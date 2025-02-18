@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                // Target ECMAScript next-generation output
+    "outDir": "./public/dist",
+    "module": "NodeNext",         
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "rootDirs": ["src"],  
+  "include": ["src/**/*.mts"],
+  "exclude": []                        // Exclude unnecessary files (e.g., test files, node_modules)
+}

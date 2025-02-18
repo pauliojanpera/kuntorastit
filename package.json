@@ -1,0 +1,14 @@
+{
+    "name": "kuntorastit",
+    "version": "0.0.1",
+    "description": "Kuntorastit",
+    "private": false,
+    "scripts": {
+      "build": "tsc && tsc-alias"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "^5.7.3",
+      "tsc-alias": "^1.8.10"
+    }
+  }
