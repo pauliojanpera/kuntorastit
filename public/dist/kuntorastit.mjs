@@ -1,4 +1,4 @@
-const DATA_URL = "/data/events.json";
+const DATA_URL = "./data/events.json";
 async function loadData() {
     try {
         const response = await fetch(DATA_URL);
