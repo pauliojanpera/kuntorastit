@@ -54,7 +54,7 @@ function createTableSkeleton() {
                 <tr>
                     <th class="date">
                         <select id="date-filter">
-                            <option value="">ajankohta</option>
+                            <option value="">aika</option>
                         </select>
                     </th>
                     <th class="event">
@@ -62,15 +62,10 @@ function createTableSkeleton() {
                     </th>
                     <th class="organizer">
                         <select id="organizer-filter">
-                            <option value="">järjestäjä</option>
+                            <option value="">seura</option>
                         </select>
                     </th>
                 </tr>
-                <!--tr>
-                    <th class="date">alkaa</th>
-                    <th class="event">tapahtuma</th>
-                    <th class="organizer">seura</th>
-                </tr-->
             </thead>
             <tbody></tbody>
         </table>
@@ -90,8 +85,8 @@ function populateFilters(events: { event: OrienteeringEvent }[]) {
 
     const dateFilter = document.getElementById("date-filter")!;
     [
+        ['past', 'menneet'],
         ['future', 'tulevat'],
-        ['past', 'menneet']
     ].forEach(([value, textContent]) => {
         const option = document.createElement("option");
         option.value = value;
@@ -136,7 +131,7 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
         const row = document.createElement("tr");
         row.classList.add(`${dayOfWeek}`); // Assign CSS class based on the day of the week
         row.innerHTML = `
-            <td class="start">${previousStartDateTime === event.startDateTime ? '' : formatDate(new Date(event.startDateTime))}</td>
+            <td class="date">${previousStartDateTime === event.startDateTime ? '' : formatDate(new Date(event.startDateTime))}</td>
             <td class="event">${event.name.replaceAll(/\s/g, ' ')}</td>
             <td class="organizer">${event.organizerName}</td>
         `;

@@ -33,9 +33,11 @@
             box-sizing: border-box; /* Ensures padding and border are included in width */
         }
         table {
-            width: 100%;
             padding: 1rem;
+            width: 100%;
             max-width: 30rem;
+            margin: auto;
+            table-layout: fixed; /* Ensures columns adhere to defined widths */
         }
         th,td {
             padding: .1rem;
@@ -46,20 +48,26 @@
             color: #180f3d;
             mix-blend-mode: multiply;
         }
-        .event {
+        th.date, td.date {
+            width: 4rem;
+        }
+        th.organizer, td.organizer {
+            width: 5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        th.event, td.event {
+            width: auto;
+            max-width: calc(100% - 9rem);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        th.event input {
             width: 100%;
-            max-width: 19rem;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+            box-sizing: border-box;
         }
-        .organizer {
-            max-width: 4rem;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
         .monday {
             background-color: #f0f921c0;
         }
