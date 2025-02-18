@@ -17,7 +17,7 @@ function renderData(data) {
     content.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
 }
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('./service-worker.js')
         .then(() => console.log("Service Worker registered"))
         .catch(console.error);
 }
