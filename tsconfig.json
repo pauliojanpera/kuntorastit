@@ -13,6 +13,6 @@
     }
   },
   "rootDirs": ["src"],  
-  "include": ["src/**/*.mts"],
+  "include": ["src/**/*.mts", "src/**/*.ts"],
   "exclude": []                        // Exclude unnecessary files (e.g., test files, node_modules)
 }

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const CACHE_NAME = "kuntorastit";
 const URLS_TO_CACHE = ["/", "/index.html", "/dist/app.mjs", "/data/events.json"];
 self.addEventListener("install", (event) => {
@@ -6,4 +8,3 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
     event.respondWith(caches.match(event.request).then(response => response || fetch(event.request)));
 });
-export {};
