@@ -41,7 +41,6 @@
         }
         th,td {
             padding: .1rem;
-            cursor: pointer;
             position: relative;
         }
         td {
@@ -67,6 +66,39 @@
         th.event input {
             width: 100%;
             box-sizing: border-box;
+        }
+        .event-row {
+            cursor: pointer;
+        }
+        .expanded-row {
+            background-color: #f8f9fa;
+        }
+
+        .expanded-content {
+            padding: 10px;
+        }
+        .location-description {
+            justify-content: space-around;
+        }
+        .location-description, .event-page-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: .5rem;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
         }
         .monday {
             background-color: #f0f921c0;
