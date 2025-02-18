@@ -4,13 +4,15 @@
   "description": "Kuntorastit",
   "private": false,
   "scripts": {
-    "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs",
+    "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs && mv public/dist/service-worker.mjs public/service-worker.js",
     "deploy": "./scripts/deploy.sh",
-    "fetch" : "./scripts/fetch_events.sh"
+    "fetch": "./scripts/fetch_events.sh",
+    "watch": "nodemon -e mts,json,html,png,sh --exec pnpm run build"
   },
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.7.3",
-    "tsc-alias": "^1.8.10"
+    "tsc-alias": "^1.8.10",
+    "nodemon": "^3.1.9"
   }
 }

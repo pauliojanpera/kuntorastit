@@ -1,455 +1,165 @@
 [ {
-  "disciplines" : [ "OT", "SU" ],
+  "disciplines" : [ "OT" ],
   "event" : {
-    "eventId" : 157817,
-    "name" : "Hiidenmaa",
+    "eventId" : 200773,
+    "name" : "Lohja - Karnaistenkorpi",
     "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1687770000000,
-    "endDateTime" : 1749934800000,
+    "organizerId" : 7138,
+    "organizerName" : "Länsi-Uudenmaan Suunnistajat",
+    "startDateTime" : 1734912060000,
+    "endDateTime" : 1740787140000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hiidenmaantie 394, 51780 Juva, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
+    "locationAddress" : "9GG6825J+XV",
+    "locationDescription" : "Lohja, Karnaistenkorpi",
     "locationCoordinates" : {
-      "lat" : 61.699303,
-      "lon" : 27.753435
+      "lat" : 60.30995,
+      "lon" : 24.03221
     },
-    "uuid" : "d540267a-0170-4dd3-8f68-7cf9cfc0b6e1",
-    "priceInCents" : 800,
+    "uuid" : "b709a7a0-9ef8-43f0-9b4a-eb2a7c598845",
+    "priceInCents" : 700,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
+    "parentSeriesEventId" : 200772,
+    "parentSeriesEventUuid" : "dabb70f7-7919-4ca4-a743-d07fc3dc21f2",
+    "parentSeriesEventName" : "Talviset omatoimirastit - L-US"
   },
   "serviceAvailable" : false
 }, {
-  "disciplines" : [ "OT", "SU" ],
+  "disciplines" : [ "OT" ],
   "event" : {
-    "eventId" : 157819,
-    "name" : "Karjasillat",
+    "eventId" : 201132,
+    "name" : "Lohja - Karnaistenkorpi",
     "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1687770000000,
-    "endDateTime" : 1749934800000,
+    "organizerId" : 7138,
+    "organizerName" : "Länsi-Uudenmaan Suunnistajat",
+    "startDateTime" : 1735898400000,
+    "endDateTime" : 1743112800000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Rahilammentie 288, 52100 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
+    "locationAddress" : "9GG6826J+5P",
+    "locationDescription" : "Lohja, Karnaistenkorpi",
     "locationCoordinates" : {
-      "lat" : 61.68213,
-      "lon" : 27.721737
+      "lat" : 60.310486,
+      "lon" : 24.03181
     },
-    "uuid" : "49b7937a-05ad-47c4-a500-62e1340b94fa",
-    "priceInCents" : 800,
+    "uuid" : "1b2f4efd-a95a-481e-944b-fe0cefade81b",
+    "priceInCents" : 700,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 157821,
-    "name" : "Säynätti",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1687770000000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "9GH9M96X+6C",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.660522,
-      "lon" : 27.398514
-    },
-    "uuid" : "dba0a356-93bb-4e79-95f7-3a37c99ef3a4",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 157818,
-    "name" : "Tolvala",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1687770000000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Neitvuorentie 48, 52100 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.6792,
-      "lon" : 27.679958
-    },
-    "uuid" : "1b304628-62ae-48aa-81de-3c552340e7be",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 157820,
-    "name" : "Ala-Säynätti",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1688374800000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "9GH9J9VV+6C",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.643074,
-      "lon" : 27.393589
-    },
-    "uuid" : "64a015fb-6d9e-43f1-8418-1d58a2a40196",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 157822,
-    "name" : "Neitvuori",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1688374800000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Neitvuorentie 656, 52100 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.666504,
-      "lon" : 27.739439
-    },
-    "uuid" : "ef8dc788-9d31-4768-8d71-0335b0581d95",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 157815,
-    "name" : "Säynätti",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1688374800000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "9GH9M96X+77",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit. ",
-    "locationCoordinates" : {
-      "lat" : 61.660652,
-      "lon" : 27.398165
-    },
-    "uuid" : "a202b8db-da19-4496-b549-7e03bb39feaf",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 157823,
-    "name" : "Tornimäki",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1688374800000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Metsä-Sairilantie 6, 50100 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.661022,
-      "lon" : 27.340384
-    },
-    "uuid" : "b95f44a1-683b-44d1-814f-47c5c0efd520",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 163360,
-    "name" : "Lyökki",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1690880400000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Ruokoniementie 7, 52360 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.45874,
-      "lon" : 27.663746
-    },
-    "uuid" : "0bcf93e9-c8e8-42bf-8dd6-04eed49cfa28",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 163361,
-    "name" : "Pahalammenvuori",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1690880400000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Helppanalantie 31, 50800 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit",
-    "locationCoordinates" : {
-      "lat" : 61.621227,
-      "lon" : 27.33109
-    },
-    "uuid" : "5379bfa3-dcad-47c0-abf2-b27b4bff154e",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 163357,
-    "name" : "Palvanen",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1690880400000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "9GH9M86Q+FX",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit. ",
-    "locationCoordinates" : {
-      "lat" : 61.661236,
-      "lon" : 27.339907
-    },
-    "uuid" : "37cc6476-81fe-482a-86aa-eddd462393d6",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT", "SU" ],
-  "event" : {
-    "eventId" : 163359,
-    "name" : "Riutta",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1690880400000,
-    "endDateTime" : 1749934800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Imatrankatu 21, 50970 Mikkeli, Suomi",
-    "locationDescription" : "Treenipaketti Jukola 2025 ja Navin omatoimirastit. ",
-    "locationCoordinates" : {
-      "lat" : 61.720512,
-      "lon" : 27.279356
-    },
-    "uuid" : "8c6b9754-b1a6-4dbb-9014-e2d28e851e6a",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 157814,
-    "parentSeriesEventUuid" : "69a52eda-c8e4-49e7-9a80-d50dc654f0cf",
-    "parentSeriesEventName" : "Treenipaketti Jukola 2025"
+    "parentSeriesEventId" : 201131,
+    "parentSeriesEventUuid" : "0a00d7d8-3d0d-4985-9771-62aefc83204c",
+    "parentSeriesEventName" : "Talviset omatoimirastit - L-US 2025"
   },
   "serviceAvailable" : false
 }, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 168525,
-    "name" : "Orimattilan iltarastit",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7311,
-    "organizerName" : "Rastivarsat",
-    "startDateTime" : 1694131200000,
-    "endDateTime" : 2335132800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "16300 Orimattila, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 60.80171339999999,
-      "lon" : 25.7288398
-    },
-    "uuid" : "4fb03c4f-f074-470e-99c6-fc47f6147e44",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "PROMOTION",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 168518,
-    "name" : "Rastivarsat",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7311,
-    "organizerName" : "Rastivarsat",
-    "startDateTime" : 1694131200000,
-    "endDateTime" : 2335132800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "16300 Orimattila, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 60.80171339999999,
-      "lon" : 25.7288398
-    },
-    "uuid" : "eb6a8096-43d8-49cd-9cca-5260c7a4bfe0",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "PROMOTION",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 170286,
-    "name" : "Kooveen aikuisten suunnistuskoulu",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7122,
-    "organizerName" : "Koovee",
-    "startDateTime" : 1695600000000,
-    "endDateTime" : 1979078400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Tampere, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 61.4977524,
-      "lon" : 23.7609535
-    },
-    "uuid" : "e651eb0a-c849-4951-b113-d7b1a14807e5",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "PROMOTION",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 170277,
-    "name" : "Kooveen lasten ja nuorten suunnistuskoulu",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7122,
-    "organizerName" : "Koovee",
-    "startDateTime" : 1695600000000,
-    "endDateTime" : 1978387200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Tampere, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 61.4977524,
-      "lon" : 23.7609535
-    },
-    "uuid" : "5f487337-db87-465b-b18c-cb040c5b00cb",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "PROMOTION",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 174597,
-    "name" : "KOULUTUSTILAUS: Valmentajakoulutus taso 1",
+    "eventId" : 197684,
+    "name" : "Nuorten seuravalmennus suunnistusseurassa, Taso 1, PK-seutu",
     "sports" : [ "Suunnistus - Orientering" ],
     "organizerId" : 6994,
     "organizerName" : "Suomen Suunnistusliitto",
-    "startDateTime" : 1703030400000,
-    "endDateTime" : 1767139200000,
-    "currentAttendeeCount" : 1,
+    "startDateTime" : 1737417600000,
+    "endDateTime" : 1744070400000,
+    "currentAttendeeCount" : 17,
     "maxAttendeeCount" : 0,
-    "locationAddress" : "Suomi",
-    "locationDescription" : "Koulutuspaikka tilaajaseuran toiveiden mukaisesti.",
+    "locationAddress" : null,
+    "locationDescription" : "Etäkoulutus ja Helsinki",
     "locationCoordinates" : {
-      "lat" : 61.92410999999999,
-      "lon" : 25.748151
+      "lat" : 60.62995249999999,
+      "lon" : 24.8580797
     },
-    "uuid" : "2dbec7d5-f906-4829-876a-663aeb73cd0a",
-    "priceInCents" : 0,
+    "uuid" : "ae82aee5-a3e4-49df-ab37-6a157ebc9fda",
+    "priceInCents" : 17000,
+    "productDiscounts" : [ ],
+    "purpose" : "EDUCATION",
+    "parentSeriesEventId" : null,
+    "parentSeriesEventUuid" : null,
+    "parentSeriesEventName" : null
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "OT" ],
+  "event" : {
+    "eventId" : 202612,
+    "name" : "Hiun kartalla omatoimirastit",
+    "sports" : [ ],
+    "organizerId" : 7266,
+    "organizerName" : "Vakka-Rasti",
+    "startDateTime" : 1737910800000,
+    "endDateTime" : 1740337200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kivipesänkuja 4, 23500 Uusikaupunki, Suomi",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.828957,
+      "lon" : 21.396166
+    },
+    "uuid" : "1a7014c2-fbb8-4940-820d-01233c44ea04",
+    "priceInCents" : 500,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198598,
+    "parentSeriesEventUuid" : "6dce7988-9db2-46a7-acc0-b54e102c1db5",
+    "parentSeriesEventName" : "Vakka-omatoimirastit 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU", "OT" ],
+  "event" : {
+    "eventId" : 203644,
+    "name" : "Februariorientering+ teknikträning / Helmikuun rastit + tekniikkatreeni",
+    "sports" : [ ],
+    "organizerId" : 7197,
+    "organizerName" : "OK Raseborg",
+    "startDateTime" : 1739012400000,
+    "endDateTime" : 1743375600000,
+    "currentAttendeeCount" : 8,
+    "maxAttendeeCount" : 999,
+    "locationAddress" : "Järnönsalmentie 103, 10680 Raasepori, Suomi",
+    "locationDescription" : "Predium, Skogby",
+    "locationCoordinates" : {
+      "lat" : 59.910713,
+      "lon" : 23.292114
+    },
+    "uuid" : "2c2a5751-b67b-4dc6-abd9-7578690878da",
+    "priceInCents" : 800,
+    "productDiscounts" : [ {
+      "id" : 55319,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Juniorer 18 år eller yngre / Juniorit 18 v ja nuoremmat",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197247,
+    "parentSeriesEventUuid" : "56ddddcf-2058-4ace-8acd-b39a4410c3b6",
+    "parentSeriesEventName" : "Raaseporin syys- ja talvirastit 2024-25"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 197514,
+    "name" : "Ratamestarikoulu, etä (helmi-maaliskuu 2025)",
+    "sports" : [ "Suunnistus - Orientering" ],
+    "organizerId" : 6994,
+    "organizerName" : "Suomen Suunnistusliitto",
+    "startDateTime" : 1739296800000,
+    "endDateTime" : 1741122000000,
+    "currentAttendeeCount" : 29,
+    "maxAttendeeCount" : 40,
+    "locationAddress" : null,
+    "locationDescription" : "Teams-sovellus",
+    "locationCoordinates" : {
+      "lat" : 60.21846970000001,
+      "lon" : 24.8787342
+    },
+    "uuid" : "0e2d64c2-a69d-4c89-b9be-83309ea9b975",
+    "priceInCents" : 2000,
     "productDiscounts" : [ ],
     "purpose" : "EDUCATION",
     "parentSeriesEventId" : null,
@@ -460,49 +170,22 @@
 }, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 170921,
-    "name" : "KOULUTUSTILAUS: Nuori Suunta ohjaajakoulutus",
+    "eventId" : 204270,
+    "name" : "Jukola-leiri 25-27.4.2025",
     "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 6994,
-    "organizerName" : "Suomen Suunnistusliitto",
-    "startDateTime" : 1704067200000,
-    "endDateTime" : 1767139200000,
-    "currentAttendeeCount" : 3,
+    "organizerId" : 7292,
+    "organizerName" : "Siilin Rasti",
+    "startDateTime" : 1739491200000,
+    "endDateTime" : 1742083200000,
+    "currentAttendeeCount" : 10,
     "maxAttendeeCount" : 0,
-    "locationAddress" : "Suomi",
-    "locationDescription" : "Koulutuspaikka tilaajaseuran toiveiden mukaisesti.",
-    "locationCoordinates" : {
-      "lat" : 61.92410999999999,
-      "lon" : 25.748151
-    },
-    "uuid" : "84817a51-4dad-419d-971e-808f5914fc3c",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "EDUCATION",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 179564,
-    "name" : "Valmennusryhmä",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7117,
-    "organizerName" : "Lappeen Riento",
-    "startDateTime" : 1710806400000,
-    "endDateTime" : 1761868800000,
-    "currentAttendeeCount" : 35,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Lappeenranta, Suomi",
+    "locationAddress" : "Mikkeli, Suomi",
     "locationDescription" : null,
     "locationCoordinates" : {
-      "lat" : 61.05785110000001,
-      "lon" : 28.1829306
+      "lat" : 61.68854769999999,
+      "lon" : 27.2722598
     },
-    "uuid" : "e2d97fc3-6a9d-4f36-a511-7043c403ffca",
+    "uuid" : "534cb136-45ea-4c49-9231-6f0b82f9567c",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
@@ -512,42 +195,96 @@
   },
   "serviceAvailable" : false
 }, {
-  "disciplines" : [ ],
+  "disciplines" : [ "OT" ],
   "event" : {
-    "eventId" : 196459,
-    "name" : " Vörå IF innebandy 2024",
+    "eventId" : 204291,
+    "name" : "Laarimäki",
     "sports" : [ ],
-    "organizerId" : 7244,
-    "organizerName" : "Vörå IF",
-    "startDateTime" : 1727116200000,
-    "endDateTime" : 1745870400000,
-    "currentAttendeeCount" : 11,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "66600 Norrvalla, Finland",
-    "locationDescription" : null,
+    "organizerId" : 7260,
+    "organizerName" : "Paimion Rasti",
+    "startDateTime" : 1739696400000,
+    "endDateTime" : 1740344400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Leppämäentie 195, 21530 Paimio, Suomi",
+    "locationDescription" : "Leppämäentie 195, Paimio",
     "locationCoordinates" : {
-      "lat" : 63.1548956,
-      "lon" : 22.2687592
+      "lat" : 60.48591,
+      "lon" : 22.642237
     },
-    "uuid" : "be4a5cee-ad4f-45fc-833f-a7d3ffc58521",
-    "priceInCents" : 2500,
+    "uuid" : "94c81c84-224a-4b31-89f0-fba00dbc09da",
+    "priceInCents" : 700,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
+    "parentSeriesEventId" : 204290,
+    "parentSeriesEventUuid" : "602a0f49-5710-4762-a912-53e8d8e19a70",
+    "parentSeriesEventName" : "Laarimäen omatoimet"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "OT" ],
+  "event" : {
+    "eventId" : 204405,
+    "name" : "Lemppajärvi Omatoimirastit",
+    "sports" : [ ],
+    "organizerId" : 7266,
+    "organizerName" : "Vakka-Rasti",
+    "startDateTime" : 1739880000000,
+    "endDateTime" : 1742842800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Isovuorentie 71, 23800 Laitila, Finland",
+    "locationDescription" : "Lemppäjärvi Isovuorentie 71, 23800 Laitila",
+    "locationCoordinates" : {
+      "lat" : 60.856552,
+      "lon" : 21.562136
+    },
+    "uuid" : "412afa55-1767-496b-b19c-2546e4c0a6cc",
+    "priceInCents" : 500,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198598,
+    "parentSeriesEventUuid" : "6dce7988-9db2-46a7-acc0-b54e102c1db5",
+    "parentSeriesEventName" : "Vakka-omatoimirastit 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202363,
+    "name" : "Noljakka ",
+    "sports" : [ ],
+    "organizerId" : 7102,
+    "organizerName" : "Kalevan Rasti",
+    "startDateTime" : 1739899800000,
+    "endDateTime" : 1739903400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Noljakankaari 19, 80140 Joensuu, Finland",
+    "locationDescription" : "Noljakka ",
+    "locationCoordinates" : {
+      "lat" : 62.62255,
+      "lon" : 29.692139
+    },
+    "uuid" : "293e5682-512f-4691-a717-f31636da959c",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202359,
+    "parentSeriesEventUuid" : "953c0750-a4b6-4a22-9e96-7a4a46c511d9",
+    "parentSeriesEventName" : "Joensuun seudun talvirastit 2025"
   },
   "serviceAvailable" : false
 }, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 201369,
-    "name" : "Juoksuharjoitukset",
-    "sports" : [ "Suunnistus - Orientering" ],
+    "eventId" : 201376,
+    "name" : "Tapahtumakerta ti 18.2.2025",
+    "sports" : [ ],
     "organizerId" : 7095,
     "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 1736276400000,
-    "endDateTime" : 1745956800000,
+    "startDateTime" : 1739905200000,
+    "endDateTime" : 1739908800000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
@@ -556,10 +293,739 @@
       "lat" : 62.89782779999999,
       "lon" : 27.6600656
     },
-    "uuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "uuid" : "593fcd59-cdc3-4849-8643-00cae3fc3ad4",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201369,
+    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "parentSeriesEventName" : "Juoksuharjoitukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200119,
+    "name" : "Tuppurala",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1740070800000,
+    "endDateTime" : 1740073500000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Haavikatu 2, 50190 Mikkeli, Suomi",
+    "locationDescription" : "Jääkiekkokaukalo \nHUOM! tavanomaisesta poiketen torstaina",
+    "locationCoordinates" : {
+      "lat" : 61.683887,
+      "lon" : 27.303375
+    },
+    "uuid" : "f1af36c7-fa56-416e-af8d-316d04c3f13f",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "YÖ" ],
+  "event" : {
+    "eventId" : 204300,
+    "name" : "Haapaimäki, Loimaa",
+    "sports" : [ ],
+    "organizerId" : 7130,
+    "organizerName" : "Loimaan Jankko",
+    "startDateTime" : 1740160800000,
+    "endDateTime" : 1740162600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Tampereentie 51, 32200 Loimaa, Suomi",
+    "locationDescription" : "Opastus Tampereentieltä, lähtöpaikka Ruokavirastolla (ent. siementarkastuslaitos)",
+    "locationCoordinates" : {
+      "lat" : 60.867622,
+      "lon" : 23.088068
+    },
+    "uuid" : "32e2accc-203d-4e3d-9810-a08319a81355",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200922,
+    "parentSeriesEventUuid" : "c414d69e-a98f-460e-8ca9-7020d5fc52a6",
+    "parentSeriesEventName" : "Loimaan seudun yösuunnistukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201465,
+    "name" : "Penttilänpuisto",
+    "sports" : [ ],
+    "organizerId" : 7283,
+    "organizerName" : "Tampereen Pyrintö",
+    "startDateTime" : 1740218400000,
+    "endDateTime" : 1740223800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Vihnuskatu 4, 37150 Nokia, Suomi",
+    "locationDescription" : "Nokian jäähalli",
+    "locationCoordinates" : {
+      "lat" : 61.48288,
+      "lon" : 23.526312
+    },
+    "uuid" : "83bd8d69-f854-4845-87ea-05809ca2b775",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201458,
+    "parentSeriesEventUuid" : "583f32d2-2d10-4b55-b553-c6b53eb13cf2",
+    "parentSeriesEventName" : "Tampereen Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 199362,
+    "name" : "Vieremä",
+    "sports" : [ ],
+    "organizerId" : 7079,
+    "organizerName" : "Hyvinkään Rasti",
+    "startDateTime" : 1740218400000,
+    "endDateTime" : 1740222000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kenkätehtaankatu 1, 05900 Hyvinkää, Suomi",
+    "locationDescription" : "Kipinä, Kenkatehtaankatu 1",
+    "locationCoordinates" : {
+      "lat" : 60.62917,
+      "lon" : 24.853636
+    },
+    "uuid" : "b9e5a8af-dd2e-47ed-b93b-8afc8bccfdc0",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 199354,
+    "parentSeriesEventUuid" : "811c018a-de0f-4131-b5b3-e8968b64f88b",
+    "parentSeriesEventName" : "Hyvinkään Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204020,
+    "name" : "Kokkola, Korttelisuunnistuskartta",
+    "sports" : [ ],
+    "organizerId" : 7269,
+    "organizerName" : "Kokkolan Suunnistajat",
+    "startDateTime" : 1740222000000,
+    "endDateTime" : 1740225600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Terveystie 1, 67200 Kokkola, Finland",
+    "locationDescription" : "Kokkola, Terveystien kiinteistö, Terveystie 1",
+    "locationCoordinates" : {
+      "lat" : 63.84322,
+      "lon" : 23.101994
+    },
+    "uuid" : "c425c126-36a2-4b50-a27e-ec6a28683009",
+    "priceInCents" : 600,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204016,
+    "parentSeriesEventUuid" : "014c8d0b-0f8e-4718-9701-ea6dc0a3e20e",
+    "parentSeriesEventName" : "Kokkolan Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200818,
+    "name" : "Ruissalo",
+    "sports" : [ ],
+    "organizerId" : 7247,
+    "organizerName" : "Turun Suunnistajat",
+    "startDateTime" : 1740222000000,
+    "endDateTime" : 1740225600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Saarontie 31, 20100 Turku, Suomi",
+    "locationDescription" : "Järjestäjä: Turun Suunnistajat",
+    "locationCoordinates" : {
+      "lat" : 60.425556,
+      "lon" : 22.097282
+    },
+    "uuid" : "cb7dd46a-897b-417e-9916-fdd45f3f9fe0",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197413,
+    "parentSeriesEventUuid" : "2a6649c4-ad96-4abd-b248-8d60f7024a2b",
+    "parentSeriesEventName" : "TalviRastit 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "HS" ],
+  "event" : {
+    "eventId" : 201986,
+    "name" : "Ojaniemi Vähäkyrö, 1. päivä - Uusi päivä 22.2.2025",
+    "sports" : [ ],
+    "organizerId" : 7225,
+    "organizerName" : "Vaasan Suunnistajat",
+    "startDateTime" : 1740225600000,
+    "endDateTime" : 1740232800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Ojaniementie 106, 66500 Vaasa, Finland",
+    "locationDescription" : "Huom. Siirretään lumitilanteen takia helmikuulle. \nPysäköinti Ojaniementie 100 Vähäkyrö",
+    "locationCoordinates" : {
+      "lat" : 63.067986,
+      "lon" : 22.118277
+    },
+    "uuid" : "8517be3b-6799-4674-89ef-71c6ac09a40a",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201985,
+    "parentSeriesEventUuid" : "f14a673a-dacf-48f9-9605-c3d647013cfa",
+    "parentSeriesEventName" : "VaaSu hiihtosuunnistus 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198856,
+    "name" : "Nöykkiö",
+    "sports" : [ ],
+    "organizerId" : 7020,
+    "organizerName" : "Espoon Akilles ry",
+    "startDateTime" : 1740304800000,
+    "endDateTime" : 1740310200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Oxfotintie 2, 02330 Espoo, Suomi",
+    "locationDescription" : "Oxfotintie 2, Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.16799,
+      "lon" : 24.662628
+    },
+    "uuid" : "450788a7-5999-4521-a7a0-1f561bed2839",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198852,
+    "parentSeriesEventUuid" : "d8b12af1-af31-4ecb-b7f6-19f68bb5e05e",
+    "parentSeriesEventName" : "Korttelirastit 2024-25, Akilleksen vuorot"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204309,
+    "name" : "Maikkula",
+    "sports" : [ ],
+    "organizerId" : 7156,
+    "organizerName" : "SK Pohjantähti",
+    "startDateTime" : 1740306600000,
+    "endDateTime" : 1740312000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Jatulikivenkatu 8, 90240 Oulu, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 64.981995,
+      "lon" : 25.57725
+    },
+    "uuid" : "af40b051-89bb-4630-9232-9bc96937aa8f",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202741,
+    "parentSeriesEventUuid" : "569b74ff-9450-4d11-95cb-ac82e0581a6c",
+    "parentSeriesEventName" : "Talvisarja 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204012,
+    "name" : " Kaupungintalo,  Asemanranta ",
+    "sports" : [ ],
+    "organizerId" : 7034,
+    "organizerName" : "Karkki-Rasti",
+    "startDateTime" : 1740308400000,
+    "endDateTime" : 1740312000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Valtatie 26, 03600 Karkkila, Suomi",
+    "locationDescription" : "   Karkkilan  kaupungintalo,  opastus Valtatie  26,  Karkkila ",
+    "locationCoordinates" : {
+      "lat" : 60.533318,
+      "lon" : 24.205921
+    },
+    "uuid" : "13699076-03a5-4148-9af1-47cd91b4b35a",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204011,
+    "parentSeriesEventUuid" : "6c56abb9-db28-4a18-8fb2-88b55c11d54d",
+    "parentSeriesEventName" : "Karkkilan talvisprintti 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198678,
+    "name" : "Tanelinranta- Lampitie",
+    "sports" : [ ],
+    "organizerId" : 7286,
+    "organizerName" : "Rasti-Jussit",
+    "startDateTime" : 1740308400000,
+    "endDateTime" : 1740312000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Lampitie 8, 60150 Seinäjoki, Suomi",
+    "locationDescription" : "Hyllykallio maastokartta",
+    "locationCoordinates" : {
+      "lat" : 62.79652,
+      "lon" : 22.912945
+    },
+    "uuid" : "7202a342-d34c-45f5-a82f-7b3ebdb6676a",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198671,
+    "parentSeriesEventUuid" : "730186b9-883f-4c4b-bce1-c785d222aa00",
+    "parentSeriesEventName" : "Talvirastit Seinäjoki"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202158,
+    "name" : "2.osakilpailu Uramon koulu",
+    "sports" : [ ],
+    "organizerId" : 7207,
+    "organizerName" : "Riihimäen Suunnistajat",
+    "startDateTime" : 1740312000000,
+    "endDateTime" : 1740315600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Uramontie 63, 11120 Riihimäki, Suomi",
+    "locationDescription" : "Uramon koulu, Uramontie 53",
+    "locationCoordinates" : {
+      "lat" : 60.74993,
+      "lon" : 24.759972
+    },
+    "uuid" : "13921780-cec7-4621-a89e-db99cb61c253",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202156,
+    "parentSeriesEventUuid" : "735df054-bd17-4c0b-9aea-d47f67ddea62",
+    "parentSeriesEventName" : "2.Team Sportia -rastit"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "HS" ],
+  "event" : {
+    "eventId" : 201987,
+    "name" : "Ojaniemi Vähäkyrö, 2. päivä - Uusi päivä 23.2.2025",
+    "sports" : [ ],
+    "organizerId" : 7225,
+    "organizerName" : "Vaasan Suunnistajat",
+    "startDateTime" : 1740312000000,
+    "endDateTime" : 1740319200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Ojaniementie 108, 66500 Vaasa, Suomi",
+    "locationDescription" : "Huom. Siirretään lumitilanteen takia helmikuulle. \nPysäköinti Ojaniementie 100 Vähäkyrö",
+    "locationCoordinates" : {
+      "lat" : 63.068195,
+      "lon" : 22.118275
+    },
+    "uuid" : "0ac38d30-abbf-4596-a0f6-a794ae16fa26",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201985,
+    "parentSeriesEventUuid" : "f14a673a-dacf-48f9-9605-c3d647013cfa",
+    "parentSeriesEventName" : "VaaSu hiihtosuunnistus 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202364,
+    "name" : "Pataluodon koulu ",
+    "sports" : [ ],
+    "organizerId" : 7102,
+    "organizerName" : "Kalevan Rasti",
+    "startDateTime" : 1740504600000,
+    "endDateTime" : 1740508200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Pataluodonkatu 2, 80160 Joensuu, Finland",
+    "locationDescription" : "Pataluodon koulu ",
+    "locationCoordinates" : {
+      "lat" : 62.6141,
+      "lon" : 29.819279
+    },
+    "uuid" : "a17cd131-21a9-406b-89e3-9f9dbbc4d993",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202359,
+    "parentSeriesEventUuid" : "953c0750-a4b6-4a22-9e96-7a4a46c511d9",
+    "parentSeriesEventName" : "Joensuun seudun talvirastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 201377,
+    "name" : "Tapahtumakerta ti 25.2.2025",
+    "sports" : [ ],
+    "organizerId" : 7095,
+    "organizerName" : "Kuopion Suunnistajat",
+    "startDateTime" : 1740510000000,
+    "endDateTime" : 1740513600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 0,
+    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
+    "locationDescription" : null,
+    "locationCoordinates" : {
+      "lat" : 62.89782779999999,
+      "lon" : 27.6600656
+    },
+    "uuid" : "5a1ef11f-f85b-4c29-9de2-2f2280bd79c7",
+    "priceInCents" : 0,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201369,
+    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "parentSeriesEventName" : "Juoksuharjoitukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200120,
+    "name" : "Lehmuskylä",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1740589200000,
+    "endDateTime" : 1740591900000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Sointukatu 1, 50100 Mikkeli, Suomi",
+    "locationDescription" : "Mikaeli",
+    "locationCoordinates" : {
+      "lat" : 61.690983,
+      "lon" : 27.251997
+    },
+    "uuid" : "306476e8-c6b4-4746-916f-ef6bc8e80746",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "YÖ" ],
+  "event" : {
+    "eventId" : 203688,
+    "name" : "Ristimäki, Loimaa",
+    "sports" : [ ],
+    "organizerId" : 7130,
+    "organizerName" : "Loimaan Jankko",
+    "startDateTime" : 1740765600000,
+    "endDateTime" : 1740768300000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Ristimäentie 21, 32210 Loimaa, Suomi",
+    "locationDescription" : "Opastus Hirvikoski - Oripää tieltä, noin 3,5 km HIrvikosken keskustasta Oripään suuntaan",
+    "locationCoordinates" : {
+      "lat" : 60.861317,
+      "lon" : 22.924585
+    },
+    "uuid" : "38506697-d84c-40a2-b04b-06953babbb26",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200922,
+    "parentSeriesEventUuid" : "c414d69e-a98f-460e-8ca9-7020d5fc52a6",
+    "parentSeriesEventName" : "Loimaan seudun yösuunnistukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 199363,
+    "name" : "Vehkoja",
+    "sports" : [ ],
+    "organizerId" : 7079,
+    "organizerName" : "Hyvinkään Rasti",
+    "startDateTime" : 1740823200000,
+    "endDateTime" : 1740826800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Männikkötie 6, 05830 Hyvinkää, Suomi",
+    "locationDescription" : "Vehkojan koulu, Männikkötie 6",
+    "locationCoordinates" : {
+      "lat" : 60.609566,
+      "lon" : 24.84016
+    },
+    "uuid" : "92b98f0a-6076-46cb-8e8d-c467cb56dec5",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 199354,
+    "parentSeriesEventUuid" : "811c018a-de0f-4131-b5b3-e8968b64f88b",
+    "parentSeriesEventName" : "Hyvinkään Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201466,
+    "name" : "Vehmainen",
+    "sports" : [ ],
+    "organizerId" : 7283,
+    "organizerName" : "Tampereen Pyrintö",
+    "startDateTime" : 1740823200000,
+    "endDateTime" : 1740828600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Sarvannankatu 7, 33730 Tampere, Suomi",
+    "locationDescription" : "Vehmaisten koulu",
+    "locationCoordinates" : {
+      "lat" : 61.476467,
+      "lon" : 23.92086
+    },
+    "uuid" : "b693c39a-73c7-4bc7-a24c-e6e19177f569",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201458,
+    "parentSeriesEventUuid" : "583f32d2-2d10-4b55-b553-c6b53eb13cf2",
+    "parentSeriesEventName" : "Tampereen Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204021,
+    "name" : "Kokkola,  Korttelisuunnistuskartta",
+    "sports" : [ ],
+    "organizerId" : 7269,
+    "organizerName" : "Kokkolan Suunnistajat",
+    "startDateTime" : 1740826800000,
+    "endDateTime" : 1740830400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Ilkantie 12, 67100 Kokkola, Finland",
+    "locationDescription" : "Kokkola, Vesitorni Ilkatie 13",
+    "locationCoordinates" : {
+      "lat" : 63.846767,
+      "lon" : 23.139734
+    },
+    "uuid" : "0e41208d-1165-49ee-84cf-02acafd1e440",
+    "priceInCents" : 600,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204016,
+    "parentSeriesEventUuid" : "014c8d0b-0f8e-4718-9701-ea6dc0a3e20e",
+    "parentSeriesEventName" : "Kokkolan Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200819,
+    "name" : "Linnasmäen opisto",
+    "sports" : [ ],
+    "organizerId" : 7247,
+    "organizerName" : "Turun Suunnistajat",
+    "startDateTime" : 1740826800000,
+    "endDateTime" : 1740830400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Lustokatu 7, 20380 Turku, Suomi",
+    "locationDescription" : "Järjestäjä: Turun Suunnistajat",
+    "locationCoordinates" : {
+      "lat" : 60.47925,
+      "lon" : 22.302736
+    },
+    "uuid" : "a0777479-429c-4619-baf5-522e3dc2b8f4",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197413,
+    "parentSeriesEventUuid" : "2a6649c4-ad96-4abd-b248-8d60f7024a2b",
+    "parentSeriesEventName" : "TalviRastit 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202159,
+    "name" : "3.osakilpailu Keskusta",
+    "sports" : [ ],
+    "organizerId" : 7207,
+    "organizerName" : "Riihimäen Suunnistajat",
+    "startDateTime" : 1740830400000,
+    "endDateTime" : 1740834000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kirkkopolku 5, 11100 Riihimäki, Suomi",
+    "locationDescription" : "Team Sportia, Kirkkopolku 5",
+    "locationCoordinates" : {
+      "lat" : 60.737595,
+      "lon" : 24.773487
+    },
+    "uuid" : "b8190a4f-d75d-4826-96df-62225aa7d3cf",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202156,
+    "parentSeriesEventUuid" : "735df054-bd17-4c0b-9aea-d47f67ddea62",
+    "parentSeriesEventName" : "2.Team Sportia -rastit"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198739,
+    "name" : "Korso",
+    "sports" : [ ],
+    "organizerId" : 7178,
+    "organizerName" : "Pihkaniskat",
+    "startDateTime" : 1740909600000,
+    "endDateTime" : 1740915000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Merikotkanpolku 2, 01450 Vantaa, Suomi",
+    "locationDescription" : "Merikotkanpolku 2, Vantaa",
+    "locationCoordinates" : {
+      "lat" : 60.35121,
+      "lon" : 25.076696
+    },
+    "uuid" : "cbecd779-4800-48bd-b9c6-a1be018064b1",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198733,
+    "parentSeriesEventUuid" : "6f35fdec-ab19-4b92-baa9-031eb5f35b1d",
+    "parentSeriesEventName" : "Korttelirastit 2024-2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203841,
+    "name" : "Tapiola",
+    "sports" : [ ],
+    "organizerId" : 7060,
+    "organizerName" : "Espoon Suunta",
+    "startDateTime" : 1741023000000,
+    "endDateTime" : 1741028400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Merituulentie 1, 02100 Espoo, Suomi",
+    "locationDescription" : "Tapiola,Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.17566,
+      "lon" : 24.807594
+    },
+    "uuid" : "4b95e601-b956-4533-9195-afb96466f709",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203840,
+    "parentSeriesEventUuid" : "660e4316-4061-46cf-b68c-dda67cced133",
+    "parentSeriesEventName" : "Espoo Sprintti cup kevät 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202365,
+    "name" : "Karhunmäki ",
+    "sports" : [ ],
+    "organizerId" : 7102,
+    "organizerName" : "Kalevan Rasti",
+    "startDateTime" : 1741109400000,
+    "endDateTime" : 1741113000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Karhunkaari 28, 80230 Joensuu, Finland",
+    "locationDescription" : "Karhunmäki ",
+    "locationCoordinates" : {
+      "lat" : 62.570988,
+      "lon" : 29.816996
+    },
+    "uuid" : "136cb1a7-14d5-4234-ad98-76ac230fbaae",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202359,
+    "parentSeriesEventUuid" : "953c0750-a4b6-4a22-9e96-7a4a46c511d9",
+    "parentSeriesEventName" : "Joensuun seudun talvirastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202673,
+    "name" : "Kirjala",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1741194000000,
+    "endDateTime" : 1741196700000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "9GH9M7J5+9P",
+    "locationDescription" : "XAMK",
+    "locationCoordinates" : {
+      "lat" : 61.680943,
+      "lon" : 27.259312
+    },
+    "uuid" : "a7af802b-6e30-47fd-96fe-695ceb27bc55",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 202218,
+    "name" : "Viestiratojen suunnittelu ja hajontojen hallinta (Teams)",
+    "sports" : [ "Suunnistus - Orientering" ],
+    "organizerId" : 6994,
+    "organizerName" : "Suomen Suunnistusliitto",
+    "startDateTime" : 1741197600000,
+    "endDateTime" : 1741204800000,
+    "currentAttendeeCount" : 4,
+    "maxAttendeeCount" : 50,
+    "locationAddress" : null,
+    "locationDescription" : "Teams-sovellus",
+    "locationCoordinates" : {
+      "lat" : 60.21846970000001,
+      "lon" : 24.8787342
+    },
+    "uuid" : "8ca54c8b-5590-4b87-a32d-8b64da8d48ed",
+    "priceInCents" : 2000,
+    "productDiscounts" : [ ],
+    "purpose" : "EDUCATION",
     "parentSeriesEventId" : null,
     "parentSeriesEventUuid" : null,
     "parentSeriesEventName" : null
@@ -568,82 +1034,1246 @@
 }, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 201941,
-    "name" : "KuoSun valmennusmaksu 2025",
+    "eventId" : 201893,
+    "name" : "Lasten ja nuorten ratojen laatiminen -koulutus (Teams)",
     "sports" : [ "Suunnistus - Orientering" ],
+    "organizerId" : 6994,
+    "organizerName" : "Suomen Suunnistusliitto",
+    "startDateTime" : 1741219200000,
+    "endDateTime" : 1741219200000,
+    "currentAttendeeCount" : 6,
+    "maxAttendeeCount" : 0,
+    "locationAddress" : "Valimotie 10, 00380 Helsinki, Suomi",
+    "locationDescription" : "Microsoft Teams",
+    "locationCoordinates" : {
+      "lat" : 60.2186864,
+      "lon" : 24.878139
+    },
+    "uuid" : "d0536537-16b0-4d3e-ac51-0f66207f5449",
+    "priceInCents" : 0,
+    "productDiscounts" : [ ],
+    "purpose" : "EDUCATION",
+    "parentSeriesEventId" : null,
+    "parentSeriesEventUuid" : null,
+    "parentSeriesEventName" : null
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "YÖ" ],
+  "event" : {
+    "eventId" : 203687,
+    "name" : "Palojoki, Huittinen",
+    "sports" : [ ],
+    "organizerId" : 7130,
+    "organizerName" : "Loimaan Jankko",
+    "startDateTime" : 1741372200000,
+    "endDateTime" : 1741374000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Korkeakoskentie 1082, 32700 Huittinen, Suomi",
+    "locationDescription" : "Opastus Korkeankoskentieltä Huittisista",
+    "locationCoordinates" : {
+      "lat" : 61.08954,
+      "lon" : 22.729462
+    },
+    "uuid" : "3c0e1b1d-a404-4578-9e0b-cd6a712bc3dc",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200922,
+    "parentSeriesEventUuid" : "c414d69e-a98f-460e-8ca9-7020d5fc52a6",
+    "parentSeriesEventName" : "Loimaan seudun yösuunnistukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 199364,
+    "name" : "Hakakallio",
+    "sports" : [ ],
+    "organizerId" : 7079,
+    "organizerName" : "Hyvinkään Rasti",
+    "startDateTime" : 1741428000000,
+    "endDateTime" : 1741431600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kivikonkierto 18, 05460 Hyvinkää, Suomi",
+    "locationDescription" : "Kivikonkierto 18",
+    "locationCoordinates" : {
+      "lat" : 60.610214,
+      "lon" : 24.88248
+    },
+    "uuid" : "25d77ed6-87d2-4abb-a7fd-4a4ea4dac0a7",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 199354,
+    "parentSeriesEventUuid" : "811c018a-de0f-4131-b5b3-e8968b64f88b",
+    "parentSeriesEventName" : "Hyvinkään Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201467,
+    "name" : "Härmälän ranta",
+    "sports" : [ ],
+    "organizerId" : 7283,
+    "organizerName" : "Tampereen Pyrintö",
+    "startDateTime" : 1741428000000,
+    "endDateTime" : 1741433400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Rantaperkiönkatu 1 C 6b, 33900 Tampere, Suomi",
+    "locationDescription" : "Suunnistajan kauppa",
+    "locationCoordinates" : {
+      "lat" : 61.47456,
+      "lon" : 23.765429
+    },
+    "uuid" : "99ad9923-dc9c-4f12-8484-b2d89a4748b2",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201458,
+    "parentSeriesEventUuid" : "583f32d2-2d10-4b55-b553-c6b53eb13cf2",
+    "parentSeriesEventName" : "Tampereen Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200821,
+    "name" : "Kaarina Biltema",
+    "sports" : [ ],
+    "organizerId" : 7247,
+    "organizerName" : "Turun Suunnistajat",
+    "startDateTime" : 1741431600000,
+    "endDateTime" : 1741435200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Jännekatu 5, 20760 Kaarina, Suomi",
+    "locationDescription" : "Järjestäjä: Turun Suunnistajat",
+    "locationCoordinates" : {
+      "lat" : 60.41456,
+      "lon" : 22.33121
+    },
+    "uuid" : "3452fc18-7866-42c6-b223-c7bf433cd012",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197413,
+    "parentSeriesEventUuid" : "2a6649c4-ad96-4abd-b248-8d60f7024a2b",
+    "parentSeriesEventName" : "TalviRastit 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204022,
+    "name" : "Kokkola,  Korttelisuunnistuskartta",
+    "sports" : [ ],
+    "organizerId" : 7269,
+    "organizerName" : "Kokkolan Suunnistajat",
+    "startDateTime" : 1741431600000,
+    "endDateTime" : 1741435200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Ulkometsäntie 1, 67400 Kokkola, Finland",
+    "locationDescription" : "Kokkola, Ulkometsäntie, Rytimäki",
+    "locationCoordinates" : {
+      "lat" : 63.85411,
+      "lon" : 23.153479
+    },
+    "uuid" : "a837741d-9882-4cb9-8a4a-7583a7a8f20f",
+    "priceInCents" : 600,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204016,
+    "parentSeriesEventUuid" : "014c8d0b-0f8e-4718-9701-ea6dc0a3e20e",
+    "parentSeriesEventName" : "Kokkolan Talvirastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198439,
+    "name" : "Linnanmäki",
+    "sports" : [ ],
+    "organizerId" : 7075,
+    "organizerName" : "Rasti-Jyry",
+    "startDateTime" : 1741514400000,
+    "endDateTime" : 1741519800000,
+    "currentAttendeeCount" : 1,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Tivolitie 12, 00510 Helsinki, Suomi",
+    "locationDescription" : "Tivolitie 12, Helsinki",
+    "locationCoordinates" : {
+      "lat" : 60.188457,
+      "lon" : 24.937574
+    },
+    "uuid" : "990145c6-0c77-414c-b845-7a67cf39a7f2",
+    "priceInCents" : 700,
+    "productDiscounts" : [ {
+      "id" : 53341,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Kaksi karttaa, sama suunnistaja",
+      "priceInCents" : 900,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198430,
+    "parentSeriesEventUuid" : "53fbe8df-6514-4fd5-935b-9a884ada745d",
+    "parentSeriesEventName" : "Korttelirastit 2024 - 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198679,
+    "name" : "Hyllykallio",
+    "sports" : [ ],
+    "organizerId" : 7286,
+    "organizerName" : "Rasti-Jussit",
+    "startDateTime" : 1741518000000,
+    "endDateTime" : 1741521600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kopparintie 8, 60510 Seinäjoki, Suomi",
+    "locationDescription" : "Nurmo pp-stadion",
+    "locationCoordinates" : {
+      "lat" : 62.79699,
+      "lon" : 22.888515
+    },
+    "uuid" : "f4e1ecf6-6bc5-44c3-951c-179d2796a689",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198671,
+    "parentSeriesEventUuid" : "730186b9-883f-4c4b-bce1-c785d222aa00",
+    "parentSeriesEventName" : "Talvirastit Seinäjoki"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201208,
+    "name" : "Pispala",
+    "sports" : [ ],
+    "organizerId" : 7122,
+    "organizerName" : "Koovee",
+    "startDateTime" : 1741629600000,
+    "endDateTime" : 1741633200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Portaanpää 18b, 33250 Tampere, Finland",
+    "locationDescription" : "Pispala, Tampere",
+    "locationCoordinates" : {
+      "lat" : 61.50446,
+      "lon" : 23.708649
+    },
+    "uuid" : "a2de2339-2c39-431d-8562-72e5fce4c4af",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 54669,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 18 vuotiaat",
+      "priceInCents" : 600,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201203,
+    "parentSeriesEventUuid" : "7848b31e-f86a-4d09-ac52-2e40ff71df2e",
+    "parentSeriesEventName" : "Manse Night Challenge"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202366,
+    "name" : "Karsikko",
+    "sports" : [ ],
+    "organizerId" : 7102,
+    "organizerName" : "Kalevan Rasti",
+    "startDateTime" : 1741714200000,
+    "endDateTime" : 1741717800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kettuvaarantie 28, 80260 Joensuu, Finland",
+    "locationDescription" : "Karsikko",
+    "locationCoordinates" : {
+      "lat" : 62.602436,
+      "lon" : 29.802015
+    },
+    "uuid" : "ca416e11-0e2e-4730-8b0d-5ea01a9ef557",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202359,
+    "parentSeriesEventUuid" : "953c0750-a4b6-4a22-9e96-7a4a46c511d9",
+    "parentSeriesEventName" : "Joensuun seudun talvirastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 201378,
+    "name" : "Tapahtumakerta ti 11.3.2025",
+    "sports" : [ ],
     "organizerId" : 7095,
     "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 1736553600000,
-    "endDateTime" : 1767139200000,
+    "startDateTime" : 1741719600000,
+    "endDateTime" : 1741723200000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 0,
-    "locationAddress" : "Kuopio, Suomi",
-    "locationDescription" : "Eri paikoissa vuoden mittaan",
+    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
+    "locationDescription" : null,
     "locationCoordinates" : {
-      "lat" : 62.8965859,
-      "lon" : 27.6785574
+      "lat" : 62.89782779999999,
+      "lon" : 27.6600656
     },
-    "uuid" : "a60b24ea-7afe-4363-954c-f90e47a5dae1",
+    "uuid" : "51270549-0207-4ff6-a1fc-507ac29e14c4",
+    "priceInCents" : 0,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201369,
+    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "parentSeriesEventName" : "Juoksuharjoitukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202674,
+    "name" : "Tuppurala",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1741798800000,
+    "endDateTime" : 1741801500000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Haavikatu 2, 50190 Mikkeli, Suomi",
+    "locationDescription" : "Pitkä A+ -rata n. 10 km",
+    "locationCoordinates" : {
+      "lat" : 61.68388,
+      "lon" : 27.303658
+    },
+    "uuid" : "e615e405-a967-4834-8f9e-a2e254b10ee6",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203801,
+    "name" : "Kannelmäki",
+    "sports" : [ ],
+    "organizerId" : 7018,
+    "organizerName" : "Helsingin Suunnistajat",
+    "startDateTime" : 1741802400000,
+    "endDateTime" : 1741807800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Vanhaistentie 4, 00420 Helsinki, Suomi",
+    "locationDescription" : "Kannelmäki",
+    "locationCoordinates" : {
+      "lat" : 60.242176,
+      "lon" : 24.88327
+    },
+    "uuid" : "693edd36-79f7-47d8-947c-248ccad6de33",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 55477,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Perusmaksu + lainaemit",
+      "priceInCents" : 1500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55478,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55479,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v + lainaemit",
+      "priceInCents" : 800,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203800,
+    "parentSeriesEventUuid" : "7ad79b7f-79af-4758-8c4b-1b3259e1a173",
+    "parentSeriesEventName" : "Stadin Sprintticup 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 201850,
+    "name" : "Ratamestarikoulutus 1. ja 2. luokan ratamestaripätevyyden uusintaan (Teams)",
+    "sports" : [ "Suunnistus - Orientering" ],
+    "organizerId" : 6994,
+    "organizerName" : "Suomen Suunnistusliitto",
+    "startDateTime" : 1741971600000,
+    "endDateTime" : 1741982400000,
+    "currentAttendeeCount" : 12,
+    "maxAttendeeCount" : 30,
+    "locationAddress" : null,
+    "locationDescription" : "Teams-sovellus",
+    "locationCoordinates" : {
+      "lat" : 60.21846970000001,
+      "lon" : 24.8787342
+    },
+    "uuid" : "fe16ecbe-b9bf-49ef-b263-bf6059b438a1",
+    "priceInCents" : 2000,
+    "productDiscounts" : [ ],
+    "purpose" : "EDUCATION",
+    "parentSeriesEventId" : null,
+    "parentSeriesEventUuid" : null,
+    "parentSeriesEventName" : null
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU", "PS" ],
+  "event" : {
+    "eventId" : 202608,
+    "name" : "Kevätroga, 2-5 hlöä",
+    "sports" : [ ],
+    "organizerId" : 7178,
+    "organizerName" : "Pihkaniskat",
+    "startDateTime" : 1742032800000,
+    "endDateTime" : 1742036400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "50, 01510 Vantaa, Finland",
+    "locationDescription" : "PK-seutu",
+    "locationCoordinates" : {
+      "lat" : 60.28762,
+      "lon" : 24.982002
+    },
+    "uuid" : "44bf0629-3faf-403d-9e6c-d0744ef76cb4",
     "priceInCents" : 5000,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
+    "parentSeriesEventId" : 202605,
+    "parentSeriesEventUuid" : "a2368886-d976-42a6-b2c2-449a51bb9922",
+    "parentSeriesEventName" : "Kevätroga 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU", "PS" ],
+  "event" : {
+    "eventId" : 202607,
+    "name" : "Kevätroga, aikuinen",
+    "sports" : [ ],
+    "organizerId" : 7178,
+    "organizerName" : "Pihkaniskat",
+    "startDateTime" : 1742032800000,
+    "endDateTime" : 1742036400000,
+    "currentAttendeeCount" : 1,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kirkonkylän etl., 01510 Vantaa, Finland",
+    "locationDescription" : "PK-seutu",
+    "locationCoordinates" : {
+      "lat" : 60.28813,
+      "lon" : 24.97941
+    },
+    "uuid" : "abae4934-ef01-49b6-9862-0c03b49e1718",
+    "priceInCents" : 2500,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202605,
+    "parentSeriesEventUuid" : "a2368886-d976-42a6-b2c2-449a51bb9922",
+    "parentSeriesEventName" : "Kevätroga 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU", "PS" ],
+  "event" : {
+    "eventId" : 202606,
+    "name" : "Kevätroga, alle 18-vuotias",
+    "sports" : [ ],
+    "organizerId" : 7178,
+    "organizerName" : "Pihkaniskat",
+    "startDateTime" : 1742032800000,
+    "endDateTime" : 1742036400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kyläraitti 12, 01510 Vantaa, Finland",
+    "locationDescription" : "PK-seutu",
+    "locationCoordinates" : {
+      "lat" : 60.283356,
+      "lon" : 24.979195
+    },
+    "uuid" : "7690009f-fe2a-4c7f-9053-98c863c769fc",
+    "priceInCents" : 1250,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202605,
+    "parentSeriesEventUuid" : "a2368886-d976-42a6-b2c2-449a51bb9922",
+    "parentSeriesEventName" : "Kevätroga 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 199365,
+    "name" : "Martti",
+    "sports" : [ ],
+    "organizerId" : 7079,
+    "organizerName" : "Hyvinkään Rasti",
+    "startDateTime" : 1742032800000,
+    "endDateTime" : 1742036400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Tapainlinnankatu 3, 05810 Hyvinkää, Suomi",
+    "locationDescription" : "Martintalo, Martintorinkuja 2 ",
+    "locationCoordinates" : {
+      "lat" : 60.621655,
+      "lon" : 24.89072
+    },
+    "uuid" : "3d9d2955-ce14-4a27-b3f1-22f13ffdd524",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 199354,
+    "parentSeriesEventUuid" : "811c018a-de0f-4131-b5b3-e8968b64f88b",
+    "parentSeriesEventName" : "Hyvinkään Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201468,
+    "name" : "Pikkola",
+    "sports" : [ ],
+    "organizerId" : 7283,
+    "organizerName" : "Tampereen Pyrintö",
+    "startDateTime" : 1742032800000,
+    "endDateTime" : 1742038200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Finnentie 42, 36200 Kangasala, Suomi",
+    "locationDescription" : "Kangasalan lukio",
+    "locationCoordinates" : {
+      "lat" : 61.466366,
+      "lon" : 24.045315
+    },
+    "uuid" : "2c7a2a99-e6c3-4635-b69f-86dc705fd005",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201458,
+    "parentSeriesEventUuid" : "583f32d2-2d10-4b55-b553-c6b53eb13cf2",
+    "parentSeriesEventName" : "Tampereen Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204023,
+    "name" : "Kokkola, Korttelisuunnistuskartta",
+    "sports" : [ ],
+    "organizerId" : 7269,
+    "organizerName" : "Kokkolan Suunnistajat",
+    "startDateTime" : 1742036400000,
+    "endDateTime" : 1742040000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Hakatie 28, 67700 Kokkola, Finland",
+    "locationDescription" : "Kokkola, Kirkonmäen urheilukenttä Ventuksentie 47",
+    "locationCoordinates" : {
+      "lat" : 63.8244,
+      "lon" : 23.137531
+    },
+    "uuid" : "3cc5d6ba-1880-467c-8b01-bf4d24c2a39a",
+    "priceInCents" : 600,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204016,
+    "parentSeriesEventUuid" : "014c8d0b-0f8e-4718-9701-ea6dc0a3e20e",
+    "parentSeriesEventName" : "Kokkolan Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200820,
+    "name" : "Urheilupuisto",
+    "sports" : [ ],
+    "organizerId" : 7247,
+    "organizerName" : "Turun Suunnistajat",
+    "startDateTime" : 1742036400000,
+    "endDateTime" : 1742040000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Betaniankatu 2, 20810 Turku, Suomi",
+    "locationDescription" : "Järjestäjä: Turun Suunnistajat",
+    "locationCoordinates" : {
+      "lat" : 60.44172,
+      "lon" : 22.259985
+    },
+    "uuid" : "e0cbf901-c590-4e87-a028-a0eb06eb4b40",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197413,
+    "parentSeriesEventUuid" : "2a6649c4-ad96-4abd-b248-8d60f7024a2b",
+    "parentSeriesEventName" : "TalviRastit 2024-2025"
   },
   "serviceAvailable" : false
 }, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198740,
+    "name" : "Heikinlaakso-Puistola",
+    "sports" : [ ],
+    "organizerId" : 7178,
+    "organizerName" : "Pihkaniskat",
+    "startDateTime" : 1742119200000,
+    "endDateTime" : 1742124600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kallenlaakso 1, 01380 Vantaa, Suomi",
+    "locationDescription" : "Kallenlaakso, Helsinki",
+    "locationCoordinates" : {
+      "lat" : 60.275497,
+      "lon" : 25.07728
+    },
+    "uuid" : "063e6007-b148-4dbd-91c0-f7c85441040d",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198733,
+    "parentSeriesEventUuid" : "6f35fdec-ab19-4b92-baa9-031eb5f35b1d",
+    "parentSeriesEventName" : "Korttelirastit 2024-2025"
+  },
+  "serviceAvailable" : true
+}, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 202194,
-    "name" : "Tsemppi ja Spurtti",
+    "eventId" : 203810,
+    "name" : "Nuori Suunta ohjaajakoulutus TuS 18.3.-9.4.2025",
     "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7020,
-    "organizerName" : "Espoon Akilles ry",
-    "startDateTime" : 1736985600000,
-    "endDateTime" : 1767139200000,
+    "organizerId" : 6994,
+    "organizerName" : "Suomen Suunnistusliitto",
+    "startDateTime" : 1742256000000,
+    "endDateTime" : 1744156800000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 0,
-    "locationAddress" : "Espoo, Finland",
-    "locationDescription" : "Paikka vaihtelee",
+    "locationAddress" : "Lustokatu 7, 20380 Turku, Suomi",
+    "locationDescription" : "",
     "locationCoordinates" : {
-      "lat" : 60.2054911,
-      "lon" : 24.6559001
+      "lat" : 60.4792548,
+      "lon" : 22.3037317
     },
-    "uuid" : "84f6f14d-791b-4d6b-8804-c243e97c892b",
+    "uuid" : "3cf0396c-be26-486a-9ce7-60c351525da6",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
+    "purpose" : "EDUCATION",
     "parentSeriesEventId" : null,
     "parentSeriesEventUuid" : null,
     "parentSeriesEventName" : null
   },
   "serviceAvailable" : false
 }, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202367,
+    "name" : "Liperin koulukeskus",
+    "sports" : [ ],
+    "organizerId" : 7102,
+    "organizerName" : "Kalevan Rasti",
+    "startDateTime" : 1742319000000,
+    "endDateTime" : 1742322600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Liperin koulukeskus, 83100 Liperi, Finland",
+    "locationDescription" : "Liperin koulukeskus",
+    "locationCoordinates" : {
+      "lat" : 62.53336,
+      "lon" : 29.372381
+    },
+    "uuid" : "6d71d5d2-002a-4f9e-b7c8-8a399af255a3",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202359,
+    "parentSeriesEventUuid" : "953c0750-a4b6-4a22-9e96-7a4a46c511d9",
+    "parentSeriesEventName" : "Joensuun seudun talvirastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 204265,
-    "name" : "Mikkeli- Jukola 2025 ",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7292,
-    "organizerName" : "Siilin Rasti",
-    "startDateTime" : 1739491200000,
-    "endDateTime" : 1746316800000,
-    "currentAttendeeCount" : 17,
+    "eventId" : 201379,
+    "name" : "Tapahtumakerta ti 18.3.2025",
+    "sports" : [ ],
+    "organizerId" : 7095,
+    "organizerName" : "Kuopion Suunnistajat",
+    "startDateTime" : 1742324400000,
+    "endDateTime" : 1742328000000,
+    "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 0,
-    "locationAddress" : "Mikkeli, Suomi",
+    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
     "locationDescription" : null,
     "locationCoordinates" : {
-      "lat" : 61.68854769999999,
-      "lon" : 27.2722598
+      "lat" : 62.89782779999999,
+      "lon" : 27.6600656
     },
-    "uuid" : "ecf4157f-ff62-43e3-9002-4503da57aa5e",
+    "uuid" : "26fa38e9-dbe2-452e-915c-bab920f3fbe8",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
+    "parentSeriesEventId" : 201369,
+    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "parentSeriesEventName" : "Juoksuharjoitukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203802,
+    "name" : "Ruoholahti",
+    "sports" : [ ],
+    "organizerId" : 7018,
+    "organizerName" : "Helsingin Suunnistajat",
+    "startDateTime" : 1742407200000,
+    "endDateTime" : 1742412600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Itämerenkatu 30, 00180 Helsinki, Suomi",
+    "locationDescription" : "Ruoholahti - Salmisaari",
+    "locationCoordinates" : {
+      "lat" : 60.162914,
+      "lon" : 24.906187
+    },
+    "uuid" : "66189d57-eb5d-4dae-bfc4-0fee38c214ec",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 55480,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Perusmaksu + lainaemit",
+      "priceInCents" : 1500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55481,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55482,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v + lainaemit",
+      "priceInCents" : 800,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203800,
+    "parentSeriesEventUuid" : "7ad79b7f-79af-4758-8c4b-1b3259e1a173",
+    "parentSeriesEventName" : "Stadin Sprintticup 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201469,
+    "name" : "Etelä-Hervanta",
+    "sports" : [ ],
+    "organizerId" : 7283,
+    "organizerName" : "Tampereen Pyrintö",
+    "startDateTime" : 1742637600000,
+    "endDateTime" : 1742643000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Suolijärvenkatu 7, 33720 Tampere, Suomi",
+    "locationDescription" : "Suolijärven ulkoilumaja",
+    "locationCoordinates" : {
+      "lat" : 61.443413,
+      "lon" : 23.834324
+    },
+    "uuid" : "e005abb1-90fc-4cf3-abe4-9d47959badcb",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201458,
+    "parentSeriesEventUuid" : "583f32d2-2d10-4b55-b553-c6b53eb13cf2",
+    "parentSeriesEventName" : "Tampereen Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202675,
+    "name" : "Keskusta",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1742637600000,
+    "endDateTime" : 1742641200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Puistokatu 2, 50100 Mikkeli, Suomi",
+    "locationDescription" : "Sprintti / Lähtö: Marskin aukio",
+    "locationCoordinates" : {
+      "lat" : 61.688057,
+      "lon" : 27.262653
+    },
+    "uuid" : "0c3f8199-437d-4be4-abcf-07a7dfd45e43",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 199366,
+    "name" : "Keskusta",
+    "sports" : [ ],
+    "organizerId" : 7079,
+    "organizerName" : "Hyvinkään Rasti",
+    "startDateTime" : 1742637600000,
+    "endDateTime" : 1742641200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kenkätehtaankatu 1, 05900 Hyvinkää, Suomi",
+    "locationDescription" : "Kipinä, Kenkatehtaankatu 1",
+    "locationCoordinates" : {
+      "lat" : 60.62915,
+      "lon" : 24.853611
+    },
+    "uuid" : "27d8aa77-3a2d-467c-bf51-c2673dc449ff",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 199354,
+    "parentSeriesEventUuid" : "811c018a-de0f-4131-b5b3-e8968b64f88b",
+    "parentSeriesEventName" : "Hyvinkään Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204024,
+    "name" : "Kokkola, Köykärin Korttelisuunnistuskartta",
+    "sports" : [ ],
+    "organizerId" : 7269,
+    "organizerName" : "Kokkolan Suunnistajat",
+    "startDateTime" : 1742641200000,
+    "endDateTime" : 1742644800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Hiihtotie 3, 67600 Kokkola, Finland",
+    "locationDescription" : "Kokkola, Köykärin Hiihtokeskus, Hiihtotie",
+    "locationCoordinates" : {
+      "lat" : 63.82848,
+      "lon" : 23.197899
+    },
+    "uuid" : "5c8bdbfc-1013-4dfe-9c3b-59f841c3548d",
+    "priceInCents" : 600,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204016,
+    "parentSeriesEventUuid" : "014c8d0b-0f8e-4718-9701-ea6dc0a3e20e",
+    "parentSeriesEventName" : "Kokkolan Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200822,
+    "name" : "Lyseon koulu",
+    "sports" : [ ],
+    "organizerId" : 7247,
+    "organizerName" : "Turun Suunnistajat",
+    "startDateTime" : 1742641200000,
+    "endDateTime" : 1742644800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Varusmestarintie 19, 20360 Turku, Suomi",
+    "locationDescription" : "Järjestäjä: Turun Suunnistajat",
+    "locationCoordinates" : {
+      "lat" : 60.49228,
+      "lon" : 22.267914
+    },
+    "uuid" : "ddf447de-ae23-481e-a819-a8d2d7dde3bf",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197413,
+    "parentSeriesEventUuid" : "2a6649c4-ad96-4abd-b248-8d60f7024a2b",
+    "parentSeriesEventName" : "TalviRastit 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 198857,
+    "name" : "Lähderanta",
+    "sports" : [ ],
+    "organizerId" : 7020,
+    "organizerName" : "Espoon Akilles ry",
+    "startDateTime" : 1742724000000,
+    "endDateTime" : 1742729400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Lähdepurontie 1, 02720 Espoo, Suomi",
+    "locationDescription" : "Lähdepurontie, Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.244072,
+      "lon" : 24.74686
+    },
+    "uuid" : "9e49b6d1-4e19-4ea5-b4b7-06c46a8cae34",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 198852,
+    "parentSeriesEventUuid" : "d8b12af1-af31-4ecb-b7f6-19f68bb5e05e",
+    "parentSeriesEventName" : "Korttelirastit 2024-25, Akilleksen vuorot"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203614,
+    "name" : "Urheilupuisto-Keskusta (Atomi), 1:5000/2021",
+    "sports" : [ ],
+    "organizerId" : 7207,
+    "organizerName" : "Riihimäen Suunnistajat",
+    "startDateTime" : 1742731200000,
+    "endDateTime" : 1742736600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Voimalankatu 2, 11130 Riihimäki, Suomi",
+    "locationDescription" : "Etelän Viertotie 4, Riihimäki",
+    "locationCoordinates" : {
+      "lat" : 60.732655,
+      "lon" : 24.775867
+    },
+    "uuid" : "d083a62f-b20d-41d8-938c-5019d2986bb2",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203613,
+    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
+    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201209,
+    "name" : "Länsi-Hervanta",
+    "sports" : [ ],
+    "organizerId" : 7122,
+    "organizerName" : "Koovee",
+    "startDateTime" : 1742839200000,
+    "endDateTime" : 1742842800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Valtaraitti 28, 33720 Tampere, Finland",
+    "locationDescription" : "Hervanta, Tampere",
+    "locationCoordinates" : {
+      "lat" : 61.447945,
+      "lon" : 23.845911
+    },
+    "uuid" : "5828fefc-b26c-4aa9-b92d-c38f592ae6fd",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 54668,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 18 vuotiaat",
+      "priceInCents" : 600,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201203,
+    "parentSeriesEventUuid" : "7848b31e-f86a-4d09-ac52-2e40ff71df2e",
+    "parentSeriesEventName" : "Manse Night Challenge"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202368,
+    "name" : "Mutala",
+    "sports" : [ ],
+    "organizerId" : 7102,
+    "organizerName" : "Kalevan Rasti",
+    "startDateTime" : 1742923800000,
+    "endDateTime" : 1742927400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Lastenkatu 4, 80100 Joensuu, Finland",
+    "locationDescription" : "Mutala",
+    "locationCoordinates" : {
+      "lat" : 62.613335,
+      "lon" : 29.788084
+    },
+    "uuid" : "e4750e1a-693c-48de-b3d4-0375dffffefe",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202359,
+    "parentSeriesEventUuid" : "953c0750-a4b6-4a22-9e96-7a4a46c511d9",
+    "parentSeriesEventName" : "Joensuun seudun talvirastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 201380,
+    "name" : "Tapahtumakerta ti 25.3.2025",
+    "sports" : [ ],
+    "organizerId" : 7095,
+    "organizerName" : "Kuopion Suunnistajat",
+    "startDateTime" : 1742929200000,
+    "endDateTime" : 1742932800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 0,
+    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
+    "locationDescription" : null,
+    "locationCoordinates" : {
+      "lat" : 62.89782779999999,
+      "lon" : 27.6600656
+    },
+    "uuid" : "d74577d8-396e-4175-bfc1-8d35c992a97f",
+    "priceInCents" : 0,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201369,
+    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "parentSeriesEventName" : "Juoksuharjoitukset"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202676,
+    "name" : "Lähemäki",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1743008400000,
+    "endDateTime" : 1743011100000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Peltopaukkulankatu 23, 50170 Mikkeli, Suomi",
+    "locationDescription" : "Koulu",
+    "locationCoordinates" : {
+      "lat" : 61.694862,
+      "lon" : 27.298965
+    },
+    "uuid" : "99c8a320-b6f7-45a0-b814-bcdcaae87a37",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203803,
+    "name" : "Keilaniemi",
+    "sports" : [ ],
+    "organizerId" : 7018,
+    "organizerName" : "Helsingin Suunnistajat",
+    "startDateTime" : 1743012000000,
+    "endDateTime" : 1743017400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Keilaranta 7, 02150 Espoo, Suomi",
+    "locationDescription" : "Keilaniemi",
+    "locationCoordinates" : {
+      "lat" : 60.177063,
+      "lon" : 24.83409
+    },
+    "uuid" : "adae25cd-ac94-4dc8-bafd-a0e6d695c25c",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 55483,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Perusmaksu + lainaemit",
+      "priceInCents" : 1500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55484,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55485,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v + lainaemit",
+      "priceInCents" : 800,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203800,
+    "parentSeriesEventUuid" : "7ad79b7f-79af-4758-8c4b-1b3259e1a173",
+    "parentSeriesEventName" : "Stadin Sprintticup 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 201470,
+    "name" : "Alasjärvi",
+    "sports" : [ ],
+    "organizerId" : 7283,
+    "organizerName" : "Tampereen Pyrintö",
+    "startDateTime" : 1743242400000,
+    "endDateTime" : 1743247800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Niihamankatu 3, 33560 Tampere, Suomi",
+    "locationDescription" : "Niihaman liityntäparkki. Omatoimipysäköinti sallituilla paikoilla.",
+    "locationCoordinates" : {
+      "lat" : 61.500477,
+      "lon" : 23.877094
+    },
+    "uuid" : "6c49808f-2584-47fb-bd23-c2f21df8d55d",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201458,
+    "parentSeriesEventUuid" : "583f32d2-2d10-4b55-b553-c6b53eb13cf2",
+    "parentSeriesEventName" : "Tampereen Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204025,
+    "name" : "Kokkola,  Korttelisuunnistuskartta",
+    "sports" : [ ],
+    "organizerId" : 7269,
+    "organizerName" : "Kokkolan Suunnistajat",
+    "startDateTime" : 1743246000000,
+    "endDateTime" : 1743249600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Säveltäjäntie 34, 67300 Kokkola, Finland",
+    "locationDescription" : "Kokkola, Roskaruka, Kelkkatie",
+    "locationCoordinates" : {
+      "lat" : 63.850018,
+      "lon" : 23.14484
+    },
+    "uuid" : "8e5bf18d-1ddc-48c1-a5f3-3871e09752ea",
+    "priceInCents" : 600,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204016,
+    "parentSeriesEventUuid" : "014c8d0b-0f8e-4718-9701-ea6dc0a3e20e",
+    "parentSeriesEventName" : "Kokkolan Talvirastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203615,
+    "name" : "Kirvasto (Sairaala), 1:7500/2022",
+    "sports" : [ ],
+    "organizerId" : 7207,
+    "organizerName" : "Riihimäen Suunnistajat",
+    "startDateTime" : 1743336000000,
+    "endDateTime" : 1743341400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kontiontie 77, 11120 Riihimäki, Suomi",
+    "locationDescription" : "Kontiontie 77, Riihimäki",
+    "locationCoordinates" : {
+      "lat" : 60.745804,
+      "lon" : 24.743336
+    },
+    "uuid" : "5320d2df-e81a-4929-9826-b32ec1eafea4",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203613,
+    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
+    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204416,
+    "name" : "Kälahult",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1743440400000,
+    "endDateTime" : 1743445800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kälahultsvägen 36, 10710 Raseborg, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.01294,
+      "lon" : 23.747602
+    },
+    "uuid" : "23561812-3aa9-4578-b8c1-596d4c18c4a5",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204190,
+    "name" : "Juvanpuisto",
+    "sports" : [ ],
+    "organizerId" : 7020,
+    "organizerName" : "Espoon Akilles ry",
+    "startDateTime" : 1743442200000,
+    "endDateTime" : 1743447600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Juvanpuistonkuja 3b, 02920 Espoo, Suomi",
+    "locationDescription" : "Juvanpuisto",
+    "locationCoordinates" : {
+      "lat" : 60.27687,
+      "lon" : 24.752073
+    },
+    "uuid" : "dc04ea1f-109f-4ca5-94dc-aaa931daebde",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204189,
+    "parentSeriesEventUuid" : "cc981358-2998-49f2-a1de-93c2026dce84",
+    "parentSeriesEventName" : "Espoo Sprintticup, kevät 2025, Espoon Akilles"
   },
   "serviceAvailable" : false
 }, {
@@ -701,42 +2331,15 @@
   },
   "serviceAvailable" : false
 }, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203618,
-    "name" : "Ravirata, Kirvasto, 1:7500/2022",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1744734600000,
-    "endDateTime" : 1744741800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Oravankatu 26, 11120 Riihimäki, Suomi",
-    "locationDescription" : "Oravankatu 26, ravirata,  Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.755016,
-      "lon" : 24.769447
-    },
-    "uuid" : "e41511c3-9ebc-44e8-b5b4-08b37f742728",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
   "disciplines" : [ ],
   "event" : {
-    "eventId" : 201383,
-    "name" : "Tapahtumakerta ti 15.4.2025",
+    "eventId" : 201381,
+    "name" : "Tapahtumakerta ti 1.4.2025",
     "sports" : [ ],
     "organizerId" : 7095,
     "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 1744743600000,
-    "endDateTime" : 1744747200000,
+    "startDateTime" : 1743534000000,
+    "endDateTime" : 1743537600000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
@@ -745,1894 +2348,34 @@
       "lat" : 62.89782779999999,
       "lon" : 27.6600656
     },
-    "uuid" : "4e86f076-4eaf-4952-931a-6e5d5e514446",
+    "uuid" : "5e1a5e24-3f4b-44ae-9075-b0d17b8aaf5b",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
     "parentSeriesEventId" : 201369,
     "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
     "parentSeriesEventName" : "Juoksuharjoitukset"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200106,
-    "name" : "Luukki",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1745253000000,
-    "endDateTime" : 1745262000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Luukintie 33, 02970 Espoo, Suomi",
-    "locationDescription" : "Luukintie 33, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.31841,
-      "lon" : 24.689379
-    },
-    "uuid" : "cd34e6fe-0598-4808-aea4-5d1abb51f4a1",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54223,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54224,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54225,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204423,
-    "name" : "Kälahult",
-    "sports" : [ ],
-    "organizerId" : 7291,
-    "organizerName" : "Karjaan Ura",
-    "startDateTime" : 1745254800000,
-    "endDateTime" : 1745260200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Kälahultsvägen 38, 10710 Raseborg, Finland",
-    "locationDescription" : "-",
-    "locationCoordinates" : {
-      "lat" : 60.013027,
-      "lon" : 23.747574
-    },
-    "uuid" : "6627d430-81d9-49ff-9c1e-263aa73aefa0",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204412,
-    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
-    "parentSeriesEventName" : "Maanantairastit 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203619,
-    "name" : "Uhkola (Ratapiha), 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1745339400000,
-    "endDateTime" : 1745346600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Vahteristontie 93, 11130 Riihimäki, Suomi",
-    "locationDescription" : "Vahteristontie 93, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.720917,
-      "lon" : 24.798841
-    },
-    "uuid" : "017cbd97-466b-40f7-9d13-b920b7c2109f",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 201384,
-    "name" : "Tapahtumakerta ti 22.4.2025",
-    "sports" : [ ],
-    "organizerId" : 7095,
-    "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 1745348400000,
-    "endDateTime" : 1745352000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 62.89782779999999,
-      "lon" : 27.6600656
-    },
-    "uuid" : "7e91ed56-f1a7-4991-aa91-1afe63f787b9",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 201369,
-    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
-    "parentSeriesEventName" : "Juoksuharjoitukset"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 202183,
-    "name" : "Monikkala/2024",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1745512200000,
-    "endDateTime" : 1745519400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hakoistentie 343, 14240 Janakkala, Suomi",
-    "locationDescription" : "Janakkalan kko ,Hakoistentie 347 Janakkala",
-    "locationCoordinates" : {
-      "lat" : 60.89375,
-      "lon" : 24.594318
-    },
-    "uuid" : "d73d71b8-3762-4719-80de-2c23c0cf98e1",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 202182,
-    "parentSeriesEventUuid" : "3fa1e5df-b4fe-4fcc-92a7-d6a611bca1d1",
-    "parentSeriesEventName" : "Hämeenlinnan Seudun Kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200107,
-    "name" : "Kattila",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1745857800000,
-    "endDateTime" : 1745866800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Kattilantie 423, 02820 Vihti, Suomi",
-    "locationDescription" : "Kattilantie 424, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.32745,
-      "lon" : 24.495916
-    },
-    "uuid" : "8a2e3a0d-baf6-4ab1-b81d-d1404ce437b2",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54226,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54227,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54228,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. +  lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204424,
-    "name" : "Svedja",
-    "sports" : [ ],
-    "organizerId" : 7291,
-    "organizerName" : "Karjaan Ura",
-    "startDateTime" : 1745859600000,
-    "endDateTime" : 1745865000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Svedja Träskvägen 41, 10300 Raseborg, Finland",
-    "locationDescription" : "-",
-    "locationCoordinates" : {
-      "lat" : 60.043922,
-      "lon" : 23.601028
-    },
-    "uuid" : "e7f9b7d0-398d-402e-a0f1-8a42b19509c9",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204412,
-    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
-    "parentSeriesEventName" : "Maanantairastit 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU", "RR", "TR", "YÖ" ],
-  "event" : {
-    "eventId" : 203620,
-    "name" : "Hausjärvi kk, 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1745944200000,
-    "endDateTime" : 1745951400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Kupparlammintie 142, 12210 Hausjärvi, Suomi",
-    "locationDescription" : "Kupparlammintie 142, Hausjärvi",
-    "locationCoordinates" : {
-      "lat" : 60.7719,
-      "lon" : 24.907988
-    },
-    "uuid" : "2c948d67-d40b-404c-9b9f-80afbc53cf09",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 201385,
-    "name" : "Tapahtumakerta ti 29.4.2025",
-    "sports" : [ ],
-    "organizerId" : 7095,
-    "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 1745953200000,
-    "endDateTime" : 1745956800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 62.89782779999999,
-      "lon" : 27.6600656
-    },
-    "uuid" : "5288e986-579f-4b1f-b8f1-172da5ef96ca",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 201369,
-    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
-    "parentSeriesEventName" : "Juoksuharjoitukset"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "OT" ],
-  "event" : {
-    "eventId" : 201192,
-    "name" : "Testitapahtuma",
-    "sports" : [ ],
-    "organizerId" : 7138,
-    "organizerName" : "Länsi-Uudenmaan Suunnistajat",
-    "startDateTime" : 1746032400000,
-    "endDateTime" : 1746039600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Suurlohjankatu 1, 08100 Lohja, Suomi",
-    "locationDescription" : "Ei tapahtumaa.",
-    "locationCoordinates" : {
-      "lat" : 60.25118,
-      "lon" : 24.067616
-    },
-    "uuid" : "d527e0ab-acc7-4094-8fff-53ef641ec9ab",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 201131,
-    "parentSeriesEventUuid" : "0a00d7d8-3d0d-4985-9771-62aefc83204c",
-    "parentSeriesEventName" : "Talviset omatoimirastit - L-US 2025"
   },
   "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU", "OT" ],
   "event" : {
-    "eventId" : 89174,
-    "name" : "Testi",
-    "sports" : [ ],
-    "organizerId" : 7333,
-    "organizerName" : "Olavin Rasti",
-    "startDateTime" : 1746057600000,
-    "endDateTime" : 1746124200000,
-    "currentAttendeeCount" : 1,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Metsolantie 30, 57220 Savonlinna, Finland",
-    "locationDescription" : "Testipaikka",
-    "locationCoordinates" : {
-      "lat" : 61.863987,
-      "lon" : 28.973793
-    },
-    "uuid" : "921a637b-c503-40ba-93a7-2fcf99920a01",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : null,
-    "parentSeriesEventId" : 89173,
-    "parentSeriesEventUuid" : "0831b827-83f8-4752-858f-58435986ab95",
-    "parentSeriesEventName" : "Testirastit ORa 2021"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 198732,
-    "name" : "Kompassi-tapahtumat 2025",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 6994,
-    "organizerName" : "Suomen Suunnistusliitto",
-    "startDateTime" : 1746057600000,
-    "endDateTime" : 1759190400000,
-    "currentAttendeeCount" : 12,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Valimotie 10, 00380 Helsinki, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 60.2186864,
-      "lon" : 24.878139
-    },
-    "uuid" : "2a172d15-7ed0-4cb1-8f77-b3e9f7759971",
-    "priceInCents" : 0,
-    "productDiscounts" : [ ],
-    "purpose" : "ORGANIZATIONAL",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200108,
-    "name" : "Paloheinä",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1746462600000,
-    "endDateTime" : 1746471600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Pakilantie 124, 00670 Helsinki, Suomi",
-    "locationDescription" : "Paloheinän ulkoilumaja, Pakilantie 124, Helsinki",
-    "locationCoordinates" : {
-      "lat" : 60.254574,
-      "lon" : 24.917576
-    },
-    "uuid" : "1ac0b682-029d-47a9-871e-4b94ced2772e",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54229,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54230,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54231,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204425,
-    "name" : "Billnäs/Pentby",
-    "sports" : [ ],
-    "organizerId" : 7291,
-    "organizerName" : "Karjaan Ura",
-    "startDateTime" : 1746464400000,
-    "endDateTime" : 1746469800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Bruksvägen 7, 10330 Raseborg, Finland",
-    "locationDescription" : "-",
-    "locationCoordinates" : {
-      "lat" : 60.08537,
-      "lon" : 23.640526
-    },
-    "uuid" : "0a2ec6fd-be72-4a34-8f96-91efb5127f9b",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204412,
-    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
-    "parentSeriesEventName" : "Maanantairastit 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203850,
-    "name" : "Kevätkumpu/Humla",
-    "sports" : [ ],
-    "organizerId" : 7314,
-    "organizerName" : "Porvoon Urheilijat",
-    "startDateTime" : 1746464400000,
-    "endDateTime" : 1746469800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Humlantie 4, 06150 Porvoo, Suomi",
-    "locationDescription" : "Kevätkumpu/Humla, Humlantie 1 Porvoo",
-    "locationCoordinates" : {
-      "lat" : 60.381153,
-      "lon" : 25.695297
-    },
-    "uuid" : "cc211948-9f6d-48dd-a418-90c4cf028e9f",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203848,
-    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
-    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203621,
-    "name" : "Korttionmäki, 1:10000/2020",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1746549000000,
-    "endDateTime" : 1746556200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Korttiontie 2, 11130 Riihimäki, Suomi",
-    "locationDescription" : "Korttiontie 2, RMK",
-    "locationCoordinates" : {
-      "lat" : 60.72361,
-      "lon" : 24.78755
-    },
-    "uuid" : "720949a1-1036-4c18-b6bf-77852d371a2e",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204362,
-    "name" : "Kukonnokka / 2024  ",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1747067400000,
-    "endDateTime" : 1747072800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Leppäkoskentie 659, 12380 Janakkala, Suomi",
-    "locationDescription" : "Leppäkoski-Tervakoski tie \nLeppäkoskentie 662 Janakkala",
-    "locationCoordinates" : {
-      "lat" : 60.841835,
-      "lon" : 24.71766
-    },
-    "uuid" : "662328f0-4454-4451-92ea-ebe58396f1c5",
-    "priceInCents" : 600,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204357,
-    "parentSeriesEventUuid" : "3543cfd1-b2b4-46b3-8bfe-fa5c84999096",
-    "parentSeriesEventName" : "Janakkalarastit 2025  "
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200109,
-    "name" : "Pirkkola",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1747067400000,
-    "endDateTime" : 1747076400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Pirkkolantie 23, 00630 Helsinki, Suomi",
-    "locationDescription" : "Pirkkolan liikuntapuisto, Pirkkolantie 23, Helsinki",
-    "locationCoordinates" : {
-      "lat" : 60.229916,
-      "lon" : 24.916054
-    },
-    "uuid" : "2c2dac6e-88ae-475a-bc0a-7a2650305082",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54232,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54233,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54234,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204426,
-    "name" : "Prästgården/Pappila",
-    "sports" : [ ],
-    "organizerId" : 7291,
-    "organizerName" : "Karjaan Ura",
-    "startDateTime" : 1747069200000,
-    "endDateTime" : 1747074600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Sannäsvägen 152, 10300 Raseborg, Finland",
-    "locationDescription" : "",
-    "locationCoordinates" : {
-      "lat" : 60.079487,
-      "lon" : 23.715622
-    },
-    "uuid" : "35196ca1-b742-4b6a-889d-b8e079c64635",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204412,
-    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
-    "parentSeriesEventName" : "Maanantairastit 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203622,
-    "name" : "Kilometrikallio, 1:10000/2020",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1747153800000,
-    "endDateTime" : 1747161000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Ojajoenkaari 88, 12700 Loppi, Suomi",
-    "locationDescription" : "Ojajoenkaari 72, Loppi",
-    "locationCoordinates" : {
-      "lat" : 60.7219,
-      "lon" : 24.456991
-    },
-    "uuid" : "a25f2dbe-74f2-4d9b-80dc-5a75548f7864",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 203908,
-    "name" : "Forssa roga 2025",
-    "sports" : [ ],
-    "organizerId" : 7112,
-    "organizerName" : "Lounais-Hämeen Rasti",
-    "startDateTime" : 1747440000000,
-    "endDateTime" : 1747440000000,
-    "currentAttendeeCount" : 3,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Talsoilankatu 34, 30100 Forssa, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 60.82061119999999,
-      "lon" : 23.6057369
-    },
-    "uuid" : "b60ed5bd-d069-4775-96c9-f6d12f5c7c6a",
-    "priceInCents" : 4000,
-    "productDiscounts" : [ {
-      "id" : 55538,
-      "priceSteps" : [ ],
-      "discountType" : "PUBLIC",
-      "name" : "Ennakkoilmoittautuminen 1",
-      "priceInCents" : 2000,
-      "validityPeriod" : {
-        "start" : 1739138400000,
-        "end" : 1743454740000
-      }
-    }, {
-      "id" : 55539,
-      "priceSteps" : [ ],
-      "discountType" : "PUBLIC",
-      "name" : "Ennakkoilmoittautuminen 2",
-      "priceInCents" : 3000,
-      "validityPeriod" : {
-        "start" : 1743454800000,
-        "end" : 1746997140000
-      }
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200110,
-    "name" : "Solvalla",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1747672200000,
-    "endDateTime" : 1747681200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Nouxvägen 82, 02820 Esbo, Suomi",
-    "locationDescription" : "Solvalla, Nuuksiontie 82, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.293896,
-      "lon" : 24.557842
-    },
-    "uuid" : "a2631cb1-da98-4f19-aba0-c62d39ea9868",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54235,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54236,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54237,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204360,
-    "name" : "Tarinmaa / 2023",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1747672200000,
-    "endDateTime" : 1747677600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hakoistentie 346, 14240 Janakkala, Suomi",
-    "locationDescription" : "Janakkalan kko \nHakoistentie 345 Janakkala",
-    "locationCoordinates" : {
-      "lat" : 60.893578,
-      "lon" : 24.59435
-    },
-    "uuid" : "8c9a014d-58d5-4089-92d2-b93e080b9800",
-    "priceInCents" : 600,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204357,
-    "parentSeriesEventUuid" : "3543cfd1-b2b4-46b3-8bfe-fa5c84999096",
-    "parentSeriesEventName" : "Janakkalarastit 2025  "
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204427,
-    "name" : "Lövkulla",
-    "sports" : [ ],
-    "organizerId" : 7291,
-    "organizerName" : "Karjaan Ura",
-    "startDateTime" : 1747674000000,
-    "endDateTime" : 1747679400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Långbackagatan 19, 10300 Raseborg, Finland",
-    "locationDescription" : "-",
-    "locationCoordinates" : {
-      "lat" : 60.082558,
-      "lon" : 23.669706
-    },
-    "uuid" : "a8d0a8a6-d9b3-4117-8a9b-47dcb17c9986",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204412,
-    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
-    "parentSeriesEventName" : "Maanantairastit 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU", "RR", "TR" ],
-  "event" : {
-    "eventId" : 203623,
-    "name" : "Varuskunta (Kokonkatu/Tykkikentäntie), 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1747758600000,
-    "endDateTime" : 1747765800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Polvikatu 4, 11120 Riihimäki, Suomi",
-    "locationDescription" : "Kokonkatu 2-4, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.74638,
-      "lon" : 24.786915
-    },
-    "uuid" : "ef84703d-b7a2-4069-b7b6-2dced5fbb8a4",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200111,
-    "name" : "Rinnekoti",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1748277000000,
-    "endDateTime" : 1748286000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Talouskeskus, 02980 Espoo, Suomi",
-    "locationDescription" : "Rinnekodintie 30, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.353622,
-      "lon" : 24.65583
-    },
-    "uuid" : "beb3a740-d7f9-4d04-86f5-217107a93f14",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54238,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54239,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54240,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU", "RR", "TR" ],
-  "event" : {
-    "eventId" : 203624,
-    "name" : "Hikiä, 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1748363400000,
-    "endDateTime" : 1748370600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Kuruntie 771, 12240 Hausjärvi, Suomi",
-    "locationDescription" : "Kuruntie 771, Hausjärvi",
-    "locationCoordinates" : {
-      "lat" : 60.731308,
-      "lon" : 24.949665
-    },
-    "uuid" : "9e1faea1-7a24-440d-9370-145cae8f3c7d",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 203956,
-    "name" : "Leimaus-leiri ilmoittautuminen 2025",
-    "sports" : [ "Suunnistus - Orientering" ],
-    "organizerId" : 7095,
-    "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 1748822400000,
-    "endDateTime" : 1749081600000,
-    "currentAttendeeCount" : 1,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Opistotie 1, 63100 Kuortane, Suomi",
-    "locationDescription" : "Kuortaneen urheiluopisto",
-    "locationCoordinates" : {
-      "lat" : 62.8188602,
-      "lon" : 23.5053724
-    },
-    "uuid" : "efba06f4-f00d-4e5c-bd81-8ea88391bd88",
-    "priceInCents" : 17000,
-    "productDiscounts" : [ {
-      "id" : 55562,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Leirimaksu huoltaja/ohjaaja",
-      "priceInCents" : 14500,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200112,
-    "name" : "Pirttimäki",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1748881800000,
-    "endDateTime" : 1748890800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Pirttimäki, 02740 Espoo, Suomi",
-    "locationDescription" : "Pirttimäen ulkoilumaja, Savupirtintie 3, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.26859,
-      "lon" : 24.652966
-    },
-    "uuid" : "4eb2417b-b921-4e55-92f4-154071164db8",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54241,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54242,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54243,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203851,
-    "name" : "Virvik",
-    "sports" : [ ],
-    "organizerId" : 7314,
-    "organizerName" : "Porvoon Urheilijat",
-    "startDateTime" : 1748883600000,
-    "endDateTime" : 1748889000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Virvikintie 39, 06200 Porvoo, Suomi",
-    "locationDescription" : "Virvik ent. hiekkakuopat, Virvikintie 39 Porvoo",
-    "locationCoordinates" : {
-      "lat" : 60.34743,
-      "lon" : 25.864315
-    },
-    "uuid" : "096aee04-8c82-4288-a635-4f70218a8e99",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203848,
-    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
-    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203625,
-    "name" : "Riutta, 1:7500/2024",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1748968200000,
-    "endDateTime" : 1748975400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Rinnetie 3, 11910 Riihimäki, Suomi",
-    "locationDescription" : "Rinnetie 1, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.72658,
-      "lon" : 24.69564
-    },
-    "uuid" : "d81e7143-c1d3-4679-a963-28b160c8a34d",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 202184,
-    "name" : "Hiidenkorpi / 2023",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1749141000000,
-    "endDateTime" : 1749148200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Santasillantie 79, 14240 Janakkala, Suomi",
-    "locationDescription" : "Janakkala kko \nSantasillantie  79  Janakkala",
-    "locationCoordinates" : {
-      "lat" : 60.899395,
-      "lon" : 24.583569
-    },
-    "uuid" : "cc178d9a-6830-4a5a-8221-ba58fe2914b2",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 202182,
-    "parentSeriesEventUuid" : "3fa1e5df-b4fe-4fcc-92a7-d6a611bca1d1",
-    "parentSeriesEventName" : "Hämeenlinnan Seudun Kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200113,
-    "name" : "Luukki",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1749486600000,
-    "endDateTime" : 1749495600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Luukintie 33, 02970 Espoo, Suomi",
-    "locationDescription" : "Luukin ulkoilualue, Luukintie 33, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.318302,
-      "lon" : 24.68908
-    },
-    "uuid" : "3753c4f1-7d0a-4267-ab6e-449884cdde30",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54244,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54245,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54246,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203626,
-    "name" : "Malva (Kalamaja), 1:10000/2020",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1749573000000,
-    "endDateTime" : 1749580200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hirvenharjuntie 120, 12920 Loppi, Suomi",
-    "locationDescription" : "Hirvenharjuntie 120",
-    "locationCoordinates" : {
-      "lat" : 60.700146,
-      "lon" : 24.266489
-    },
-    "uuid" : "3395d387-48bd-46f3-b9d1-2be95d99190d",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203627,
-    "name" : "Ykslammi 1:4000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1750177800000,
-    "endDateTime" : 1750185000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Riihiviidantie 620, 12310 Hausjärvi, Suomi",
-    "locationDescription" : "Riihiviidantie 616, Ryttylä",
-    "locationCoordinates" : {
-      "lat" : 60.80558,
-      "lon" : 24.749249
-    },
-    "uuid" : "3ebda55b-5f37-43b1-b253-12f80e18a49c",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200115,
-    "name" : "Pirttimäki",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1750696200000,
-    "endDateTime" : 1750705200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Kunnarlantie 110, 02740 Espoo, Suomi",
-    "locationDescription" : "Pirttimäen ulkoilualue, Savupirtintie 3, Espoo",
-    "locationCoordinates" : {
-      "lat" : 60.268627,
-      "lon" : 24.653065
-    },
-    "uuid" : "615b05ac-0928-4d89-b269-9f00a1c5079d",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54250,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54251,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54252,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 200117,
-    "name" : "Pirkkola",
-    "sports" : [ ],
-    "organizerId" : 7018,
-    "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1751301000000,
-    "endDateTime" : 1751310000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Pirkkolantie 23, 00630 Helsinki, Suomi",
-    "locationDescription" : "Pirkkolan liikuntapuisto, Pirkkolantie 23, Helsinki",
-    "locationCoordinates" : {
-      "lat" : 60.229874,
-      "lon" : 24.915993
-    },
-    "uuid" : "e824f648-634d-47a9-a6d1-df0a9915b152",
-    "priceInCents" : 1200,
-    "productDiscounts" : [ {
-      "id" : 54253,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v.",
-      "priceInCents" : 500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54254,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Perusmaksu + lainaemit",
-      "priceInCents" : 1500,
-      "validityPeriod" : null
-    }, {
-      "id" : 54255,
-      "priceSteps" : [ ],
-      "discountType" : "PRICE_STEP",
-      "name" : "Alle 16 v. + lainaemit",
-      "priceInCents" : 800,
-      "validityPeriod" : null
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200103,
-    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
-    "parentSeriesEventName" : "Iltarastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203852,
-    "name" : "Epoo etelä",
-    "sports" : [ ],
-    "organizerId" : 7314,
-    "organizerName" : "Porvoon Urheilijat",
-    "startDateTime" : 1751302800000,
-    "endDateTime" : 1751308200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Epoontie 522, 06200 Porvoo, Suomi",
-    "locationDescription" : "Epoo, Epoontie 520 Porvoo",
-    "locationCoordinates" : {
-      "lat" : 60.358208,
-      "lon" : 25.807627
-    },
-    "uuid" : "a01c452d-e1fe-457f-8df1-47a60a13b3a4",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203848,
-    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
-    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 202185,
-    "name" : "Kukonnokka/2024",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1752165000000,
-    "endDateTime" : 1752172200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Leppäkoskentie 662, 12380 Janakkala, Suomi",
-    "locationDescription" : "Leppäkoski-Tervakoski tie. Leppäkoskentie 662 Janakkala",
-    "locationCoordinates" : {
-      "lat" : 60.842026,
-      "lon" : 24.71725
-    },
-    "uuid" : "f92526db-98e9-4353-8736-8127789b6b67",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 202182,
-    "parentSeriesEventUuid" : "3fa1e5df-b4fe-4fcc-92a7-d6a611bca1d1",
-    "parentSeriesEventName" : "Hämeenlinnan Seudun Kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 202186,
-    "name" : "Vuortenkylä /2023",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1753201800000,
-    "endDateTime" : 1753209000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Sääjärventie 48, 13330 Janakkala, Suomi",
-    "locationDescription" : "HML-Turenki tie290\nSääjärventie 48 Janakkala  ( Harvialan koulu)",
-    "locationCoordinates" : {
-      "lat" : 60.957302,
-      "lon" : 24.607594
-    },
-    "uuid" : "86568db7-62e4-4679-8d37-823581fd6435",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 202182,
-    "parentSeriesEventUuid" : "3fa1e5df-b4fe-4fcc-92a7-d6a611bca1d1",
-    "parentSeriesEventName" : "Hämeenlinnan Seudun Kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203853,
-    "name" : "Norike",
-    "sports" : [ ],
-    "organizerId" : 7314,
-    "organizerName" : "Porvoon Urheilijat",
-    "startDateTime" : 1753722000000,
-    "endDateTime" : 1753727400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Ylikentie 732, 06200 Porvoo, Suomi",
-    "locationDescription" : "Norike pohjoinen, Ylikentie 732 Porvoo",
-    "locationCoordinates" : {
-      "lat" : 60.366646,
-      "lon" : 25.867218
-    },
-    "uuid" : "02fa3998-f389-4a3c-b163-f867b2a3169e",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203848,
-    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
-    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203628,
-    "name" : "Oitti, 1:7500/2024",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1753806600000,
-    "endDateTime" : 1753813800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Urheilutie 10, 12100 Hausjärvi, Suomi",
-    "locationDescription" : "Urheilutie 10, Oitti",
-    "locationCoordinates" : {
-      "lat" : 60.788887,
-      "lon" : 25.035536
-    },
-    "uuid" : "d3fa1999-30ac-40c1-a15b-eab8f73759ec",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203629,
-    "name" : "Launonen 1:4000/2023",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1754411400000,
-    "endDateTime" : 1754418600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Launonen L, 12540 Loppi, Suomi",
-    "locationDescription" : "Kartanontie 8, Launonen koulu",
-    "locationCoordinates" : {
-      "lat" : 60.749275,
-      "lon" : 24.582714
-    },
-    "uuid" : "2bbd6917-8446-4efc-a5cb-42dc4715c174",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204366,
-    "name" : "Monikkala / 2024 ",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1754929800000,
-    "endDateTime" : 1754935200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Hakoistentie 362, 14240 Janakkala, Suomi",
-    "locationDescription" : "Janakkalan kko \nHakoistentie 360 Janakkala\nKernaalantien parkkipaikka",
-    "locationCoordinates" : {
-      "lat" : 60.892456,
-      "lon" : 24.596125
-    },
-    "uuid" : "6b4c8aaf-42bc-44b6-9fe4-772205b2f12a",
-    "priceInCents" : 600,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204357,
-    "parentSeriesEventUuid" : "3543cfd1-b2b4-46b3-8bfe-fa5c84999096",
-    "parentSeriesEventName" : "Janakkalarastit 2025  "
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203630,
-    "name" : "Hirvijärvi, 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1755016200000,
-    "endDateTime" : 1755023400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hirvijärventie 750, 11710 Riihimäki, Suomi",
-    "locationDescription" : "Hirvijärventie 760, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.67381,
-      "lon" : 24.643372
-    },
-    "uuid" : "68281638-823b-4817-b305-4bc25fee07f0",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204367,
-    "name" : "Vuortenkylä / 2023",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1755534600000,
-    "endDateTime" : 1755540000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Heinäjoentie 200, 14200 Janakkala, Suomi",
-    "locationDescription" : "Heinäjoentie 200 Janakkala\n(Koljalan VPK)",
-    "locationCoordinates" : {
-      "lat" : 60.95229,
-      "lon" : 24.63677
-    },
-    "uuid" : "6f9dd9db-5b42-4a27-b4bb-61bbae37b4ba",
-    "priceInCents" : 600,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204357,
-    "parentSeriesEventUuid" : "3543cfd1-b2b4-46b3-8bfe-fa5c84999096",
-    "parentSeriesEventName" : "Janakkalarastit 2025  "
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU", "RR", "TR" ],
-  "event" : {
-    "eventId" : 203631,
-    "name" : "Hikiä, 1:7500/2023",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1755621000000,
-    "endDateTime" : 1755628200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Kuruntie 773, 12240 Hausjärvi, Suomi",
-    "locationDescription" : "Kuruntie 771, Hausjärvi",
-    "locationCoordinates" : {
-      "lat" : 60.730675,
-      "lon" : 24.948168
-    },
-    "uuid" : "d98a2283-1513-43f9-b618-c530f67d64dc",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203854,
-    "name" : "Mustijoki, Sillvik",
-    "sports" : [ ],
-    "organizerId" : 7314,
-    "organizerName" : "Porvoon Urheilijat",
-    "startDateTime" : 1756141200000,
-    "endDateTime" : 1756146600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Sillvikintie 107, 06750 Porvoo, Suomi",
-    "locationDescription" : "Sillvik, Sillvikintie 107 Porvoo",
-    "locationCoordinates" : {
-      "lat" : 60.33907,
-      "lon" : 25.570814
-    },
-    "uuid" : "9d175249-8f47-4ece-a6a2-03cc1b58111d",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203848,
-    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
-    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203632,
-    "name" : "Loppi kartta päivitetään keväällä 1:4000/2025",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1756225800000,
-    "endDateTime" : 1756233000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Opintie 2, 12700 Loppi, Suomi",
-    "locationDescription" : "Opintie 6, Loppi kk",
-    "locationCoordinates" : {
-      "lat" : 60.71658,
-      "lon" : 24.44883
-    },
-    "uuid" : "d95ad31c-0e16-40fc-9aec-71ea18b39767",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 204368,
-    "name" : "Hiidenkorpi / 2023",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1756312200000,
-    "endDateTime" : 1756317600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 999,
-    "locationAddress" : "Hakoistentie 279, 14240 Janakkala, Suomi",
-    "locationDescription" : "Janakkala kko\nHakoistentie 280 Janakkala\n( Tarinmaan VPK )",
-    "locationCoordinates" : {
-      "lat" : 60.898537,
-      "lon" : 24.597633
-    },
-    "uuid" : "c26c1380-0de9-4f92-a942-d07642070410",
-    "priceInCents" : 600,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 204357,
-    "parentSeriesEventUuid" : "3543cfd1-b2b4-46b3-8bfe-fa5c84999096",
-    "parentSeriesEventName" : "Janakkalarastit 2025  "
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203633,
-    "name" : "Majolampi, 1:10000/2025 (kartta päivitetään keväällä 2025)",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1756830600000,
-    "endDateTime" : 1756836000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Laskolantie 53, 12100 Hausjärvi, Suomi",
-    "locationDescription" : "Laskolantie 53, Hausjärvi",
-    "locationCoordinates" : {
-      "lat" : 60.789875,
-      "lon" : 24.955076
-    },
-    "uuid" : "91fa55ed-739b-4813-8fd7-453aa7fbb124",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU", "YÖ" ],
-  "event" : {
-    "eventId" : 203634,
-    "name" : "Varuskunta, 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1757435400000,
-    "endDateTime" : 1757440800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hiihtomajantie 107, 11120 Riihimäki, Suomi",
-    "locationDescription" : "Hiihtomajantie 109, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.757397,
-      "lon" : 24.81844
-    },
-    "uuid" : "d811c21a-8423-4097-a044-7d9f3b5f8d3a",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 202187,
-    "name" : "Kulomäki/2025",
-    "sports" : [ ],
-    "organizerId" : 7264,
-    "organizerName" : "Turengin Sarastus",
-    "startDateTime" : 1757608200000,
-    "endDateTime" : 1757613600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Lammintie 780, 14200 Janakkala, Suomi",
-    "locationDescription" : "Turenki- Lammi tie 292. \nLammintie 780 Janakkala\n( n.7km Turengista Lammintietä)\n",
-    "locationCoordinates" : {
-      "lat" : 60.959972,
-      "lon" : 24.756397
-    },
-    "uuid" : "e0b93c1a-29ce-4e46-afc8-c112290c5682",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 202182,
-    "parentSeriesEventUuid" : "3fa1e5df-b4fe-4fcc-92a7-d6a611bca1d1",
-    "parentSeriesEventName" : "Hämeenlinnan Seudun Kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU", "YÖ" ],
-  "event" : {
-    "eventId" : 203635,
-    "name" : "Kirkkomäki, Haminankylä, 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1758040200000,
-    "endDateTime" : 1758045600000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Ojalantie 100, 12130 Hausjärvi, Suomi",
-    "locationDescription" : "Ojalantie 86, Hausjärvi",
-    "locationCoordinates" : {
-      "lat" : 60.829494,
-      "lon" : 25.02954
-    },
-    "uuid" : "5df0ae2a-4396-4109-905a-50c140d2a470",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203855,
-    "name" : "Humla",
-    "sports" : [ ],
-    "organizerId" : 7314,
-    "organizerName" : "Porvoon Urheilijat",
-    "startDateTime" : 1758560400000,
-    "endDateTime" : 1758578400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Rotnäsintie 201, 06200 Porvoo, Suomi",
-    "locationDescription" : "Humla, Rotnäsintie 199 Porvoo",
-    "locationCoordinates" : {
-      "lat" : 60.376194,
-      "lon" : 25.743807
-    },
-    "uuid" : "461c22a0-4352-451a-bcf4-ba20709d3ad7",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203848,
-    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
-    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU", "YÖ" ],
-  "event" : {
-    "eventId" : 203636,
-    "name" : "Uhkola (Suonummenmaja), 1:7500/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1758645000000,
-    "endDateTime" : 1758650400000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Erkyläntie 391, 11130 Hausjärvi, Suomi",
-    "locationDescription" : "Erkyläntie 399, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.72562,
-      "lon" : 24.845018
-    },
-    "uuid" : "caa059bc-9cb9-4e79-b449-c013837783d3",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203637,
-    "name" : "Uhkola (Ratapiha), 1:7500, 2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1759060800000,
-    "endDateTime" : 1759066200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Vahteristontie 93, 11130 Riihimäki, Suomi",
-    "locationDescription" : "Vahteristontie 93, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.720924,
-      "lon" : 24.7985
-    },
-    "uuid" : "abcb864e-5711-4de1-a726-d0c3c97378ac",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ ],
-  "event" : {
-    "eventId" : 203906,
-    "name" : "Louna-Roga 2025",
-    "sports" : [ ],
-    "organizerId" : 7112,
-    "organizerName" : "Lounais-Hämeen Rasti",
-    "startDateTime" : 1759536000000,
-    "endDateTime" : 1759536000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 0,
-    "locationAddress" : "Räyskäläntie 311, 12820 Räyskälä, Suomi",
-    "locationDescription" : null,
-    "locationCoordinates" : {
-      "lat" : 60.7446188,
-      "lon" : 24.1135898
-    },
-    "uuid" : "529b19bd-8aef-4cab-b6c6-7c1a50066cd0",
-    "priceInCents" : 5000,
-    "productDiscounts" : [ {
-      "id" : 55533,
-      "priceSteps" : [ ],
-      "discountType" : "PUBLIC",
-      "name" : "Ennakkoilmoittautuminen 1",
-      "priceInCents" : 2500,
-      "validityPeriod" : {
-        "start" : 1740780000000,
-        "end" : 1748725140000
-      }
-    }, {
-      "id" : 55534,
-      "priceSteps" : [ ],
-      "discountType" : "PUBLIC",
-      "name" : "Ennakkoilmoittautuminen 2",
-      "priceInCents" : 3500,
-      "validityPeriod" : {
-        "start" : 1748725200000,
-        "end" : 1753995540000
-      }
-    }, {
-      "id" : 55535,
-      "priceSteps" : [ ],
-      "discountType" : "PUBLIC",
-      "name" : "Ennakkoilmoittautuminen 3",
-      "priceInCents" : 4500,
-      "validityPeriod" : {
-        "start" : 1753995600000,
-        "end" : 1759093140000
-      }
-    } ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : null,
-    "parentSeriesEventUuid" : null,
-    "parentSeriesEventName" : null
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
-    "eventId" : 203638,
-    "name" : "Varuskunta (Tapiola), 1:10000/2021",
-    "sports" : [ ],
-    "organizerId" : 7207,
-    "organizerName" : "Riihimäen Suunnistajat",
-    "startDateTime" : 1759665600000,
-    "endDateTime" : 1759671000000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Hiihtomajantie 108, 11120 Riihimäki, Suomi",
-    "locationDescription" : "Hiihtomajantie 109, Riihimäki",
-    "locationCoordinates" : {
-      "lat" : 60.757465,
-      "lon" : 24.818472
-    },
-    "uuid" : "a9f794da-86cc-4508-a6f7-0dd2b2deb69f",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 203613,
-    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
-    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
-  },
-  "serviceAvailable" : true
-}, {
-  "disciplines" : [ "SU", "OT" ],
-  "event" : {
-    "eventId" : 202245,
-    "name" : "Laajavuori",
+    "eventId" : 202243,
+    "name" : " Touruvuori",
     "sports" : [ ],
     "organizerId" : 7232,
     "organizerName" : "Suunta Jyväskylä",
-    "startDateTime" : 1763136000000,
-    "endDateTime" : 1763139600000,
+    "startDateTime" : 1743602400000,
+    "endDateTime" : 1743606000000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Laajavuoren hiihtostadion, Hikipolku 1, 40740 Jyväskylä, Finland",
-    "locationDescription" : "Kadun koulu, Linnakatu 36 (Mallitapahtuma 3) ",
+    "locationAddress" : "Raivaajantie 110, 40270 Jyväskylä, Finland",
+    "locationDescription" : "Takametsa, Vaiveronkatu 70 (Mallitapahtuma 1)",
     "locationCoordinates" : {
-      "lat" : 62.258823,
-      "lon" : 25.694757
+      "lat" : 62.296165,
+      "lon" : 25.756306
     },
-    "uuid" : "0f867da5-a5ac-4552-acac-cc85b2cb201c",
+    "uuid" : "67a594f3-bfa7-4480-9ffc-df97781c01ab",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
     "purpose" : "SPORTS",
@@ -2644,28 +2387,361 @@
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
-    "eventId" : 54949,
-    "name" : "Kuosuppa",
+    "eventId" : 203804,
+    "name" : "Munkkiniemi",
+    "sports" : [ ],
+    "organizerId" : 7018,
+    "organizerName" : "Helsingin Suunnistajat",
+    "startDateTime" : 1743616800000,
+    "endDateTime" : 1743622200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kadetintie 13, 00330 Helsinki, Suomi",
+    "locationDescription" : "Munkkiniemi",
+    "locationCoordinates" : {
+      "lat" : 60.195557,
+      "lon" : 24.879745
+    },
+    "uuid" : "effbf3b3-a6ea-4761-a545-057b1931b712",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 55486,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Perusmaksu + lainaemit",
+      "priceInCents" : 1500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55487,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    }, {
+      "id" : 55488,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v + lainaemit",
+      "priceInCents" : 800,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203800,
+    "parentSeriesEventUuid" : "7ad79b7f-79af-4758-8c4b-1b3259e1a173",
+    "parentSeriesEventName" : "Stadin Sprintticup 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204153,
+    "name" : "Seminaarinmäki-Hippos",
+    "sports" : [ ],
+    "organizerId" : 7232,
+    "organizerName" : "Suunta Jyväskylä",
+    "startDateTime" : 1743699600000,
+    "endDateTime" : 1743705000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Rautpohjankatu 10, 40700 Jyväskylä, Finland",
+    "locationDescription" : "Sprintti, ALUSTAVA SIJAINTI VOI MUUTTUA!",
+    "locationCoordinates" : {
+      "lat" : 62.23715,
+      "lon" : 25.7239
+    },
+    "uuid" : "b85c2017-79b7-4ad1-9150-8c47d345fa2d",
+    "priceInCents" : 900,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204152,
+    "parentSeriesEventUuid" : "7f30e43e-5fd2-483c-a730-7fcdc7806c80",
+    "parentSeriesEventName" : "Suunta Jyväskylä Testi 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203616,
+    "name" : "Urheilupuisto-Keskusta (Urheilutalo), 1:5000/2021",
+    "sports" : [ ],
+    "organizerId" : 7207,
+    "organizerName" : "Riihimäen Suunnistajat",
+    "startDateTime" : 1743940800000,
+    "endDateTime" : 1743946200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Pohjolankatu 6, 11120 Riihimäki, Suomi",
+    "locationDescription" : "Pohjolankatu 6, Riihimäki",
+    "locationCoordinates" : {
+      "lat" : 60.743004,
+      "lon" : 24.767982
+    },
+    "uuid" : "a0501bb5-3fc3-4206-b41f-5b6017873b23",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203613,
+    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
+    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200104,
+    "name" : "Pirkkola",
+    "sports" : [ ],
+    "organizerId" : 7018,
+    "organizerName" : "Helsingin Suunnistajat",
+    "startDateTime" : 1744043400000,
+    "endDateTime" : 1744052400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Pirkkolantie 23, 00630 Helsinki, Suomi",
+    "locationDescription" : "Pirkkolan liikuntapuisto, Pirkkolantie 23, Helsinki",
+    "locationCoordinates" : {
+      "lat" : 60.229927,
+      "lon" : 24.915928
+    },
+    "uuid" : "6b4908ba-3f31-4b9b-96b7-5dbaf818d8ca",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 54217,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16v",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    }, {
+      "id" : 54218,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Perusmaksu + lainaemit",
+      "priceInCents" : 1500,
+      "validityPeriod" : null
+    }, {
+      "id" : 54219,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v + lainaemit",
+      "priceInCents" : 800,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200103,
+    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
+    "parentSeriesEventName" : "Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204421,
+    "name" : "Vitträsket",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1744045200000,
+    "endDateTime" : 1744050600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Fagerviksvägen 1221, 10250 Ingå, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.018097,
+      "lon" : 23.803276
+    },
+    "uuid" : "4a6ca487-365b-4af9-9c9c-70ecf6f9e9bc",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 201382,
+    "name" : "Tapahtumakerta ti 8.4.2025",
     "sports" : [ ],
     "organizerId" : 7095,
     "organizerName" : "Kuopion Suunnistajat",
-    "startDateTime" : 2240586000000,
-    "endDateTime" : 2240593200000,
+    "startDateTime" : 1744138800000,
+    "endDateTime" : 1744142400000,
     "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Rovastinkatu 7, 70600 Kuopio, Suomi",
-    "locationDescription" : "Viimeinen tapahtuma",
+    "maxAttendeeCount" : 0,
+    "locationAddress" : "Opistotie 4, 70200 Kuopio, Suomi",
+    "locationDescription" : null,
     "locationCoordinates" : {
-      "lat" : 62.893047,
-      "lon" : 27.658098
+      "lat" : 62.89782779999999,
+      "lon" : 27.6600656
     },
-    "uuid" : "ee73e34f-0943-4e73-a399-ade55e90be4d",
+    "uuid" : "3cbef30b-fdaa-4592-9b62-f06cbd01d701",
     "priceInCents" : 0,
     "productDiscounts" : [ ],
-    "purpose" : null,
-    "parentSeriesEventId" : 54947,
-    "parentSeriesEventUuid" : "5198ed12-8686-4dd8-a74b-508a7a2a37a5",
-    "parentSeriesEventName" : "KuoSun koulutukset"
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 201369,
+    "parentSeriesEventUuid" : "f9046f84-0852-4e99-9a1a-e8fc59031b82",
+    "parentSeriesEventName" : "Juoksuharjoitukset"
   },
   "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU", "OT" ],
+  "event" : {
+    "eventId" : 202244,
+    "name" : "Muuratsalo",
+    "sports" : [ ],
+    "organizerId" : 7232,
+    "organizerName" : "Suunta Jyväskylä",
+    "startDateTime" : 1744210800000,
+    "endDateTime" : 1744214400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Vuorenlahdenkatu 45a, 40900 Jyväskylä, Finland",
+    "locationDescription" : "Martintalo, Martintorinkuja 2 (Mallitapahtuma 2)",
+    "locationCoordinates" : {
+      "lat" : 62.11771,
+      "lon" : 25.754936
+    },
+    "uuid" : "a3361dfc-474f-4ec5-b5ca-0ad8630333ec",
+    "priceInCents" : 0,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202242,
+    "parentSeriesEventUuid" : "597b3264-6fc0-4182-89a5-2e65a1b01002",
+    "parentSeriesEventName" : "Suunta Jyväskylä testitapahtumat"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203617,
+    "name" : "Urheilupuisto - Keskusta (Messupuisto) 1:5000/2021",
+    "sports" : [ ],
+    "organizerId" : 7207,
+    "organizerName" : "Riihimäen Suunnistajat",
+    "startDateTime" : 1744545600000,
+    "endDateTime" : 1744551000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Tehtaankatu 23, 11910 Riihimäki, Suomi",
+    "locationDescription" : "Tehtaankatu 22, Riihimäki",
+    "locationCoordinates" : {
+      "lat" : 60.732815,
+      "lon" : 24.737257
+    },
+    "uuid" : "8891d0bb-fe1d-4837-859f-7ffd4871a920",
+    "priceInCents" : 700,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203613,
+    "parentSeriesEventUuid" : "0c355ab5-18c4-401d-ae6c-e7a8582a3a5f",
+    "parentSeriesEventName" : "Riihimäen Suunnistajat kuntorastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 200105,
+    "name" : "Uutela",
+    "sports" : [ ],
+    "organizerId" : 7018,
+    "organizerName" : "Helsingin Suunnistajat",
+    "startDateTime" : 1744648200000,
+    "endDateTime" : 1744657200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Itäreimarintie, Helsinki, Suomi",
+    "locationDescription" : "Pohjoisreimarintie, Helsinki",
+    "locationCoordinates" : {
+      "lat" : 60.210052,
+      "lon" : 25.163164
+    },
+    "uuid" : "72419e81-4ce6-42a1-ac59-838cb8c0d3c2",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ {
+      "id" : 54220,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v.",
+      "priceInCents" : 500,
+      "validityPeriod" : null
+    }, {
+      "id" : 54221,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Perusmaksu + lainaemit",
+      "priceInCents" : 1500,
+      "validityPeriod" : null
+    }, {
+      "id" : 54222,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Alle 16 v. + lainaemit",
+      "priceInCents" : 800,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200103,
+    "parentSeriesEventUuid" : "8369f0c7-2c3a-480f-a16b-d3014fb22b50",
+    "parentSeriesEventName" : "Iltarastit 2025"
+  },
+  "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204422,
+    "name" : "Dalkarby",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1744650000000,
+    "endDateTime" : 1744655400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Dalkarby allén 99c, 10420 Raseborg, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.08235,
+      "lon" : 23.497952
+    },
+    "uuid" : "06def15b-afb9-4d27-bf4b-3b67f352e8d2",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203849,
+    "name" : "Haikkoo",
+    "sports" : [ ],
+    "organizerId" : 7314,
+    "organizerName" : "Porvoon Urheilijat",
+    "startDateTime" : 1744650000000,
+    "endDateTime" : 1744655400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Haikkoontie 218, 06400 Porvoo, Suomi",
+    "locationDescription" : "Haikkoo, Haikkoontie 218 Porvoo",
+    "locationCoordinates" : {
+      "lat" : 60.34384,
+      "lon" : 25.61868
+    },
+    "uuid" : "60692ff1-16f6-494f-8f45-487f41b67959",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203848,
+    "parentSeriesEventUuid" : "781047dd-c2f1-40a9-a911-b8a996814078",
+    "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
+  },
+  "serviceAvailable" : true
 } ]
