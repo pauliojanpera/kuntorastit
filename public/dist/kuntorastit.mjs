@@ -12,9 +12,30 @@ async function loadData() {
         document.getElementById("content").innerText = "Failed to load data.";
     }
 }
-function renderData(data) {
+function renderData(events) {
     const content = document.getElementById("content");
-    content.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+    content.innerHTML = "";
+    const table = document.createElement("table");
+    table.classList.add("event-table");
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Start Date</th>
+                <th>Name</th>
+                <th>Organizer</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${events.map(({ event }) => `
+                <tr>
+                    <td>${new Date(event.startDateTime).toLocaleDateString()}</td>
+                    <td>${event.name}</td>
+                    <td>${event.organizerName}</td>
+                </tr>
+            `).join("")}
+        </tbody>
+    `;
+    content.appendChild(table);
 }
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./service-worker.js')

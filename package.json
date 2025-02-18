@@ -1,14 +1,16 @@
 {
-    "name": "kuntorastit",
-    "version": "0.0.1",
-    "description": "Kuntorastit",
-    "private": false,
-    "scripts": {
-      "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs"
-    },
-    "dependencies": {},
-    "devDependencies": {
-      "typescript": "^5.7.3",
-      "tsc-alias": "^1.8.10"
-    }
+  "name": "kuntorastit",
+  "version": "0.0.1",
+  "description": "Kuntorastit",
+  "private": false,
+  "scripts": {
+    "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs",
+    "deploy": "./scripts/deploy.sh",
+    "fetch" : "./scripts/fetch_events.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "tsc-alias": "^1.8.10"
   }
+}

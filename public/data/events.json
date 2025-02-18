@@ -683,7 +683,7 @@
     "organizerName" : "Suomen Suunnistusliitto",
     "startDateTime" : 1743465600000,
     "endDateTime" : 1745971200000,
-    "currentAttendeeCount" : 29,
+    "currentAttendeeCount" : 30,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Helsinki, Suomi",
     "locationDescription" : null,
@@ -802,6 +802,33 @@
     "parentSeriesEventName" : "Iltarastit 2025"
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204423,
+    "name" : "Kälahult",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1745254800000,
+    "endDateTime" : 1745260200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kälahultsvägen 38, 10710 Raseborg, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.013027,
+      "lon" : 23.747574
+    },
+    "uuid" : "6627d430-81d9-49ff-9c1e-263aa73aefa0",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -931,6 +958,33 @@
     "parentSeriesEventName" : "Iltarastit 2025"
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204424,
+    "name" : "Svedja",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1745859600000,
+    "endDateTime" : 1745865000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Svedja Träskvägen 41, 10300 Raseborg, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.043922,
+      "lon" : 23.601028
+    },
+    "uuid" : "e7f9b7d0-398d-402e-a0f1-8a42b19509c9",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU", "RR", "TR", "YÖ" ],
   "event" : {
@@ -1117,6 +1171,33 @@
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
+    "eventId" : 204425,
+    "name" : "Billnäs/Pentby",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1746464400000,
+    "endDateTime" : 1746469800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Bruksvägen 7, 10330 Raseborg, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.08537,
+      "lon" : 23.640526
+    },
+    "uuid" : "0a2ec6fd-be72-4a34-8f96-91efb5127f9b",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
     "eventId" : 203850,
     "name" : "Kevätkumpu/Humla",
     "sports" : [ ],
@@ -1243,6 +1324,33 @@
     "parentSeriesEventName" : "Iltarastit 2025"
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204426,
+    "name" : "Prästgården/Pappila",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1747069200000,
+    "endDateTime" : 1747074600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Sannäsvägen 152, 10300 Raseborg, Finland",
+    "locationDescription" : "",
+    "locationCoordinates" : {
+      "lat" : 60.079487,
+      "lon" : 23.715622
+    },
+    "uuid" : "35196ca1-b742-4b6a-889d-b8e079c64635",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -1392,6 +1500,33 @@
     "parentSeriesEventName" : "Janakkalarastit 2025  "
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204427,
+    "name" : "Lövkulla",
+    "sports" : [ ],
+    "organizerId" : 7291,
+    "organizerName" : "Karjaan Ura",
+    "startDateTime" : 1747674000000,
+    "endDateTime" : 1747679400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Långbackagatan 19, 10300 Raseborg, Finland",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 60.082558,
+      "lon" : 23.669706
+    },
+    "uuid" : "a8d0a8a6-d9b3-4117-8a9b-47dcb17c9986",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204412,
+    "parentSeriesEventUuid" : "13925057-0c4e-475a-9ae1-8781c579e2bd",
+    "parentSeriesEventName" : "Maanantairastit 2025"
+  },
+  "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU", "RR", "TR" ],
   "event" : {
