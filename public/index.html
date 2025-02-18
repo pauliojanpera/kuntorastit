@@ -22,7 +22,6 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 1rem;
             width: 100%;
             max-width: 1024px;
             margin: 0 auto;
@@ -34,6 +33,8 @@
             box-sizing: border-box; /* Ensures padding and border are included in width */
         }
         table {
+            width: 100%;
+            padding: 1rem;
             max-width: 30rem;
         }
         th,td {
@@ -45,17 +46,15 @@
             color: #180f3d;
             mix-blend-mode: multiply;
         }
-        .date {
-            max-width: 4rem;
-        }
         .event {
+            width: 100%;
             max-width: 19rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
         .organizer {
-            max-width: 7rem;
+            max-width: 4rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
