@@ -1,7 +1,7 @@
 {
     "name": "Kuntorastit",
     "short_name": "Kuntorastit",
-    "start_url": "/",
+    "start_url": "/kuntorastit",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#f86135",
