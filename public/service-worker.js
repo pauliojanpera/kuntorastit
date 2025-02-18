@@ -1,1 +1,1 @@
-dist/service-worker.js
+dist/service-worker.mjs

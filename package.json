@@ -4,7 +4,7 @@
     "description": "Kuntorastit",
     "private": false,
     "scripts": {
-      "build": "tsc && tsc-alias"
+      "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs"
     },
     "dependencies": {},
     "devDependencies": {
