@@ -26,17 +26,17 @@ async function* filterSettings() {
     let resolve;
     document.getElementById("date-filter").onchange = (e) => {
         filters.dateFilter = e.target?.value || undefined;
-        resolve(filters);
+        resolve?.(filters);
     };
     document.getElementById("name-filter").oninput = (e) => {
         filters.nameFilter = e.target?.value.toLowerCase().trim() || undefined;
-        resolve(filters);
+        resolve?.(filters);
     };
     document.getElementById("organizer-filter").onchange = (e) => {
         const select = e.target;
         const selectedOrganizers = Array.from(select.selectedOptions).map(option => option.value);
         filters.organizerFilter = selectedOrganizers.length > 0 ? selectedOrganizers : undefined;
-        resolve(filters);
+        resolve?.(filters);
     };
     yield filters;
     for (;;)
