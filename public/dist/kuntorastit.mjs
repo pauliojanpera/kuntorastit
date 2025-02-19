@@ -11,7 +11,9 @@ async function* filterSettings() {
         resolve(filters);
     };
     document.getElementById("organizer-filter").onchange = (e) => {
-        filters.organizerFilter = e.target?.value || undefined;
+        const select = e.target;
+        const selectedOrganizers = Array.from(select.selectedOptions).map(option => option.value);
+        filters.organizerFilter = selectedOrganizers.length > 0 ? selectedOrganizers : undefined;
         resolve(filters);
     };
     yield filters;
@@ -50,7 +52,7 @@ function createTableSkeleton() {
                         <input type="text" id="name-filter" placeholder="tapahtuma">
                     </th>
                     <th class="organizer">
-                        <select id="organizer-filter">
+                        <select id="organizer-filter" multiple>
                             <option value="">seura</option>
                         </select>
                     </th>
@@ -131,7 +133,7 @@ function renderData(events, filters) {
                 || (filters.dateFilter === 'past' && event.startDateTime < Date.now())
                 || (filters.dateFilter === 'future' && event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)) &&
             (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&
-            (!filters.organizerFilter || event.organizerName === filters.organizerFilter));
+            (!filters.organizerFilter || filters.organizerFilter.includes(event.organizerName)));
     }).forEach(({ event }) => {
         const dayOfWeek = new Date(event.startDateTime)
             .toLocaleDateString('en-US', { weekday: 'long' })
