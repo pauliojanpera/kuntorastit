@@ -2,7 +2,7 @@ name: Update Event Data
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 6 hours
+    - cron: "0 */12 * * *"
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
@@ -24,6 +24,8 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add public/data/events.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update JSON data" && git push)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
