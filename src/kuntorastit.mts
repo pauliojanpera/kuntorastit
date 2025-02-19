@@ -19,8 +19,34 @@ type OrienteeringEventFilterSettings = {
     organizerFilter?: string[];
 };
 
+function saveFilterSettings(filters: OrienteeringEventFilterSettings) {
+    localStorage.setItem("orienteeringEventFilters", JSON.stringify(filters));
+}
+
+function loadFilterSettings(): OrienteeringEventFilterSettings {
+    const storedFilters = localStorage.getItem("orienteeringEventFilters");
+    return storedFilters ? JSON.parse(storedFilters) : {};
+}
+
+function restoreFilterUI() {
+    const filters = loadFilterSettings();
+
+    if (filters.dateFilter) {
+        (document.getElementById("date-filter") as HTMLSelectElement).value = filters.dateFilter;
+    }
+    if (filters.nameFilter) {
+        (document.getElementById("name-filter") as HTMLInputElement).value = filters.nameFilter;
+    }
+    if (filters.organizerFilter) {
+        const select = document.getElementById("organizer-filter") as HTMLSelectElement;
+        Array.from(select.options).forEach(option => {
+            option.selected = filters.organizerFilter!.includes(option.value);
+        });
+    }
+}
+
 async function* filterSettings() {
-    const filters: OrienteeringEventFilterSettings = {};
+    const filters: OrienteeringEventFilterSettings = loadFilterSettings();
 
     let resolve: (f: OrienteeringEventFilterSettings) => void;
     document.getElementById("date-filter")!.onchange = (e) => {
@@ -39,7 +65,11 @@ async function* filterSettings() {
     };
     yield filters;
     for (; ;)
-        yield new Promise<OrienteeringEventFilterSettings>(_resolve => resolve = _resolve);
+        yield new Promise<OrienteeringEventFilterSettings>(_resolve => resolve = _resolve)
+            .then((filters) => {
+                saveFilterSettings(filters);
+                return filters;
+            });
 }
 
 async function loadData() {
@@ -52,6 +82,7 @@ async function loadData() {
 
         contentDiv.innerHTML = createTableSkeleton();
         populateFilters(data);
+        restoreFilterUI();
         setupMultiSelectToggle();
 
         for await (const filters of filterSettings()) {

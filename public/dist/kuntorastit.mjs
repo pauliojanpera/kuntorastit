@@ -1,6 +1,28 @@
 const DATA_URL = "./data/events.json";
+function saveFilterSettings(filters) {
+    localStorage.setItem("orienteeringEventFilters", JSON.stringify(filters));
+}
+function loadFilterSettings() {
+    const storedFilters = localStorage.getItem("orienteeringEventFilters");
+    return storedFilters ? JSON.parse(storedFilters) : {};
+}
+function restoreFilterUI() {
+    const filters = loadFilterSettings();
+    if (filters.dateFilter) {
+        document.getElementById("date-filter").value = filters.dateFilter;
+    }
+    if (filters.nameFilter) {
+        document.getElementById("name-filter").value = filters.nameFilter;
+    }
+    if (filters.organizerFilter) {
+        const select = document.getElementById("organizer-filter");
+        Array.from(select.options).forEach(option => {
+            option.selected = filters.organizerFilter.includes(option.value);
+        });
+    }
+}
 async function* filterSettings() {
-    const filters = {};
+    const filters = loadFilterSettings();
     let resolve;
     document.getElementById("date-filter").onchange = (e) => {
         filters.dateFilter = e.target?.value || undefined;
@@ -18,7 +40,11 @@ async function* filterSettings() {
     };
     yield filters;
     for (;;)
-        yield new Promise(_resolve => resolve = _resolve);
+        yield new Promise(_resolve => resolve = _resolve)
+            .then((filters) => {
+            saveFilterSettings(filters);
+            return filters;
+        });
 }
 async function loadData() {
     const contentDiv = document.getElementById("content");
@@ -29,6 +55,7 @@ async function loadData() {
         const data = await response.json();
         contentDiv.innerHTML = createTableSkeleton();
         populateFilters(data);
+        restoreFilterUI();
         setupMultiSelectToggle();
         for await (const filters of filterSettings()) {
             renderData(data, filters);
