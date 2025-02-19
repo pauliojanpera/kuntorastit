@@ -112,7 +112,7 @@ function createTableSkeleton() {
                             <option value="">seura</option>
                         </select>
                         <div id="organizer-filter-container" style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
-                            <select id="organizer-filter" multiple>
+                            <select id="organizer-filter" multiple size="6">
                             </select>
                         </div>
                     </th>
@@ -129,20 +129,19 @@ function setupMultiSelectToggle() {
     const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
 
     function showFilterPopup() {
-        console.log('showing filter popup');
         const rect = organizerPlaceholder.getBoundingClientRect();
-        
+        console.log(rect);
         organizerFilterContainer.style.display = "block";
         organizerFilterContainer.style.position = "fixed";
         organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-        organizerFilterContainer.style.left = `${rect.left + window.scrollX}px`;
-        organizerFilterContainer.style.width = `${rect.width}px`;
+        organizerFilterContainer.style.right = `${window.innerWidth-rect.right + window.scrollX}px`;
     }
 
     function adjustDropdownBehavior() {
         if (window.innerWidth >= 768) {
             organizerPlaceholder.style.display = "inline-block";
             organizerFilterContainer.style.display = "none";
+            organizerFilter.setAttribute('size', '20');
 
             organizerPlaceholder.addEventListener("mousedown", (event) => {
                 event.preventDefault();
@@ -152,6 +151,7 @@ function setupMultiSelectToggle() {
             organizerPlaceholder.style.display = "none";
             organizerFilterContainer.style.display = "block";
             organizerFilterContainer.style.position = "static";
+            organizerFilter.setAttribute('size', '1');
         }
     }
 
