@@ -29,6 +29,7 @@ async function loadData() {
         const data = await response.json();
         contentDiv.innerHTML = createTableSkeleton();
         populateFilters(data);
+        setupMultiSelectToggle();
         for await (const filters of filterSettings()) {
             renderData(data, filters);
         }
@@ -52,15 +53,55 @@ function createTableSkeleton() {
                         <input type="text" id="name-filter" placeholder="tapahtuma">
                     </th>
                     <th class="organizer">
-                        <select id="organizer-filter" multiple>
+                        <select id="organizer-placeholder">
                             <option value="">seura</option>
                         </select>
+                        <div id="organizer-filter-container" style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
+                            <select id="organizer-filter" multiple>
+                            </select>
+                        </div>
                     </th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
     `;
+}
+function setupMultiSelectToggle() {
+    const organizerPlaceholder = document.getElementById("organizer-placeholder");
+    const organizerFilterContainer = document.getElementById("organizer-filter-container");
+    const organizerFilter = document.getElementById("organizer-filter");
+    function showFilterPopup() {
+        console.log('showing filter popup');
+        const rect = organizerPlaceholder.getBoundingClientRect();
+        organizerFilterContainer.style.display = "block";
+        organizerFilterContainer.style.position = "fixed";
+        organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
+        organizerFilterContainer.style.left = `${rect.left + window.scrollX}px`;
+        organizerFilterContainer.style.width = `${rect.width}px`;
+    }
+    function adjustDropdownBehavior() {
+        if (window.innerWidth >= 768) {
+            organizerPlaceholder.style.display = "inline-block";
+            organizerFilterContainer.style.display = "none";
+            organizerPlaceholder.addEventListener("mousedown", (event) => {
+                event.preventDefault();
+                showFilterPopup();
+            });
+        }
+        else {
+            organizerPlaceholder.style.display = "none";
+            organizerFilterContainer.style.display = "block";
+            organizerFilterContainer.style.position = "static";
+        }
+    }
+    adjustDropdownBehavior();
+    window.addEventListener("resize", adjustDropdownBehavior);
+    document.addEventListener("click", (event) => {
+        if (!organizerFilterContainer.contains(event.target) && event.target !== organizerPlaceholder) {
+            adjustDropdownBehavior();
+        }
+    });
 }
 function populateFilters(events) {
     const organizers = new Set(events.map(({ event }) => event.organizerName));
