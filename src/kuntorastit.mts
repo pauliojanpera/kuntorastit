@@ -79,8 +79,6 @@ async function loadData() {
         if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
 
-
-        contentDiv.innerHTML = createTableSkeleton();
         populateFilters(data);
         restoreFilterUI();
         setupMultiSelectToggle();
@@ -92,35 +90,6 @@ async function loadData() {
         console.error("Error loading data:", error);
         contentDiv.innerText = "Failed to load data.";
     }
-}
-
-function createTableSkeleton() {
-    return `
-        <table class="event-table">
-            <thead>
-                <tr>
-                    <th class="date">
-                        <select id="date-filter">
-                            <option value="">aika</option>
-                        </select>
-                    </th>
-                    <th class="event">
-                        <input type="text" id="name-filter" placeholder="tapahtuma">
-                    </th>
-                    <th class="organizer">
-                        <select id="organizer-placeholder">
-                            <option value="">seura</option>
-                        </select>
-                        <div id="organizer-filter-container" style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
-                            <select id="organizer-filter" multiple size="6">
-                            </select>
-                        </div>
-                    </th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    `;
 }
 
 function setupMultiSelectToggle() {
