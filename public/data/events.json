@@ -26,33 +26,6 @@
   },
   "serviceAvailable" : false
 }, {
-  "disciplines" : [ "OT" ],
-  "event" : {
-    "eventId" : 201132,
-    "name" : "Lohja - Karnaistenkorpi",
-    "sports" : [ ],
-    "organizerId" : 7138,
-    "organizerName" : "Länsi-Uudenmaan Suunnistajat",
-    "startDateTime" : 1735898400000,
-    "endDateTime" : 1743112800000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "9GG6826J+5P",
-    "locationDescription" : "Lohja, Karnaistenkorpi",
-    "locationCoordinates" : {
-      "lat" : 60.310486,
-      "lon" : 24.03181
-    },
-    "uuid" : "1b2f4efd-a95a-481e-944b-fe0cefade81b",
-    "priceInCents" : 700,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 201131,
-    "parentSeriesEventUuid" : "0a00d7d8-3d0d-4985-9771-62aefc83204c",
-    "parentSeriesEventName" : "Talviset omatoimirastit - L-US 2025"
-  },
-  "serviceAvailable" : false
-}, {
   "disciplines" : [ ],
   "event" : {
     "eventId" : 197684,
@@ -116,7 +89,7 @@
     "organizerName" : "OK Raseborg",
     "startDateTime" : 1739012400000,
     "endDateTime" : 1743375600000,
-    "currentAttendeeCount" : 8,
+    "currentAttendeeCount" : 10,
     "maxAttendeeCount" : 999,
     "locationAddress" : "Järnönsalmentie 103, 10680 Raasepori, Suomi",
     "locationDescription" : "Predium, Skogby",
@@ -177,7 +150,7 @@
     "organizerName" : "Siilin Rasti",
     "startDateTime" : 1739491200000,
     "endDateTime" : 1742083200000,
-    "currentAttendeeCount" : 10,
+    "currentAttendeeCount" : 12,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Mikkeli, Suomi",
     "locationDescription" : null,
@@ -366,7 +339,7 @@
     "organizerName" : "Tampereen Pyrintö",
     "startDateTime" : 1740218400000,
     "endDateTime" : 1740223800000,
-    "currentAttendeeCount" : 0,
+    "currentAttendeeCount" : 5,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Vihnuskatu 4, 37150 Nokia, Suomi",
     "locationDescription" : "Nokian jäähalli",
@@ -393,7 +366,7 @@
     "organizerName" : "Hyvinkään Rasti",
     "startDateTime" : 1740218400000,
     "endDateTime" : 1740222000000,
-    "currentAttendeeCount" : 0,
+    "currentAttendeeCount" : 8,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Kenkätehtaankatu 1, 05900 Hyvinkää, Suomi",
     "locationDescription" : "Kipinä, Kenkatehtaankatu 1",
@@ -492,6 +465,33 @@
   },
   "serviceAvailable" : true
 }, {
+  "disciplines" : [ "SU", "OT" ],
+  "event" : {
+    "eventId" : 204667,
+    "name" : "Vinter- och vårpaket: Källviken",
+    "sports" : [ ],
+    "organizerId" : 7197,
+    "organizerName" : "OK Raseborg",
+    "startDateTime" : 1740301200000,
+    "endDateTime" : 1743375600000,
+    "currentAttendeeCount" : 2,
+    "maxAttendeeCount" : 999,
+    "locationAddress" : "Leksvallintie 406, 10660 Raasepori, Suomi",
+    "locationDescription" : "-",
+    "locationCoordinates" : {
+      "lat" : 59.940414,
+      "lon" : 23.364153
+    },
+    "uuid" : "bfd66d4f-c3ae-4b3e-ab1e-e94f7907efe4",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197247,
+    "parentSeriesEventUuid" : "56ddddcf-2058-4ace-8acd-b39a4410c3b6",
+    "parentSeriesEventName" : "Raaseporin syys- ja talvirastit 2024-25"
+  },
+  "serviceAvailable" : true
+}, {
   "disciplines" : [ "SU" ],
   "event" : {
     "eventId" : 198856,
@@ -531,7 +531,7 @@
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Jatulikivenkatu 8, 90240 Oulu, Finland",
-    "locationDescription" : "-",
+    "locationDescription" : "Maikkulan yläaste, Jatulikivenkatu 8",
     "locationCoordinates" : {
       "lat" : 64.981995,
       "lon" : 25.57725
@@ -609,7 +609,7 @@
     "organizerName" : "Riihimäen Suunnistajat",
     "startDateTime" : 1740312000000,
     "endDateTime" : 1740315600000,
-    "currentAttendeeCount" : 0,
+    "currentAttendeeCount" : 3,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Uramontie 63, 11120 Riihimäki, Suomi",
     "locationDescription" : "Uramon koulu, Uramontie 53",
@@ -735,6 +735,33 @@
   },
   "serviceAvailable" : false
 }, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204509,
+    "name" : "Katajanokka, Matruusinpuisto",
+    "sports" : [ ],
+    "organizerId" : 7075,
+    "organizerName" : "Rasti-Jyry",
+    "startDateTime" : 1740591000000,
+    "endDateTime" : 1740596400000,
+    "currentAttendeeCount" : 32,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Katajanokanranta 10, 00160 Helsinki, Suomi",
+    "locationDescription" : "Katajanokanranta 10, 00160 Helsinki",
+    "locationCoordinates" : {
+      "lat" : 60.16674,
+      "lon" : 24.978067
+    },
+    "uuid" : "2164a48a-8b54-464c-8581-4a7ab8fbd812",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197174,
+    "parentSeriesEventUuid" : "7004c4f6-704e-47d0-bac4-e9d84f76839b",
+    "parentSeriesEventName" : "Stadin Sprintticup 2024 - 2025 (Rasti-Jyry, Rastihaukat, HS)"
+  },
+  "serviceAvailable" : true
+}, {
   "disciplines" : [ "YÖ" ],
   "event" : {
     "eventId" : 203688,
@@ -761,6 +788,33 @@
     "parentSeriesEventName" : "Loimaan seudun yösuunnistukset"
   },
   "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU", "OT" ],
+  "event" : {
+    "eventId" : 204876,
+    "name" : "Vinter- och vårpaket: Ovanmalm",
+    "sports" : [ ],
+    "organizerId" : 7197,
+    "organizerName" : "OK Raseborg",
+    "startDateTime" : 1740819600000,
+    "endDateTime" : 1743375600000,
+    "currentAttendeeCount" : 3,
+    "maxAttendeeCount" : 999,
+    "locationAddress" : "Björnbackantie 30, 10520 Raasepori, Suomi",
+    "locationDescription" : "Kvarnträskets simstrand / Kvarnträsketin uimaranta",
+    "locationCoordinates" : {
+      "lat" : 60.09347,
+      "lon" : 23.304293
+    },
+    "uuid" : "1b9467d6-a0af-410d-8013-7d6561611185",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197247,
+    "parentSeriesEventUuid" : "56ddddcf-2058-4ace-8acd-b39a4410c3b6",
+    "parentSeriesEventName" : "Raaseporin syys- ja talvirastit 2024-25"
+  },
+  "serviceAvailable" : true
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -798,7 +852,7 @@
     "organizerName" : "Tampereen Pyrintö",
     "startDateTime" : 1740823200000,
     "endDateTime" : 1740828600000,
-    "currentAttendeeCount" : 0,
+    "currentAttendeeCount" : 2,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Sarvannankatu 7, 33730 Tampere, Suomi",
     "locationDescription" : "Vehmaisten koulu",
@@ -815,6 +869,33 @@
     "parentSeriesEventName" : "Tampereen Iltarastit 2025"
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204981,
+    "name" : "Indoor- / outdoor suunnistusta",
+    "sports" : [ ],
+    "organizerId" : 7105,
+    "organizerName" : "OK Kristina",
+    "startDateTime" : 1740826800000,
+    "endDateTime" : 1740837600000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Högstadiet, 64100 Kristinestad, Finland",
+    "locationDescription" : "Kristiinankaupungin ruotsinkielinen yläkoulu. Koulurinne 4.",
+    "locationCoordinates" : {
+      "lat" : 62.273674,
+      "lon" : 21.368492
+    },
+    "uuid" : "786a9218-39a7-4eb3-a2c4-c044974b5a03",
+    "priceInCents" : 500,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 204980,
+    "parentSeriesEventUuid" : "cb0f8621-869c-4313-949b-491622181507",
+    "parentSeriesEventName" : "OK Kristina iltarastit 2025"
+  },
+  "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -879,7 +960,7 @@
     "organizerName" : "Riihimäen Suunnistajat",
     "startDateTime" : 1740830400000,
     "endDateTime" : 1740834000000,
-    "currentAttendeeCount" : 0,
+    "currentAttendeeCount" : 1,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Kirkkopolku 5, 11100 Riihimäki, Suomi",
     "locationDescription" : "Team Sportia, Kirkkopolku 5",
@@ -895,7 +976,7 @@
     "parentSeriesEventUuid" : "735df054-bd17-4c0b-9aea-d47f67ddea62",
     "parentSeriesEventName" : "2.Team Sportia -rastit"
   },
-  "serviceAvailable" : false
+  "serviceAvailable" : true
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -909,7 +990,7 @@
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Merikotkanpolku 2, 01450 Vantaa, Suomi",
-    "locationDescription" : "Merikotkanpolku 2, Vantaa",
+    "locationDescription" : "Merikotkanpolku 2, Vantaa (Lumon eteläseinustalla)",
     "locationCoordinates" : {
       "lat" : 60.35121,
       "lon" : 25.076696
@@ -926,6 +1007,33 @@
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
+    "eventId" : 204635,
+    "name" : "Knuutilankangas",
+    "sports" : [ ],
+    "organizerId" : 7156,
+    "organizerName" : "SK Pohjantähti",
+    "startDateTime" : 1740911400000,
+    "endDateTime" : 1740916800000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Knuutilankankaantie 8, 90240 Oulu, Finland",
+    "locationDescription" : "Knuutilankankaan koulu",
+    "locationCoordinates" : {
+      "lat" : 64.99289,
+      "lon" : 25.557096
+    },
+    "uuid" : "8ecd0ccc-c4c1-4567-ac0e-43dfdd30f33c",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202741,
+    "parentSeriesEventUuid" : "569b74ff-9450-4d11-95cb-ac82e0581a6c",
+    "parentSeriesEventName" : "Talvisarja 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
     "eventId" : 203841,
     "name" : "Tapiola",
     "sports" : [ ],
@@ -935,11 +1043,11 @@
     "endDateTime" : 1741028400000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Merituulentie 1, 02100 Espoo, Suomi",
-    "locationDescription" : "Tapiola,Espoo",
+    "locationAddress" : "Kaupinkalliontie 6, 02100 Espoo, Suomi",
+    "locationDescription" : "Opintie, Espoo",
     "locationCoordinates" : {
-      "lat" : 60.17566,
-      "lon" : 24.807594
+      "lat" : 60.178974,
+      "lon" : 24.803518
     },
     "uuid" : "4b95e601-b956-4533-9195-afb96466f709",
     "priceInCents" : 1200,
@@ -1005,6 +1113,33 @@
   },
   "serviceAvailable" : false
 }, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 197278,
+    "name" : "Laajasalo, Yliskylä",
+    "sports" : [ ],
+    "organizerId" : 7146,
+    "organizerName" : "Rastihaukat",
+    "startDateTime" : 1741195800000,
+    "endDateTime" : 1741201200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 999,
+    "locationAddress" : "Koulutanhua 1, 00840 Helsinki, Suomi",
+    "locationDescription" : "Koulutanhua 1",
+    "locationCoordinates" : {
+      "lat" : 60.179344,
+      "lon" : 25.05684
+    },
+    "uuid" : "94256c7a-0ff6-46cf-8367-0b4ca5453987",
+    "priceInCents" : 1000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 197267,
+    "parentSeriesEventUuid" : "bfd2d1f9-6458-420b-824a-106bf48f07f9",
+    "parentSeriesEventName" : "Stadin Sprintticup 2024 - 2025 (Rasti-Jyry, Rastihaukat, HS)"
+  },
+  "serviceAvailable" : true
+}, {
   "disciplines" : [ ],
   "event" : {
     "eventId" : 202218,
@@ -1014,7 +1149,7 @@
     "organizerName" : "Suomen Suunnistusliitto",
     "startDateTime" : 1741197600000,
     "endDateTime" : 1741204800000,
-    "currentAttendeeCount" : 4,
+    "currentAttendeeCount" : 12,
     "maxAttendeeCount" : 50,
     "locationAddress" : null,
     "locationDescription" : "Teams-sovellus",
@@ -1041,7 +1176,7 @@
     "organizerName" : "Suomen Suunnistusliitto",
     "startDateTime" : 1741219200000,
     "endDateTime" : 1741219200000,
-    "currentAttendeeCount" : 6,
+    "currentAttendeeCount" : 12,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Valimotie 10, 00380 Helsinki, Suomi",
     "locationDescription" : "Microsoft Teams",
@@ -1067,7 +1202,7 @@
     "organizerId" : 7130,
     "organizerName" : "Loimaan Jankko",
     "startDateTime" : 1741372200000,
-    "endDateTime" : 1741374000000,
+    "endDateTime" : 1741374900000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Korkeakoskentie 1082, 32700 Huittinen, Suomi",
@@ -1257,6 +1392,33 @@
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
+    "eventId" : 203842,
+    "name" : "Espoon keskus",
+    "sports" : [ ],
+    "organizerId" : 7060,
+    "organizerName" : "Espoon Suunta",
+    "startDateTime" : 1741627800000,
+    "endDateTime" : 1741633200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Kirkkopuisto, Kirkkopuisto 5, 02770 Espoo, Suomi",
+    "locationDescription" : "Kirkkopuisto, Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.209805,
+      "lon" : 24.65432
+    },
+    "uuid" : "4c9d1d8c-9d2b-4c8d-bff1-306333b3d32a",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203840,
+    "parentSeriesEventUuid" : "660e4316-4061-46cf-b68c-dda67cced133",
+    "parentSeriesEventName" : "Espoo Sprintti cup kevät 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
     "eventId" : 201208,
     "name" : "Pispala",
     "sports" : [ ],
@@ -1377,15 +1539,15 @@
     "sports" : [ ],
     "organizerId" : 7018,
     "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1741802400000,
-    "endDateTime" : 1741807800000,
+    "startDateTime" : 1741800600000,
+    "endDateTime" : 1741806000000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Vanhaistentie 4, 00420 Helsinki, Suomi",
-    "locationDescription" : "Kannelmäki",
+    "locationAddress" : "Kantelettarentie 1 C, 00420 Helsinki, Suomi",
+    "locationDescription" : "Kannelmäki, Kauppakeskus Kaari, Laulukuja 3, 00420  Helsinki",
     "locationCoordinates" : {
-      "lat" : 60.242176,
-      "lon" : 24.88327
+      "lat" : 60.237473,
+      "lon" : 24.890806
     },
     "uuid" : "693edd36-79f7-47d8-947c-248ccad6de33",
     "priceInCents" : 1200,
@@ -1427,7 +1589,7 @@
     "organizerName" : "Suomen Suunnistusliitto",
     "startDateTime" : 1741971600000,
     "endDateTime" : 1741982400000,
-    "currentAttendeeCount" : 12,
+    "currentAttendeeCount" : 15,
     "maxAttendeeCount" : 30,
     "locationAddress" : null,
     "locationDescription" : "Teams-sovellus",
@@ -1481,7 +1643,7 @@
     "organizerName" : "Pihkaniskat",
     "startDateTime" : 1742032800000,
     "endDateTime" : 1742036400000,
-    "currentAttendeeCount" : 1,
+    "currentAttendeeCount" : 2,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Kirkonkylän etl., 01510 Vantaa, Finland",
     "locationDescription" : "PK-seutu",
@@ -1661,6 +1823,60 @@
   },
   "serviceAvailable" : true
 }, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204636,
+    "name" : "Heinäpää",
+    "sports" : [ ],
+    "organizerId" : 7156,
+    "organizerName" : "SK Pohjantähti",
+    "startDateTime" : 1742121000000,
+    "endDateTime" : 1742126400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Isokatu 99, 90120 Oulu, Finland",
+    "locationDescription" : "Lisätietoja myöhemmin",
+    "locationCoordinates" : {
+      "lat" : 65.00098,
+      "lon" : 25.456978
+    },
+    "uuid" : "d7174d57-4bc1-485c-ad09-4f6b06278189",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202741,
+    "parentSeriesEventUuid" : "569b74ff-9450-4d11-95cb-ac82e0581a6c",
+    "parentSeriesEventName" : "Talvisarja 2024-2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203843,
+    "name" : "Urheilupuisto",
+    "sports" : [ ],
+    "organizerId" : 7060,
+    "organizerName" : "Espoon Suunta",
+    "startDateTime" : 1742232600000,
+    "endDateTime" : 1742238000000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Urheilupuistontie 2, 02200 Espoo, Suomi",
+    "locationDescription" : "Urheilupuisto,Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.177444,
+      "lon" : 24.781427
+    },
+    "uuid" : "90b4ff36-17d8-4a31-93ba-cdcccb4c8af3",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203840,
+    "parentSeriesEventUuid" : "660e4316-4061-46cf-b68c-dda67cced133",
+    "parentSeriesEventName" : "Espoo Sprintti cup kevät 2025"
+  },
+  "serviceAvailable" : false
+}, {
   "disciplines" : [ ],
   "event" : {
     "eventId" : 203810,
@@ -1670,7 +1886,7 @@
     "organizerName" : "Suomen Suunnistusliitto",
     "startDateTime" : 1742256000000,
     "endDateTime" : 1744156800000,
-    "currentAttendeeCount" : 0,
+    "currentAttendeeCount" : 6,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Lustokatu 7, 20380 Turku, Suomi",
     "locationDescription" : "",
@@ -1749,15 +1965,15 @@
     "sports" : [ ],
     "organizerId" : 7018,
     "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1742407200000,
-    "endDateTime" : 1742412600000,
+    "startDateTime" : 1742405400000,
+    "endDateTime" : 1742410800000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Itämerenkatu 30, 00180 Helsinki, Suomi",
-    "locationDescription" : "Ruoholahti - Salmisaari",
+    "locationAddress" : "Ruoholahdentori 1a, 02120 Espoo, Suomi",
+    "locationDescription" : "Ruoholahti, Ruoholahdentori, 00180 Helsinki",
     "locationCoordinates" : {
-      "lat" : 60.162914,
-      "lon" : 24.906187
+      "lat" : 60.162487,
+      "lon" : 24.914108
     },
     "uuid" : "66189d57-eb5d-4dae-bfc4-0fee38c214ec",
     "priceInCents" : 1200,
@@ -1819,33 +2035,6 @@
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
-    "eventId" : 202675,
-    "name" : "Keskusta",
-    "sports" : [ ],
-    "organizerId" : 7272,
-    "organizerName" : "Navi",
-    "startDateTime" : 1742637600000,
-    "endDateTime" : 1742641200000,
-    "currentAttendeeCount" : 0,
-    "maxAttendeeCount" : 10000,
-    "locationAddress" : "Puistokatu 2, 50100 Mikkeli, Suomi",
-    "locationDescription" : "Sprintti / Lähtö: Marskin aukio",
-    "locationCoordinates" : {
-      "lat" : 61.688057,
-      "lon" : 27.262653
-    },
-    "uuid" : "0c3f8199-437d-4be4-abcf-07a7dfd45e43",
-    "priceInCents" : 800,
-    "productDiscounts" : [ ],
-    "purpose" : "SPORTS",
-    "parentSeriesEventId" : 200097,
-    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
-    "parentSeriesEventName" : "Navi-rastit 2025"
-  },
-  "serviceAvailable" : false
-}, {
-  "disciplines" : [ "SU" ],
-  "event" : {
     "eventId" : 199366,
     "name" : "Keskusta",
     "sports" : [ ],
@@ -1870,6 +2059,33 @@
     "parentSeriesEventName" : "Hyvinkään Talvirastit 2025"
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 202675,
+    "name" : "Keskusta",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1742637600000,
+    "endDateTime" : 1742641200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Puistokatu 2, 50100 Mikkeli, Suomi",
+    "locationDescription" : "Sprintti / Lähtö: Marskin aukio",
+    "locationCoordinates" : {
+      "lat" : 61.688057,
+      "lon" : 27.262653
+    },
+    "uuid" : "0c3f8199-437d-4be4-abcf-07a7dfd45e43",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
+  },
+  "serviceAvailable" : false
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -1949,6 +2165,33 @@
     "parentSeriesEventId" : 198852,
     "parentSeriesEventUuid" : "d8b12af1-af31-4ecb-b7f6-19f68bb5e05e",
     "parentSeriesEventName" : "Korttelirastit 2024-25, Akilleksen vuorot"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204637,
+    "name" : "Nokela",
+    "sports" : [ ],
+    "organizerId" : 7156,
+    "organizerName" : "SK Pohjantähti",
+    "startDateTime" : 1742725800000,
+    "endDateTime" : 1742731200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Vesaisentie E, 90150 Oulu, Finland",
+    "locationDescription" : "Lisätietoja myöhemmin",
+    "locationCoordinates" : {
+      "lat" : 64.99109,
+      "lon" : 25.490154
+    },
+    "uuid" : "dfe1859e-b874-4244-8071-068426db5f02",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 202741,
+    "parentSeriesEventUuid" : "569b74ff-9450-4d11-95cb-ac82e0581a6c",
+    "parentSeriesEventName" : "Talvisarja 2024-2025"
   },
   "serviceAvailable" : false
 }, {
@@ -2101,15 +2344,15 @@
     "sports" : [ ],
     "organizerId" : 7018,
     "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1743012000000,
-    "endDateTime" : 1743017400000,
+    "startDateTime" : 1743010200000,
+    "endDateTime" : 1743015600000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Keilaranta 7, 02150 Espoo, Suomi",
-    "locationDescription" : "Keilaniemi",
+    "locationAddress" : "Keilaranta 2, 02150 Espoo, Suomi",
+    "locationDescription" : "Keilaniemi, Keilaranta 1, 02150 Espoo",
     "locationCoordinates" : {
-      "lat" : 60.177063,
-      "lon" : 24.83409
+      "lat" : 60.176746,
+      "lon" : 24.830845
     },
     "uuid" : "adae25cd-ac94-4dc8-bafd-a0e6d695c25c",
     "priceInCents" : 1200,
@@ -2286,7 +2529,7 @@
     "organizerName" : "Suomen Suunnistusliitto",
     "startDateTime" : 1743465600000,
     "endDateTime" : 1767139200000,
-    "currentAttendeeCount" : 40,
+    "currentAttendeeCount" : 70,
     "maxAttendeeCount" : 0,
     "locationAddress" : "Suomi",
     "locationDescription" : null,
@@ -2370,7 +2613,7 @@
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Raivaajantie 110, 40270 Jyväskylä, Finland",
-    "locationDescription" : "Takametsa, Vaiveronkatu 70 (Mallitapahtuma 1)",
+    "locationDescription" : "Raivaajantie",
     "locationCoordinates" : {
       "lat" : 62.296165,
       "lon" : 25.756306
@@ -2381,7 +2624,34 @@
     "purpose" : "SPORTS",
     "parentSeriesEventId" : 202242,
     "parentSeriesEventUuid" : "597b3264-6fc0-4182-89a5-2e65a1b01002",
-    "parentSeriesEventName" : "Suunta Jyväskylä testitapahtumat"
+    "parentSeriesEventName" : "Suunta Jyväskylä testi- ja koulutustapahtumat"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204972,
+    "name" : "Kaukola",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1743613200000,
+    "endDateTime" : 1743615900000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Savilahdenkatu 24, 50100 Mikkeli, Suomi",
+    "locationDescription" : "Sprintti",
+    "locationCoordinates" : {
+      "lat" : 61.690704,
+      "lon" : 27.264143
+    },
+    "uuid" : "6975c5a3-162f-4534-a195-d433019b8513",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
   },
   "serviceAvailable" : false
 }, {
@@ -2392,15 +2662,15 @@
     "sports" : [ ],
     "organizerId" : 7018,
     "organizerName" : "Helsingin Suunnistajat",
-    "startDateTime" : 1743616800000,
-    "endDateTime" : 1743622200000,
+    "startDateTime" : 1743615000000,
+    "endDateTime" : 1743620400000,
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
-    "locationAddress" : "Kadetintie 13, 00330 Helsinki, Suomi",
-    "locationDescription" : "Munkkiniemi",
+    "locationAddress" : "Professorintie 3, 00330 Helsinki, Suomi",
+    "locationDescription" : "Munkkiniemen ala-asteen koulu, Tietokuja 1, 00330 Helsinki",
     "locationCoordinates" : {
-      "lat" : 60.195557,
-      "lon" : 24.879745
+      "lat" : 60.20183,
+      "lon" : 24.875372
     },
     "uuid" : "effbf3b3-a6ea-4761-a545-057b1931b712",
     "priceInCents" : 1200,
@@ -2456,9 +2726,9 @@
     "purpose" : "SPORTS",
     "parentSeriesEventId" : 204152,
     "parentSeriesEventUuid" : "7f30e43e-5fd2-483c-a730-7fcdc7806c80",
-    "parentSeriesEventName" : "Suunta Jyväskylä Testi 2025"
+    "parentSeriesEventName" : "S-JKL kuntorastit 2025"
   },
-  "serviceAvailable" : false
+  "serviceAvailable" : true
 }, {
   "disciplines" : [ "SU" ],
   "event" : {
@@ -2562,6 +2832,60 @@
   },
   "serviceAvailable" : false
 }, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203844,
+    "name" : "Espoonlahti",
+    "sports" : [ ],
+    "organizerId" : 7060,
+    "organizerName" : "Espoon Suunta",
+    "startDateTime" : 1744047000000,
+    "endDateTime" : 1744052400000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Krattivuorentie 5, 02320 Espoo, Suomi",
+    "locationDescription" : "Espoonlahti,Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.142414,
+      "lon" : 24.646702
+    },
+    "uuid" : "0479dce1-d53f-4eec-bc95-f510f1dc19a3",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203840,
+    "parentSeriesEventUuid" : "660e4316-4061-46cf-b68c-dda67cced133",
+    "parentSeriesEventName" : "Espoo Sprintti cup kevät 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 204696,
+    "name" : "Suunnistuskurssi uusille kuntosuunnistajille",
+    "sports" : [ "Suunnistus - Orientering" ],
+    "organizerId" : 7112,
+    "organizerName" : "Lounais-Hämeen Rasti",
+    "startDateTime" : 1744070400000,
+    "endDateTime" : 1744675200000,
+    "currentAttendeeCount" : 1,
+    "maxAttendeeCount" : 0,
+    "locationAddress" : "Talsoilankatu 34, 30100 Forssa, Suomi",
+    "locationDescription" : "Talsoilan koulu. Sisäänkäynti välituntipihan puolelta ovesta C",
+    "locationCoordinates" : {
+      "lat" : 60.82124930000001,
+      "lon" : 23.6037738
+    },
+    "uuid" : "e149d940-e80c-4249-96e9-ffdda87d650e",
+    "priceInCents" : 2000,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : null,
+    "parentSeriesEventUuid" : null,
+    "parentSeriesEventName" : null
+  },
+  "serviceAvailable" : false
+}, {
   "disciplines" : [ ],
   "event" : {
     "eventId" : 201382,
@@ -2601,7 +2925,7 @@
     "currentAttendeeCount" : 0,
     "maxAttendeeCount" : 10000,
     "locationAddress" : "Vuorenlahdenkatu 45a, 40900 Jyväskylä, Finland",
-    "locationDescription" : "Martintalo, Martintorinkuja 2 (Mallitapahtuma 2)",
+    "locationDescription" : "",
     "locationCoordinates" : {
       "lat" : 62.11771,
       "lon" : 25.754936
@@ -2612,7 +2936,34 @@
     "purpose" : "SPORTS",
     "parentSeriesEventId" : 202242,
     "parentSeriesEventUuid" : "597b3264-6fc0-4182-89a5-2e65a1b01002",
-    "parentSeriesEventName" : "Suunta Jyväskylä testitapahtumat"
+    "parentSeriesEventName" : "Suunta Jyväskylä testi- ja koulutustapahtumat"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 204973,
+    "name" : "Peitsari",
+    "sports" : [ ],
+    "organizerId" : 7272,
+    "organizerName" : "Navi",
+    "startDateTime" : 1744218000000,
+    "endDateTime" : 1744220700000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Peitsarinkuja 6, 50170 Mikkeli, Suomi",
+    "locationDescription" : "Sprintti",
+    "locationCoordinates" : {
+      "lat" : 61.69988,
+      "lon" : 27.301037
+    },
+    "uuid" : "b0238d9c-784d-43fd-a10a-3ad7e8c68b61",
+    "priceInCents" : 800,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 200097,
+    "parentSeriesEventUuid" : "39255235-4b0f-4bc1-a9d1-bf681412e612",
+    "parentSeriesEventName" : "Navi-rastit 2025"
   },
   "serviceAvailable" : false
 }, {
@@ -2744,4 +3095,65 @@
     "parentSeriesEventName" : "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
   },
   "serviceAvailable" : true
+}, {
+  "disciplines" : [ "SU" ],
+  "event" : {
+    "eventId" : 203845,
+    "name" : "Otaniemi",
+    "sports" : [ ],
+    "organizerId" : 7060,
+    "organizerName" : "Espoon Suunta",
+    "startDateTime" : 1744651800000,
+    "endDateTime" : 1744657200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 10000,
+    "locationAddress" : "Puunjalostustekniikka 1, Vuorimiehentie 1, 02150 Espoo, Suomi",
+    "locationDescription" : "Otaniemi,Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.181465,
+      "lon" : 24.82575
+    },
+    "uuid" : "0939c4c0-ed78-4b47-9349-46a37e5ab8ed",
+    "priceInCents" : 1200,
+    "productDiscounts" : [ ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : 203840,
+    "parentSeriesEventUuid" : "660e4316-4061-46cf-b68c-dda67cced133",
+    "parentSeriesEventName" : "Espoo Sprintti cup kevät 2025"
+  },
+  "serviceAvailable" : false
+}, {
+  "disciplines" : [ ],
+  "event" : {
+    "eventId" : 204720,
+    "name" : "Suunnistuksen peruskurssi aikuisille 14.-15.4.2025",
+    "sports" : [ "Suunnistus - Orientering" ],
+    "organizerId" : 7020,
+    "organizerName" : "Espoon Akilles ry",
+    "startDateTime" : 1744653600000,
+    "endDateTime" : 1744747200000,
+    "currentAttendeeCount" : 0,
+    "maxAttendeeCount" : 3,
+    "locationAddress" : "Vanha maantie 13, 02650 Espoo, Finland",
+    "locationDescription" : "Teoriaosuus etänä Zoomin välityksellä. Pienryhmäsuunnistus Leppävaaran Espoorastien yhteydessä. Vanha Maantie 13, Espoo",
+    "locationCoordinates" : {
+      "lat" : 60.2227498,
+      "lon" : 24.8027822
+    },
+    "uuid" : "263b83f3-660e-4c1a-957f-c7fd1e68a717",
+    "priceInCents" : 2500,
+    "productDiscounts" : [ {
+      "id" : 56107,
+      "priceSteps" : [ ],
+      "discountType" : "PRICE_STEP",
+      "name" : "Osallistumismaksu (Espoon Akilleksen jäsenet)",
+      "priceInCents" : 2000,
+      "validityPeriod" : null
+    } ],
+    "purpose" : "SPORTS",
+    "parentSeriesEventId" : null,
+    "parentSeriesEventUuid" : null,
+    "parentSeriesEventName" : null
+  },
+  "serviceAvailable" : false
 } ]
