@@ -32,31 +32,37 @@ fs.renameSync(tempBuildDir, finalBuildDir);
 const swInputPath = path.join(finalBuildDir, 'dist', 'service-worker.mjs');
 const swOutputPath = path.join(finalBuildDir, 'service-worker.js');
 const mainInputPath = path.join(finalBuildDir, 'dist', 'kuntorastit.mjs');
+const indexHtmlInputPath = path.join(finalBuildDir, 'index.html');
+const indexHtmlOutputPath = path.join(kuntorastitDir, 'index.html');
 
-const swContent = fs.readFileSync(swInputPath, 'utf8')
-  .replace('CACHE_UUID', buildUuid)
-  .replace(/export {};/, '');
-fs.writeFileSync(swOutputPath, swContent);
+fs.writeFileSync(swOutputPath,
+  fs.readFileSync(swInputPath, 'utf8')
+    .replaceAll('CACHE_UUID', buildUuid)
+    .replace(/export {};/, ''));
 
-const mainContent = fs.readFileSync(mainInputPath, 'utf8')
-  .replace('CACHE_UUID', buildUuid);
-fs.writeFileSync(mainInputPath, mainContent);
+fs.writeFileSync(mainInputPath,
+  fs.readFileSync(mainInputPath, 'utf8')
+    .replaceAll('CACHE_UUID', buildUuid));
 
-// Create redirect index.html at /kuntorastit
-const redirectHtml = `
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/kuntorastit/${buildUuid}/">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <p>Redirecting to <a href="/kuntorastit/${buildUuid}/">latest build</a>...</p>
-</body>
-</html>
-`;
-fs.writeFileSync(path.join(kuntorastitDir, 'index.html'), redirectHtml);
+fs.writeFileSync(indexHtmlOutputPath,
+  fs.readFileSync(indexHtmlInputPath, 'utf8')
+    .replaceAll('CACHE_UUID', buildUuid));
+    
+// // Create redirect index.html at /kuntorastit
+// const redirectHtml = `
+// <!DOCTYPE html>
+// <html>
+// <head>
+//   <meta charset="UTF-8">
+//   <meta http-equiv="refresh" content="0; url=/kuntorastit/${buildUuid}/">
+//   <title>Redirecting...</title>
+// </head>
+// <body>
+//   <p>Redirecting to <a href="/kuntorastit/${buildUuid}/">latest build</a>...</p>
+// </body>
+// </html>
+// `;
+// fs.writeFileSync(path.join(kuntorastitDir, 'index.html'), redirectHtml);
 
 // Save the buildUuid to a file for fetch_events.sh
 fs.writeFileSync(path.join(kuntorastitDir, 'build-uuid.txt'), buildUuid);

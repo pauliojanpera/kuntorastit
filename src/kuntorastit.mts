@@ -1,4 +1,4 @@
-const DATA_URL = "./data/events.json"; // Relative to index.html in public/kuntorastit
+const DATA_URL = `./data/events.json`;
 
 type OrienteeringEvent = {
     uuid: string;
@@ -335,8 +335,8 @@ async function registerServiceWorker(): Promise<void> {
     if ('serviceWorker' in navigator) {
         try {
             // Cache name with UUID placeholder (replaced at build time)
-            const registration = await navigator.serviceWorker.register('/kuntorastit/CACHE_UUID/service-worker.js', {
-                scope: './'
+            const registration = await navigator.serviceWorker.register(`service-worker.js`, {
+                scope: `./`
             });
             registration.addEventListener('updatefound', () => {
                 const newWorker = registration.installing;

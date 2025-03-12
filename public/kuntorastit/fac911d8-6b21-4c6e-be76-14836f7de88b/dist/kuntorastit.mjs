@@ -1,4 +1,4 @@
-const DATA_URL = "./data/events.json"; // Relative to index.html in public/kuntorastit
+const DATA_URL = `./data/events.json`;
 function saveFilterSettings(filters) {
     localStorage.setItem("orienteeringEventFilters", JSON.stringify(filters));
 }
@@ -259,8 +259,8 @@ async function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
         try {
             // Cache name with UUID placeholder (replaced at build time)
-            const registration = await navigator.serviceWorker.register('/kuntorastit/1fab648f-3cea-41ee-9d68-b7eb3bb2e154/service-worker.js', {
-                scope: './'
+            const registration = await navigator.serviceWorker.register(`service-worker.js`, {
+                scope: `./`
             });
             registration.addEventListener('updatefound', () => {
                 const newWorker = registration.installing;
