@@ -1,3 +1,52 @@
+===== README.md =====
+
+# Kuntorastit
+
+A web-based tool for browsing orienteering events, built with TypeScript and modern web standards. Features dynamic data fetching, filtering, offline support via a service worker, and automated deployment via GitHub Actions.
+
+## Purpose and Functionality
+Fetches event data from `rastilippu.fi`, displays it in a filterable table, and supports offline access after initial load.
+
+## User Instructions
+- **Online Access**: [Live URL](https://pauliojanpera.github.io/kuntorastit/).
+- **Usage**: Filter events by date, name, or organizer; click rows to expand details.
+- **Offline Mode**: Works after initial load due to service worker caching.
+
+## Local Execution
+- **Prerequisites**: Node.js (v16+), pnpm (`npm install -g pnpm`).
+- **Steps**:
+  1. Clone: `git clone <repository-url>` && `cd kuntorastit`.
+  2. Install: `pnpm install`.
+  3. Build: `pnpm run build`.
+  4. Serve: `pnpm start` → visit `http://localhost:8080`.
+
+## License
+MIT License.
+-----
+
+===== REFERENCE.md =====
+
+# Technical Reference: Kuntorastit
+*Date: March 11, 2025*
+
+## Overview
+A TypeScript app for displaying orienteering events with real-time filtering and offline capability via a service worker.
+
+## Core Components
+- `src/kuntorastit.mts`: Main logic for data loading, filtering, and UI rendering.
+- `src/service-worker.mts`: Caches assets for offline use.
+- `public/index.html`: Entry point with styles.
+- `public/data/events.json`: Event data fetched from `rastilippu.fi`.
+
+## Implementation Details
+- **Service Worker**: Registers at `/kuntorastit/service-worker.js`, caches key assets with UUID-based naming.
+- **Cache Busting**: UUID injected via `postbuild.js` ensures fresh content per deployment.
+- **Data Handling**: Fetches JSON, filters events by date/name/organizer, renders expandable rows.
+
+## Build Process
+- `pnpm run build`: Compiles TypeScript, applies aliases, runs `postbuild.js` for cache versioning.
+-----
+
 ===== package.json =====
 
 {
@@ -6,20 +55,22 @@
   "description": "Kuntorastit",
   "private": false,
   "scripts": {
-    "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs && mv public/dist/service-worker.mjs public/service-worker.js",
+    "build": "rimraf public && cp -a static public && tsc && tsc-alias && node ./scripts/postbuild.js",
     "deploy": "./scripts/deploy.sh",
     "fetch": "./scripts/fetch_events.sh",
     "watch": "nodemon -e mts,json,html,png,sh --exec pnpm run build",
-    "report": "./scripts/files.sh package.json tsconfig.json .github/workflows/static.yml scripts/ src public/manifest.json public/index.html > kuntorastit.txt"
+    "report": "./scripts/files.sh README.md REFERENCE.md package.json tsconfig.json .github/workflows/static.yml scripts/ src static/kuntorastit/index.html static/kuntorastit/manifest.json > kuntorastit.txt",
+    "start": "http-server public -p 8080 --cors -c-1"
   },
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.7.3",
     "tsc-alias": "^1.8.10",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "http-server": "^14.1.1",
+    "rimraf": "^6.0.1"
   }
 }
-
 -----
 
 ===== tsconfig.json =====
@@ -27,7 +78,7 @@
 {
   "compilerOptions": {
     "target": "esnext",                // Target ECMAScript next-generation output
-    "outDir": "./public/dist",
+    "outDir": "./public/kuntorastit/dist",
     "module": "NodeNext",         
     "moduleResolution": "NodeNext",
     "strict": true,
@@ -90,7 +141,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: './public/kuntorastit'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
@@ -100,15 +151,90 @@ jobs:
 ===== scripts/fetch_events.sh =====
 
 #!/bin/bash
-set -e  # Exit on error
+set -e
 
-# Define the target directory
-TARGET_DIR="public/data"
+# Base directory
+BASE_DIR="public/kuntorastit"
+
+# Check if build-uuid.txt exists
+if [ ! -f "$BASE_DIR/build-uuid.txt" ]; then
+  echo "Warning: build-uuid.txt not found in $BASE_DIR. Run 'pnpm run build' first to generate a build UUID."
+  echo "Skipping fetch to avoid placing events.json in the wrong directory."
+  exit 0  # Exit gracefully, not an error for cron
+fi
+
+# Read the buildUuid from build-uuid.txt
+BUILD_UUID=$(cat "$BASE_DIR/build-uuid.txt")
+
+# Define the target directory using the buildUuid
+TARGET_DIR="$BASE_DIR/$BUILD_UUID/data"
 mkdir -p "$TARGET_DIR"
 
-# Fetch the JSON data
-curl -sS "https://www.rastilippu.fi/api/events/search/?topLeftLat=70.190068&topLeftLon=19.640624&bottomRightLat=59.741636&bottomRightLon=31.769532&dateTimeRangeStart=2025-02-18T00:00:00Z&dateTimeRangeEnd=2025-04-15T00:00:00%2B03:00&size=9999" -o "$TARGET_DIR/events.json"
+CURRENT_YEAR=$(date +%Y)
+START_DATE="${CURRENT_YEAR}-01-01T00:00:00Z"
+END_DATE="${CURRENT_YEAR}-12-31T23:59:59Z"
 
+curl -sS "https://www.rastilippu.fi/api/events/search/?topLeftLat=70.190068&topLeftLon=19.640624&bottomRightLat=59.741636&bottomRightLon=31.769532&dateTimeRangeStart=${START_DATE}&dateTimeRangeEnd=${END_DATE}&size=9999" -o "$TARGET_DIR/events.json"
+
+
+-----
+
+===== scripts/postbuild.js =====
+
+#!/usr/bin/env node
+const { randomUUID } = require('crypto');
+const fs = require('fs');
+const path = require('path');
+
+// Base directories
+const publicDir = 'public';
+const kuntorastitDir = path.join(publicDir, 'kuntorastit');
+
+// Ensure public directory exists
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+}
+
+// Generate a UUID for this build
+const buildUuid = randomUUID();
+const tempBuildDir = path.join(publicDir, buildUuid);
+const finalBuildDir = path.join(kuntorastitDir, buildUuid);
+
+// Rename kuntorastit to the UUID directory
+if (fs.existsSync(kuntorastitDir)) {
+  fs.renameSync(kuntorastitDir, tempBuildDir);
+}
+
+// Recreate kuntorastit directory
+fs.mkdirSync(kuntorastitDir, { recursive: true });
+
+// Move the UUID directory back into kuntorastit
+fs.renameSync(tempBuildDir, finalBuildDir);
+
+// Update service-worker.js and kuntorastit.mjs with UUIDs
+const swInputPath = path.join(finalBuildDir, 'dist', 'service-worker.mjs');
+const swOutputPath = path.join(finalBuildDir, 'service-worker.js');
+const mainInputPath = path.join(finalBuildDir, 'dist', 'kuntorastit.mjs');
+const indexHtmlInputPath = path.join(finalBuildDir, 'index.html');
+const indexHtmlOutputPath = path.join(kuntorastitDir, 'index.html');
+
+fs.writeFileSync(swOutputPath,
+  fs.readFileSync(swInputPath, 'utf8')
+    .replaceAll('CACHE_UUID', buildUuid)
+    .replace(/export {};/, ''));
+
+fs.writeFileSync(mainInputPath,
+  fs.readFileSync(mainInputPath, 'utf8')
+    .replaceAll('CACHE_UUID', buildUuid));
+
+fs.writeFileSync(indexHtmlOutputPath,
+  fs.readFileSync(indexHtmlInputPath, 'utf8')
+    .replaceAll('CACHE_UUID', buildUuid));
+    
+// Save the buildUuid to a file for fetch_events.sh
+fs.writeFileSync(path.join(kuntorastitDir, 'build-uuid.txt'), buildUuid);
+
+console.log(`Post-build complete with buildUuid: ${buildUuid}`);
 -----
 
 ===== scripts/files.sh =====
@@ -200,7 +326,7 @@ pnpm run build && git add . && git commit -m "$msg" && git push -u origin main
 
 ===== src/kuntorastit.mts =====
 
-const DATA_URL = "./data/events.json";
+const DATA_URL = `./data/events.json`;
 
 type OrienteeringEvent = {
     uuid: string;
@@ -305,7 +431,7 @@ function setupMultiSelectToggle() {
         organizerFilterContainer.style.display = "block";
         organizerFilterContainer.style.position = "fixed";
         organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-        organizerFilterContainer.style.right = `${window.innerWidth-rect.right + window.scrollX}px`;
+        organizerFilterContainer.style.right = `${window.innerWidth - rect.right + window.scrollX}px`;
     }
 
     function adjustDropdownBehavior() {
@@ -533,8 +659,45 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
     });
 }
 
-document.addEventListener("DOMContentLoaded", loadData);
+async function registerServiceWorker(): Promise<void> {
+    if ('serviceWorker' in navigator) {
+        try {
+            // Cache name with UUID placeholder (replaced at build time)
+            const registration = await navigator.serviceWorker.register(`service-worker.js`, {
+                scope: `./`
+            });
+            registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                if (newWorker) {
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            newWorker.postMessage({ action: 'skipWaiting' });
+                        }
+                    });
+                }
+            });
+            console.log('Service Worker registered with scope:', registration.scope);
+        } catch (error) {
+            console.error('Service Worker registration failed:', error);
+        }
+    } else {
+        console.warn('Service Workers not supported in this browser');
+    }
+}
 
+// Initialize the application
+async function initialize(): Promise<void> {
+    try {
+        await registerServiceWorker();
+        await loadData();
+    } catch (error) {
+        console.error("Error initializing:", error);
+        const contentDiv = document.getElementById("content")!;
+        contentDiv.innerText = "Failed to initialize application.";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", initialize);
 -----
 
 ===== src/service-worker.mts =====
@@ -543,63 +706,67 @@ document.addEventListener("DOMContentLoaded", loadData);
 export type { };
 declare const self: ServiceWorkerGlobalScope;
 
-const CACHE_NAME = "kuntorastit";
+// Cache name with UUID placeholder (replaced at build time)
+const CACHE_NAME = "kuntorastit-CACHE_UUID";
 const URLS_TO_CACHE = [
-    "index.html",
-    "dist/kuntorastit.mjs",
-    "data/events.json",
-    "icon-192.png",
+    "./index.html",
+    "./dist/kuntorastit.mjs",
+    "./data/events.json",
+    "./icon-192.png",
 ];
 
+// Install event: Cache assets
 self.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => cache.addAll(URLS_TO_CACHE))
     );
 });
 
+// Activate event: Clean up old caches
+self.addEventListener("activate", (event) => {
+    event.waitUntil(
+        caches.keys().then((cacheNames) => {
+            return Promise.all(
+                cacheNames
+                    .filter((name) => name.startsWith("kuntorastit-") && name !== CACHE_NAME)
+                    .map((name) => caches.delete(name))
+            );
+        })
+    );
+});
+
+// Fetch event: Network-first with cache fallback
 self.addEventListener("fetch", (event) => {
     event.respondWith((async () => {
         try {
             const response = await fetch(event.request);
             const responseClone = response.clone();
-            caches.open(CACHE_NAME).then(
-                (cache) => {
-                    cache.put(event.request, responseClone);
-                });
+            caches.open(CACHE_NAME).then((cache) => {
+                cache.put(event.request, responseClone);
+            });
             return response;
         } catch (e) {
-            // If network fails, try to return a cached response
-            return await caches.match(event.request)
-                ?? new Response('Offline content unavailable', {
+            return (
+                (await caches.match(event.request)) ??
+                new Response('Offline content unavailable', {
                     status: 503,
                     statusText: 'Service Unavailable',
                     headers: { 'Content-Type': 'text/plain' }
-                });
+                })
+            );
         }
     })());
 });
+
+// Handle skipWaiting message
+self.addEventListener("message", (event) => {
+    if (event.data && event.data.action === "skipWaiting") {
+        self.skipWaiting();
+    }
+});
 -----
 
-===== public/manifest.json =====
-
-{
-    "name": "Kuntorastit",
-    "short_name": "Kuntorastit",
-    "start_url": "/kuntorastit",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#f86135",
-    "icons": [
-      {
-        "src": "icon-192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ]
-  }
------
-
-===== public/index.html =====
+===== static/kuntorastit/index.html =====
 
 <!DOCTYPE html>
 <html lang="en">
@@ -608,6 +775,7 @@ self.addEventListener("fetch", (event) => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuntorastit</title>
+    <base href="./CACHE_UUID/">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon-192.png">
     <script type="module" src="dist/kuntorastit.mjs"></script>
@@ -789,5 +957,24 @@ self.addEventListener("fetch", (event) => {
 </body>
 
 </html>
+-----
+
+===== static/kuntorastit/manifest.json =====
+
+{
+  "name": "Kuntorastit",
+  "short_name": "Kuntorastit",
+  "start_url": "../",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f86135",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
 -----
 
