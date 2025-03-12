@@ -3,7 +3,7 @@ export type { };
 declare const self: ServiceWorkerGlobalScope;
 
 // Cache name with UUID placeholder (replaced at build time)
-const CACHE_NAME = "kuntorastit-CACHE_UUID";
+const CACHE_NAME = "kuntorastit-$$BUILD_UUID$$";
 const URLS_TO_CACHE = [
     "./index.html",
     "./dist/kuntorastit.mjs",

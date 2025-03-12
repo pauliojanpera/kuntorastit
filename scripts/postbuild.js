@@ -39,20 +39,20 @@ const updateDataYmlOutputPath = '.github/workflows/update-data.yml';
 
 fs.writeFileSync(swOutputPath,
   fs.readFileSync(swInputPath, 'utf8')
-    .replaceAll('CACHE_UUID', buildUuid)
+    .replaceAll('$$BUILD_UUID$$', buildUuid)
     .replace(/export {};/, ''));
 
 fs.writeFileSync(mainInputPath,
   fs.readFileSync(mainInputPath, 'utf8')
-    .replaceAll('CACHE_UUID', buildUuid));
+    .replaceAll('$$BUILD_UUID$$', buildUuid));
 
 fs.writeFileSync(indexHtmlOutputPath,
   fs.readFileSync(indexHtmlInputPath, 'utf8')
-    .replaceAll('CACHE_UUID', buildUuid));
+    .replaceAll('$$BUILD_UUID$$', buildUuid));
 
 fs.writeFileSync(updateDataYmlOutputPath,
   fs.readFileSync(updateDataYmlInputPath, 'utf8')
-    .replaceAll('CACHE_UUID', buildUuid));
+    .replaceAll('$$BUILD_UUID$$', buildUuid));
     
 
 // Save the buildUuid to a file for fetch_events.sh
