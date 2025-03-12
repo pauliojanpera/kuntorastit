@@ -1,18 +1,21 @@
 {
   "name": "kuntorastit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Kuntorastit",
   "private": false,
   "scripts": {
-    "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs && mv public/dist/service-worker.mjs public/service-worker.js",
+    "build": "tsc && tsc-alias && node ./scripts/postbuild.js",
     "deploy": "./scripts/deploy.sh",
     "fetch": "./scripts/fetch_events.sh",
-    "watch": "nodemon -e mts,json,html,png,sh --exec pnpm run build"
+    "watch": "nodemon -e mts,json,html,png,sh --exec pnpm run build",
+    "report": "./scripts/files.sh README.md REFERENCE.md package.json tsconfig.json .github/workflows/static.yml scripts/ src public/kuntorastit/manifest.json public/kuntorastit/index.html > kuntorastit.txt",
+    "start": "http-server public -p 8080 --cors -c-1"
   },
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.7.3",
     "tsc-alias": "^1.8.10",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "http-server": "^14.1.1"
   }
 }

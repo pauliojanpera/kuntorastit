@@ -1,4 +1,206 @@
-const DATA_URL = "./data/events.json"; // Relative to index.html in public/kuntorastit
+===== package.json =====
+
+{
+  "name": "kuntorastit",
+  "version": "0.0.1",
+  "description": "Kuntorastit",
+  "private": false,
+  "scripts": {
+    "build": "tsc && tsc-alias && sed -i '/export {};$/d' public/dist/service-worker.mjs && mv public/dist/service-worker.mjs public/service-worker.js",
+    "deploy": "./scripts/deploy.sh",
+    "fetch": "./scripts/fetch_events.sh",
+    "watch": "nodemon -e mts,json,html,png,sh --exec pnpm run build",
+    "report": "./scripts/files.sh package.json tsconfig.json .github/workflows/static.yml scripts/ src public/manifest.json public/index.html > kuntorastit.txt"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "tsc-alias": "^1.8.10",
+    "nodemon": "^3.1.9"
+  }
+}
+
+-----
+
+===== tsconfig.json =====
+
+{
+  "compilerOptions": {
+    "target": "esnext",                // Target ECMAScript next-generation output
+    "outDir": "./public/dist",
+    "module": "NodeNext",         
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "rootDirs": ["src"],  
+  "include": ["src/**/*.mts", "src/**/*.ts"],
+  "exclude": []                        // Exclude unnecessary files (e.g., test files, node_modules)
+}
+
+-----
+
+===== .github/workflows/static.yml =====
+
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  workflow_run:
+    workflows: ["Update Event Data"]
+    types:
+      - completed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+-----
+
+===== scripts/fetch_events.sh =====
+
+#!/bin/bash
+set -e  # Exit on error
+
+# Define the target directory
+TARGET_DIR="public/data"
+mkdir -p "$TARGET_DIR"
+
+# Fetch the JSON data
+curl -sS "https://www.rastilippu.fi/api/events/search/?topLeftLat=70.190068&topLeftLon=19.640624&bottomRightLat=59.741636&bottomRightLon=31.769532&dateTimeRangeStart=2025-02-18T00:00:00Z&dateTimeRangeEnd=2025-04-15T00:00:00%2B03:00&size=9999" -o "$TARGET_DIR/events.json"
+
+-----
+
+===== scripts/files.sh =====
+
+#!/bin/bash
+
+# Default output is stdout (empty string means stdout in redirection), default pattern is all files
+OUTPUT_FILE=""
+FILE_PATTERNS=("*")  # Default to all files
+
+# Usage message
+usage() {
+    echo "Usage: $0 [-o output_file] [-p pattern1 pattern2 ...] [files_or_directories...]"
+    echo "  -o: Specify output file (default: stdout)"
+    echo "  -p: File patterns to match (default: *)"
+    echo "  files_or_directories: Files and/or directories to process (default: current directory)"
+    exit 1
+}
+
+# Parse command-line options
+while getopts "o:p:" opt; do
+    case $opt in
+        o) OUTPUT_FILE="$OPTARG" ;;
+        p) IFS=' ' read -r -a FILE_PATTERNS <<< "$OPTARG" ;;
+        ?) usage ;;
+    esac
+done
+shift $((OPTIND - 1))
+
+# If no arguments provided, default to current directory
+if [ $# -eq 0 ]; then
+    set -- "."
+fi
+
+# Build the find command with multiple patterns
+FIND_ARGS=()
+for pattern in "${FILE_PATTERNS[@]}"; do
+    FIND_ARGS+=(-name "$pattern")
+    if [ "$pattern" != "${FILE_PATTERNS[-1]}" ]; then
+        FIND_ARGS+=(-o)
+    fi
+done
+
+# Function to process a single path (file or directory)
+process_path() {
+    local path="$1"
+    if [ -f "$path" ]; then
+        # If it's a file, process it directly
+        echo -e "===== $path =====\n"
+        cat "$path"
+        echo -e "\n-----\n"
+    elif [ -d "$path" ]; then
+        # If it's a directory, use find
+        find "$path" -type f \( "${FIND_ARGS[@]}" \) -print0 | \
+            xargs -0 -I {} /bin/bash -c 'echo -e "===== {} =====\n"; cat "{}"; echo -e "\n-----\n"'
+    else
+        echo "Warning: Skipping $path - not a file or directory" >&2
+    fi
+}
+
+# Process all provided paths
+if [ -z "$OUTPUT_FILE" ]; then
+    # Output to stdout
+    for path in "$@"; do
+        process_path "$path"
+    done
+else
+    # Output to file
+    {
+        for path in "$@"; do
+            process_path "$path"
+        done
+    } > "$OUTPUT_FILE"
+    echo "Combined files written to $OUTPUT_FILE"
+fi
+-----
+
+===== scripts/deploy.sh =====
+
+#!/bin/sh
+msg="$1"
+if [ -z "$msg" ]; then
+  echo "Commit message required."
+  exit 1
+fi
+
+pnpm run build && git add . && git commit -m "$msg" && git push -u origin main
+-----
+
+===== src/kuntorastit.mts =====
+
+const DATA_URL = "./data/events.json";
 
 type OrienteeringEvent = {
     uuid: string;
@@ -331,45 +533,261 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
     });
 }
 
-// Cache name with UUID placeholder (replaced at build time)
-const CACHE_NAME = "kuntorastit-CACHE_UUID";
+document.addEventListener("DOMContentLoaded", loadData);
 
-// Register service worker with force update
-async function registerServiceWorker(): Promise<void> {
-    if ('serviceWorker' in navigator) {
+-----
+
+===== src/service-worker.mts =====
+
+/// <reference lib="webworker" />
+export type { };
+declare const self: ServiceWorkerGlobalScope;
+
+const CACHE_NAME = "kuntorastit";
+const URLS_TO_CACHE = [
+    "index.html",
+    "dist/kuntorastit.mjs",
+    "data/events.json",
+    "icon-192.png",
+];
+
+self.addEventListener("install", (event) => {
+    event.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => cache.addAll(URLS_TO_CACHE))
+    );
+});
+
+self.addEventListener("fetch", (event) => {
+    event.respondWith((async () => {
         try {
-            const registration = await navigator.serviceWorker.register('service-worker.js', {
-                scope: './'
-            });
-            registration.addEventListener('updatefound', () => {
-                const newWorker = registration.installing;
-                if (newWorker) {
-                    newWorker.addEventListener('statechange', () => {
-                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                            newWorker.postMessage({ action: 'skipWaiting' });
-                        }
-                    });
-                }
-            });
-            console.log('Service Worker registered with scope:', registration.scope);
-        } catch (error) {
-            console.error('Service Worker registration failed:', error);
+            const response = await fetch(event.request);
+            const responseClone = response.clone();
+            caches.open(CACHE_NAME).then(
+                (cache) => {
+                    cache.put(event.request, responseClone);
+                });
+            return response;
+        } catch (e) {
+            // If network fails, try to return a cached response
+            return await caches.match(event.request)
+                ?? new Response('Offline content unavailable', {
+                    status: 503,
+                    statusText: 'Service Unavailable',
+                    headers: { 'Content-Type': 'text/plain' }
+                });
         }
-    } else {
-        console.warn('Service Workers not supported in this browser');
-    }
-}
+    })());
+});
+-----
 
-// Initialize the application
-async function initialize(): Promise<void> {
-    try {
-        await registerServiceWorker();
-        await loadData();
-    } catch (error) {
-        console.error("Error initializing:", error);
-        const contentDiv = document.getElementById("content")!;
-        contentDiv.innerText = "Failed to initialize application.";
-    }
-}
+===== public/manifest.json =====
 
-document.addEventListener("DOMContentLoaded", initialize);
+{
+    "name": "Kuntorastit",
+    "short_name": "Kuntorastit",
+    "start_url": "/kuntorastit",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#f86135",
+    "icons": [
+      {
+        "src": "icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+-----
+
+===== public/index.html =====
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuntorastit</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <script type="module" src="dist/kuntorastit.mjs"></script>
+    <style>
+        :root {
+            --primary-color: #b9c6d2;
+            --secondary-color: #d0dde9;
+            --tertiary-color: #edf0f8;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 10.45%, var(--tertiary-color) 41.35%);
+
+            font-family: Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+            /* Make the select box take up full width of td */
+            max-width: 100%;
+            /* Prevents it from overflowing */
+            box-sizing: border-box;
+            /* Ensures padding and border are included in width */
+        }
+
+        table {
+            padding: 1rem;
+            width: 100%;
+            max-width: 30rem;
+            margin: auto;
+            table-layout: fixed;
+            /* Ensures columns adhere to defined widths */
+        }
+
+        th,
+        td {
+            padding: .1rem;
+            position: relative;
+        }
+
+        td {
+            color: #180f3d;
+            mix-blend-mode: multiply;
+        }
+
+        th.date,
+        td.date {
+            width: 4rem;
+        }
+
+        th.organizer,
+        td.organizer {
+            width: 5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        th.event,
+        td.event {
+            width: auto;
+            max-width: calc(100% - 9rem);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        th.event input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .event-row {
+            cursor: pointer;
+        }
+
+        .expanded-row {
+            background-color: #f8f9fa;
+        }
+
+        .expanded-content {
+            padding: 10px;
+        }
+
+        .location-description {
+            justify-content: space-around;
+        }
+
+        .location-description,
+        .event-page-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: .5rem;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .monday {
+            background-color: #f0f921c0;
+        }
+
+        .tuesday {
+            background-color: #cc4778c0;
+            ;
+        }
+
+        .wednesday {
+            background-color: #0d088780;
+        }
+
+        .thursday {
+            background-color: #fdb42fc0;
+        }
+
+        .friday {
+            background-color: #9c179e80;
+        }
+
+        .saturday {
+            background-color: #ed7953c0;
+        }
+
+        .sunday {
+            background-color: #5c01a680;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <table class="event-table">
+            <thead>
+                <tr>
+                    <th class="date">
+                        <select id="date-filter">
+                            <option value="">aika</option>
+                        </select>
+                    </th>
+                    <th class="event">
+                        <input type="text" id="name-filter" placeholder="tapahtuma">
+                    </th>
+                    <th class="organizer">
+                        <select id="organizer-placeholder">
+                            <option value="">seura</option>
+                        </select>
+                        <div id="organizer-filter-container"
+                            style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
+                            <select id="organizer-filter" multiple size="6">
+                            </select>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+-----
+

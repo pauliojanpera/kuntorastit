@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",                // Target ECMAScript next-generation output
-    "outDir": "./public/dist",
+    "outDir": "./public/kuntorastit/dist",
     "module": "NodeNext",         
     "moduleResolution": "NodeNext",
     "strict": true,
