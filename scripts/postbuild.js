@@ -1,31 +1,64 @@
 #!/usr/bin/env node
 const { randomUUID } = require('crypto');
 const fs = require('fs');
+const path = require('path');
 
-// Ensure public/kuntorastit exists
-const outputDir = 'public/kuntorastit';
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true });
+// Base directories
+const publicDir = 'public';
+const kuntorastitDir = path.join(publicDir, 'kuntorastit');
+
+// Ensure public directory exists
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
 }
 
-// Generate a UUID
-const uuid = randomUUID();
+// Generate a UUID for this build
+const buildUuid = randomUUID();
+const tempBuildDir = path.join(publicDir, buildUuid);
+const finalBuildDir = path.join(kuntorastitDir, buildUuid);
 
-// Paths to input and output files
-const swInputPath = 'public/kuntorastit/dist/service-worker.mjs';
-const swOutputPath = 'public/kuntorastit/service-worker.js';
-const mainInputPath = 'public/kuntorastit/dist/kuntorastit.mjs';
+// Rename kuntorastit to the UUID directory
+if (fs.existsSync(kuntorastitDir)) {
+  fs.renameSync(kuntorastitDir, tempBuildDir);
+}
 
-// Read and process service-worker.mjs
-const swContent = fs.readFileSync(swInputPath, 'utf8').replace('CACHE_UUID', uuid);
+// Recreate kuntorastit directory
+fs.mkdirSync(kuntorastitDir, { recursive: true });
+
+// Move the UUID directory back into kuntorastit
+fs.renameSync(tempBuildDir, finalBuildDir);
+
+// Update service-worker.js and kuntorastit.mjs with UUIDs
+const swInputPath = path.join(finalBuildDir, 'dist', 'service-worker.mjs');
+const swOutputPath = path.join(finalBuildDir, 'service-worker.js');
+const mainInputPath = path.join(finalBuildDir, 'dist', 'kuntorastit.mjs');
+
+const swContent = fs.readFileSync(swInputPath, 'utf8')
+  .replace('CACHE_UUID', buildUuid)
+  .replace(/export {};/, '');
 fs.writeFileSync(swOutputPath, swContent);
 
-// Read and process kuntorastit.mjs
-const mainContent = fs.readFileSync(mainInputPath, 'utf8').replace('CACHE_UUID', uuid);
+const mainContent = fs.readFileSync(mainInputPath, 'utf8')
+  .replace('CACHE_UUID', buildUuid);
 fs.writeFileSync(mainInputPath, mainContent);
 
-// Clean up the export statement in service-worker.js
-const finalSwContent = fs.readFileSync(swOutputPath, 'utf8').replace(/export {};/, '');
-fs.writeFileSync(swOutputPath, finalSwContent);
+// Create redirect index.html at /kuntorastit
+const redirectHtml = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=/kuntorastit/${buildUuid}/">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="/kuntorastit/${buildUuid}/">latest build</a>...</p>
+</body>
+</html>
+`;
+fs.writeFileSync(path.join(kuntorastitDir, 'index.html'), redirectHtml);
 
-console.log(`Post-build complete with UUID: ${uuid}`);
+// Save the buildUuid to a file for fetch_events.sh
+fs.writeFileSync(path.join(kuntorastitDir, 'build-uuid.txt'), buildUuid);
+
+console.log(`Post-build complete with buildUuid: ${buildUuid}`);

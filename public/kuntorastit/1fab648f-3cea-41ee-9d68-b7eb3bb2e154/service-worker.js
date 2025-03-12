@@ -1,10 +1,10 @@
 // Cache name with UUID placeholder (replaced at build time)
-const CACHE_NAME = "kuntorastit-CACHE_UUID";
+const CACHE_NAME = "kuntorastit-1fab648f-3cea-41ee-9d68-b7eb3bb2e154";
 const URLS_TO_CACHE = [
-    "index.html",
-    "dist/kuntorastit.mjs",
-    "data/events.json",
-    "icon-192.png",
+    "./index.html",
+    "./dist/kuntorastit.mjs",
+    "./data/events.json",
+    "./icon-192.png",
 ];
 // Install event: Cache assets
 self.addEventListener("install", (event) => {
@@ -45,4 +45,4 @@ self.addEventListener("message", (event) => {
         self.skipWaiting();
     }
 });
-export {};
+

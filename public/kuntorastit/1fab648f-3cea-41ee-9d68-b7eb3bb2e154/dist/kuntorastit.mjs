@@ -255,13 +255,11 @@ function renderData(events, filters) {
         previousStartDateTime = event.startDateTime;
     });
 }
-// Cache name with UUID placeholder (replaced at build time)
-const CACHE_NAME = "kuntorastit-6fbebcab-d0ab-4043-8694-7340d13b213f";
-// Register service worker with force update
 async function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register('service-worker.js', {
+            // Cache name with UUID placeholder (replaced at build time)
+            const registration = await navigator.serviceWorker.register('/kuntorastit/1fab648f-3cea-41ee-9d68-b7eb3bb2e154/service-worker.js', {
                 scope: './'
             });
             registration.addEventListener('updatefound', () => {

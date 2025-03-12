@@ -103,7 +103,7 @@ function setupMultiSelectToggle() {
         organizerFilterContainer.style.display = "block";
         organizerFilterContainer.style.position = "fixed";
         organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-        organizerFilterContainer.style.right = `${window.innerWidth-rect.right + window.scrollX}px`;
+        organizerFilterContainer.style.right = `${window.innerWidth - rect.right + window.scrollX}px`;
     }
 
     function adjustDropdownBehavior() {
@@ -331,14 +331,11 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
     });
 }
 
-// Cache name with UUID placeholder (replaced at build time)
-const CACHE_NAME = "kuntorastit-CACHE_UUID";
-
-// Register service worker with force update
 async function registerServiceWorker(): Promise<void> {
     if ('serviceWorker' in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register('service-worker.js', {
+            // Cache name with UUID placeholder (replaced at build time)
+            const registration = await navigator.serviceWorker.register('/kuntorastit/CACHE_UUID/service-worker.js', {
                 scope: './'
             });
             registration.addEventListener('updatefound', () => {

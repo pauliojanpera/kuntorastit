@@ -5,10 +5,10 @@ declare const self: ServiceWorkerGlobalScope;
 // Cache name with UUID placeholder (replaced at build time)
 const CACHE_NAME = "kuntorastit-CACHE_UUID";
 const URLS_TO_CACHE = [
-    "index.html",
-    "dist/kuntorastit.mjs",
-    "data/events.json",
-    "icon-192.png",
+    "./index.html",
+    "./dist/kuntorastit.mjs",
+    "./data/events.json",
+    "./icon-192.png",
 ];
 
 // Install event: Cache assets
