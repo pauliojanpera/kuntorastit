@@ -1,6 +1,6 @@
 const DATA_URL = `./data/events.json`;
 function saveFilterSettings(filters) {
-    localStorage.setItem("orienteeringEventFilters", JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? [...v] : v));
+    localStorage.setItem("orienteeringEventFilters", JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? !v.has('all') ? [...v] : undefined : v));
 }
 function loadFilterSettings() {
     const stored = localStorage.getItem("orienteeringEventFilters");
@@ -38,7 +38,7 @@ async function* filterSettings() {
     document.getElementById("organizer-filter").onchange = (e) => {
         const select = e.target;
         const selectedOrganizers = new Set(Array.from(select.selectedOptions).map(option => option.value));
-        filters.organizerFilter = selectedOrganizers.size > 0 ? selectedOrganizers : undefined;
+        filters.organizerFilter = selectedOrganizers.size > 0 && !selectedOrganizers.has('all') ? selectedOrganizers : undefined;
         resolve?.(filters);
     };
     yield filters;
@@ -58,8 +58,8 @@ async function loadData() {
             throw new Error("Failed to fetch data");
         const data = await response.json();
         populateFilters(data);
-        restoreFilterUI();
         setupMultiSelectToggle();
+        restoreFilterUI();
         for await (const filters of filterSettings()) {
             activeFilters = filters;
             renderData(data, filters);
@@ -73,7 +73,6 @@ async function loadData() {
 function positionFilterContainer() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder");
     const organizerFilterContainer = document.getElementById("organizer-filter-container");
-    console.log('positionFilterContainer()');
     const rect = organizerPlaceholder.getBoundingClientRect();
     organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
     organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
@@ -82,6 +81,7 @@ function setupMultiSelectToggle() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder");
     const organizerFilterContainer = document.getElementById("organizer-filter-container");
     const organizerFilter = document.getElementById("organizer-filter");
+    const organizerOptionAll = document.getElementById("organizer-option-all");
     // Robust device detection
     const isTouchDevice = () => {
         return ('ontouchstart' in window) ||
@@ -155,7 +155,15 @@ function setupMultiSelectToggle() {
         if (organizerOption.tagName !== 'OPTION')
             return;
         event.preventDefault();
-        organizerOption.selected = !activeFilters?.organizerFilter?.has(organizerOption.value);
+        if (organizerOption === organizerOptionAll) {
+            for (const selectedOption of Array.from(organizerFilter.selectedOptions))
+                selectedOption.selected = false;
+            organizerOptionAll.selected = true;
+        }
+        else {
+            organizerOption.selected = !activeFilters?.organizerFilter?.has(organizerOption.value);
+            organizerOptionAll.selected = false;
+        }
         organizerFilter.dispatchEvent(new Event("change", { bubbles: true }));
         organizerFilter.focus();
     }
@@ -188,12 +196,12 @@ function populateFilters(events) {
         option.textContent = textContent;
         dateFilter.appendChild(option);
     });
-    const organizerFilter = document.getElementById("organizer-filter");
+    const organizerFilterSelectElement = document.getElementById("organizer-filter");
     organizers.forEach(org => {
         const option = document.createElement("option");
         option.value = org;
         option.textContent = org;
-        organizerFilter.appendChild(option);
+        organizerFilterSelectElement.appendChild(option);
     });
 }
 function formatDate(date) {

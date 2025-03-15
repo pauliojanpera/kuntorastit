@@ -21,7 +21,7 @@ type OrienteeringEventFilterSettings = {
 
 function saveFilterSettings(filters: OrienteeringEventFilterSettings) {
     localStorage.setItem("orienteeringEventFilters",
-        JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? [...v] : v));
+        JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? !v.has('all') ? [...v] : undefined : v));
 }
 
 function loadFilterSettings(): OrienteeringEventFilterSettings {
@@ -64,7 +64,7 @@ async function* filterSettings() {
     document.getElementById("organizer-filter")!.onchange = (e) => {
         const select = e.target as HTMLSelectElement;
         const selectedOrganizers = new Set(Array.from(select.selectedOptions).map(option => option.value));
-        filters.organizerFilter = selectedOrganizers.size > 0 ? selectedOrganizers : undefined;
+        filters.organizerFilter = selectedOrganizers.size > 0 && !selectedOrganizers.has('all') ? selectedOrganizers : undefined;
         resolve?.(filters);
     };
     yield filters;
@@ -86,8 +86,8 @@ async function loadData() {
         const data = await response.json();
 
         populateFilters(data);
-        restoreFilterUI();
         setupMultiSelectToggle();
+        restoreFilterUI();
 
         for await (const filters of filterSettings()) {
             activeFilters = filters;
@@ -103,7 +103,6 @@ function positionFilterContainer() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
     const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
 
-    console.log('positionFilterContainer()');
     const rect = organizerPlaceholder.getBoundingClientRect();
     organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
     organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
@@ -113,6 +112,7 @@ function setupMultiSelectToggle() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
     const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
     const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
+    const organizerOptionAll = document.getElementById("organizer-option-all") as HTMLOptionElement;
 
     // Robust device detection
     const isTouchDevice = () => {
@@ -197,7 +197,16 @@ function setupMultiSelectToggle() {
         if (organizerOption.tagName !== 'OPTION') return;
 
         event.preventDefault();
-        organizerOption.selected = !activeFilters?.organizerFilter?.has(organizerOption.value);
+
+        if (organizerOption === organizerOptionAll) {
+            for (const selectedOption of Array.from(organizerFilter.selectedOptions))
+                selectedOption.selected = false;
+            organizerOptionAll.selected = true;
+        } else {
+            organizerOption.selected = !activeFilters?.organizerFilter?.has(organizerOption.value);
+            organizerOptionAll.selected = false;
+        }
+
         organizerFilter.dispatchEvent(new Event("change", { bubbles: true }));
         organizerFilter.focus();
     }
@@ -236,12 +245,12 @@ function populateFilters(events: { event: OrienteeringEvent }[]) {
         dateFilter.appendChild(option);
     });
 
-    const organizerFilter = document.getElementById("organizer-filter")!;
+    const organizerFilterSelectElement = document.getElementById("organizer-filter") as HTMLSelectElement;
     organizers.forEach(org => {
         const option = document.createElement("option");
         option.value = org;
         option.textContent = org;
-        organizerFilter.appendChild(option);
+        organizerFilterSelectElement.appendChild(option);
     });
 }
 

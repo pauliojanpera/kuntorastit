@@ -63,7 +63,9 @@
                 overflow-y: auto;
             }
         }
+
         @media (max-width: 30rem) {
+
             body::before,
             body::after {
                 display: none;
@@ -225,7 +227,8 @@
             height: var(--version-identifier-height);
             color: rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
-            flex-shrink: 0; /* Prevent it from shrinking */
+            flex-shrink: 0;
+            /* Prevent it from shrinking */
         }
     </style>
 </head>
@@ -250,6 +253,7 @@
                         <div id="organizer-filter-container"
                             style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
                             <select id="organizer-filter" multiple size="6">
+                                <option id="organizer-option-all" value="all">kaikki</option>
                             </select>
                         </div>
                     </th>

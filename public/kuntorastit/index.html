@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuntorastit</title>
-    <base href="./3f26df06-b0b8-4899-9c7a-95dffad3560e/">
+    <base href="./c0375bd9-7ab9-4d3d-b24f-7e6dc37d3050/">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon-192.png">
     <script type="module" src="dist/kuntorastit.mjs"></script>
@@ -63,7 +63,9 @@
                 overflow-y: auto;
             }
         }
+
         @media (max-width: 30rem) {
+
             body::before,
             body::after {
                 display: none;
@@ -225,7 +227,8 @@
             height: var(--version-identifier-height);
             color: rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
-            flex-shrink: 0; /* Prevent it from shrinking */
+            flex-shrink: 0;
+            /* Prevent it from shrinking */
         }
     </style>
 </head>
@@ -250,6 +253,7 @@
                         <div id="organizer-filter-container"
                             style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
                             <select id="organizer-filter" multiple size="6">
+                                <option id="organizer-option-all" value="all">kaikki</option>
                             </select>
                         </div>
                     </th>
@@ -258,7 +262,7 @@
             <tbody></tbody>
         </table>
     </div>
-    <div class="version-identifier">Versio: 3f26df06-b0b8-4899-9c7a-95dffad3560e</div>
+    <div class="version-identifier">Versio: c0375bd9-7ab9-4d3d-b24f-7e6dc37d3050</div>
 </body>
 
 </html>
