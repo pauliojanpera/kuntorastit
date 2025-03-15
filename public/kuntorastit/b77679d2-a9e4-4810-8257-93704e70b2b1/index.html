@@ -30,6 +30,8 @@
             margin: 0 auto;
             box-sizing: border-box;
             position: relative;
+            overflow-y: auto; /* Scrollbar on body */
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         /* Left tint overlay */
@@ -57,6 +59,7 @@
         }
 
         @media (max-width: 30rem) {
+
             body::before,
             body::after {
                 display: none;
@@ -68,6 +71,30 @@
             width: 100%;
             /* Pushes the version identifier to the bottom of the screen: */
             min-height: calc(100dvh - var(--version-identifier-height));
+        }
+
+        .event-table {
+            width: 100%;
+            margin: auto;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        .event-table thead {
+            position: sticky;
+            top: 0;
+            background: var(--tertiary-color);
+            z-index: 10;
+        }
+
+        th {
+            padding: .1rem;
+            position: relative;
+            background: inherit;
+        }
+
+        .event-table thead th {
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         }
 
         select {
@@ -192,8 +219,9 @@
             padding: .1rem;
             font-size: .7rem;
             height: var(--version-identifier-height);
-            color: rgba(0,0,0, 0.1);
+            color: rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
+            flex-shrink: 0; /* Prevent it from shrinking */
         }
     </style>
 </head>
