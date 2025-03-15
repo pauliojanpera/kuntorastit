@@ -113,35 +113,35 @@ function positionFilterContainer() {
     organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
 }
 
+// Robust device detection (unchanged)
+const isTouchDevice = () => {
+    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+};
+
+const isMobileUserAgent = () => {
+    const ua = navigator.userAgent.toLowerCase();
+    return /mobile|android|iphone|ipad|tablet/i.test(ua);
+};
+
+const prefersCoarsePointer = () => {
+    return window.matchMedia("(pointer: coarse)").matches;
+};
+
+const useDesktopBehavior = () => {
+    const isWideScreen = window.innerWidth >= 768;
+    const isFinePointer = window.matchMedia("(pointer: fine)").matches;
+    const isNotTouch = !isTouchDevice();
+    const isNotMobile = !isMobileUserAgent();
+    return (isWideScreen && isFinePointer) ||
+        (isWideScreen && isNotTouch) ||
+        (isFinePointer && isNotMobile && !prefersCoarsePointer());
+};
+
 function setupMultiSelectToggle() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
     const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
     const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
     const organizerOptionAll = document.getElementById("organizer-option-all") as HTMLOptionElement;
-
-    // Robust device detection (unchanged)
-    const isTouchDevice = () => {
-        return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-    };
-
-    const isMobileUserAgent = () => {
-        const ua = navigator.userAgent.toLowerCase();
-        return /mobile|android|iphone|ipad|tablet/i.test(ua);
-    };
-
-    const prefersCoarsePointer = () => {
-        return window.matchMedia("(pointer: coarse)").matches;
-    };
-
-    const useDesktopBehavior = () => {
-        const isWideScreen = window.innerWidth >= 768;
-        const isFinePointer = window.matchMedia("(pointer: fine)").matches;
-        const isNotTouch = !isTouchDevice();
-        const isNotMobile = !isMobileUserAgent();
-        return (isWideScreen && isFinePointer) ||
-            (isWideScreen && isNotTouch) ||
-            (isFinePointer && isNotMobile && !prefersCoarsePointer());
-    };
 
     // Function to update placeholder text based on selected organizers
     function updatePlaceholder() {
@@ -259,13 +259,29 @@ function setupMultiSelectToggle() {
 }
 
 function populateFilters(events: { event: OrienteeringEvent }[]) {
-    const organizers = new Set(events.map(({ event }) => event.organizerName));
-
     const organizerFilterSelectElement = document.getElementById("organizer-filter") as HTMLSelectElement;
+
+    // Create a map to count events per organizer
+    const organizerEventCount = new Map<string, number>();
+    events.forEach(({ event }) => {
+        organizerEventCount.set(
+            event.organizerName,
+            (organizerEventCount.get(event.organizerName) || 0) + 1
+        );
+    });
+
+    // Get unique organizers and sort them alphabetically
+    const organizers = Array.from(organizerEventCount.keys()).sort((a, b) =>
+        a.localeCompare(b, 'fi-FI') // Use Finnish locale for sorting
+    );
+
+    const desktop = useDesktopBehavior();
+    // Populate the select element with sorted organizers and event counts
     organizers.forEach(org => {
         const option = document.createElement("option");
         option.value = org;
-        option.textContent = org;
+        const eventCount = organizerEventCount.get(org) || 0;
+        option.textContent = `${org} (${eventCount ? (eventCount + (desktop ? ' tapahtumaa' : '')) : 'ei tapahtumia'})`;
         organizerFilterSelectElement.appendChild(option);
     });
 }
