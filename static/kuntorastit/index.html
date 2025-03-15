@@ -230,19 +230,25 @@
         }
 
         #organizer-filter-container {
-            display: none;
             position: absolute;
             background: white;
             padding: 0px;
             z-index: 1000;
-            width: 30rem;
-            opacity: 1;
-            transition: opacity 0.3s ease-in-out;
+            width: 30rem; /* Fixed width to match global layout */
+            opacity: 1; /* Initial opacity for transition */
+            transition: opacity 0.3s ease-in-out; /* Fade transition */
+            display: block; /* Default display state */
         }
 
         #organizer-filter-container.hidden {
-            opacity: 0;
-            pointer-events: none;
+            opacity: 0; /* Fade out state */
+            pointer-events: none; /* Prevent interaction when hidden */
+        }
+
+        /* Ensure the select inside is visible */
+        #organizer-filter {
+            width: 100%;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -272,8 +278,7 @@
                         <select id="organizer-placeholder">
                             <option value="unset" selected="true"></option>
                         </select>
-                        <div id="organizer-filter-container"
-                            style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
+                        <div id="organizer-filter-container">
                             <select id="organizer-filter" multiple size="6">
                                 <option id="organizer-option-all" value="kaikki" selected="true">kaikki</option>
                             </select>
