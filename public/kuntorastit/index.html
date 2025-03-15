@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuntorastit</title>
-    <base href="./47fd6410-022e-4b7b-af17-53e54edc68af/">
+    <base href="./459c2500-8c9c-4a24-b9f9-61ef11055dbe/">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon-192.png">
     <script type="module" src="dist/kuntorastit.mjs"></script>
@@ -230,25 +230,35 @@
         }
 
         #organizer-filter-container {
+            display: block;
             position: absolute;
             background: white;
             padding: 0px;
             z-index: 1000;
-            width: 30rem; /* Fixed width to match global layout */
-            opacity: 1; /* Initial opacity for transition */
-            transition: opacity 0.3s ease-in-out; /* Fade transition */
-            display: block; /* Default display state */
+            width: 30rem;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
         }
 
         #organizer-filter-container.hidden {
-            opacity: 0; /* Fade out state */
-            pointer-events: none; /* Prevent interaction when hidden */
+            opacity: 0;
+            pointer-events: none;
         }
 
-        /* Ensure the select inside is visible */
         #organizer-filter {
             width: 100%;
             box-sizing: border-box;
+        }
+
+        #organizer-filter.mobile {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            box-sizing: border-box;
+            z-index: 10;
         }
     </style>
 </head>
@@ -289,7 +299,7 @@
             <tbody></tbody>
         </table>
     </div>
-    <div class="version-identifier">Versio: 47fd6410-022e-4b7b-af17-53e54edc68af</div>
+    <div class="version-identifier">Versio: 459c2500-8c9c-4a24-b9f9-61ef11055dbe</div>
 </body>
 
 </html>
