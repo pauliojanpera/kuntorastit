@@ -92,29 +92,34 @@ async function loadData() {
     }
 }
 
+function positionFilterContainer() {
+    const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
+    const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
+
+    if (window.innerWidth >= 768 && organizerFilterContainer.style.display === "block") {
+        console.log('positionFilterContainer()');
+        const rect = organizerPlaceholder.getBoundingClientRect();
+        organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
+        organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
+    }
+}
+
 function setupMultiSelectToggle() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
     const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
     const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
 
-    function showFilterPopup() {
-        const rect = organizerPlaceholder.getBoundingClientRect();
-        console.log(rect);
-        organizerFilterContainer.style.display = "block";
-        organizerFilterContainer.style.position = "fixed";
-        organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-        organizerFilterContainer.style.right = `${window.innerWidth - rect.right + window.scrollX}px`;
-    }
-
     function adjustDropdownBehavior() {
         if (window.innerWidth >= 768) {
             organizerPlaceholder.style.display = "inline-block";
-            organizerFilterContainer.style.display = "none";
+            organizerFilterContainer.style.display = "none"; // Hidden until clicked
             organizerFilter.setAttribute('size', '20');
 
             organizerPlaceholder.addEventListener("mousedown", (event) => {
                 event.preventDefault();
-                showFilterPopup();
+                organizerFilterContainer.style.display = "block";
+                organizerFilterContainer.style.position = "fixed";
+                positionFilterContainer(); // Position it when shown
             });
         } else {
             organizerPlaceholder.style.display = "none";
@@ -125,7 +130,10 @@ function setupMultiSelectToggle() {
     }
 
     adjustDropdownBehavior();
-    window.addEventListener("resize", adjustDropdownBehavior);
+    window.addEventListener("resize", () => {
+        adjustDropdownBehavior();
+        positionFilterContainer(); // Update position on resize
+    });
 
     document.addEventListener("click", (event) => {
         if (!organizerFilterContainer.contains(event.target as Node) && event.target !== organizerPlaceholder) {
@@ -133,9 +141,6 @@ function setupMultiSelectToggle() {
         }
     });
 }
-
-
-
 function populateFilters(events: { event: OrienteeringEvent }[]) {
     const organizers = new Set(events.map(({ event }) => event.organizerName));
 
@@ -319,16 +324,25 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
         // Toggle expansion on row click
         row.addEventListener("click", () => {
             if (expandedRow.style.display === "none") {
-                // Close any other open row first
                 document.querySelectorAll(".expanded-row").forEach(el => (el as HTMLElement).style.display = "none");
                 expandedRow.style.display = "table-row";
+                positionFilterContainer(); // Reposition after expanding a row
             } else {
                 expandedRow.style.display = "none";
+                positionFilterContainer(); // Reposition after collapsing
             }
         });
 
         previousStartDateTime = event.startDateTime;
     });
+}
+
+function observeTableChanges() {
+    const tbody = document.querySelector(".event-table tbody")!;
+    const observer = new MutationObserver(() => {
+        positionFilterContainer();
+    });
+    observer.observe(tbody, { childList: true, subtree: true });
 }
 
 async function registerServiceWorker(): Promise<void> {
@@ -361,6 +375,7 @@ async function registerServiceWorker(): Promise<void> {
 async function initialize(): Promise<void> {
     try {
         await registerServiceWorker();
+        observeTableChanges();
         await loadData();
     } catch (error) {
         console.error("Error initializing:", error);

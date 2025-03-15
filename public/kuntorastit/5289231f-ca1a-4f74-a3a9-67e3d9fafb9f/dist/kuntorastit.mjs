@@ -65,26 +65,30 @@ async function loadData() {
         contentDiv.innerText = "Failed to load data.";
     }
 }
+function positionFilterContainer() {
+    const organizerPlaceholder = document.getElementById("organizer-placeholder");
+    const organizerFilterContainer = document.getElementById("organizer-filter-container");
+    if (window.innerWidth >= 768 && organizerFilterContainer.style.display === "block") {
+        console.log('positionFilterContainer()');
+        const rect = organizerPlaceholder.getBoundingClientRect();
+        organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
+        organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
+    }
+}
 function setupMultiSelectToggle() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder");
     const organizerFilterContainer = document.getElementById("organizer-filter-container");
     const organizerFilter = document.getElementById("organizer-filter");
-    function showFilterPopup() {
-        const rect = organizerPlaceholder.getBoundingClientRect();
-        console.log(rect);
-        organizerFilterContainer.style.display = "block";
-        organizerFilterContainer.style.position = "fixed";
-        organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-        organizerFilterContainer.style.right = `${window.innerWidth - rect.right + window.scrollX}px`;
-    }
     function adjustDropdownBehavior() {
         if (window.innerWidth >= 768) {
             organizerPlaceholder.style.display = "inline-block";
-            organizerFilterContainer.style.display = "none";
+            organizerFilterContainer.style.display = "none"; // Hidden until clicked
             organizerFilter.setAttribute('size', '20');
             organizerPlaceholder.addEventListener("mousedown", (event) => {
                 event.preventDefault();
-                showFilterPopup();
+                organizerFilterContainer.style.display = "block";
+                organizerFilterContainer.style.position = "fixed";
+                positionFilterContainer(); // Position it when shown
             });
         }
         else {
@@ -95,7 +99,10 @@ function setupMultiSelectToggle() {
         }
     }
     adjustDropdownBehavior();
-    window.addEventListener("resize", adjustDropdownBehavior);
+    window.addEventListener("resize", () => {
+        adjustDropdownBehavior();
+        positionFilterContainer(); // Update position on resize
+    });
     document.addEventListener("click", (event) => {
         if (!organizerFilterContainer.contains(event.target) && event.target !== organizerPlaceholder) {
             adjustDropdownBehavior();
@@ -244,16 +251,24 @@ function renderData(events, filters) {
         // Toggle expansion on row click
         row.addEventListener("click", () => {
             if (expandedRow.style.display === "none") {
-                // Close any other open row first
                 document.querySelectorAll(".expanded-row").forEach(el => el.style.display = "none");
                 expandedRow.style.display = "table-row";
+                positionFilterContainer(); // Reposition after expanding a row
             }
             else {
                 expandedRow.style.display = "none";
+                positionFilterContainer(); // Reposition after collapsing
             }
         });
         previousStartDateTime = event.startDateTime;
     });
+}
+function observeTableChanges() {
+    const tbody = document.querySelector(".event-table tbody");
+    const observer = new MutationObserver(() => {
+        positionFilterContainer();
+    });
+    observer.observe(tbody, { childList: true, subtree: true });
 }
 async function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
@@ -286,6 +301,7 @@ async function registerServiceWorker() {
 async function initialize() {
     try {
         await registerServiceWorker();
+        observeTableChanges();
         await loadData();
     }
     catch (error) {

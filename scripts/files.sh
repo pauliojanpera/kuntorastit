@@ -43,12 +43,12 @@ process_path() {
     if [ -f "$path" ]; then
         # If it's a file, process it directly
         echo -e "===== $path =====\n"
-        cat "$path"
+        cat -n "$path"
         echo -e "\n-----\n"
     elif [ -d "$path" ]; then
         # If it's a directory, use find
         find "$path" -type f \( "${FIND_ARGS[@]}" \) -print0 | \
-            xargs -0 -I {} /bin/bash -c 'echo -e "===== {} =====\n"; cat "{}"; echo -e "\n-----\n"'
+            xargs -0 -I {} /bin/bash -c 'echo -e "===== {} =====\n"; cat -n "{}"; echo -e "\n-----\n"'
     else
         echo "Warning: Skipping $path - not a file or directory" >&2
     fi
