@@ -21,7 +21,7 @@ type OrienteeringEventFilterSettings = {
 
 function saveFilterSettings(filters: OrienteeringEventFilterSettings) {
     localStorage.setItem("orienteeringEventFilters",
-        JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? !v.has('all') ? [...v] : undefined : v));
+        JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? !v.has('kaikki') ? [...v] : undefined : v));
 }
 
 function loadFilterSettings(): OrienteeringEventFilterSettings {
@@ -64,7 +64,7 @@ async function* filterSettings() {
     document.getElementById("organizer-filter")!.onchange = (e) => {
         const select = e.target as HTMLSelectElement;
         const selectedOrganizers = new Set(Array.from(select.selectedOptions).map(option => option.value));
-        filters.organizerFilter = selectedOrganizers.size > 0 && !selectedOrganizers.has('all') ? selectedOrganizers : undefined;
+        filters.organizerFilter = selectedOrganizers.size > 0 && !selectedOrganizers.has('kaikki') ? selectedOrganizers : undefined;
         resolve?.(filters);
     };
     yield filters;
@@ -142,7 +142,9 @@ function setupMultiSelectToggle() {
     // Function to update placeholder text based on selected organizers
     function updatePlaceholder() {
         const selectedCount = organizerFilter.selectedOptions.length;
-        organizerPlaceholder.options[0].textContent = selectedCount === 0 ? "seura" : String(selectedCount);
+        organizerPlaceholder.options[0].textContent = selectedCount === 1
+            ? organizerFilter.selectedOptions.item(0)?.value ?? ''
+            : `${String(selectedCount)} järjestäjää`;
     }
 
     function adjustDropdownBehavior() {

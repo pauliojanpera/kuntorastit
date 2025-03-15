@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuntorastit</title>
-    <base href="./c0375bd9-7ab9-4d3d-b24f-7e6dc37d3050/">
+    <base href="./8ef716d5-c0db-4abf-aba4-e460f6e76256/">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon-192.png">
     <script type="module" src="dist/kuntorastit.mjs"></script>
@@ -91,16 +91,14 @@
             top: 0;
             background: var(--tertiary-color);
             z-index: 10;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         }
 
         th {
             padding: .1rem;
             position: relative;
             background: inherit;
-        }
-
-        .event-table thead th {
-            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
 
         select {
@@ -237,23 +235,28 @@
     <div id="content">
         <table class="event-table">
             <thead>
-                <tr>
+                <tr id="legend">
+                    <th class="date">aika</th>
+                    <th class="event">tapahtuma</th>
+                    <th class="organizer">järjestäjä</th>
+                </tr>
+                <tr id="filter">
                     <th class="date">
                         <select id="date-filter">
-                            <option value="">aika</option>
+                            <option value="">valitse</option>
                         </select>
                     </th>
                     <th class="event">
-                        <input type="text" id="name-filter" placeholder="tapahtuma">
+                        <input type="text" id="name-filter" placeholder="hae nimellä...">
                     </th>
                     <th class="organizer">
                         <select id="organizer-placeholder">
-                            <option value="">seura</option>
+                            <option value="">valitse</option>
                         </select>
                         <div id="organizer-filter-container"
                             style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
                             <select id="organizer-filter" multiple size="6">
-                                <option id="organizer-option-all" value="all">kaikki</option>
+                                <option id="organizer-option-all" value="kaikki" selected="true">kaikki</option>
                             </select>
                         </div>
                     </th>
@@ -262,7 +265,7 @@
             <tbody></tbody>
         </table>
     </div>
-    <div class="version-identifier">Versio: c0375bd9-7ab9-4d3d-b24f-7e6dc37d3050</div>
+    <div class="version-identifier">Versio: 8ef716d5-c0db-4abf-aba4-e460f6e76256</div>
 </body>
 
 </html>
