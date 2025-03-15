@@ -16,16 +16,17 @@ type OrienteeringEvent = {
 type OrienteeringEventFilterSettings = {
     dateFilter?: 'past' | 'future';
     nameFilter?: string;
-    organizerFilter?: string[];
+    organizerFilter?: Set<string>;
 };
 
 function saveFilterSettings(filters: OrienteeringEventFilterSettings) {
-    localStorage.setItem("orienteeringEventFilters", JSON.stringify(filters));
+    localStorage.setItem("orienteeringEventFilters",
+        JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? [...v] : v));
 }
 
 function loadFilterSettings(): OrienteeringEventFilterSettings {
-    const storedFilters = localStorage.getItem("orienteeringEventFilters");
-    return storedFilters ? JSON.parse(storedFilters) : {};
+    const stored = localStorage.getItem("orienteeringEventFilters");
+    return stored ? JSON.parse(stored, (k, v) => k === 'organizerFilter' && Array.isArray(v) ? new Set(v) : v) : {};
 }
 
 function restoreFilterUI() {
@@ -40,8 +41,11 @@ function restoreFilterUI() {
     if (filters.organizerFilter) {
         const select = document.getElementById("organizer-filter") as HTMLSelectElement;
         Array.from(select.options).forEach(option => {
-            option.selected = filters.organizerFilter!.includes(option.value);
+            option.selected = filters.organizerFilter!.has(option.value);
         });
+        // Trigger update of placeholder after restoring selections
+        const changeEvent = new Event("change", { bubbles: true });
+        select.dispatchEvent(changeEvent);
     }
 }
 
@@ -59,8 +63,8 @@ async function* filterSettings() {
     };
     document.getElementById("organizer-filter")!.onchange = (e) => {
         const select = e.target as HTMLSelectElement;
-        const selectedOrganizers = Array.from(select.selectedOptions).map(option => option.value);
-        filters.organizerFilter = selectedOrganizers.length > 0 ? selectedOrganizers : undefined;
+        const selectedOrganizers = new Set(Array.from(select.selectedOptions).map(option => option.value));
+        filters.organizerFilter = selectedOrganizers.size > 0 ? selectedOrganizers : undefined;
         resolve?.(filters);
     };
     yield filters;
@@ -71,6 +75,8 @@ async function* filterSettings() {
                 return filters;
             });
 }
+
+let activeFilters: OrienteeringEventFilterSettings;
 
 async function loadData() {
     const contentDiv = document.getElementById("content")!;
@@ -84,6 +90,7 @@ async function loadData() {
         setupMultiSelectToggle();
 
         for await (const filters of filterSettings()) {
+            activeFilters = filters;
             renderData(data, filters);
         }
     } catch (error) {
@@ -109,8 +116,8 @@ function setupMultiSelectToggle() {
 
     // Robust device detection
     const isTouchDevice = () => {
-        return ('ontouchstart' in window) || 
-               (navigator.maxTouchPoints > 0);
+        return ('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0);
     };
 
     const isMobileUserAgent = () => {
@@ -122,31 +129,40 @@ function setupMultiSelectToggle() {
         return window.matchMedia("(pointer: coarse)").matches;
     };
 
-    // Determine if we should use desktop-style dropdown or native multi-select
     const useDesktopBehavior = () => {
-        // Desktop: Wide screen, fine pointer (mouse), no touch, not mobile UA
         const isWideScreen = window.innerWidth >= 768;
         const isFinePointer = window.matchMedia("(pointer: fine)").matches;
         const isNotTouch = !isTouchDevice();
         const isNotMobile = !isMobileUserAgent();
-
-        // Require at least two strong desktop indicators
-        return (isWideScreen && isFinePointer) || 
-               (isWideScreen && isNotTouch) || 
-               (isFinePointer && isNotMobile && !prefersCoarsePointer());
+        return (isWideScreen && isFinePointer) ||
+            (isWideScreen && isNotTouch) ||
+            (isFinePointer && isNotMobile && !prefersCoarsePointer());
     };
+
+    // Function to update placeholder text based on selected organizers
+    function updatePlaceholder() {
+        const selectedCount = organizerFilter.selectedOptions.length;
+        organizerPlaceholder.options[0].textContent = selectedCount === 0 ? "seura" : String(selectedCount);
+    }
 
     function adjustDropdownBehavior() {
         if (useDesktopBehavior()) {
-            // Desktop behavior: Placeholder + dropdown
+            // Desktop behavior: Placeholder + dropdown with custom toggle
             organizerPlaceholder.style.display = "inline-block";
             organizerFilterContainer.style.display = "none"; // Hidden until clicked
-            organizerFilter.setAttribute('size', '20'); // Large dropdown
+            organizerFilter.setAttribute('size', '20');
 
-            organizerPlaceholder.removeEventListener("mousedown", showDropdown); // Clean up
+            organizerPlaceholder.removeEventListener("mousedown", showDropdown);
             organizerPlaceholder.addEventListener("mousedown", showDropdown);
 
-            // Ensure container closes when clicking outside
+            // Custom toggle behavior for desktop
+            organizerFilter.removeEventListener("mousedown", handleDesktopToggle);
+            organizerFilter.addEventListener("mousedown", handleDesktopToggle);
+
+            // Update placeholder when selection changes
+            organizerFilter.removeEventListener("change", updatePlaceholder);
+            organizerFilter.addEventListener("change", updatePlaceholder);
+
             document.removeEventListener("click", closeDropdownOutside);
             document.addEventListener("click", closeDropdownOutside);
         } else {
@@ -154,23 +170,36 @@ function setupMultiSelectToggle() {
             organizerPlaceholder.style.display = "none";
             organizerFilterContainer.style.display = "block";
             organizerFilterContainer.style.position = "static";
-            organizerFilter.setAttribute('size', '1'); // Native select behavior
-            document.removeEventListener("click", closeDropdownOutside); // Clean up
+            organizerFilter.setAttribute('size', '1');
+            organizerFilter.removeEventListener("mousedown", handleDesktopToggle);
+            organizerFilter.removeEventListener("change", updatePlaceholder);
+            document.removeEventListener("click", closeDropdownOutside);
         }
-        positionFilterContainer(); // Adjust position if needed
+        positionFilterContainer();
+        if (useDesktopBehavior()) updatePlaceholder(); // Initial update
     }
 
     function showDropdown(event: Event) {
         event.preventDefault();
         organizerFilterContainer.style.display = "block";
         organizerFilterContainer.style.position = "fixed";
-        positionFilterContainer(); // Position it when shown
+        positionFilterContainer();
     }
 
     function closeDropdownOutside(event: Event) {
         if (!organizerFilterContainer.contains(event.target as Node) && event.target !== organizerPlaceholder) {
             organizerFilterContainer.style.display = "none";
         }
+    }
+
+    function handleDesktopToggle(event: Event) {
+        const organizerOption = event.target as HTMLOptionElement;
+        if (organizerOption.tagName !== 'OPTION') return;
+
+        event.preventDefault();
+        organizerOption.selected = !activeFilters?.organizerFilter?.has(organizerOption.value);
+        organizerFilter.dispatchEvent(new Event("change", { bubbles: true }));
+        organizerFilter.focus();
     }
 
     // Initial setup
@@ -180,13 +209,12 @@ function setupMultiSelectToggle() {
     window.addEventListener("resize", adjustDropdownBehavior);
     window.addEventListener("orientationchange", adjustDropdownBehavior);
 
-    // Optional: Detect if the select element behaves atypically (e.g., opens a checkbox dialog)
+    // Optional: Detect native dialog behavior
     let initialHeight = organizerFilter.offsetHeight;
     organizerFilter.addEventListener("click", () => {
         requestAnimationFrame(() => {
             const newHeight = organizerFilter.offsetHeight;
             if (newHeight !== initialHeight && !useDesktopBehavior()) {
-                // If height changes unexpectedly on click, assume native dialog and adjust
                 organizerFilter.setAttribute('size', '1');
                 organizerFilterContainer.style.position = "static";
             }
@@ -291,7 +319,7 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
                 || (filters.dateFilter === 'future' && event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)
             ) &&
             (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&
-            (!filters.organizerFilter || filters.organizerFilter.includes(event.organizerName))
+            (!filters.organizerFilter || filters.organizerFilter.has(event.organizerName))
         );
     }).forEach(({ event }) => {
         const dayOfWeek = new Date(event.startDateTime)

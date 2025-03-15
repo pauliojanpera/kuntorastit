@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuntorastit</title>
-    <base href="./b77679d2-a9e4-4810-8257-93704e70b2b1/">
+    <base href="./3f26df06-b0b8-4899-9c7a-95dffad3560e/">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon-192.png">
     <script type="module" src="dist/kuntorastit.mjs"></script>
@@ -30,8 +30,8 @@
             margin: 0 auto;
             box-sizing: border-box;
             position: relative;
-            overflow-y: auto; /* Scrollbar on body */
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
 
         /* Left tint overlay */
@@ -58,8 +58,12 @@
             z-index: -1;
         }
 
+        @media (max-width: 32rem) {
+            body {
+                overflow-y: auto;
+            }
+        }
         @media (max-width: 30rem) {
-
             body::before,
             body::after {
                 display: none;
@@ -254,7 +258,7 @@
             <tbody></tbody>
         </table>
     </div>
-    <div class="version-identifier">Versio: b77679d2-a9e4-4810-8257-93704e70b2b1</div>
+    <div class="version-identifier">Versio: 3f26df06-b0b8-4899-9c7a-95dffad3560e</div>
 </body>
 
 </html>

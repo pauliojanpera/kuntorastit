@@ -30,8 +30,8 @@
             margin: 0 auto;
             box-sizing: border-box;
             position: relative;
-            overflow-y: auto; /* Scrollbar on body */
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
 
         /* Left tint overlay */
@@ -58,8 +58,12 @@
             z-index: -1;
         }
 
+        @media (max-width: 32rem) {
+            body {
+                overflow-y: auto;
+            }
+        }
         @media (max-width: 30rem) {
-
             body::before,
             body::after {
                 display: none;
