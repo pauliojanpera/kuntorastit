@@ -228,6 +228,22 @@
             flex-shrink: 0;
             /* Prevent it from shrinking */
         }
+
+        #organizer-filter-container {
+            display: none;
+            position: absolute;
+            background: white;
+            padding: 0px;
+            z-index: 1000;
+            width: 30rem;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #organizer-filter-container.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
     </style>
 </head>
 
