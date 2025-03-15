@@ -119,9 +119,10 @@ function setupMultiSelectToggle() {
     const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
     const organizerOptionAll = document.getElementById("organizer-option-all") as HTMLOptionElement;
 
-    // Robust device detection (unchanged)
+    // Robust device detection
     const isTouchDevice = () => {
-        return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+        return ('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0);
     };
 
     const isMobileUserAgent = () => {
@@ -143,7 +144,7 @@ function setupMultiSelectToggle() {
             (isFinePointer && isNotMobile && !prefersCoarsePointer());
     };
 
-    // Function to update placeholder text based on selected organizers (unchanged)
+    // Function to update placeholder text based on selected organizers
     function updatePlaceholder() {
         const selectedCount = organizerFilter.selectedOptions.length;
         organizerPlaceholder.options[0].textContent = selectedCount === 1
@@ -155,15 +156,17 @@ function setupMultiSelectToggle() {
         if (useDesktopBehavior()) {
             // Desktop behavior: Placeholder + dropdown with custom toggle
             organizerPlaceholder.style.display = "inline-block";
-            organizerFilterContainer.classList.add("hidden"); // Initially hidden
+            organizerFilterContainer.style.display = "none"; // Hidden until clicked
             organizerFilter.setAttribute('size', '20');
 
             organizerPlaceholder.removeEventListener("mousedown", showDropdown);
             organizerPlaceholder.addEventListener("mousedown", showDropdown);
 
+            // Custom toggle behavior for desktop
             organizerFilter.removeEventListener("mousedown", handleDesktopToggle);
             organizerFilter.addEventListener("mousedown", handleDesktopToggle);
 
+            // Update placeholder when selection changes
             organizerFilter.removeEventListener("change", updatePlaceholder);
             organizerFilter.addEventListener("change", updatePlaceholder);
 
@@ -172,7 +175,7 @@ function setupMultiSelectToggle() {
         } else {
             // Mobile behavior: Native multi-select
             organizerPlaceholder.style.display = "none";
-            organizerFilterContainer.classList.remove("hidden"); // Always visible
+            organizerFilterContainer.style.display = "block";
             organizerFilterContainer.style.position = "static";
             organizerFilter.setAttribute('size', '1');
             organizerFilter.removeEventListener("mousedown", handleDesktopToggle);
@@ -185,15 +188,14 @@ function setupMultiSelectToggle() {
 
     function showDropdown(event: Event) {
         event.preventDefault();
-        organizerFilterContainer.classList.remove("hidden"); // Fade in
-        organizerFilterContainer.style.display ="block";
+        organizerFilterContainer.style.display = "block";
         organizerFilterContainer.style.position = "fixed";
         positionFilterContainer();
     }
 
     function closeDropdownOutside(event: Event) {
         if (!organizerFilterContainer.contains(event.target as Node) && event.target !== organizerPlaceholder) {
-            organizerFilterContainer.classList.add("hidden"); // Fade out
+            organizerFilterContainer.style.display = "none";
         }
     }
 
@@ -215,8 +217,7 @@ function setupMultiSelectToggle() {
         organizerFilter.dispatchEvent(new Event("change", { bubbles: true }));
         organizerFilter.focus();
 
-        // Fade out after a delay to allow the transition to complete
-        setTimeout(() => organizerFilterContainer.classList.add("hidden"), 300);
+        setTimeout(() => organizerFilterContainer.style.display = "none", 300);
     }
 
     // Initial setup
@@ -226,7 +227,7 @@ function setupMultiSelectToggle() {
     window.addEventListener("resize", adjustDropdownBehavior);
     window.addEventListener("orientationchange", adjustDropdownBehavior);
 
-    // Optional: Detect native dialog behavior (unchanged)
+    // Optional: Detect native dialog behavior
     let initialHeight = organizerFilter.offsetHeight;
     organizerFilter.addEventListener("click", () => {
         requestAnimationFrame(() => {
