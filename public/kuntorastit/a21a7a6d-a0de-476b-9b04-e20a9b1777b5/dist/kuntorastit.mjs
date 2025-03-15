@@ -6,14 +6,17 @@ function loadFilterSettings() {
     const stored = localStorage.getItem("orienteeringEventFilters");
     return stored ? JSON.parse(stored, (k, v) => k === 'organizerFilter' && Array.isArray(v) ? new Set(v) : v) : {};
 }
-function restoreFilterUI() {
+async function* filterSettings() {
     const filters = loadFilterSettings();
-    if (filters.dateFilter) {
-        document.getElementById("date-filter").value = filters.dateFilter;
-    }
-    if (filters.nameFilter) {
+    // First we restore the filter UI
+    if (!filters.dateFilter)
+        filters.dateFilter = 'future';
+    const dateFilterElement = document.getElementById("date-filter");
+    const dateUnsetOption = dateFilterElement.selectedOptions[0];
+    dateFilterElement.value = filters.dateFilter;
+    dateUnsetOption.remove();
+    if (filters.nameFilter)
         document.getElementById("name-filter").value = filters.nameFilter;
-    }
     if (filters.organizerFilter) {
         const select = document.getElementById("organizer-filter");
         Array.from(select.options).forEach(option => {
@@ -23,11 +26,10 @@ function restoreFilterUI() {
         const changeEvent = new Event("change", { bubbles: true });
         select.dispatchEvent(changeEvent);
     }
-}
-async function* filterSettings() {
-    const filters = loadFilterSettings();
+    // Next we bind to settings changes
     let resolve;
     document.getElementById("date-filter").onchange = (e) => {
+        console.log('datefilter changed');
         filters.dateFilter = e.target?.value || undefined;
         resolve?.(filters);
     };
@@ -42,6 +44,7 @@ async function* filterSettings() {
         resolve?.(filters);
     };
     yield filters;
+    // Then we start yielding the settings changes
     for (;;)
         yield new Promise(_resolve => resolve = _resolve)
             .then((filters) => {
@@ -59,7 +62,6 @@ async function loadData() {
         const data = await response.json();
         populateFilters(data);
         setupMultiSelectToggle();
-        restoreFilterUI();
         for await (const filters of filterSettings()) {
             activeFilters = filters;
             renderData(data, filters);
@@ -188,16 +190,6 @@ function setupMultiSelectToggle() {
 }
 function populateFilters(events) {
     const organizers = new Set(events.map(({ event }) => event.organizerName));
-    const dateFilter = document.getElementById("date-filter");
-    [
-        ['past', 'menneet'],
-        ['future', 'tulevat'],
-    ].forEach(([value, textContent]) => {
-        const option = document.createElement("option");
-        option.value = value;
-        option.textContent = textContent;
-        dateFilter.appendChild(option);
-    });
     const organizerFilterSelectElement = document.getElementById("organizer-filter");
     organizers.forEach(org => {
         const option = document.createElement("option");
@@ -253,7 +245,7 @@ function renderData(events, filters) {
     events.filter(({ event }) => {
         return (event.startDateTime >= currentYearStart &&
             event.endDateTime <= nextYearStart &&
-            (!filters.dateFilter
+            (filters.dateFilter === 'all'
                 || (filters.dateFilter === 'past' && event.startDateTime < Date.now())
                 || (filters.dateFilter === 'future' && event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)) &&
             (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&

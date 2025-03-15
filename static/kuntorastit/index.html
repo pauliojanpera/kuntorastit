@@ -243,7 +243,10 @@
                 <tr id="filter">
                     <th class="date">
                         <select id="date-filter">
-                            <option value="">valitse</option>
+                            <option value="unset" selected="true"></option>
+                            <option value="all">kaikki</option>
+                            <option value="past">menneet</option>
+                            <option value="future">tulevat</option>
                         </select>
                     </th>
                     <th class="event">
@@ -251,7 +254,7 @@
                     </th>
                     <th class="organizer">
                         <select id="organizer-placeholder">
-                            <option value="">valitse</option>
+                            <option value="unset" selected="true"></option>
                         </select>
                         <div id="organizer-filter-container"
                             style="display: none; position: absolute; background: white; padding: 0px; z-index: 1000;">
