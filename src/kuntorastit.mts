@@ -96,12 +96,10 @@ function positionFilterContainer() {
     const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
     const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
 
-    if (window.innerWidth >= 768 && organizerFilterContainer.style.display === "block") {
-        console.log('positionFilterContainer()');
-        const rect = organizerPlaceholder.getBoundingClientRect();
-        organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-        organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
-    }
+    console.log('positionFilterContainer()');
+    const rect = organizerPlaceholder.getBoundingClientRect();
+    organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
+    organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
 }
 
 function setupMultiSelectToggle() {
@@ -109,38 +107,93 @@ function setupMultiSelectToggle() {
     const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
     const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
 
+    // Robust device detection
+    const isTouchDevice = () => {
+        return ('ontouchstart' in window) || 
+               (navigator.maxTouchPoints > 0);
+    };
+
+    const isMobileUserAgent = () => {
+        const ua = navigator.userAgent.toLowerCase();
+        return /mobile|android|iphone|ipad|tablet/i.test(ua);
+    };
+
+    const prefersCoarsePointer = () => {
+        return window.matchMedia("(pointer: coarse)").matches;
+    };
+
+    // Determine if we should use desktop-style dropdown or native multi-select
+    const useDesktopBehavior = () => {
+        // Desktop: Wide screen, fine pointer (mouse), no touch, not mobile UA
+        const isWideScreen = window.innerWidth >= 768;
+        const isFinePointer = window.matchMedia("(pointer: fine)").matches;
+        const isNotTouch = !isTouchDevice();
+        const isNotMobile = !isMobileUserAgent();
+
+        // Require at least two strong desktop indicators
+        return (isWideScreen && isFinePointer) || 
+               (isWideScreen && isNotTouch) || 
+               (isFinePointer && isNotMobile && !prefersCoarsePointer());
+    };
+
     function adjustDropdownBehavior() {
-        if (window.innerWidth >= 768) {
+        if (useDesktopBehavior()) {
+            // Desktop behavior: Placeholder + dropdown
             organizerPlaceholder.style.display = "inline-block";
             organizerFilterContainer.style.display = "none"; // Hidden until clicked
-            organizerFilter.setAttribute('size', '20');
+            organizerFilter.setAttribute('size', '20'); // Large dropdown
 
-            organizerPlaceholder.addEventListener("mousedown", (event) => {
-                event.preventDefault();
-                organizerFilterContainer.style.display = "block";
-                organizerFilterContainer.style.position = "fixed";
-                positionFilterContainer(); // Position it when shown
-            });
+            organizerPlaceholder.removeEventListener("mousedown", showDropdown); // Clean up
+            organizerPlaceholder.addEventListener("mousedown", showDropdown);
+
+            // Ensure container closes when clicking outside
+            document.removeEventListener("click", closeDropdownOutside);
+            document.addEventListener("click", closeDropdownOutside);
         } else {
+            // Mobile behavior: Native multi-select
             organizerPlaceholder.style.display = "none";
             organizerFilterContainer.style.display = "block";
             organizerFilterContainer.style.position = "static";
-            organizerFilter.setAttribute('size', '1');
+            organizerFilter.setAttribute('size', '1'); // Native select behavior
+            document.removeEventListener("click", closeDropdownOutside); // Clean up
+        }
+        positionFilterContainer(); // Adjust position if needed
+    }
+
+    function showDropdown(event: Event) {
+        event.preventDefault();
+        organizerFilterContainer.style.display = "block";
+        organizerFilterContainer.style.position = "fixed";
+        positionFilterContainer(); // Position it when shown
+    }
+
+    function closeDropdownOutside(event: Event) {
+        if (!organizerFilterContainer.contains(event.target as Node) && event.target !== organizerPlaceholder) {
+            organizerFilterContainer.style.display = "none";
         }
     }
 
+    // Initial setup
     adjustDropdownBehavior();
-    window.addEventListener("resize", () => {
-        adjustDropdownBehavior();
-        positionFilterContainer(); // Update position on resize
-    });
 
-    document.addEventListener("click", (event) => {
-        if (!organizerFilterContainer.contains(event.target as Node) && event.target !== organizerPlaceholder) {
-            adjustDropdownBehavior();
-        }
+    // Re-evaluate on resize or orientation change
+    window.addEventListener("resize", adjustDropdownBehavior);
+    window.addEventListener("orientationchange", adjustDropdownBehavior);
+
+    // Optional: Detect if the select element behaves atypically (e.g., opens a checkbox dialog)
+    let initialHeight = organizerFilter.offsetHeight;
+    organizerFilter.addEventListener("click", () => {
+        requestAnimationFrame(() => {
+            const newHeight = organizerFilter.offsetHeight;
+            if (newHeight !== initialHeight && !useDesktopBehavior()) {
+                // If height changes unexpectedly on click, assume native dialog and adjust
+                organizerFilter.setAttribute('size', '1');
+                organizerFilterContainer.style.position = "static";
+            }
+        });
     });
 }
+
 function populateFilters(events: { event: OrienteeringEvent }[]) {
     const organizers = new Set(events.map(({ event }) => event.organizerName));
 
