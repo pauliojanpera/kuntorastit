@@ -245,6 +245,9 @@ function wgs84ToTm35fin(lat, lon) {
 }
 function renderData(events, filters) {
     const tbody = document.querySelector(".event-table tbody");
+    const modal = document.getElementById("event-modal");
+    const modalDetails = document.getElementById("modal-details");
+    const closeModal = document.querySelector(".close-modal");
     // Clear existing rows
     while (tbody.firstChild) {
         tbody.removeChild(tbody.firstChild);
@@ -256,9 +259,9 @@ function renderData(events, filters) {
     events.filter(({ event }) => {
         return (event.startDateTime >= currentYearStart &&
             event.endDateTime <= nextYearStart &&
-            (filters.dateFilter === 'all'
-                || (filters.dateFilter === 'past' && event.startDateTime < Date.now())
-                || (filters.dateFilter === 'future' && event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)) &&
+            (filters.dateFilter === 'all' ||
+                (filters.dateFilter === 'past' && event.startDateTime < Date.now()) ||
+                (filters.dateFilter === 'future' && event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)) &&
             (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&
             (!filters.organizerFilter || filters.organizerFilter.has(event.organizerName)));
     }).forEach(({ event }) => {
@@ -267,7 +270,7 @@ function renderData(events, filters) {
             .toLowerCase();
         const row = document.createElement("tr");
         row.classList.add("event-row");
-        row.classList.add(dayOfWeek); // Assign CSS class based on the day of the week
+        row.classList.add(dayOfWeek);
         const dateCell = document.createElement("td");
         dateCell.classList.add("date");
         if (previousStartDateTime !== event.startDateTime) {
@@ -283,65 +286,60 @@ function renderData(events, filters) {
         row.appendChild(eventCell);
         row.appendChild(organizerCell);
         tbody.appendChild(row);
-        // Create an expandable row but keep it hidden initially
-        const expandedRow = document.createElement("tr");
-        expandedRow.classList.add("expanded-row");
-        expandedRow.style.display = "none"; // Initially hidden
-        const expandedCell = document.createElement("td");
-        expandedCell.colSpan = 3; // Spanning all columns
-        // Additional information content
-        const expandedContent = document.createElement("div");
-        expandedContent.classList.add("expanded-content");
-        if (event.locationDescription || event.locationCoordinates) {
-            const locationInfo = document.createElement("div");
-            const locationTitle = document.createElement("div");
-            locationTitle.textContent = `Opastuksen alku, lähtöpaikan osoite tai muu sijainti: `;
-            const locationDescription = document.createElement("div");
-            locationDescription.classList.add('location-description');
-            locationDescription.textContent = event.locationDescription;
-            locationInfo.appendChild(locationTitle);
-            locationInfo.appendChild(locationDescription);
-            if (event.locationCoordinates) {
-                const { northing, easting } = wgs84ToTm35fin(event.locationCoordinates.lat, event.locationCoordinates.lon);
-                const mapLink = document.createElement("a");
-                mapLink.href = `https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=fi&share=customMarker&n=${northing.toFixed(2)}&e=${easting.toFixed(2)}&title=${encodeURIComponent(event.name)}&zoom=6&layers=W3siaWQiOjIsIm9wYWNpdHkiOjEwMH1d-z`;
-                mapLink.target = "_blank";
-                mapLink.textContent = "🌍\u00A0Näytä\u00A0kartalla";
-                mapLink.classList.add("button");
-                locationDescription.appendChild(mapLink);
-            }
-            expandedContent.appendChild(locationInfo);
-        }
-        const timeInfo = document.createElement("div");
-        const startTime = new Date(event.startDateTime);
-        const endTime = new Date(event.endDateTime);
-        timeInfo.textContent = `Tapahtuma jatkuu ${formatDate(endTime)} saakka.`;
-        expandedContent.appendChild(timeInfo);
-        const eventPageLinkInfo = document.createElement("div");
-        eventPageLinkInfo.classList.add('event-page-link');
-        eventPageLinkInfo.appendChild(Object.assign(document.createElement('a'), {
-            href: `https://www.rastilippu.fi/kuntorastit/tapahtuma/${event.uuid}`,
-            target: '_blank',
-            textContent: '📌 Tapahtumanjärjestäjän ilmoitus',
-        }));
-        expandedContent.appendChild(eventPageLinkInfo);
-        expandedCell.appendChild(expandedContent);
-        expandedRow.appendChild(expandedCell);
-        tbody.appendChild(expandedRow);
-        // Toggle expansion on row click
+        // Add click event to show modal
         row.addEventListener("click", () => {
-            if (expandedRow.style.display === "none") {
-                document.querySelectorAll(".expanded-row").forEach(el => el.style.display = "none");
-                expandedRow.style.display = "table-row";
-                positionFilterContainer(); // Reposition after expanding a row
+            // Clear previous modal content
+            modalDetails.innerHTML = '';
+            // Create event details content
+            const expandedContent = document.createElement("div");
+            if (event.locationDescription || event.locationCoordinates) {
+                const locationInfo = document.createElement("div");
+                const locationTitle = document.createElement("div");
+                locationTitle.textContent = `Opastuksen alku, lähtöpaikan osoite tai muu sijainti: `;
+                const locationDescription = document.createElement("div");
+                locationDescription.classList.add('location-description');
+                locationDescription.textContent = event.locationDescription;
+                locationInfo.appendChild(locationTitle);
+                locationInfo.appendChild(locationDescription);
+                if (event.locationCoordinates) {
+                    const { northing, easting } = wgs84ToTm35fin(event.locationCoordinates.lat, event.locationCoordinates.lon);
+                    const mapLink = document.createElement("a");
+                    mapLink.href = `https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=fi&share=customMarker&n=${northing.toFixed(2)}&e=${easting.toFixed(2)}&title=${encodeURIComponent(event.name)}&zoom=6&layers=W3siaWQiOjIsIm9wYWNpdHkiOjEwMH1d-z`;
+                    mapLink.target = "_blank";
+                    mapLink.textContent = "🌍\u00A0Näytä\u00A0kartalla";
+                    mapLink.classList.add("button");
+                    locationDescription.appendChild(mapLink);
+                }
+                expandedContent.appendChild(locationInfo);
             }
-            else {
-                expandedRow.style.display = "none";
-                positionFilterContainer(); // Reposition after collapsing
-            }
+            const timeInfo = document.createElement("div");
+            const endTime = new Date(event.endDateTime);
+            timeInfo.textContent = `Tapahtuma jatkuu ${formatDate(endTime)} saakka.`;
+            expandedContent.appendChild(timeInfo);
+            const eventPageLinkInfo = document.createElement("div");
+            eventPageLinkInfo.classList.add('event-page-link');
+            eventPageLinkInfo.appendChild(Object.assign(document.createElement('a'), {
+                href: `https://www.rastilippu.fi/kuntorastit/tapahtuma/${event.uuid}`,
+                target: '_blank',
+                textContent: '📌 Tapahtumanjärjestäjän ilmoitus',
+            }));
+            expandedContent.appendChild(eventPageLinkInfo);
+            modalDetails.appendChild(expandedContent);
+            // Show the modal
+            modal.style.display = "block";
         });
         previousStartDateTime = event.startDateTime;
     });
+    // Close modal when clicking the close button
+    closeModal.onclick = () => {
+        modal.style.display = "none";
+    };
+    // Close modal when clicking outside of it
+    window.onclick = (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
 }
 function observeTableChanges() {
     const tbody = document.querySelector(".event-table tbody");

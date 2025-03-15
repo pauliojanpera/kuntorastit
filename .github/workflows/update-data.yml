@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add public/kuntorastit/459c2500-8c9c-4a24-b9f9-61ef11055dbe/data/events.json
+          git add public/kuntorastit/9d74dca2-3401-4cab-8181-50935e4d789a/data/events.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update JSON data" && git push)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

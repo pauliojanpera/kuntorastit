@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuntorastit</title>
-    <base href="./459c2500-8c9c-4a24-b9f9-61ef11055dbe/">
+    <base href="./9d74dca2-3401-4cab-8181-50935e4d789a/">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="icon-192.png">
     <script type="module" src="dist/kuntorastit.mjs"></script>
@@ -260,6 +260,67 @@
             box-sizing: border-box;
             z-index: 10;
         }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close-modal {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-modal:hover,
+        .close-modal:focus {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Reuse existing classes for consistency */
+        #modal-details .location-description,
+        #modal-details .event-page-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: .5rem;
+        }
+
+        #modal-details .button {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        #modal-details .button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
@@ -299,7 +360,13 @@
             <tbody></tbody>
         </table>
     </div>
-    <div class="version-identifier">Versio: 459c2500-8c9c-4a24-b9f9-61ef11055dbe</div>
+    <div class="version-identifier">Versio: 9d74dca2-3401-4cab-8181-50935e4d789a</div>
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
 </body>
 
 </html>

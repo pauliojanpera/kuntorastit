@@ -1,5 +1,5 @@
 // Cache name with UUID placeholder (replaced at build time)
-const CACHE_NAME = "kuntorastit-459c2500-8c9c-4a24-b9f9-61ef11055dbe";
+const CACHE_NAME = "kuntorastit-9d74dca2-3401-4cab-8181-50935e4d789a";
 const URLS_TO_CACHE = [
     "./index.html",
     "./dist/kuntorastit.mjs",
