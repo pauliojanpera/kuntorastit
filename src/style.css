@@ -227,14 +227,14 @@ th.event input {
   /* Prevent it from shrinking */
 }
 
-#version-identifier a {
+.version-identifier a {
   color: inherit;
   text-decoration: none;
 }
 
-#version-identifier a:hover,
-#version-identifier a:active,
-#version-identifier a:focus {
+.version-identifier a:hover,
+.version-identifier a:active,
+.version-identifier a:focus {
   color: inherit;
   text-decoration: none;
 }
