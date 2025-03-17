@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script type="module" src="/src/main.ts"></script>
     <style src="style.css"></style>
 </head>
+
 <body>
     <div id="content">
         <table class="event-table">
@@ -45,11 +47,156 @@
         </table>
     </div>
     <div class="version-identifier">Versio: BUILD_VERSION_PLACEHOLDER</div>
-    <div id="event-modal" class="modal">
+
+    <!-- Template for EventRow -->
+    <template id="event-row-template">
+        <style>
+            :host {
+                display: table-row;
+                vertical-align: inherit;
+                height: 2rem;
+            }
+
+            td {
+                padding: 8px;
+            }
+
+            .event {
+                white-space: nowrap;
+                cursor: pointer;
+            }
+
+            /* Day-of-week styles applied to .date inside shadow DOM */
+            :host(.monday) .date {
+                background-color: #CB9999c0;
+                /* Soft Red */
+            }
+
+            :host(.tuesday) .date {
+                background-color: #CBB07Ec0;
+                /* Warm Yellow */
+            }
+
+            :host(.wednesday) .date {
+                background-color: #A3C18Dc0;
+                /* Muted Green */
+            }
+
+            :host(.thursday) .date {
+                background-color: #8DC1B5c0;
+                /* Cool Cyan */
+            }
+
+            :host(.friday) .date {
+                background-color: #9BB0CBc0;
+                /* Sky Blue */
+            }
+
+            :host(.saturday) .date {
+                background-color: #B399CBc0;
+                /* Soft Purple */
+            }
+
+            :host(.sunday) .date {
+                background-color: #CB91B3c0;
+                /* Gentle Magenta */
+            }
+
+            /* Alternating row styles for .event and .organizer */
+            :host(.odd) .event,
+            :host(.odd) .organizer {
+                background-color: var(--secondary-color);
+            }
+
+            :host(.even) .event,
+            :host(.even) .organizer {
+                background-color: var(--tertiary-color);
+            }
+        </style>
+        <td class="date" part="date"></td>
+        <td class="event" part="event"></td>
+        <td class="organizer" part="organizer"></td>
+    </template>
+
+    <!-- Template for EventModal -->
+    <template id="event-modal-template">
+        <style>
+            :host {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                z-index: 1000;
+                overflow: auto;
+            }
+
+            .modal-content {
+                background: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 500px;
+                border-radius: 8px;
+                position: relative;
+            }
+
+            .close-modal {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .close-modal:hover,
+            .close-modal:focus {
+                color: black;
+                text-decoration: none;
+            }
+
+            .location-section {
+                margin-bottom: 15px;
+            }
+
+            .location-description {
+                margin-top: 5px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: .5rem;
+            }
+
+            .button {
+                display: inline-block;
+                margin-top: 5px;
+                padding: 5px 10px;
+                background-color: #007bff;
+                color: white;
+                text-decoration: none;
+                border-radius: 4px;
+            }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+
+            .event-page-link {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: .5rem;
+            }
+        </style>
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
+            <span class="close-modal">×</span>
             <div id="modal-details"></div>
         </div>
-    </div>
+    </template>
 </body>
+
 </html>

@@ -1,490 +1,497 @@
-import './style.css'
+import './style.css';
 
-const DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/events.json`;
+// Define the base URL for fetching event data
+const EVENTS_DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/events.json`;
 
-type OrienteeringEvent = {
-    uuid: string;
-    startDateTime: number;
-    endDateTime: number;
-    name: string;
-    organizerName: string;
-    locationDescription: string;
-    locationCoordinates: {
-        lat: number;
-        lon: number;
-    }
+// Interface for an orienteering event
+interface OrienteeringEvent {
+  uuid: string;
+  startDateTime: number;
+  endDateTime: number;
+  name: string;
+  organizerName: string;
+  locationDescription: string;
+  locationCoordinates: { lat: number; lon: number };
 }
 
-type OrienteeringEventFilterSettings = {
-    dateFilter?: 'all' | 'past' | 'future';
-    nameFilter?: string;
-    organizerFilter?: Set<string>;
-};
-
-function saveFilterSettings(filters: OrienteeringEventFilterSettings) {
-    localStorage.setItem("orienteeringEventFilters",
-        JSON.stringify(filters, (k, v) => k === 'organizerFilter' && v instanceof Set ? !v.has('kaikki') ? [...v] : undefined : v));
+// Interface for filter settings
+interface FilterSettings {
+  dateFilter?: 'all' | 'past' | 'future';
+  nameFilter?: string;
+  organizerFilter?: Set<string>;
 }
 
-function loadFilterSettings(): OrienteeringEventFilterSettings {
-    const stored = localStorage.getItem("orienteeringEventFilters");
-    return stored ? JSON.parse(stored, (k, v) => k === 'organizerFilter' && Array.isArray(v) ? new Set(v) : v) : {};
+// Custom Element: EventRow
+class EventRow extends HTMLElement {
+  constructor(event: OrienteeringEvent, previousStartDateTime?: number, isOdd: boolean = false) {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.render(event, previousStartDateTime, isOdd);
+  }
+
+  // Render the event row based on the template
+  render(event: OrienteeringEvent, previousStartDateTime?: number, isOdd: boolean = false) {
+    const template = document.getElementById('event-row-template') as HTMLTemplateElement;
+    const clone = template.content.cloneNode(true) as DocumentFragment;
+
+    const dayOfWeek = new Date(event.startDateTime)
+      .toLocaleDateString('en-US', { weekday: 'long' })
+      .toLowerCase();
+    this.classList.add('event-row', dayOfWeek);
+    this.classList.add(isOdd ? 'odd' : 'even');
+
+    const dateCell = clone.querySelector('.date') as HTMLTableCellElement;
+    dateCell.textContent = formatDateAndTime(event.startDateTime, previousStartDateTime);
+
+    const eventCell = clone.querySelector('.event') as HTMLTableCellElement;
+    eventCell.textContent = event.name.replace(/\s/g, ' ');
+
+    const organizerCell = clone.querySelector('.organizer') as HTMLTableCellElement;
+    organizerCell.textContent = event.organizerName;
+
+    this.shadowRoot!.appendChild(clone);
+    this.addEventListener('click', () => this.showModal(event));
+  }
+
+  // Show the event modal when the row is clicked
+  showModal(event: OrienteeringEvent) {
+    const modal = document.createElement('event-modal') as EventModal;
+    modal.setEvent(event);
+    document.body.appendChild(modal);
+  }
 }
 
-async function* filterSettings() {
-    const filters: OrienteeringEventFilterSettings = loadFilterSettings();
+// Custom Element: EventModal
+class EventModal extends HTMLElement {
+  private event!: OrienteeringEvent;
 
-    // First we restore the filter UI
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 
-    if (!filters.dateFilter)
-        filters.dateFilter = 'future';
-    const dateFilterElement = document.getElementById("date-filter") as HTMLSelectElement;
-    const dateUnsetOption = dateFilterElement.selectedOptions[0] as HTMLOptionElement;
-    dateFilterElement.value = filters.dateFilter;
-    dateUnsetOption.remove();
+  setEvent(event: OrienteeringEvent) {
+    this.event = event;
+    this.render();
+  }
 
-    if (filters.nameFilter)
-        (document.getElementById("name-filter") as HTMLInputElement).value = filters.nameFilter;
+  // Render the modal with event details
+  render() {
+    const template = document.getElementById('event-modal-template') as HTMLTemplateElement;
+    const clone = template.content.cloneNode(true) as DocumentFragment;
 
-    if (filters.organizerFilter) {
-        const select = document.getElementById("organizer-filter") as HTMLSelectElement;
-        Array.from(select.options).forEach(option => {
-            option.selected = filters.organizerFilter!.has(option.value);
-        });
-        // Trigger update of placeholder after restoring selections
-        const changeEvent = new Event("change", { bubbles: true });
-        select.dispatchEvent(changeEvent);
-    }
+    const modalDetails = clone.querySelector('#modal-details') as HTMLDivElement;
+    modalDetails.appendChild(this.createEventDetails());
 
-    // Next we bind to settings changes
+    const closeModal = clone.querySelector('.close-modal') as HTMLSpanElement;
+    closeModal.onclick = () => this.remove();
 
-    let resolve: (f: OrienteeringEventFilterSettings) => void;
-    document.getElementById("date-filter")!.onchange = (e) => {
-        filters.dateFilter = ((e.target as HTMLSelectElement)?.value as any) || undefined;
-        resolve?.(filters);
+    this.shadowRoot!.appendChild(clone);
+    this.style.display = 'block';
+
+    // Close modal when clicking outside
+    window.onclick = e => {
+      if (e.target === this) this.remove();
     };
-    document.getElementById("name-filter")!.oninput = (e) => {
-        filters.nameFilter = (e.target as HTMLInputElement)?.value.toLowerCase().trim() || undefined;
-        resolve?.(filters);
-    };
-    document.getElementById("organizer-filter")!.onchange = (e) => {
-        const select = e.target as HTMLSelectElement;
-        const selectedOrganizers = new Set(Array.from(select.selectedOptions).map(option => option.value));
-        filters.organizerFilter = selectedOrganizers.size > 0 && !selectedOrganizers.has('kaikki') ? selectedOrganizers : undefined;
-        resolve?.(filters);
-    };
-    yield filters;
+  }
 
-    // Then we start yielding the settings changes
-    for (; ;)
-        yield new Promise<OrienteeringEventFilterSettings>(_resolve => resolve = _resolve)
-            .then((filters) => {
-                saveFilterSettings(filters);
-                return filters;
-            });
-}
+  // Create the detailed content for the modal
+  private createEventDetails(): HTMLElement {
+    const content = document.createElement('div');
 
-let activeFilters: OrienteeringEventFilterSettings;
-
-async function loadData() {
-    const contentDiv = document.getElementById('content')!;
-    try {
-        const response = await fetch(DATA_URL);
-        if (!response.ok) throw new Error('Failed to fetch data');
-        let { events } = await response.json();
-
-        if ('knownOrganizers' in window) {
-            const { knownOrganizers } = window;
-            if (Array.isArray(knownOrganizers) && knownOrganizers.length > 0) {
-                events = events.filter(({ event }: { event: OrienteeringEvent }) =>
-                    knownOrganizers.includes(event.organizerName)
-                );
-            } else {
-                console.error('The knownOrganizers global should be an array with string values');
-            }
-        }
-
-        populateFilters(events);
-        setupMultiSelectToggle();
-
-        for await (const filters of filterSettings()) {
-            activeFilters = filters;
-            renderData(events, filters);
-        }
-    } catch (error) {
-        console.error('Error loading data:', error);
-        contentDiv.innerText = 'Failed to load data.';
+    if (this.event.locationDescription || this.event.locationCoordinates) {
+      const locationSection = document.createElement('div');
+      locationSection.classList.add('location-section');
+      locationSection.innerHTML = `
+                <div class="location-title">Opastuksen alku, lähtöpaikan osoite tai muu sijainti:</div>
+                <div class="location-description">${this.event.locationDescription}</div>
+            `;
+      if (this.event.locationCoordinates) {
+        const { northing, easting } = wgs84ToTm35fin(
+          this.event.locationCoordinates.lat,
+          this.event.locationCoordinates.lon,
+        );
+        const mapLink = document.createElement('a');
+        mapLink.href = `https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=fi&share=customMarker&n=${northing.toFixed(2)}&e=${easting.toFixed(2)}&title=${encodeURIComponent(this.event.name)}&zoom=6&layers=W3siaWQiOjIsIm9wYWNpdHkiOjEwMH1d-z`;
+        mapLink.target = '_blank';
+        mapLink.textContent = '🌍 Näytä kartalla';
+        mapLink.classList.add('button');
+        locationSection.querySelector('.location-description')!.appendChild(mapLink);
+      }
+      content.appendChild(locationSection);
     }
+
+    const duration = document.createElement('div');
+    duration.textContent = `Tapahtuma jatkuu ${formatDateAndTime(this.event.endDateTime)} saakka.`;
+    content.appendChild(duration);
+
+    const eventLink = document.createElement('div');
+    eventLink.classList.add('event-page-link');
+    eventLink.innerHTML = `<a href="https://www.rastilippu.fi/kuntorastit/tapahtuma/${this.event.uuid}" target="_blank">📌 Tapahtumanjärjestäjän ilmoitus</a>`;
+    content.appendChild(eventLink);
+
+    return content;
+  }
 }
 
-function positionFilterContainer() {
-    const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
-    const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
+// Register custom elements
+customElements.define('event-row', EventRow);
+customElements.define('event-modal', EventModal);
 
-    const rect = organizerPlaceholder.getBoundingClientRect();
-    organizerFilterContainer.style.top = `${rect.bottom + window.scrollY}px`;
-    organizerFilterContainer.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
+// Save filter settings to localStorage
+function saveFilterSettings(filters: FilterSettings) {
+  localStorage.setItem(
+    'orienteeringEventFilters',
+    JSON.stringify(filters, (key, value) =>
+      key === 'organizerFilter' && value instanceof Set
+        ? !value.has('kaikki')
+          ? [...value]
+          : undefined
+        : value,
+    ),
+  );
 }
 
-// Robust device detection (unchanged)
-const isTouchDevice = () => {
-    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-};
+// Load filter settings from localStorage
+function loadFilterSettings(): FilterSettings {
+  const stored = localStorage.getItem('orienteeringEventFilters');
+  return stored
+    ? JSON.parse(stored, (key, value) =>
+        key === 'organizerFilter' && Array.isArray(value) ? new Set(value) : value,
+      )
+    : {};
+}
 
-const isMobileUserAgent = () => {
-    const ua = navigator.userAgent.toLowerCase();
-    return /mobile|android|iphone|ipad|tablet/i.test(ua);
-};
+// Generator function to manage filter settings and UI updates
+async function* manageFilterSettings(): AsyncGenerator<FilterSettings> {
+  const filters: FilterSettings = loadFilterSettings();
 
-const prefersCoarsePointer = () => {
-    return window.matchMedia("(pointer: coarse)").matches;
-};
+  // Initialize filter UI with stored values
+  filters.dateFilter ??= 'future';
+  const dateFilterElement = document.getElementById('date-filter') as HTMLSelectElement;
+  dateFilterElement.value = filters.dateFilter;
+  dateFilterElement.querySelector('option[value="unset"]')?.remove();
 
+  if (filters.nameFilter) {
+    (document.getElementById('name-filter') as HTMLInputElement).value = filters.nameFilter;
+  }
+
+  const organizerFilterElement = document.getElementById('organizer-filter') as HTMLSelectElement;
+  if (filters.organizerFilter) {
+    Array.from(organizerFilterElement.options).forEach(option => {
+      option.selected = filters.organizerFilter!.has(option.value);
+    });
+    organizerFilterElement.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+
+  // Event handlers for filter changes
+  let resolveFilterChange: (filters: FilterSettings) => void;
+  dateFilterElement.onchange = e => {
+    filters.dateFilter = (e.target as HTMLSelectElement).value as FilterSettings['dateFilter'];
+    resolveFilterChange?.(filters);
+  };
+  document.getElementById('name-filter')!.oninput = e => {
+    filters.nameFilter = (e.target as HTMLInputElement).value.toLowerCase().trim() || undefined;
+    resolveFilterChange?.(filters);
+  };
+  organizerFilterElement.onchange = e => {
+    const selectedOrganizers = new Set(
+      Array.from((e.target as HTMLSelectElement).selectedOptions).map(opt => opt.value),
+    );
+    filters.organizerFilter =
+      selectedOrganizers.size > 0 && !selectedOrganizers.has('kaikki')
+        ? selectedOrganizers
+        : undefined;
+    resolveFilterChange?.(filters);
+  };
+
+  yield filters;
+
+  // Continuously yield updated filters on change
+  while (true) {
+    yield new Promise<FilterSettings>(resolve => (resolveFilterChange = resolve)).then(
+      updatedFilters => {
+        saveFilterSettings(updatedFilters);
+        return updatedFilters;
+      },
+    );
+  }
+}
+
+// Load and display event data
+async function loadAndDisplayEvents() {
+  const contentDiv = document.getElementById('content')!;
+  try {
+    const response = await fetch(EVENTS_DATA_URL);
+    if (!response.ok) throw new Error('Failed to fetch events data');
+    let { events }: { events: { event: OrienteeringEvent }[] } = await response.json();
+
+    // Filter events by known organizers if provided
+    if ('knownOrganizers' in window) {
+      const { knownOrganizers } = window as any;
+      if (Array.isArray(knownOrganizers) && knownOrganizers.length > 0) {
+        events = events.filter(({ event }) => knownOrganizers.includes(event.organizerName));
+      } else {
+        console.error('knownOrganizers should be a non-empty array of strings');
+      }
+    }
+
+    populateOrganizerFilter(events);
+    setupOrganizerMultiSelect();
+
+    for await (const filters of manageFilterSettings()) {
+      renderEvents(events, filters);
+    }
+  } catch (error) {
+    console.error('Error loading events:', error);
+    contentDiv.textContent = 'Failed to load event data.';
+  }
+}
+
+// Position the organizer filter dropdown
+function positionOrganizerFilter() {
+  const placeholder = document.getElementById('organizer-placeholder') as HTMLSelectElement;
+  const container = document.getElementById('organizer-filter-container') as HTMLDivElement;
+  const rect = placeholder.getBoundingClientRect();
+  container.style.top = `${rect.bottom + window.scrollY}px`;
+  container.style.right = `${document.documentElement.clientWidth - rect.right + window.scrollX}px`;
+}
+
+// Device detection utilities
+const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+const isMobileUserAgent = () =>
+  /mobile|android|iphone|ipad|tablet/i.test(navigator.userAgent.toLowerCase());
+const prefersCoarsePointer = () => window.matchMedia('(pointer: coarse)').matches;
 const useDesktopBehavior = () => {
-    const isWideScreen = window.innerWidth >= 768;
-    const isFinePointer = window.matchMedia("(pointer: fine)").matches;
-    const isNotTouch = !isTouchDevice();
-    const isNotMobile = !isMobileUserAgent();
-    return (isWideScreen && isFinePointer) ||
-        (isWideScreen && isNotTouch) ||
-        (isFinePointer && isNotMobile && !prefersCoarsePointer());
+  const isWideScreen = window.innerWidth >= 768;
+  const isFinePointer = window.matchMedia('(pointer: fine)').matches;
+  const isNotTouch = !isTouchDevice();
+  const isNotMobile = !isMobileUserAgent();
+  return (
+    (isWideScreen && isFinePointer) ||
+    (isWideScreen && isNotTouch) ||
+    (isFinePointer && isNotMobile && !prefersCoarsePointer())
+  );
 };
 
-function setupMultiSelectToggle() {
-    const organizerPlaceholder = document.getElementById("organizer-placeholder") as HTMLSelectElement;
-    const organizerFilterContainer = document.getElementById("organizer-filter-container") as HTMLDivElement;
-    const organizerFilter = document.getElementById("organizer-filter") as HTMLSelectElement;
-    const organizerOptionAll = document.getElementById("organizer-option-all") as HTMLOptionElement;
+// Setup the organizer multi-select dropdown behavior
+function setupOrganizerMultiSelect() {
+  const placeholder = document.getElementById('organizer-placeholder') as HTMLSelectElement;
+  const container = document.getElementById('organizer-filter-container') as HTMLDivElement;
+  const filter = document.getElementById('organizer-filter') as HTMLSelectElement;
+  const allOption = document.getElementById('organizer-option-all') as HTMLOptionElement;
 
-    // Function to update placeholder text based on selected organizers
-    function updatePlaceholder() {
-        const selectedCount = organizerFilter.selectedOptions.length;
-        organizerPlaceholder.options[0].textContent = selectedCount === 0
-            ? 'kaikki'
-            : selectedCount === 1
-                ? organizerFilter.selectedOptions.item(0)?.value ?? ''
-                : `${String(selectedCount)} järjestäjää`;
+  const updatePlaceholderText = () => {
+    const selectedCount = filter.selectedOptions.length;
+    placeholder.options[0].textContent =
+      selectedCount === 0
+        ? 'kaikki'
+        : selectedCount === 1
+          ? filter.selectedOptions[0].value
+          : `${selectedCount} järjestäjää`;
+  };
+
+  const adjustBehavior = () => {
+    placeholder.style.display = 'inline-block';
+    if (useDesktopBehavior()) {
+      container.classList.add('hidden');
+      filter.setAttribute('size', '20');
+      placeholder.addEventListener('mousedown', showDropdown);
+      filter.addEventListener('mousedown', handleDesktopToggle);
+      filter.addEventListener('change', updatePlaceholderText);
+      document.addEventListener('click', closeDropdownOutside);
+    } else {
+      container.classList.remove('hidden');
+      container.style.position = 'static';
+      filter.setAttribute('size', '1');
+      filter.classList.add('mobile');
+      allOption.remove();
+      placeholder.addEventListener('click', triggerNativeSelect);
+      filter.addEventListener('change', updatePlaceholderText);
     }
+    positionOrganizerFilter();
+    updatePlaceholderText();
+  };
 
-    function adjustDropdownBehavior() {
-        // Always show the placeholder
-        organizerPlaceholder.style.display = "inline-block";
+  const showDropdown = (e: Event) => {
+    e.preventDefault();
+    container.classList.remove('hidden');
+    container.style.position = 'fixed';
+    positionOrganizerFilter();
+  };
 
-        if (useDesktopBehavior()) {
-            organizerFilterContainer.classList.add("hidden");
-            organizerFilter.setAttribute('size', '20');
-
-            organizerPlaceholder.removeEventListener("mousedown", showDropdown);
-            organizerPlaceholder.addEventListener("mousedown", showDropdown);
-
-            organizerFilter.removeEventListener("mousedown", handleDesktopToggle);
-            organizerFilter.addEventListener("mousedown", handleDesktopToggle);
-
-            organizerFilter.removeEventListener("change", updatePlaceholder);
-            organizerFilter.addEventListener("change", updatePlaceholder);
-
-            document.removeEventListener("click", closeDropdownOutside);
-            document.addEventListener("click", closeDropdownOutside);
-        } else {
-            organizerFilterContainer.classList.remove("hidden");
-            organizerFilterContainer.style.position = "static";
-            organizerFilter.setAttribute('size', '1');
-            organizerFilter.classList.add('mobile');
-
-            // The all option can be implemented only on desktop
-            organizerOptionAll.remove();
-
-            // Remove desktop-specific event listeners
-            organizerPlaceholder.removeEventListener("mousedown", showDropdown);
-            organizerFilter.removeEventListener("mousedown", handleDesktopToggle);
-            document.removeEventListener("click", closeDropdownOutside);
-
-            // Use click to trigger native select behavior
-            organizerPlaceholder.removeEventListener("click", triggerNativeSelect);
-            organizerPlaceholder.addEventListener("click", triggerNativeSelect);
-
-            organizerFilter.removeEventListener("change", updatePlaceholder);
-            organizerFilter.addEventListener("change", updatePlaceholder);
-        }
-        positionFilterContainer();
-        updatePlaceholder(); // Initial update
+  const closeDropdownOutside = (e: Event) => {
+    if (!container.contains(e.target as Node) && e.target !== placeholder) {
+      container.classList.add('hidden');
     }
+  };
 
-    function showDropdown(event: Event) {
-        event.preventDefault();
-        organizerFilterContainer.classList.remove("hidden"); // Fade in
-        organizerFilterContainer.style.position = "fixed";
-        positionFilterContainer();
+  const handleDesktopToggle = (e: Event) => {
+    const option = e.target as HTMLOptionElement;
+    if (option.tagName !== 'OPTION') return;
+    e.preventDefault();
+    if (option === allOption) {
+      Array.from(filter.selectedOptions).forEach(opt => (opt.selected = false));
+      allOption.selected = true;
+    } else {
+      option.selected = !option.selected;
+      allOption.selected = false;
     }
+    filter.dispatchEvent(new Event('change', { bubbles: true }));
+    filter.focus();
+    container.classList.add('hidden');
+  };
 
-    function closeDropdownOutside(event: Event) {
-        if (!organizerFilterContainer.contains(event.target as Node) && event.target !== organizerPlaceholder) {
-            organizerFilterContainer.classList.add("hidden"); // Fade out
-        }
-    }
+  const triggerNativeSelect = (e: Event) => {
+    e.preventDefault();
+    filter.focus();
+    filter.dispatchEvent(new Event('click', { bubbles: true, cancelable: true }));
+  };
 
-    function handleDesktopToggle(event: Event) {
-        const organizerOption = event.target as HTMLOptionElement;
-        if (organizerOption.tagName !== 'OPTION') return;
-
-        event.preventDefault();
-
-        if (organizerOption === organizerOptionAll) {
-            for (const selectedOption of Array.from(organizerFilter.selectedOptions))
-                selectedOption.selected = false;
-            organizerOptionAll.selected = true;
-        } else {
-            organizerOption.selected = !activeFilters?.organizerFilter?.has(organizerOption.value);
-            organizerOptionAll.selected = false;
-        }
-
-        organizerFilter.dispatchEvent(new Event("change", { bubbles: true }));
-        organizerFilter.focus();
-
-        organizerFilterContainer.classList.add("hidden");
-    }
-
-    function triggerNativeSelect(event: Event) {
-        event.preventDefault();
-        organizerFilter.focus();
-        const clickEvent = new Event("click", { bubbles: true, cancelable: true });
-        organizerFilter.dispatchEvent(clickEvent);
-    }
-
-    // Initial setup
-    adjustDropdownBehavior();
-
-    // Re-evaluate on resize or orientation change
-    window.addEventListener("resize", adjustDropdownBehavior);
-    window.addEventListener("orientationchange", adjustDropdownBehavior);
-
-    // Optional: Detect native dialog behavior
-    let initialHeight = organizerFilter.offsetHeight;
-    organizerFilter.addEventListener("click", () => {
-        requestAnimationFrame(() => {
-            const newHeight = organizerFilter.offsetHeight;
-            if (newHeight !== initialHeight && !useDesktopBehavior()) {
-                organizerFilter.setAttribute('size', '1');
-                organizerFilterContainer.style.position = "static";
-            }
-        });
-    });
+  adjustBehavior();
+  window.addEventListener('resize', adjustBehavior);
+  window.addEventListener('orientationchange', adjustBehavior);
 }
 
-function populateFilters(events: { event: OrienteeringEvent }[]) {
-    const organizerFilterSelectElement = document.getElementById("organizer-filter") as HTMLSelectElement;
+// Populate the organizer filter with unique organizers
+function populateOrganizerFilter(events: { event: OrienteeringEvent }[]) {
+  const filterElement = document.getElementById('organizer-filter') as HTMLSelectElement;
+  const organizerCounts = new Map<string, number>();
+  events.forEach(({ event }) =>
+    organizerCounts.set(event.organizerName, (organizerCounts.get(event.organizerName) || 0) + 1),
+  );
 
-    // Create a map to count events per organizer
-    const organizerEventCount = new Map<string, number>();
-    events.forEach(({ event }) => {
-        organizerEventCount.set(
-            event.organizerName,
-            (organizerEventCount.get(event.organizerName) || 0) + 1
-        );
-    });
+  const sortedOrganizers = Array.from(organizerCounts.keys()).sort((a, b) =>
+    a.localeCompare(b, 'fi-FI'),
+  );
+  const isDesktop = useDesktopBehavior();
 
-    // Get unique organizers and sort them alphabetically
-    const organizers = Array.from(organizerEventCount.keys()).sort((a, b) =>
-        a.localeCompare(b, 'fi-FI') // Use Finnish locale for sorting
-    );
-
-    const desktop = useDesktopBehavior();
-    // Populate the select element with sorted organizers and event counts
-    organizers.forEach(org => {
-        const option = document.createElement("option");
-        option.value = org;
-        const eventCount = organizerEventCount.get(org) || 0;
-        option.textContent = `${org} (${eventCount ? (eventCount + (desktop ? ' tapahtumaa' : '')) : 'ei tapahtumia'})`;
-        organizerFilterSelectElement.appendChild(option);
-    });
+  sortedOrganizers.forEach(org => {
+    const option = document.createElement('option');
+    option.value = org;
+    const count = organizerCounts.get(org) || 0;
+    option.textContent = `${org} (${count}${isDesktop ? ' tapahtumaa' : ''})`;
+    filterElement.appendChild(option);
+  });
 }
 
-function formatDate(date: Date) {
-    return `${date.toLocaleDateString('fi-FI', { weekday: 'short' })}\u00A0${date.getDate()}.${date.getMonth() + 1}. klo\u00A0${date.getHours()}.${String(date.getMinutes()).padStart(2, '0')}`;
+function formatDateAndTime(currentTimestamp: number, previousTimestamp?: number): string {
+  if (currentTimestamp === previousTimestamp) return '';
+
+  const currentDate = new Date(currentTimestamp);
+
+  // Get date without time for comparison
+  const getDateOnly = (timestamp: number) => {
+    const d = new Date(timestamp);
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+  };
+
+  const datePart =
+    previousTimestamp === undefined ||
+    getDateOnly(previousTimestamp) !== getDateOnly(currentTimestamp)
+      ? `${currentDate.toLocaleDateString('fi-FI', {
+          weekday: 'short',
+        })}\u00A0${currentDate.getDate()}.${currentDate.getMonth() + 1}. `
+      : '';
+  return `${datePart}klo\u00A0${currentDate.getHours()}.${String(currentDate.getMinutes()).padStart(2, '0')}`;
 }
 
+// Convert WGS84 coordinates to TM35FIN
 function wgs84ToTm35fin(lat: number, lon: number): { northing: number; easting: number } {
-    const a = 6378137.0; // Semi-major axis (WGS84)
-    const f = 1 / 298.257222101; // Flattening (WGS84)
-    const k0 = 0.9996; // Scale factor for TM35FIN
-    const lon0 = 27; // Central meridian for EPSG:3067
-    const falseEasting = 500000; // UTM false easting
-    const falseNorthing = 0; // TM35FIN has no false northing for the northern hemisphere
+  const a = 6378137.0; // WGS84 semi-major axis
+  const f = 1 / 298.257222101; // WGS84 flattening
+  const k0 = 0.9996; // TM35FIN scale factor
+  const lon0 = 27; // Central meridian
+  const falseEasting = 500000;
+  const falseNorthing = 0;
 
-    const e = Math.sqrt(2 * f - f * f); // First eccentricity
-    const toRad = (deg: number) => deg * Math.PI / 180;
-    const toDeg = (rad: number) => rad * 180 / Math.PI;
+  const e = Math.sqrt(2 * f - f * f);
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
 
-    const phi = toRad(lat);
-    const lambda = toRad(lon);
-    const lambda0 = toRad(lon0);
+  const phi = toRad(lat);
+  const lambda = toRad(lon);
+  const lambda0 = toRad(lon0);
 
-    // Compute N, T, C, A, M for projection
-    const N = a / Math.sqrt(1 - e * e * Math.sin(phi) * Math.sin(phi));
-    const T = Math.tan(phi) * Math.tan(phi);
-    const C = (e * e) / (1 - e * e) * Math.cos(phi) * Math.cos(phi);
-    const A = Math.cos(phi) * (lambda - lambda0);
+  const N = a / Math.sqrt(1 - e * e * Math.sin(phi) * Math.sin(phi));
+  const T = Math.tan(phi) * Math.tan(phi);
+  const C = ((e * e) / (1 - e * e)) * Math.cos(phi) * Math.cos(phi);
+  const A = Math.cos(phi) * (lambda - lambda0);
 
-    // Meridional arc
-    const M = a * (
-        (1 - e * e / 4 - 3 * e ** 4 / 64 - 5 * e ** 6 / 256) * phi
-        - (3 * e ** 2 / 8 + 3 * e ** 4 / 32 + 45 * e ** 6 / 1024) * Math.sin(2 * phi)
-        + (15 * e ** 4 / 256 + 45 * e ** 6 / 1024) * Math.sin(4 * phi)
-        - (35 * e ** 6 / 3072) * Math.sin(6 * phi)
-    );
+  const M =
+    a *
+    ((1 - (e * e) / 4 - (3 * e ** 4) / 64 - (5 * e ** 6) / 256) * phi -
+      ((3 * e ** 2) / 8 + (3 * e ** 4) / 32 + (45 * e ** 6) / 1024) * Math.sin(2 * phi) +
+      ((15 * e ** 4) / 256 + (45 * e ** 6) / 1024) * Math.sin(4 * phi) -
+      ((35 * e ** 6) / 3072) * Math.sin(6 * phi));
 
-    // Compute Easting (x)
-    const easting = falseEasting + k0 * N * (
-        A + (1 - T + C) * Math.pow(A, 3) / 6
-        + (5 - 18 * T + T * T + 72 * C - 58 * (e * e) / (1 - e * e)) * Math.pow(A, 5) / 120
-    );
+  const easting =
+    falseEasting +
+    k0 *
+      N *
+      (A +
+        ((1 - T + C) * Math.pow(A, 3)) / 6 +
+        ((5 - 18 * T + T * T + 72 * C - (58 * (e * e)) / (1 - e * e)) * Math.pow(A, 5)) / 120);
 
-    // Compute Northing (y)
-    const northing = falseNorthing + k0 * (
-        M + N * Math.tan(phi) * (
-            (A * A) / 2 + (5 - T + 9 * C + 4 * C * C) * Math.pow(A, 4) / 24
-            + (61 - 58 * T + T * T + 600 * C - 330 * (e * e) / (1 - e * e)) * Math.pow(A, 6) / 720
-        )
-    );
+  const northing =
+    falseNorthing +
+    k0 *
+      (M +
+        N *
+          Math.tan(phi) *
+          ((A * A) / 2 +
+            ((5 - T + 9 * C + 4 * C * C) * Math.pow(A, 4)) / 24 +
+            ((61 - 58 * T + T * T + 600 * C - (330 * (e * e)) / (1 - e * e)) * Math.pow(A, 6)) /
+              720));
 
-    return { northing, easting };
+  return { northing, easting };
 }
 
-function renderData(events: { event: OrienteeringEvent }[], filters: OrienteeringEventFilterSettings) {
-    const tbody = document.querySelector(".event-table tbody")!;
-    const modal = document.getElementById("event-modal") as HTMLElement;
-    const modalDetails = document.getElementById("modal-details") as HTMLElement;
-    const closeModal = document.querySelector(".close-modal") as HTMLElement;
+// Render filtered events into the table
+function renderEvents(events: { event: OrienteeringEvent }[], filters: FilterSettings) {
+  const tbody = document.querySelector('.event-table tbody') as HTMLTableSectionElement;
+  tbody.innerHTML = ''; // Clear existing rows
 
-    // Clear existing rows
-    while (tbody.firstChild) {
-        tbody.removeChild(tbody.firstChild);
-    }
+  const currentYear = new Date().getFullYear();
+  const yearStart = new Date(currentYear, 0).getTime();
+  const nextYearStart = new Date(currentYear + 1, 0).getTime();
 
-    const currentYear = new Date().getFullYear();
-    const currentYearStart = new Date(currentYear, 0).getTime();
-    const nextYearStart = new Date(currentYear + 1, 0).getTime();
+  let previousStartDateTime: number | undefined;
 
-    let previousStartDateTime: number | undefined;
-
-    events.filter(({ event }) => {
-        return (
-            event.startDateTime >= currentYearStart &&
-            event.endDateTime <= nextYearStart &&
-            (filters.dateFilter === 'all' ||
-                (filters.dateFilter === 'past' && event.startDateTime < Date.now()) ||
-                (filters.dateFilter === 'future' && event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)
-            ) &&
-            (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&
-            (!filters.organizerFilter || filters.organizerFilter.has(event.organizerName))
-        );
-    }).forEach(({ event }) => {
-        const dayOfWeek = new Date(event.startDateTime)
-            .toLocaleDateString('en-US', { weekday: 'long' })
-            .toLowerCase();
-
-        const row = document.createElement("tr");
-        row.classList.add("event-row");
-        row.classList.add(dayOfWeek);
-
-        const dateCell = document.createElement("td");
-        dateCell.classList.add("date");
-        if (previousStartDateTime !== event.startDateTime) {
-            dateCell.textContent = formatDate(new Date(event.startDateTime));
-        }
-
-        const eventCell = document.createElement("td");
-        eventCell.classList.add("event");
-        eventCell.textContent = event.name.replace(/\s/g, ' ');
-
-        const organizerCell = document.createElement("td");
-        organizerCell.classList.add("organizer");
-        organizerCell.textContent = event.organizerName;
-
-        row.appendChild(dateCell);
-        row.appendChild(eventCell);
-        row.appendChild(organizerCell);
-
-        tbody.appendChild(row);
-
-        // Add click event to show modal
-        row.addEventListener("click", () => {
-            // Clear previous modal content
-            modalDetails.innerHTML = '';
-
-            // Create event details content
-            const expandedContent = document.createElement("div");
-
-            if (event.locationDescription || event.locationCoordinates) {
-                const locationInfo = document.createElement("div");
-                const locationTitle = document.createElement("div");
-                locationTitle.textContent = `Opastuksen alku, lähtöpaikan osoite tai muu sijainti: `;
-                const locationDescription = document.createElement("div");
-                locationDescription.classList.add('location-description');
-                locationDescription.textContent = event.locationDescription;
-                locationInfo.appendChild(locationTitle);
-                locationInfo.appendChild(locationDescription);
-                if (event.locationCoordinates) {
-                    const { northing, easting } = wgs84ToTm35fin(event.locationCoordinates.lat, event.locationCoordinates.lon);
-                    const mapLink = document.createElement("a");
-                    mapLink.href = `https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=fi&share=customMarker&n=${northing.toFixed(2)}&e=${easting.toFixed(2)}&title=${encodeURIComponent(event.name)}&zoom=6&layers=W3siaWQiOjIsIm9wYWNpdHkiOjEwMH1d-z`;
-                    mapLink.target = "_blank";
-                    mapLink.textContent = "🌍\u00A0Näytä\u00A0kartalla";
-                    mapLink.classList.add("button");
-                    locationDescription.appendChild(mapLink);
-                }
-                expandedContent.appendChild(locationInfo);
-            }
-
-            const timeInfo = document.createElement("div");
-            const endTime = new Date(event.endDateTime);
-            timeInfo.textContent = `Tapahtuma jatkuu ${formatDate(endTime)} saakka.`;
-            expandedContent.appendChild(timeInfo);
-
-            const eventPageLinkInfo = document.createElement("div");
-            eventPageLinkInfo.classList.add('event-page-link');
-            eventPageLinkInfo.appendChild(Object.assign(document.createElement('a'), {
-                href: `https://www.rastilippu.fi/kuntorastit/tapahtuma/${event.uuid}`,
-                target: '_blank',
-                textContent: '📌 Tapahtumanjärjestäjän ilmoitus',
-            }));
-            expandedContent.appendChild(eventPageLinkInfo);
-
-            modalDetails.appendChild(expandedContent);
-
-            // Show the modal
-            modal.style.display = "block";
-        });
-
-        previousStartDateTime = event.startDateTime;
+  const eventRows = events
+    .filter(
+      ({ event }) =>
+        event.startDateTime >= yearStart &&
+        event.endDateTime <= nextYearStart &&
+        (filters.dateFilter === 'all' ||
+          (filters.dateFilter === 'past' && event.startDateTime < Date.now()) ||
+          (filters.dateFilter === 'future' &&
+            event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)) &&
+        (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&
+        (!filters.organizerFilter || filters.organizerFilter.has(event.organizerName)),
+    )
+    .map(({ event }, rowIndex) => {
+      const isOdd = rowIndex % 2 === 0;
+      const row = new EventRow(event, previousStartDateTime, isOdd);
+      previousStartDateTime = event.startDateTime; // Update after creating the row
+      return row;
     });
 
-    // Close modal when clicking the close button
-    closeModal.onclick = () => {
-        modal.style.display = "none";
-    };
-
-    // Close modal when clicking outside of it
-    window.onclick = (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    };
+  // Append all rows to the tbody
+  eventRows.forEach(row => tbody.appendChild(row));
 }
 
 // Initialize the application
-async function initialize(): Promise<void> {
-    try {
-        new MutationObserver(positionFilterContainer).observe(
-            document.querySelector(".event-table tbody")!,
-            { childList: true, subtree: true }
-        );
-        await loadData();
-    } catch (error) {
-        console.error("Error initializing:", error);
-        const contentDiv = document.getElementById("content")!;
-        contentDiv.innerText = "Failed to initialize application.";
-    }
+async function initializeApp() {
+  try {
+    new MutationObserver(positionOrganizerFilter).observe(
+      document.querySelector('.event-table tbody')!,
+      { childList: true, subtree: true },
+    );
+    await loadAndDisplayEvents();
+  } catch (error) {
+    console.error('Initialization error:', error);
+    document.getElementById('content')!.textContent = 'Failed to initialize application.';
+  }
 }
 
-document.addEventListener("DOMContentLoaded", initialize);
+document.addEventListener('DOMContentLoaded', initializeApp);

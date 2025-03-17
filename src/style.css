@@ -52,7 +52,6 @@ body::after {
 }
 
 @media (max-width: 30rem) {
-
   body::before,
   body::after {
       display: none;
@@ -61,7 +60,6 @@ body::after {
 
 #content {
   flex: 1 0 auto;
-  /* Pushes the version identifier to the bottom of the screen: */
   min-height: calc(100dvh - var(--version-identifier-height));
 }
 
@@ -71,16 +69,6 @@ body::after {
   max-width: 30rem;
   table-layout: fixed;
   border-collapse: collapse;
-}
-
-.event-table tbody tr:nth-child(odd) > .event,
-.event-table tbody tr:nth-child(odd) > .organizer {
-    background-color: var(--secondary-color);
-}
-
-.event-table tbody tr:nth-child(even) > .event,
-.event-table tbody tr:nth-child(even) > .organizer {
-    background-color: var(--tertiary-color);
 }
 
 .event-table thead {
@@ -111,22 +99,26 @@ table {
 }
 
 th,
-td {
+event-row::part(date),
+event-row::part(event),
+event-row::part(organizer) {
   padding: .1rem .3rem;
   position: relative;
 }
 
-td {
+event-row::part(date),
+event-row::part(event),
+event-row::part(organizer) {
   color: black;
 }
 
 th.date,
-td.date {
+event-row::part(date) { 
   width: 4rem;
 }
 
 th.organizer,
-td.organizer {
+event-row::part(organizer) {
   width: 5rem;
   overflow: hidden;
   white-space: nowrap;
@@ -134,7 +126,7 @@ td.organizer {
 }
 
 th.event,
-td.event {
+event-row::part(event) {
   width: auto;
   max-width: calc(100% - 9rem);
   overflow: hidden;
@@ -186,34 +178,6 @@ th.event input {
   background-color: #0056b3;
 }
 
-.monday > .date {
-  background-color: #CB9999c0;  /* Soft Red */
-}
-
-.tuesday > .date {
-  background-color: #CBB07Ec0;  /* Warm Yellow */
-}
-
-.wednesday > .date {
-  background-color: #A3C18Dc0;  /* Muted Green */
-}
-
-.thursday > .date {
-  background-color: #8DC1B5c0;  /* Cool Cyan */
-}
-
-.friday > .date {
-  background-color: #9BB0CBc0;  /* Sky Blue */
-}
-
-.saturday > .date {
-  background-color: #B399CBc0;  /* Soft Purple */
-}
-
-.sunday > .date {
-  background-color: #CB91B3c0;  /* Gentle Magenta */
-}
-
 .version-identifier {
   bottom: 0;
   width: 100%;
@@ -224,7 +188,6 @@ th.event input {
   color: rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   flex-shrink: 0;
-  /* Prevent it from shrinking */
 }
 
 .version-identifier a {
@@ -269,65 +232,4 @@ th.event input {
   opacity: 0;
   box-sizing: border-box;
   z-index: 10;
-}
-
-/* Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 500px;
-  border-radius: 8px;
-  position: relative;
-}
-
-.close-modal {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close-modal:hover,
-.close-modal:focus {
-  color: black;
-  text-decoration: none;
-}
-
-/* Reuse existing classes for consistency */
-#modal-details .location-description,
-#modal-details .event-page-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: .5rem;
-}
-
-#modal-details .button {
-  display: inline-block;
-  margin-top: 5px;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-#modal-details .button:hover {
-  background-color: #0056b3;
 }
