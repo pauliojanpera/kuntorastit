@@ -2,15 +2,15 @@ import { defineConfig } from 'vitest/config';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(({ command, mode }) => {
-  const isDev = command === 'serve' || mode === 'development';
-  // Placeholder for base URL, replaced by GitHub Action
-  const baseUrl = 'VITE_BASE_URL_PLACEHOLDER' as string;
+  // Placeholder for base URL, replaced by GitHub Action. Stays intact in a local development environment.
+  const maybeBase = 'VITE_BASE_URL_PLACEHOLDER' as string;
+  const base = maybeBase.startsWith('VITE') ? '/' : maybeBase
   // Extract the repo-specific path (e.g., '/kuntorastit/') from the base URL or default to '/'
-  const repoPath = baseUrl === 'VITE_BASE_URL_PLACEHOLDER' ? '/' : baseUrl.match(/\/[^/]+\/$/)?.[0] || '/';
-
-  console.log({ baseUrl, repoPath, isDev });
+  const repoPath = maybeBase.startsWith('VITE') ? '/' : maybeBase.match(/\/[^/]+\/$/)?.[0];
+  
+  console.log({ base, repoPath });
   return {
-    base: isDev ? '/' : (baseUrl === 'VITE_BASE_URL_PLACEHOLDER' ? '/' : baseUrl),
+    base,
     server: {
       port: 8080,
       host: true,
@@ -26,12 +26,15 @@ export default defineConfig(({ command, mode }) => {
     },
     plugins: [
       VitePWA({
+        devOptions: {
+          enabled: true, // Enable PWA in dev mode
+          type: 'module', // Use 'module' type for service worker (optional, depending on your setup)
+        },
         registerType: 'autoUpdate',
         workbox: {
           runtimeCaching: [
             {
-              // Dynamically construct the urlPattern using baseUrl
-              urlPattern: new RegExp(`${baseUrl === 'VITE_BASE_URL_PLACEHOLDER' ? '/' : baseUrl}data/events.json`),
+              urlPattern: new RegExp(`${base}data/events.json`),
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'events-data-cache',
@@ -59,7 +62,7 @@ export default defineConfig(({ command, mode }) => {
         manifest: {
           name: 'Kuntorastit',
           short_name: 'Kuntorastit',
-          start_url: isDev ? '/' : repoPath, // Dynamic start_url based on repo path
+          start_url: repoPath,
           display: 'standalone',
           background_color: '#ffffff',
           theme_color: '#000000',
@@ -71,6 +74,7 @@ export default defineConfig(({ command, mode }) => {
             },
           ],
         },
+        manifestFilename: 'manifest.json',
         includeAssets: ['icon-192.png'],
       }),
     ],
