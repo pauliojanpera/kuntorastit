@@ -1,4 +1,6 @@
-const DATA_URL = `./data/events.json`;
+import './style.css'
+
+const DATA_URL = '/kuntorastit/data/events.json';
 
 type OrienteeringEvent = {
     uuid: string;
@@ -85,22 +87,22 @@ async function* filterSettings() {
 let activeFilters: OrienteeringEventFilterSettings;
 
 async function loadData() {
-    const contentDiv = document.getElementById("content")!;
+    const contentDiv = document.getElementById('content')!;
     try {
         const response = await fetch(DATA_URL);
-        if (!response.ok) throw new Error("Failed to fetch data");
-        const data = await response.json();
+        if (!response.ok) throw new Error('Failed to fetch data');
+        const { events } = await response.json();
 
-        populateFilters(data);
+        populateFilters(events);
         setupMultiSelectToggle();
 
         for await (const filters of filterSettings()) {
             activeFilters = filters;
-            renderData(data, filters);
+            renderData(events, filters);
         }
     } catch (error) {
-        console.error("Error loading data:", error);
-        contentDiv.innerText = "Failed to load data.";
+        console.error('Error loading data:', error);
+        contentDiv.innerText = 'Failed to load data.';
     }
 }
 
@@ -459,45 +461,13 @@ function renderData(events: { event: OrienteeringEvent }[], filters: Orienteerin
     };
 }
 
-function observeTableChanges() {
-    const tbody = document.querySelector(".event-table tbody")!;
-    const observer = new MutationObserver(() => {
-        positionFilterContainer();
-    });
-    observer.observe(tbody, { childList: true, subtree: true });
-}
-
-async function registerServiceWorker(): Promise<void> {
-    if ('serviceWorker' in navigator) {
-        try {
-            // Cache name with UUID placeholder (replaced at build time)
-            const registration = await navigator.serviceWorker.register(`service-worker.js`, {
-                scope: `./`
-            });
-            registration.addEventListener('updatefound', () => {
-                const newWorker = registration.installing;
-                if (newWorker) {
-                    newWorker.addEventListener('statechange', () => {
-                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                            newWorker.postMessage({ action: 'skipWaiting' });
-                        }
-                    });
-                }
-            });
-            console.log('Service Worker registered with scope:', registration.scope);
-        } catch (error) {
-            console.error('Service Worker registration failed:', error);
-        }
-    } else {
-        console.warn('Service Workers not supported in this browser');
-    }
-}
-
 // Initialize the application
 async function initialize(): Promise<void> {
     try {
-        await registerServiceWorker();
-        observeTableChanges();
+        new MutationObserver(positionFilterContainer).observe(
+            document.querySelector(".event-table tbody")!,
+            { childList: true, subtree: true }
+        );
         await loadData();
     } catch (error) {
         console.error("Error initializing:", error);

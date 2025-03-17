@@ -1,18 +1,24 @@
 {
   "compilerOptions": {
-    "target": "esnext",                // Target ECMAScript next-generation output
-    "outDir": "./public/kuntorastit/dist",
-    "module": "NodeNext",         
-    "moduleResolution": "NodeNext",
-    "strict": true,
-    "esModuleInterop": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
   },
-  "rootDirs": ["src"],  
-  "include": ["src/**/*.mts", "src/**/*.ts"],
-  "exclude": []                        // Exclude unnecessary files (e.g., test files, node_modules)
+  "include": ["src"]
 }

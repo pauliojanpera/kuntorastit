@@ -1,22 +1,21 @@
 {
   "name": "kuntorastit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Kuntorastit",
   "private": false,
+  "type": "module",
   "scripts": {
-    "build": "rimraf public/* && cp -a static/* public && tsc && tsc-alias && node ./scripts/postbuild.js",
-    "deploy": "./scripts/deploy.sh",
-    "fetch": "./scripts/fetch_events.sh",
-    "watch": "nodemon -e mts,json,html,png,sh -w src -w static --exec pnpm run build",
-    "report": "./scripts/files.sh README.md REFERENCE.md package.json tsconfig.json update-data.yml .github/workflows/static.yml scripts/ src static/kuntorastit/index.html static/kuntorastit/manifest.json > kuntorastit.txt",
-    "start": "http-server public -p 8080 --cors -c-1"
+"dev": "vite",
+    "build": "node scripts/fetch_events.js --no-overwrite && vite build",
+    "preview": "vite preview --port 8080",
+    "test": "vitest",
+    "fetch-events": "node scripts/fetch_events.js"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.7.3",
-    "tsc-alias": "^1.8.10",
-    "nodemon": "^3.1.9",
-    "http-server": "^14.1.1",
-    "rimraf": "^6.0.1"
+    "node-fetch": "^3.3.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^3.0.8"
   }
 }
