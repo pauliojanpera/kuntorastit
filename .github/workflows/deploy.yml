@@ -53,6 +53,12 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Inject Commit Hash into index.html
+        run: |
+          COMMIT_HASH=${{ github.sha }}
+          sed -i "s|BUILD_VERSION_PLACEHOLDER|<a href=\"https://github.com/${{ github.repository }}/commit/$COMMIT_HASH\" target=\"_blank\">${{ github.run_number }}</a>|" dist/index.html
+        shell: bash
+  
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
