@@ -5,11 +5,12 @@
   "private": false,
   "type": "module",
   "scripts": {
-"dev": "vite",
+    "dev": "vite",
     "build": "node scripts/fetch_events.js --no-overwrite && vite build",
     "preview": "vite preview --port 8080",
     "test": "vitest",
-    "fetch-events": "node scripts/fetch_events.js"
+    "fetch-events": "node scripts/fetch_events.js",
+    "report": "./scripts/files.sh README.md REFERENCE.md package.json tsconfig.json vite.config.ts .github scripts src > kuntorastit.txt"
   },
   "devDependencies": {
     "node-fetch": "^3.3.2",
