@@ -217,6 +217,7 @@ th.event input {
 .version-identifier {
   bottom: 0;
   width: 100%;
+  max-width: 30rem;
   padding: .1rem;
   font-size: .7rem;
   height: var(--version-identifier-height);
@@ -224,6 +225,18 @@ th.event input {
   box-sizing: border-box;
   flex-shrink: 0;
   /* Prevent it from shrinking */
+}
+
+#version-identifier a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#version-identifier a:hover,
+#version-identifier a:active,
+#version-identifier a:focus {
+  color: inherit;
+  text-decoration: none;
 }
 
 #organizer-filter-container {
@@ -234,7 +247,7 @@ th.event input {
   z-index: 1000;
   width: 30rem;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-out;
 }
 
 #organizer-filter-container.hidden {
