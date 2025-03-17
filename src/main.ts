@@ -91,7 +91,18 @@ async function loadData() {
     try {
         const response = await fetch(DATA_URL);
         if (!response.ok) throw new Error('Failed to fetch data');
-        const { events } = await response.json();
+        let { events } = await response.json();
+
+        if ('knownOrganizers' in window) {
+            const { knownOrganizers } = window;
+            if (Array.isArray(knownOrganizers) && knownOrganizers.length > 0) {
+                events = events.filter(({ event }: { event: OrienteeringEvent }) =>
+                    knownOrganizers.includes(event.organizerName)
+                );
+            } else {
+                console.error('The knownOrganizers global should be an array with string values');
+            }
+        }
 
         populateFilters(events);
         setupMultiSelectToggle();
