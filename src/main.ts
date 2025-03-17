@@ -1,6 +1,6 @@
 import './style.css'
 
-const DATA_URL = '/kuntorastit/data/events.json';
+const DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/events.json`;
 
 type OrienteeringEvent = {
     uuid: string;

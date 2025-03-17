@@ -8,6 +8,7 @@ export default defineConfig(({ command, mode }) => {
   // Extract the repo-specific path (e.g., '/kuntorastit/') from the base URL or default to '/'
   const repoPath = baseUrl === 'VITE_BASE_URL_PLACEHOLDER' ? '/' : baseUrl.match(/\/[^/]+\/$/)?.[0] || '/';
 
+  console.log({ baseUrl, repoPath, isDev });
   return {
     base: isDev ? '/' : (baseUrl === 'VITE_BASE_URL_PLACEHOLDER' ? '/' : baseUrl),
     server: {
@@ -29,7 +30,8 @@ export default defineConfig(({ command, mode }) => {
         workbox: {
           runtimeCaching: [
             {
-              urlPattern: /\/kuntorastit\/data\/events.json/,
+              // Dynamically construct the urlPattern using baseUrl
+              urlPattern: new RegExp(`${baseUrl === 'VITE_BASE_URL_PLACEHOLDER' ? '/' : baseUrl}data/events.json`),
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'events-data-cache',
@@ -69,7 +71,6 @@ export default defineConfig(({ command, mode }) => {
             },
           ],
         },
-        manifestFilename: 'manifest.json',
         includeAssets: ['icon-192.png'],
       }),
     ],
