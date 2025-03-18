@@ -397,7 +397,7 @@ function formatDateAndTime(
       : '');
 
   // Format the time part
-  const timePart = currentDate.toFormat('H:mm');
+  const timePart = currentDate.toFormat('H.mm');
 
   return `${datePart}${modalQuirk ? '' : 'klo\u00A0'}${timePart}`;
 }
