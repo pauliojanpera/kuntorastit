@@ -53,14 +53,20 @@ jobs:
       - name: Build singlefile version
         run: pnpm build:singlefile
 
-      - name: Rename singlefile index.html to singlefile.html
+      - name: Rename singlefile index.html to singlefile.html and move to temp
         run: |
-          mv dist/index.html dist/singlefile.html
+          mkdir -p temp
+          mv dist/index.html temp/singlefile.html
         shell: bash
 
       - name: Build
         run: pnpm build
 
+      - name: Move singlefile.html back to dist
+        run: |
+          mv temp/singlefile.html dist/singlefile.html
+        shell: bash
+        
       - name: Inject Commit Hash into index.html
         run: |
           COMMIT_HASH=${{ github.sha }}
