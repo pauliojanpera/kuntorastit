@@ -11,7 +11,7 @@ const repoPath = maybeBase.startsWith('VITE') ? '/' : maybeBase.match(/\/[^/]+\/
 export default defineConfig(({ command, mode }) => {
   console.log({ base, repoPath, mode });
 
-  return (alternatives[mode] ?? alternatives.default)({
+  const definedConfig = (alternatives[mode] ?? alternatives.default)({
     base,
     server: {
       port: 8080,
@@ -28,6 +28,9 @@ export default defineConfig(({ command, mode }) => {
     },
     plugins: []
   });
+
+  console.log(definedConfig);
+  return definedConfig;
 });
 
 const alternatives = {
@@ -52,7 +55,7 @@ const alternatives = {
         workbox: {
           runtimeCaching: [
             {
-              urlPattern: new RegExp(`${base}data/events.json`),
+              urlPattern: new RegExp(`${repoPath}data/events.json`),
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'events-data-cache',
