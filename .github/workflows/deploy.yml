@@ -64,7 +64,6 @@ jobs:
 
       - name: Move singlefile.html back to dist
         run: |
-          cp temp/singlefile.html dist/unaltered.html
           mv temp/singlefile.html dist/singlefile.html
         shell: bash
         

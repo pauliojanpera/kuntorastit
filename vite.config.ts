@@ -36,6 +36,9 @@ export default defineConfig(({ command, mode }) => {
 const alternatives = {
   singlefile: config => ({
     ...config,
+    define: {
+      'import.meta.env.ACTUAL_BASE_URL': base, // Workaround for some substitution confusion.
+    },
     plugins: [...config.plugins, viteSingleFile()],
     build: {
       ...config.build,

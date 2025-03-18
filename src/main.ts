@@ -2,7 +2,7 @@ import './style.css';
 import { DateTime } from 'luxon';
 
 // Define the base URL for fetching event data
-const EVENTS_DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/events.json`;
+const EVENTS_DATA_URL = `${import.meta.env.ACTUAL_BASE_URL.replace(/\/$/, '')}/data/events.json`;
 
 // Interface for an orienteering event
 interface OrienteeringEvent {
