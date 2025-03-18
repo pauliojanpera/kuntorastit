@@ -383,7 +383,6 @@ function formatDateAndTime(
 ): string {
   const currentDate = DateTime.fromMillis(currentTimestamp, { zone: 'UTC' });
 
-  // If previousTimestamp matches currentTimestamp, return empty string
   if (currentTimestamp === previousTimestamp) return '';
 
   // Get date without time for comparison
@@ -394,8 +393,8 @@ function formatDateAndTime(
   const datePart =
     (previousTimestamp === undefined ||
     getDateOnly(previousTimestamp) !== getDateOnly(currentTimestamp)
-      ? `${currentDate.toFormat(`EEE${modalQuirk ? 'E' : ''} d.M.`, { locale: 'fi-FI' })}`
-      : '').replace(/\s/g, '\u00A0')+' ';
+      ? `${currentDate.toFormat(`EEE${modalQuirk ? 'E' : ''} d.M.`, { locale: 'fi-FI' })}`.replace(/\s/g, '\u00A0')+' '
+      : '');
 
   // Format the time part
   const timePart = currentDate.toFormat('H:mm');
