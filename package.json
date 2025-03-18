@@ -23,5 +23,8 @@
     "vite-plugin-pwa": "^0.21.1",
     "vite-plugin-singlefile": "^2.2.0",
     "vitest": "^3.0.8"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0"
   }
 }
