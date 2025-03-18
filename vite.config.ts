@@ -37,7 +37,7 @@ const alternatives = {
   singlefile: config => ({
     ...config,
     define: {
-      'import.meta.env.ACTUAL_BASE_URL': base, // Workaround for some substitution confusion.
+      'import.meta.env.ACTUAL_BASE_URL': JSON.stringify(base), // Workaround for some substitution confusion.
     },
     plugins: [...config.plugins, viteSingleFile()],
     build: {
