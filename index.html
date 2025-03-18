@@ -146,7 +146,9 @@
 
             .close-modal {
                 color: #aaa;
-                float: right;
+                position: absolute;
+                right: 1rem;
+                top: .5rem;
                 font-size: 28px;
                 font-weight: bold;
                 cursor: pointer;
@@ -162,14 +164,6 @@
                 margin-bottom: 15px;
             }
 
-            .location-description {
-                margin-top: 5px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                padding: .5rem;
-            }
-
             .button {
                 display: inline-block;
                 margin-top: 5px;
@@ -178,10 +172,15 @@
                 color: white;
                 text-decoration: none;
                 border-radius: 4px;
+                white-space: nowrap;
             }
 
             .button:hover {
                 background-color: #0056b3;
+            }
+
+            #map-link:not(:where([href])) {
+                display: none;
             }
 
             .event-page-link {
@@ -191,10 +190,51 @@
                 align-items: center;
                 padding: .5rem;
             }
+
+            .event-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .event-detail {
+                margin-bottom: 10px;
+            }
+
+            .form-label {
+                font-weight: bold;
+            }
+            .location-description {
+                justify-content: space-around;
+            }
+
+            .location-description,
+            .event-page-link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: .5rem;
+                justify-content: space-between;
+            }
+
         </style>
         <div class="modal-content">
             <span class="close-modal">×</span>
-            <div id="modal-details"></div>
+            <div id="modal-details">
+                <div class="event-title" id="event-title"></div>
+                <div class="event-detail">
+                    <span class="form-label">Aika:</span> <span id="duration-text"></span>
+                </div>
+                <div class="event-detail">
+                    <span class="form-label">Järjestäjä:</span> <span id="organizer-text"></span>
+                </div>
+                <div class="location-section">
+                    <div class="form-label">Opastuksen alku, lähtöpaikan osoite tai muu sijainti:</div>
+                    <span id="location-text"></span>
+                </div>
+                <div><a id="map-link" class="button" target="_blank">🌍 Näytä kartalla</a></div>
+                <div><a id="event-link" class="button" target="_blank">📌 Tapahtumanjärjestäjän ilmoitus</a></div>
+            </div>
         </div>
     </template>
 </body>

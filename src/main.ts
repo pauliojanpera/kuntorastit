@@ -1,4 +1,5 @@
 import './style.css';
+import { DateTime } from 'luxon';
 
 // Define the base URL for fetching event data
 const EVENTS_DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/events.json`;
@@ -75,13 +76,12 @@ class EventModal extends HTMLElement {
     this.render();
   }
 
-  // Render the modal with event details
   render() {
     const template = document.getElementById('event-modal-template') as HTMLTemplateElement;
     const clone = template.content.cloneNode(true) as DocumentFragment;
 
     const modalDetails = clone.querySelector('#modal-details') as HTMLDivElement;
-    modalDetails.appendChild(this.createEventDetails());
+    this.populateEventDetails(modalDetails);
 
     const closeModal = clone.querySelector('.close-modal') as HTMLSpanElement;
     closeModal.onclick = () => this.remove();
@@ -89,48 +89,49 @@ class EventModal extends HTMLElement {
     this.shadowRoot!.appendChild(clone);
     this.style.display = 'block';
 
-    // Close modal when clicking outside
     window.onclick = e => {
       if (e.target === this) this.remove();
     };
   }
 
-  // Create the detailed content for the modal
-  private createEventDetails(): HTMLElement {
-    const content = document.createElement('div');
+  private populateEventDetails(modalDetails: HTMLDivElement) {
+    const eventTitle = modalDetails.querySelector('#event-title') as HTMLDivElement;
+    const organizerText = modalDetails.querySelector('#organizer-text') as HTMLSpanElement;
+    const locationSection = modalDetails.querySelector('.location-section') as HTMLDivElement;
+    const locationText = modalDetails.querySelector('#location-text') as HTMLSpanElement;
+    const mapLink = modalDetails.querySelector('#map-link') as HTMLAnchorElement;
+    const durationText = modalDetails.querySelector('#duration-text') as HTMLDivElement;
+    const eventLink = modalDetails.querySelector('#event-link') as HTMLAnchorElement;
 
+    // Populate event title
+    eventTitle.textContent = this.event.name;
+
+    // Populate duration
+    durationText.textContent = `${
+      formatDateAndTime(this.event.startDateTime, undefined, true) //
+    }–${
+      formatDateAndTime(this.event.endDateTime, this.event.startDateTime, true) //
+    }`;
+
+    // Populate organizer
+    organizerText.textContent = this.event.organizerName;
+
+    // Populate location section
     if (this.event.locationDescription || this.event.locationCoordinates) {
-      const locationSection = document.createElement('div');
-      locationSection.classList.add('location-section');
-      locationSection.innerHTML = `
-                <div class="location-title">Opastuksen alku, lähtöpaikan osoite tai muu sijainti:</div>
-                <div class="location-description">${this.event.locationDescription}</div>
-            `;
+      locationText.textContent = this.event.locationDescription || '';
       if (this.event.locationCoordinates) {
         const { northing, easting } = wgs84ToTm35fin(
           this.event.locationCoordinates.lat,
           this.event.locationCoordinates.lon,
         );
-        const mapLink = document.createElement('a');
         mapLink.href = `https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=fi&share=customMarker&n=${northing.toFixed(2)}&e=${easting.toFixed(2)}&title=${encodeURIComponent(this.event.name)}&zoom=6&layers=W3siaWQiOjIsIm9wYWNpdHkiOjEwMH1d-z`;
-        mapLink.target = '_blank';
-        mapLink.textContent = '🌍 Näytä kartalla';
-        mapLink.classList.add('button');
-        locationSection.querySelector('.location-description')!.appendChild(mapLink);
       }
-      content.appendChild(locationSection);
+    } else {
+      locationSection.style.display = 'none'; // Hide if no location data
     }
 
-    const duration = document.createElement('div');
-    duration.textContent = `Tapahtuma jatkuu ${formatDateAndTime(this.event.endDateTime)} saakka.`;
-    content.appendChild(duration);
-
-    const eventLink = document.createElement('div');
-    eventLink.classList.add('event-page-link');
-    eventLink.innerHTML = `<a href="https://www.rastilippu.fi/kuntorastit/tapahtuma/${this.event.uuid}" target="_blank">📌 Tapahtumanjärjestäjän ilmoitus</a>`;
-    content.appendChild(eventLink);
-
-    return content;
+    // Populate event link
+    eventLink.href = `https://www.rastilippu.fi/kuntorastit/tapahtuma/${this.event.uuid}`;
   }
 }
 
@@ -375,25 +376,31 @@ function populateOrganizerFilter(events: { event: OrienteeringEvent }[]) {
   });
 }
 
-function formatDateAndTime(currentTimestamp: number, previousTimestamp?: number): string {
+function formatDateAndTime(
+  currentTimestamp: number,
+  previousTimestamp?: number,
+  modalQuirk = false,
+): string {
+  const currentDate = DateTime.fromMillis(currentTimestamp, { zone: 'UTC' });
+
+  // If previousTimestamp matches currentTimestamp, return empty string
   if (currentTimestamp === previousTimestamp) return '';
 
-  const currentDate = new Date(currentTimestamp);
-
   // Get date without time for comparison
-  const getDateOnly = (timestamp: number) => {
-    const d = new Date(timestamp);
-    return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
-  };
+  const getDateOnly = (timestamp: number) =>
+    DateTime.fromMillis(timestamp, { zone: 'Europe/Helsinki' }).startOf('day').toMillis();
 
+  // Determine if the date part should be shown (only if different from previous)
   const datePart =
     previousTimestamp === undefined ||
     getDateOnly(previousTimestamp) !== getDateOnly(currentTimestamp)
-      ? `${currentDate.toLocaleDateString('fi-FI', {
-          weekday: 'short',
-        })}\u00A0${currentDate.getDate()}.${currentDate.getMonth() + 1}. `
+      ? `${currentDate.toFormat(`EEE${modalQuirk ? 'E' : ''} d.M.`, { locale: 'fi-FI' })} `
       : '';
-  return `${datePart}klo\u00A0${currentDate.getHours()}.${String(currentDate.getMinutes()).padStart(2, '0')}`;
+
+  // Format the time part
+  const timePart = currentDate.toFormat('H:mm').replace(/\s/g, '\u00A0');
+
+  return `${datePart}${modalQuirk ? '' : 'klo\u00A0'}${timePart}`;
 }
 
 // Convert WGS84 coordinates to TM35FIN

@@ -144,26 +144,6 @@ th.event input {
   cursor: pointer;
 }
 
-.expanded-row {
-  background-color: #f8f9fa;
-}
-
-.expanded-content {
-  padding: 10px;
-}
-
-.location-description {
-  justify-content: space-around;
-}
-
-.location-description,
-.event-page-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: .5rem;
-}
-
 .button {
   display: inline-block;
   margin-top: 5px;
