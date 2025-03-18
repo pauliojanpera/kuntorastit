@@ -50,6 +50,14 @@ jobs:
           sed -i "s|VITE_BASE_URL_PLACEHOLDER|$BASE_URL|" vite.config.ts
         shell: bash
 
+      - name: Build singlefile version
+        run: pnpm build:singlefile
+
+      - name: Rename singlefile index.html to singlefile.html
+        run: |
+          mv dist/index.html dist/singlefile.html
+        shell: bash
+
       - name: Build
         run: pnpm build
 
@@ -59,6 +67,12 @@ jobs:
           sed -i "s|BUILD_VERSION_PLACEHOLDER|<a href=\"https://github.com/${{ github.repository }}/commit/$COMMIT_HASH\" target=\"_blank\">${{ github.run_number }}</a>|" dist/index.html
         shell: bash
   
+      - name: Inject Commit Hash into index.html
+        run: |
+          COMMIT_HASH=${{ github.sha }}
+          sed -i "s|BUILD_VERSION_PLACEHOLDER|<a href=\"https://github.com/${{ github.repository }}/commit/$COMMIT_HASH\" target=\"_blank\">${{ github.run_number }}</a>|" dist/singlefile.html
+        shell: bash
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

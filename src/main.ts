@@ -392,13 +392,13 @@ function formatDateAndTime(
 
   // Determine if the date part should be shown (only if different from previous)
   const datePart =
-    previousTimestamp === undefined ||
+    (previousTimestamp === undefined ||
     getDateOnly(previousTimestamp) !== getDateOnly(currentTimestamp)
-      ? `${currentDate.toFormat(`EEE${modalQuirk ? 'E' : ''} d.M.`, { locale: 'fi-FI' })} `
-      : '';
+      ? `${currentDate.toFormat(`EEE${modalQuirk ? 'E' : ''} d.M.`, { locale: 'fi-FI' })}`
+      : '').replace(/\s/g, '\u00A0')+' ';
 
   // Format the time part
-  const timePart = currentDate.toFormat('H:mm').replace(/\s/g, '\u00A0');
+  const timePart = currentDate.toFormat('H:mm');
 
   return `${datePart}${modalQuirk ? '' : 'klo\u00A0'}${timePart}`;
 }

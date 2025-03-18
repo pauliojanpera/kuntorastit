@@ -1,15 +1,17 @@
 import { defineConfig } from 'vitest/config';
 import { VitePWA } from 'vite-plugin-pwa';
+import { viteSingleFile } from 'vite-plugin-singlefile';
+
+// Placeholder for base URL, replaced by GitHub Action.
+// Stays intact in a local development environment.
+const maybeBase = 'VITE_BASE_URL_PLACEHOLDER' as string;
+const base = maybeBase.startsWith('VITE') ? '/' : maybeBase;
+const repoPath = maybeBase.startsWith('VITE') ? '/' : maybeBase.match(/\/[^/]+\/$/)?.[0];
 
 export default defineConfig(({ command, mode }) => {
-  // Placeholder for base URL, replaced by GitHub Action. Stays intact in a local development environment.
-  const maybeBase = 'VITE_BASE_URL_PLACEHOLDER' as string;
-  const base = maybeBase.startsWith('VITE') ? '/' : maybeBase
-  // Extract the repo-specific path (e.g., '/kuntorastit/') from the base URL or default to '/'
-  const repoPath = maybeBase.startsWith('VITE') ? '/' : maybeBase.match(/\/[^/]+\/$/)?.[0];
-  
-  console.log({ base, repoPath });
-  return {
+  console.log({ base, repoPath, mode });
+
+  return (alternatives[mode] ?? alternatives.default)({
     base,
     server: {
       port: 8080,
@@ -24,11 +26,27 @@ export default defineConfig(({ command, mode }) => {
         },
       },
     },
+    plugins: []
+  });
+});
+
+const alternatives = {
+  singlefile: config => ({
+    ...config,
+    plugins: [...config.plugins, viteSingleFile()],
+    build: {
+      ...config.build,
+      assetsInlineLimit: 0, // Prevent small assets from being inlined as base64 unnecessarily
+      cssCodeSplit: false, // Bundle all CSS into one
+    },
+  }),
+  default: config => ({
+    ...config,
     plugins: [
       VitePWA({
         devOptions: {
-          enabled: true, // Enable PWA in dev mode
-          type: 'module', // Use 'module' type for service worker (optional, depending on your setup)
+          enabled: true,
+          type: 'module',
         },
         registerType: 'autoUpdate',
         workbox: {
@@ -82,5 +100,5 @@ export default defineConfig(({ command, mode }) => {
       globals: true,
       environment: 'jsdom',
     },
-  };
-});
+  }),
+};

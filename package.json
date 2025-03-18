@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/fetch_events.js --no-overwrite && vite build",
+    "build:singlefile": "node scripts/fetch_events.js --no-overwrite && vite build --mode singlefile && node scripts/postprocess-singlefile.js",
     "preview": "vite preview --port 8080",
     "test": "vitest",
     "fetch-events": "node scripts/fetch_events.js",
@@ -14,11 +15,13 @@
   },
   "devDependencies": {
     "@types/luxon": "^3.4.2",
+    "jsdom": "^26.0.0",
     "node-fetch": "^3.3.2",
     "prettier": "^3.5.3",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
     "vite-plugin-pwa": "^0.21.1",
+    "vite-plugin-singlefile": "^2.2.0",
     "vitest": "^3.0.8"
   },
   "dependencies": {
