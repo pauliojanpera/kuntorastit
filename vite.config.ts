@@ -17,6 +17,9 @@ export default defineConfig(({ command, mode }) => {
       port: 8080,
       host: true,
     },
+    define: {
+      'import.meta.env.ACTUAL_BASE_URL': JSON.stringify(base), // Workaround for some substitution confusion in singlefile mode.
+    },
     build: {
       rollupOptions: {
         output: {
@@ -36,9 +39,6 @@ export default defineConfig(({ command, mode }) => {
 const alternatives = {
   singlefile: config => ({
     ...config,
-    define: {
-      'import.meta.env.ACTUAL_BASE_URL': JSON.stringify(base), // Workaround for some substitution confusion.
-    },
     plugins: [...config.plugins, viteSingleFile()],
     build: {
       ...config.build,
