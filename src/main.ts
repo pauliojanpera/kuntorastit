@@ -1,5 +1,4 @@
 import './style.css';
-import { DateTime } from 'luxon';
 
 // Define the base URL for fetching event data
 const EVENTS_DATA_URL = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/events.json`;
@@ -381,24 +380,42 @@ function formatDateAndTime(
   previousTimestamp?: number,
   modalQuirk = false,
 ): string {
-  const currentDate = DateTime.fromMillis(currentTimestamp, { zone: 'UTC' });
+  const currentDate = new Date(currentTimestamp); // Timestamp in UTC milliseconds
 
-  // If previousTimestamp matches currentTimestamp, return empty string
+  // If currentTimestamp matches previousTimestamp, return empty string
   if (currentTimestamp === previousTimestamp) return '';
 
-  // Get date without time for comparison
-  const getDateOnly = (timestamp: number) =>
-    DateTime.fromMillis(timestamp, { zone: 'Europe/Helsinki' }).startOf('day').toMillis();
+  // Helper to get date in Helsinki timezone and reset to start of day
+  const getDateOnly = (timestamp: number) => {
+    const date = new Date(timestamp);
+    // Get Helsinki date string (e.g., "3/17/2025") and parse it back to UTC millis
+    const helsinkiDateStr = date.toLocaleString('en-US', {
+      timeZone: 'Europe/Helsinki',
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric',
+    });
+    const [month, day, year] = helsinkiDateStr.split('/').map(Number);
+    // Create a new Date at midnight Helsinki time, then convert to UTC millis
+    const helsinkiMidnight = new Date(Date.UTC(year, month - 1, day, 0, 0, 0));
+    const offsetMinutes = helsinkiMidnight.getTimezoneOffset(); // Offset at this date
+    helsinkiMidnight.setMinutes(helsinkiMidnight.getMinutes() + offsetMinutes); // Adjust to Helsinki midnight
+    return helsinkiMidnight.getTime();
+  };
 
   // Determine if the date part should be shown (only if different from previous)
   const datePart =
     previousTimestamp === undefined ||
     getDateOnly(previousTimestamp) !== getDateOnly(currentTimestamp)
-      ? `${currentDate.toFormat(`EEE${modalQuirk ? 'E' : ''} d.M.`, { locale: 'fi-FI' })} `
+      ? `${currentDate.toLocaleString('fi-FI', {
+          weekday: modalQuirk ? 'long' : 'short',
+          timeZone: 'UTC',
+        })}\u00A0${currentDate.getUTCDate()}.${currentDate.getUTCMonth() + 1}. `
       : '';
 
-  // Format the time part
-  const timePart = currentDate.toFormat('H:mm').replace(/\s/g, '\u00A0');
+  const hours = String(currentDate.getUTCHours());
+  const minutes = String(currentDate.getUTCMinutes()).padStart(2, '0');
+  const timePart = `${hours}.${minutes}`;
 
   return `${datePart}${modalQuirk ? '' : 'klo\u00A0'}${timePart}`;
 }
