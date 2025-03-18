@@ -5,9 +5,7 @@
   --version-identifier-height: 1rem;
 }
 
-body {
-  background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 10.45%, var(--tertiary-color) 41.35%);
-  font-family: Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+.body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -22,7 +20,7 @@ body {
 }
 
 /* Left tint overlay */
-body::before {
+.body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -34,7 +32,7 @@ body::before {
 }
 
 /* Right tint overlay */
-body::after {
+.body::after {
   content: '';
   position: fixed;
   top: 0;
@@ -46,21 +44,22 @@ body::after {
 }
 
 @media (max-width: 32rem) {
-  body {
+  .body {
       overflow-y: auto;
   }
 }
 
 @media (max-width: 30rem) {
-  body::before,
-  body::after {
+  .body::before,
+  .body::after {
       display: none;
   }
 }
 
-#content {
+#event-content {
   flex: 1 0 auto;
   min-height: calc(100dvh - var(--version-identifier-height));
+  font-family: Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
 }
 
 .event-table {
