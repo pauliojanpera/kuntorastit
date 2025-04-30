@@ -6,7 +6,7 @@ const EVENTS_DATA_URL = `${import.meta.env.ACTUAL_BASE_URL.replace(/\/$/, '')}/d
 
 // Interface for an orienteering event
 interface OrienteeringEvent {
-  uuid: string;
+  eventId: number;
   startDateTime: number;
   endDateTime: number;
   name: string;
@@ -131,7 +131,7 @@ class EventModal extends HTMLElement {
     }
 
     // Populate event link
-    eventLink.href = `https://www.rastilippu.fi/kuntorastit/tapahtuma/${this.event.uuid}`;
+    eventLink.href = `https://irma.suunnistusliitto.fi/public/event/view/${this.event.eventId}`;
   }
 }
 
