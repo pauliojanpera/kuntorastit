@@ -1,126 +1,6 @@
 {
-  "lastUpdated": "2025-04-30T20:59:20.366Z",
+  "lastUpdated": "2025-04-30T21:01:43.633Z",
   "events": [
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": 4069,
-        "name": "Kivilaaksonkadun hiekkakenttä",
-        "sports": [],
-        "organizerId": null,
-        "organizerName": "Rasti-Jussit",
-        "startDateTime": 1746030600000,
-        "endDateTime": 1746037800000,
-        "currentAttendeeCount": 0,
-        "maxAttendeeCount": 10000,
-        "locationAddress": "Liuskekatu 2, 60320 Seinäjoki, Suomi",
-        "locationDescription": "vappurastit",
-        "locationCoordinates": {
-          "lat": 62.780495,
-          "lon": 22.781736
-        },
-        "uuid": "61b126d6-a254-42f9-9ad7-9fcda2523d50",
-        "priceInCents": 500,
-        "productDiscounts": [],
-        "purpose": "SPORTS",
-        "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
-        "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": 4073,
-        "name": "Asema",
-        "sports": [],
-        "organizerId": null,
-        "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
-        "startDateTime": 1746032400000,
-        "endDateTime": 1746039600000,
-        "currentAttendeeCount": 0,
-        "maxAttendeeCount": 10000,
-        "locationAddress": "Könnintie 123, 61410 Seinäjoki, Suomi",
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.912384,
-          "lon": 22.52544
-        },
-        "uuid": "f53a11d8-ebb3-4412-a264-45f59dea1838",
-        "priceInCents": 500,
-        "productDiscounts": [],
-        "purpose": "SPORTS",
-        "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
-        "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": 4075,
-        "name": "Isokangas",
-        "sports": [],
-        "organizerId": null,
-        "organizerName": "Kortesjärven Järvi-Veikot",
-        "startDateTime": 1746032400000,
-        "endDateTime": 1746039600000,
-        "currentAttendeeCount": 0,
-        "maxAttendeeCount": 10000,
-        "locationAddress": "Isokankaantie 85, 62470 Kauhava, Finland",
-        "locationDescription": "Suuralue: Lapinkangas-Isokangas",
-        "locationCoordinates": {
-          "lat": 63.270042,
-          "lon": 23.282652
-        },
-        "uuid": "633b557f-a5e5-4d65-8ad4-13087fe024f6",
-        "priceInCents": 500,
-        "productDiscounts": [],
-        "purpose": "SPORTS",
-        "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
-        "parentSeriesEventName": "Kortesjärven iltarastit 2025"
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": 4081,
-        "name": "Ravirata, Kiuaskallio",
-        "sports": [],
-        "organizerId": null,
-        "organizerName": "Jalasjärven Jalas",
-        "startDateTime": 1746032400000,
-        "endDateTime": 1746037800000,
-        "currentAttendeeCount": 0,
-        "maxAttendeeCount": 10000,
-        "locationAddress": "Lauhanevantie 1, 61600 Kurikka, Suomi",
-        "locationDescription": "Maksut paikanpäällä tapahtumassa: alle 20v. ilmaiseksi, muut karttamaksu 7€ tai Epsu-kortti (kausikortti 80€). A-rata n. 6,5 km, B-rata n. 5 km,  C-rata n. 3 km, D-rata helppo 2 km",
-        "locationCoordinates": {
-          "lat": 62.508842,
-          "lon": 22.761341
-        },
-        "uuid": "09411b6f-f5ee-43ad-8ac1-88c5d1d4fc62",
-        "priceInCents": 500,
-        "productDiscounts": [],
-        "purpose": "SPORTS",
-        "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
-        "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
-      },
-      "serviceAvailable": false
-    },
     {
       "disciplines": [
         "OT",
@@ -142,7 +22,7 @@
           "lat": 63.104233,
           "lon": 21.65979
         },
-        "uuid": "d341b60e-143e-4225-b902-0a9164aeb7af",
+        "uuid": "20025cee-631c-4d73-be7f-c284381c5839",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -172,7 +52,7 @@
           "lat": 63.27251,
           "lon": 22.712234
         },
-        "uuid": "3c8a2886-6c74-44bb-9b76-447478c9c7fe",
+        "uuid": "855e08f0-494e-42ea-b9ed-a04b17358500",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -202,7 +82,7 @@
           "lat": 62.50181,
           "lon": 22.326355
         },
-        "uuid": "c3f5d303-5514-473a-a675-14a92b0b2b52",
+        "uuid": "d42f221f-263a-4b0c-846e-a55c3d802b15",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -233,7 +113,7 @@
           "lat": 62.952293,
           "lon": 23.525742
         },
-        "uuid": "f2cff720-270c-4782-87f7-d662acdddc0d",
+        "uuid": "13bafc39-fa08-4886-a845-c961ad439086",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -264,7 +144,7 @@
           "lat": 63.069233,
           "lon": 23.105112
         },
-        "uuid": "4cf19aa4-6ca0-4d11-8e41-9bca3db1c6f4",
+        "uuid": "d1995f2c-6ae3-4514-b52e-4898863611fe",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -292,7 +172,7 @@
           "lat": 62.44513,
           "lon": 21.690552
         },
-        "uuid": "7a99216e-6c7c-4319-a511-98f57f4ba5d2",
+        "uuid": "5e3823ea-2958-4bee-a317-580c8e0fed9b",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -322,7 +202,7 @@
           "lat": 62.6038,
           "lon": 22.452887
         },
-        "uuid": "072f02cc-5783-4e00-9a9e-1716de87f38c",
+        "uuid": "aa223c98-1a1f-4a85-b25f-1281b51820fb",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -352,7 +232,7 @@
           "lat": 62.80631,
           "lon": 21.94715
         },
-        "uuid": "18a45a05-13e0-4d3f-9815-dadd95628304",
+        "uuid": "606ea16b-e23e-4a4e-85e1-91118b32d431",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -382,7 +262,7 @@
           "lat": 62.51799,
           "lon": 22.702854
         },
-        "uuid": "1cdd22af-3792-47aa-818b-4504aad161c1",
+        "uuid": "eb2be948-f969-4ec7-a1cc-17180f6de2b6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -412,7 +292,7 @@
           "lat": 63.26979,
           "lon": 23.250143
         },
-        "uuid": "cf9243e0-1080-4efb-b5df-ebeaf6c11f0c",
+        "uuid": "ee1def11-63ab-4127-9785-00c476938ff5",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -442,7 +322,7 @@
           "lat": 62.973576,
           "lon": 22.379827
         },
-        "uuid": "32287230-a444-4ddf-be51-467721fd8282",
+        "uuid": "223794a8-d9a3-4096-961e-402b615cb957",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -472,7 +352,7 @@
           "lat": 62.665195,
           "lon": 21.981941
         },
-        "uuid": "82ab30f5-e8e1-48b4-8655-12a05e3bc127",
+        "uuid": "f9273c74-46b0-479e-a1c5-ca0deefd245e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -502,7 +382,7 @@
           "lat": 62.885593,
           "lon": 22.99991
         },
-        "uuid": "9621ab8c-b5bd-4e14-88e1-99a731308853",
+        "uuid": "95330599-9556-4958-b2a4-6d1552ad1bca",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -532,7 +412,7 @@
           "lat": 63.16157,
           "lon": 22.815979
         },
-        "uuid": "c4baba5a-221d-41af-9b5a-e018b645cf9b",
+        "uuid": "f6a58ed1-e35d-469d-9406-d032bf5bed6c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -563,7 +443,7 @@
           "lat": 63.077312,
           "lon": 23.869488
         },
-        "uuid": "469b28d0-27f0-447d-8904-b88a8b66ae1a",
+        "uuid": "d00048c0-5f54-4f05-9372-6a5943ce6042",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -593,7 +473,7 @@
           "lat": 62.387993,
           "lon": 22.573
         },
-        "uuid": "3a502ff6-857b-421c-a304-e3e6b32c2538",
+        "uuid": "57af3b9f-484f-41b3-a2bd-fb07a7b4356a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -626,7 +506,7 @@
           "lat": 63.154736,
           "lon": 23.007153
         },
-        "uuid": "1c08e564-650f-4479-b47e-2cb47f26cddb",
+        "uuid": "57a28edb-a7fb-4e63-b9ee-b6398ae8ebda",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -654,7 +534,7 @@
           "lat": 62.427128,
           "lon": 21.827862
         },
-        "uuid": "4e03a80e-0499-443c-9269-9b7ffae456ea",
+        "uuid": "01529d32-511a-483b-82bf-240679157c43",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -684,7 +564,7 @@
           "lat": 63.003845,
           "lon": 22.01617
         },
-        "uuid": "91a8d1d6-04b0-475f-899b-9907b1f7c7a7",
+        "uuid": "efe7ae8e-d260-41eb-9f83-411e8b4b8a5a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -714,7 +594,7 @@
           "lat": 62.664707,
           "lon": 22.38751
         },
-        "uuid": "df76ad2e-3849-4aab-bfcb-53e7d890ee4c",
+        "uuid": "ea7b12fb-b226-42c4-9ac5-bf61a008c793",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -744,7 +624,7 @@
           "lat": 62.955357,
           "lon": 22.734709
         },
-        "uuid": "db59810d-7f32-4ecc-9d20-e789f0a24895",
+        "uuid": "89fa38ee-e141-4a4b-a36a-6aef4f3a7ec3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -774,7 +654,7 @@
           "lat": 63.285564,
           "lon": 23.212519
         },
-        "uuid": "b68b8771-e9f0-487e-8c51-3e57f6642054",
+        "uuid": "2db454bf-58bb-4569-ae35-196ae2daf598",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -804,7 +684,7 @@
           "lat": 62.580822,
           "lon": 22.743526
         },
-        "uuid": "1882d803-11ab-450e-9530-29e139a8db76",
+        "uuid": "65ce4a90-072b-4166-a4c4-f9c0b7af9ccb",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -836,7 +716,7 @@
           "lat": 62.769466,
           "lon": 22.813366
         },
-        "uuid": "c2ba52ff-632f-4f84-a237-9e0311b83c06",
+        "uuid": "5db2edd9-e2b0-406f-b6de-622f42ea1093",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -867,7 +747,7 @@
           "lat": 63.10588,
           "lon": 21.73111
         },
-        "uuid": "4e87f6f8-861f-4271-90a8-376345272a2e",
+        "uuid": "59774eb9-2d33-455a-81f8-0e821f24e0b9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -897,7 +777,7 @@
           "lat": 63.27531,
           "lon": 22.771996
         },
-        "uuid": "0c59fddf-2dc0-4f8b-bbcb-8a60631c65c9",
+        "uuid": "5ecaa555-eebe-4873-b39c-59d497b0556a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -927,7 +807,7 @@
           "lat": 62.41735,
           "lon": 22.325623
         },
-        "uuid": "e15a7697-7ee3-480d-adce-e2cd705e8715",
+        "uuid": "1ab9c838-37b2-44c8-97e5-6b699c3b2abb",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -959,7 +839,7 @@
           "lat": 62.88263,
           "lon": 23.727152
         },
-        "uuid": "2ca48c82-f548-4493-84d3-e00051676b0a",
+        "uuid": "a406aa8c-6945-42bb-ae21-6d610e66e713",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -992,7 +872,7 @@
           "lat": 63.198254,
           "lon": 23.034311
         },
-        "uuid": "2ee964be-2ea8-4ab4-9a32-2a03a41fc506",
+        "uuid": "1425eb05-7417-4537-872b-9f3d919a3ff7",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1022,7 +902,7 @@
           "lat": 62.433872,
           "lon": 21.650557
         },
-        "uuid": "2657551a-b49c-4942-a338-ca374c05ea09",
+        "uuid": "d95162aa-a04f-497f-8e3f-70c969a49ac6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1053,7 +933,7 @@
           "lat": 62.650734,
           "lon": 22.491512
         },
-        "uuid": "1c843fb5-a457-4719-8dae-b41ae4ea6fb1",
+        "uuid": "d8983437-bc8c-4065-aa8f-fca90bc30f5f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1083,7 +963,7 @@
           "lat": 62.997948,
           "lon": 22.319155
         },
-        "uuid": "46003a02-6e61-411a-b7f7-76c3f5c75ec5",
+        "uuid": "0f8389f3-68ce-42d2-a3f5-ef1aa614f5fd",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1113,7 +993,7 @@
           "lat": 63.26159,
           "lon": 23.14032
         },
-        "uuid": "28a2767b-03d1-46d9-b4e0-60b1f29bfc8d",
+        "uuid": "5a46edb6-6c26-497f-b549-a1b4a34fd660",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1143,7 +1023,7 @@
           "lat": 62.48983,
           "lon": 22.743408
         },
-        "uuid": "664b2382-cb20-4d68-9ea9-e9cc0e213115",
+        "uuid": "e9a9894d-bef7-4efa-b594-69ff59f4b2e8",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1175,7 +1055,7 @@
           "lat": 62.774708,
           "lon": 22.801517
         },
-        "uuid": "87d5dbc6-e54d-4889-9448-677c49d49479",
+        "uuid": "073c2d97-d017-4ed1-bb79-d9c48d01ee84",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1205,7 +1085,7 @@
           "lat": 62.275726,
           "lon": 22.43545
         },
-        "uuid": "24c3e2c4-9105-4b6a-92b9-cd2e4ad04343",
+        "uuid": "59080a56-33e3-4a44-9df5-1911757ee0ee",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1235,7 +1115,7 @@
           "lat": 63.227062,
           "lon": 23.00077
         },
-        "uuid": "8485a2af-c46d-45df-ad8c-b7aacf4f757f",
+        "uuid": "8bb0becf-b45b-4336-a3d1-880780ec5e06",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1266,7 +1146,7 @@
           "lat": 63.054707,
           "lon": 23.688492
         },
-        "uuid": "68401530-41bb-4578-9c35-d91867eea5f6",
+        "uuid": "994c4832-f26b-4fa1-8ce0-766ada2cbb31",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1299,7 +1179,7 @@
           "lat": 63.074524,
           "lon": 23.03198
         },
-        "uuid": "6fe3c9f7-7526-4bd4-ab6a-3aa5cf33ba88",
+        "uuid": "0216f284-c6ad-4f70-9fc9-62bd9ee0ddca",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1327,7 +1207,7 @@
           "lat": 62.58455,
           "lon": 21.869047
         },
-        "uuid": "5317d298-bed3-4560-8501-65551d2f579f",
+        "uuid": "3b3cef85-545a-414e-aaac-a078253fa770",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1357,7 +1237,7 @@
           "lat": 62.582592,
           "lon": 22.396666
         },
-        "uuid": "517ec724-6067-4814-b3b8-52260631e9cf",
+        "uuid": "5d8cb013-4bf6-44e4-bebb-9bc336ce4e1d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1387,7 +1267,7 @@
           "lat": 62.636726,
           "lon": 22.749935
         },
-        "uuid": "d28c3e12-4db5-4f98-bf56-aa03e189a025",
+        "uuid": "43087994-443b-447f-a907-bfcfcdb3110c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1418,7 +1298,7 @@
           "lat": 63.120407,
           "lon": 21.643055
         },
-        "uuid": "f517f2b9-d3fc-494d-97c3-dfec04185634",
+        "uuid": "ab8768a2-f022-45bf-ab1e-8067066dde0e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1448,7 +1328,7 @@
           "lat": 63.360836,
           "lon": 23.056124
         },
-        "uuid": "16786f59-7e13-4575-9532-ea98a3b16073",
+        "uuid": "8e38a43a-ad89-441f-ae2b-3fc06d6caac0",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1478,7 +1358,7 @@
           "lat": 62.76743,
           "lon": 22.868519
         },
-        "uuid": "b3830295-de99-44cc-a15a-0c4986e04650",
+        "uuid": "b77f0063-80f0-430e-942d-ee022b28ca22",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1508,7 +1388,7 @@
           "lat": 63.160625,
           "lon": 22.817286
         },
-        "uuid": "392a50fc-7bc2-478e-bbf2-bf547cf79fa6",
+        "uuid": "fb2729f8-5f64-41a2-9f9c-f603a1a18364",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1539,7 +1419,7 @@
           "lat": 63.077255,
           "lon": 23.869555
         },
-        "uuid": "cd4d7982-76d6-45c7-89b8-c1ddbdbfe0a9",
+        "uuid": "41827a16-09a4-4ada-9580-cc7dacf04f53",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1570,7 +1450,7 @@
           "lat": 63.221363,
           "lon": 23.046305
         },
-        "uuid": "1ed02dc6-8bb8-4717-a392-c74221bb10d4",
+        "uuid": "0043671a-3078-44f9-96a6-077490bab609",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1598,7 +1478,7 @@
           "lat": 62.444843,
           "lon": 21.691538
         },
-        "uuid": "8c9056a4-bc90-475a-80da-46fe608954ab",
+        "uuid": "246c3cce-d386-47da-89f3-35ca891db774",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1628,7 +1508,7 @@
           "lat": 62.63153,
           "lon": 22.774708
         },
-        "uuid": "eb7122bf-02a4-4746-a64c-65c9ff649c51",
+        "uuid": "eeb995a9-c4f9-4641-a0fb-eebc2f417e41",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1658,7 +1538,7 @@
           "lat": 63.268543,
           "lon": 23.13059
         },
-        "uuid": "ae466744-f752-42f7-a5ac-123dc2771bf6",
+        "uuid": "79b331cc-ccef-4f28-8632-0e1c6bc143a2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1688,7 +1568,7 @@
           "lat": 63.04431,
           "lon": 22.66774
         },
-        "uuid": "22d2a86e-813f-4115-9646-ec870df0d446",
+        "uuid": "3eaf25e9-7389-4581-a705-63dccf76d875",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1718,7 +1598,7 @@
           "lat": 62.79627,
           "lon": 22.913088
         },
-        "uuid": "8b87411b-4cc2-4504-8dc9-444d922c7cfd",
+        "uuid": "7a7275e3-4010-4718-a5fe-892cb1bfa31e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1749,7 +1629,7 @@
           "lat": 63.051853,
           "lon": 23.912743
         },
-        "uuid": "8e7df045-3d19-445f-bed4-3a855f3676b9",
+        "uuid": "e1e6b7b9-dcd9-461c-b33a-50188407fbb1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1779,7 +1659,7 @@
           "lat": 63.273098,
           "lon": 22.967958
         },
-        "uuid": "1ae55687-9d53-47c9-be84-473c8055215b",
+        "uuid": "15f47741-d3c7-4967-a3a8-8a6a1be49ba0",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1809,7 +1689,7 @@
           "lat": 62.366703,
           "lon": 22.224638
         },
-        "uuid": "a76bcf2e-f2a1-4af1-9ef7-fb9b645662aa",
+        "uuid": "bed82e5b-7934-406e-b815-120d29832340",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1840,7 +1720,7 @@
           "lat": 63.17628,
           "lon": 23.039764
         },
-        "uuid": "7c901c5d-917b-4586-b4b6-f3bdb44a8955",
+        "uuid": "78e48978-ddd9-43a1-8a39-45ce0da551f6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1868,7 +1748,7 @@
           "lat": 62.43486,
           "lon": 21.816282
         },
-        "uuid": "6279808f-e99c-4252-8c6e-e041621c0a93",
+        "uuid": "506d84ba-2088-4ee9-8ca0-58e492a04e9f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1898,7 +1778,7 @@
           "lat": 63.07474,
           "lon": 22.603825
         },
-        "uuid": "0c615e94-f1fb-4b23-93d1-6ce2ecb59f76",
+        "uuid": "58e57ceb-02f9-4f8a-b477-4fb9c66df891",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1928,7 +1808,7 @@
           "lat": 62.399117,
           "lon": 22.897058
         },
-        "uuid": "fdcea060-4102-4b75-b51c-0f8906e02ecf",
+        "uuid": "18e28f24-635b-4d19-b82a-f2639d9aac60",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1958,7 +1838,7 @@
           "lat": 63.275013,
           "lon": 23.078302
         },
-        "uuid": "cca1d69c-768a-444b-bba6-159d71034f65",
+        "uuid": "68d706d9-54ab-4573-a500-3321271ca644",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -1988,7 +1868,7 @@
           "lat": 62.723293,
           "lon": 22.624582
         },
-        "uuid": "b13eb2b0-0379-4616-b1ac-9fe688109136",
+        "uuid": "38d746d5-a7d6-4f5a-95b1-9ab5f933b492",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2018,7 +1898,7 @@
           "lat": 63.207745,
           "lon": 22.680964
         },
-        "uuid": "0d1991cf-66d3-4eb7-a357-37823f970b28",
+        "uuid": "8b95be29-f09f-4e43-afb1-6749670f2fb6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2048,7 +1928,7 @@
           "lat": 62.23975,
           "lon": 22.324032
         },
-        "uuid": "0f821e7e-0040-47f0-b9ac-389f1592d512",
+        "uuid": "ae4017db-b909-44a1-ad13-7b31142e9fc0",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2076,7 +1956,7 @@
           "lat": 62.511326,
           "lon": 21.866873
         },
-        "uuid": "e0faa677-167f-4fae-a452-a30fd0ce994b",
+        "uuid": "49e3a3e3-082d-4c13-a387-4ca533a708be",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2106,7 +1986,7 @@
           "lat": 62.506275,
           "lon": 22.764261
         },
-        "uuid": "0405ecc8-050b-48ba-ac0f-023a10d1180a",
+        "uuid": "7cff76b0-9a08-4f8a-a1ae-c161089f402d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2136,7 +2016,7 @@
           "lat": 63.29535,
           "lon": 23.199867
         },
-        "uuid": "998bb1fe-bf2c-460e-8133-1e473e9c4193",
+        "uuid": "c0a496b3-e898-4650-9c7b-85d84a1f50f9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2167,7 +2047,7 @@
           "lat": 63.076054,
           "lon": 23.761887
         },
-        "uuid": "53f95e08-13e7-4f35-b259-15a23be419d8",
+        "uuid": "4f91f30c-1b21-4e35-bf68-8ff3054653ea",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2198,7 +2078,7 @@
           "lat": 63.15408,
           "lon": 23.103476
         },
-        "uuid": "bda29885-67ac-4f3b-ac04-ea64cb102d0e",
+        "uuid": "e2cb427a-7b6c-4940-84f7-af3f0c3d0693",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2228,7 +2108,7 @@
           "lat": 62.43385,
           "lon": 21.650436
         },
-        "uuid": "62bc9038-e223-4c5a-b29f-9d6024891619",
+        "uuid": "e7fd5eef-6df7-4c30-9ac2-c77d8c002556",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2258,7 +2138,7 @@
           "lat": 62.465424,
           "lon": 22.691298
         },
-        "uuid": "6ee55678-2b2d-4f19-bc9d-7be5f013281d",
+        "uuid": "4c1670e1-5ac5-46b6-a780-f5f08443946e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2288,7 +2168,7 @@
           "lat": 63.290054,
           "lon": 23.26306
         },
-        "uuid": "3224266c-59b7-4ece-b0f8-840786a1b92f",
+        "uuid": "bc111147-c893-42e7-ac70-c08d08d1412e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2318,7 +2198,7 @@
           "lat": 62.780445,
           "lon": 22.782427
         },
-        "uuid": "8abe3152-cd0c-4145-a807-a08b3e56fbea",
+        "uuid": "388a0994-1301-4b77-ac5f-ecac650018a2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2349,7 +2229,7 @@
           "lat": 63.042408,
           "lon": 23.818548
         },
-        "uuid": "3c7eb54f-9bdd-4491-8f0a-8c5a6a72b4a3",
+        "uuid": "3b93ad17-2c9c-451f-a6cc-9c558e06a860",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2380,7 +2260,7 @@
           "lat": 63.163353,
           "lon": 22.858282
         },
-        "uuid": "57a5eb1a-22ae-44c7-b77d-78e363f41983",
+        "uuid": "8bf1c24d-8774-4d2c-b644-5db8f07e42e7",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2410,7 +2290,7 @@
           "lat": 63.16285,
           "lon": 22.85632
         },
-        "uuid": "09219661-aa3f-46ca-b08a-dd921259ff84",
+        "uuid": "8759cd80-9c35-4abd-9148-d6cfd366d1d1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2440,7 +2320,7 @@
           "lat": 62.365925,
           "lon": 22.81603
         },
-        "uuid": "41cc207c-4a09-4cf7-aab9-a3fc215015fe",
+        "uuid": "d41d3a80-93c9-45c0-b5a2-0815a4c3295f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2470,7 +2350,7 @@
           "lat": 63.286278,
           "lon": 23.10971
         },
-        "uuid": "92abfcd7-ff84-45ad-b7e6-da40ed5e89c3",
+        "uuid": "04af5682-e88f-420e-8e7e-f51352be89e1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2500,7 +2380,7 @@
           "lat": 62.468353,
           "lon": 22.184732
         },
-        "uuid": "18dfd721-0990-4ce3-8b15-3f405e4c26e0",
+        "uuid": "d5647fbc-35f7-4c57-8ad8-9d2afdcf1080",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2531,7 +2411,7 @@
           "lat": 63.177826,
           "lon": 22.94094
         },
-        "uuid": "9cc8d9a5-1a2b-4361-b1f3-6cd6dd9223b5",
+        "uuid": "74d82501-98e7-4f01-840f-642393001847",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2561,7 +2441,7 @@
           "lat": 63.22583,
           "lon": 23.07909
         },
-        "uuid": "b6264b71-e0a7-4e00-8cc7-99462f464aa9",
+        "uuid": "2234287f-ed4c-4b35-a8af-0aa2f4db5b99",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2591,7 +2471,7 @@
           "lat": 62.39512,
           "lon": 22.80852
         },
-        "uuid": "c86d1c9c-0cb3-469b-90ef-1fd4d3c08ae5",
+        "uuid": "c9497990-f2a3-4167-a19b-f57e47b15a35",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2621,7 +2501,7 @@
           "lat": 62.758812,
           "lon": 22.799316
         },
-        "uuid": "2e8f3095-7571-42b6-a2dd-ca2b63dd93ac",
+        "uuid": "9b2aef5f-bfeb-470a-99c5-b1bc857b54e3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2651,7 +2531,7 @@
           "lat": 62.502117,
           "lon": 22.324993
         },
-        "uuid": "ad5db748-2f48-4542-9101-ac23e6ec7d9f",
+        "uuid": "d43adfb5-a216-4bd2-8420-52b8fbef41b2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2682,7 +2562,7 @@
           "lat": 62.775925,
           "lon": 23.865673
         },
-        "uuid": "a8f6b393-7665-4e38-ba5b-d5b62ead02ee",
+        "uuid": "15617ab2-b12f-493f-a5c4-4e8c95447924",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2713,7 +2593,7 @@
           "lat": 63.14368,
           "lon": 23.000282
         },
-        "uuid": "501a750f-68ce-4c62-a9c9-ed3de4985d06",
+        "uuid": "b4b9ba12-0af5-4a76-832d-9a19713bfd57",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2743,7 +2623,7 @@
           "lat": 62.3012,
           "lon": 22.828588
         },
-        "uuid": "26266a57-ee78-4b4f-8d09-e3d4dcd1cb8b",
+        "uuid": "14cfdcca-339d-4089-86bf-0095afee9b09",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2773,7 +2653,7 @@
           "lat": 63.25832,
           "lon": 23.099653
         },
-        "uuid": "0023d3d0-c08e-4877-8558-bf3f55b11c81",
+        "uuid": "03ffcb0f-cc24-480d-9804-e8edbdcc5653",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2803,7 +2683,7 @@
           "lat": 62.869614,
           "lon": 22.965324
         },
-        "uuid": "9a9e9e4f-f394-4330-b361-27d38844c630",
+        "uuid": "63eb2f3a-37be-4713-9d70-10c30411dfd6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2834,7 +2714,7 @@
           "lat": 63.0716,
           "lon": 24.072878
         },
-        "uuid": "11475e4f-2beb-4bd5-961c-25432202b9cd",
+        "uuid": "68c35036-22f1-4ac7-87d0-d88a99648b4d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2864,7 +2744,7 @@
           "lat": 62.414303,
           "lon": 22.2511
         },
-        "uuid": "12fdf64b-94cc-4f4f-b068-11f4c0a8de09",
+        "uuid": "8db9ba5d-8b5b-401a-89a6-7e900aa97b1c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2895,7 +2775,7 @@
           "lat": 63.16034,
           "lon": 23.06291
         },
-        "uuid": "5f231d1c-1628-4ac0-b46e-24ae1639bda2",
+        "uuid": "ef791bac-3f62-4272-a343-e9d66f9837ce",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2925,7 +2805,7 @@
           "lat": 62.53425,
           "lon": 22.762815
         },
-        "uuid": "e65cc5e3-4079-468b-a001-2459fd290f1b",
+        "uuid": "4bda8eaf-32e5-4857-856b-3399a22f28c9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2955,7 +2835,7 @@
           "lat": 63.35024,
           "lon": 23.14349
         },
-        "uuid": "feaf6c98-4a5c-4584-94fc-3727b92b5a0e",
+        "uuid": "b6fe4e03-b55d-4ea3-9fec-e221347d83d1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -2985,7 +2865,7 @@
           "lat": 62.778316,
           "lon": 22.764698
         },
-        "uuid": "de939587-393a-41f2-8f83-975ae88e97d1",
+        "uuid": "aa654b4b-1456-4f9c-b7ae-ab4740ab5087",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3015,7 +2895,7 @@
           "lat": 62.447292,
           "lon": 22.334404
         },
-        "uuid": "a9876dd5-fa56-4ea0-8151-f8a21ed7a149",
+        "uuid": "28bf61e8-70d4-465b-b00f-e2edfb7478bc",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3046,7 +2926,7 @@
           "lat": 63.0645,
           "lon": 23.34763
         },
-        "uuid": "d68922e2-d4ed-4a7a-9022-3eca7ba3323c",
+        "uuid": "e706bfca-3c3d-400b-a523-a1050b6f47b4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3076,7 +2956,7 @@
           "lat": 62.91239,
           "lon": 22.823582
         },
-        "uuid": "a8f62ada-520f-4f9c-a893-42ff47072e89",
+        "uuid": "655abecb-caf9-43d4-bf9a-21e4ed7578be",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3106,7 +2986,7 @@
           "lat": 63.256065,
           "lon": 23.2467
         },
-        "uuid": "e71017d5-4d61-4e6f-8e6d-ff3d5f3fe8f4",
+        "uuid": "177ab477-f678-492f-a087-7a8a78826338",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3136,7 +3016,7 @@
           "lat": 62.767376,
           "lon": 22.868902
         },
-        "uuid": "ecdb6b43-ecce-463e-b4aa-efd404931b26",
+        "uuid": "9b1d0ff8-719a-451f-80e5-caf1b7b27f2b",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3167,7 +3047,7 @@
           "lat": 62.920288,
           "lon": 24.107151
         },
-        "uuid": "398bc5bd-0c73-4a2f-90fc-504b41828135",
+        "uuid": "8192b17a-2ce9-4897-a6b3-6ffec41ac6f4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3197,7 +3077,7 @@
           "lat": 62.322243,
           "lon": 22.23889
         },
-        "uuid": "097cd1fc-092e-4b99-8f79-30c47339dbbf",
+        "uuid": "a9ed1aec-0615-4134-bdad-34cb4974151f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3230,7 +3110,7 @@
           "lat": 63.20132,
           "lon": 23.032934
         },
-        "uuid": "eef22376-c093-459b-bbf2-371c096787a7",
+        "uuid": "2302ce56-b14e-4630-8c0c-776b44ba1c5c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3258,7 +3138,7 @@
           "lat": 62.444927,
           "lon": 21.69147
         },
-        "uuid": "b0089c5e-bcc2-4342-924f-d3a3f491d93d",
+        "uuid": "5fe094b3-f332-4fbc-b2f3-7f26669b2c02",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3288,7 +3168,7 @@
           "lat": 63.307854,
           "lon": 23.142616
         },
-        "uuid": "dcd2a8c0-20f8-4b5d-b2e6-3f794fe33df4",
+        "uuid": "1ad67d2e-42eb-4f0a-ae72-cb1aa7330597",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3318,7 +3198,7 @@
           "lat": 62.72031,
           "lon": 22.63206
         },
-        "uuid": "aa31d384-9e96-4351-bce0-1ba3313cce7a",
+        "uuid": "26187e03-90fc-4763-8951-64c0fe291226",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3350,7 +3230,7 @@
           "lat": 62.990894,
           "lon": 23.829828
         },
-        "uuid": "ade6320a-5e98-4a80-a602-26f49ebe9812",
+        "uuid": "a00ca3b3-e74f-4c43-943c-c126159d64af",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3380,7 +3260,7 @@
           "lat": 62.504536,
           "lon": 22.606089
         },
-        "uuid": "abf5afd6-2406-4f4f-ab6a-4cb231496733",
+        "uuid": "f6ebf2b2-bb65-4b3c-bab3-5dc3757a0ecc",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3410,7 +3290,7 @@
           "lat": 63.142952,
           "lon": 22.826578
         },
-        "uuid": "76f4b2b1-0d0c-49bf-99e3-a6f35f8e39b2",
+        "uuid": "861968e1-e31d-453e-b4c0-ac23a38a931a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3441,7 +3321,7 @@
           "lat": 63.129078,
           "lon": 23.330267
         },
-        "uuid": "67220a37-4bd3-45c2-92c1-eadb3e49acf4",
+        "uuid": "9312b373-8f01-47f1-b64e-0ccce98a280b",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3469,7 +3349,7 @@
           "lat": 62.43485,
           "lon": 21.816397
         },
-        "uuid": "075a83f0-3a93-4d04-bd1a-ec71aa23b03f",
+        "uuid": "19b05a44-918b-4bb4-a75c-dd453eb5b854",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3499,7 +3379,7 @@
           "lat": 63.26297,
           "lon": 23.16988
         },
-        "uuid": "5f6c5895-216b-4033-b877-45e0e5e15ea8",
+        "uuid": "9da9dcf9-73dc-4a32-95da-ee3f1cd66fa4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3529,7 +3409,7 @@
           "lat": 62.58051,
           "lon": 22.744314
         },
-        "uuid": "781dfe0a-fd79-4693-b3cd-9da77b3e31fd",
+        "uuid": "efb34065-0c60-4f29-a187-17388770227c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3561,7 +3441,7 @@
           "lat": 62.80517,
           "lon": 22.898823
         },
-        "uuid": "d0d0fdbb-ff83-4715-8ae9-7b0e24f5290c",
+        "uuid": "1d29f1c5-3ad2-4d29-9ab9-eefe70399492",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3592,7 +3472,7 @@
           "lat": 63.1599,
           "lon": 22.817108
         },
-        "uuid": "9f004f37-063a-42d1-8b6e-cbfe590cc150",
+        "uuid": "21133036-fb87-474c-9621-336107d0701f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3622,7 +3502,7 @@
           "lat": 62.410458,
           "lon": 22.222773
         },
-        "uuid": "2827ca46-d090-4964-a368-63a328c284e2",
+        "uuid": "440a1d2b-624f-48be-a08e-46c2c0564664",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3655,7 +3535,7 @@
           "lat": 63.187756,
           "lon": 23.04192
         },
-        "uuid": "154c4acf-2152-4542-8a68-c6d2e62e8a3b",
+        "uuid": "0effa457-d7e6-4bdb-8ef1-e20e7efbe052",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3683,7 +3563,7 @@
           "lat": 62.426723,
           "lon": 21.685816
         },
-        "uuid": "6e305f90-72a5-405b-8f00-fa2717d2f986",
+        "uuid": "9690bb21-2456-4dce-a6de-e3abc97cc7e1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3713,7 +3593,7 @@
           "lat": 62.485504,
           "lon": 22.518137
         },
-        "uuid": "6788d181-585e-4dc5-9df2-b69d39384d8e",
+        "uuid": "ba2173c7-c029-46bf-a63d-7683fd3e1f30",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3743,7 +3623,7 @@
           "lat": 63.345737,
           "lon": 23.092499
         },
-        "uuid": "09250bac-aa22-4188-af45-7b316b4fb6d4",
+        "uuid": "1845c5e1-6607-4be4-b5dc-c33244789fee",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3775,7 +3655,7 @@
           "lat": 62.77963,
           "lon": 22.811152
         },
-        "uuid": "1914ca6a-fbbf-472a-86ef-83c358634c7c",
+        "uuid": "26dfc8fb-abfc-4e00-9e36-62d8302dc8ce",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3805,7 +3685,7 @@
           "lat": 63.241207,
           "lon": 22.883623
         },
-        "uuid": "72731a38-2586-4a87-966f-a4f360b61f19",
+        "uuid": "98f78f6b-3638-485f-8372-8dff26aa21b8",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3836,7 +3716,7 @@
           "lat": 63.062706,
           "lon": 23.2979
         },
-        "uuid": "c86dc5a3-a58e-45dc-a633-25402a1dcfbf",
+        "uuid": "c3e44d51-4cf8-4128-96f1-0e18c6cfc2d1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3864,7 +3744,7 @@
           "lat": 62.42179,
           "lon": 21.868666
         },
-        "uuid": "a101872e-51bb-4ffb-ae8f-982e436038f8",
+        "uuid": "411aab35-14ff-43b3-8282-7ef7b2d0fd40",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3894,7 +3774,7 @@
           "lat": 62.477116,
           "lon": 22.914963
         },
-        "uuid": "e51559a5-7a4e-4ccc-9754-79dab9afa219",
+        "uuid": "9993f4d1-2601-418b-ba58-51161cbc347c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3924,7 +3804,7 @@
           "lat": 63.26524,
           "lon": 23.053629
         },
-        "uuid": "c477eaba-0203-466e-b6f6-55a237831fce",
+        "uuid": "2bec8de7-cf89-4d97-86a4-ac7c69fa141d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3954,7 +3834,7 @@
           "lat": 62.839314,
           "lon": 22.978582
         },
-        "uuid": "19d6fab8-9113-48fc-9696-f434ebc98fb8",
+        "uuid": "fbf99f3d-a4be-4998-aee5-ae00d38be4c9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -3986,7 +3866,7 @@
           "lat": 63.099884,
           "lon": 23.820429
         },
-        "uuid": "e18502e5-90ed-4e59-8d47-8f6b93014d58",
+        "uuid": "6e8efc98-f10f-40eb-91ef-8c8dc87791c4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4016,7 +3896,7 @@
           "lat": 63.279114,
           "lon": 22.815916
         },
-        "uuid": "e04ff3db-4259-46b9-8a2d-9c7bfddab3c9",
+        "uuid": "fcafee68-c0ca-4c5d-beeb-7c5cfe019d85",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4047,7 +3927,7 @@
           "lat": 63.178234,
           "lon": 23.060896
         },
-        "uuid": "1a2a706f-e3b9-47f9-8211-13ee6547aa4c",
+        "uuid": "0cccafa2-61b2-4eb4-8bcc-d959281c732f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4077,7 +3957,7 @@
           "lat": 62.43385,
           "lon": 21.650377
         },
-        "uuid": "e75ce520-39d4-45c6-9ae0-4585a7c84086",
+        "uuid": "bf5feed3-037d-4eaa-afac-1bd1626a1b52",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4107,7 +3987,7 @@
           "lat": 63.365158,
           "lon": 23.477993
         },
-        "uuid": "7a743fdf-38ed-4fe4-a7ef-63118c39722a",
+        "uuid": "fa100340-8860-4c3c-a43a-8d439e5c65fc",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4137,7 +4017,7 @@
           "lat": 62.486908,
           "lon": 22.748981
         },
-        "uuid": "85cb4dbe-7df6-4607-847f-96138372200b",
+        "uuid": "89178919-f283-4765-9623-582789829b00",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4167,7 +4047,7 @@
           "lat": 62.9778,
           "lon": 22.48708
         },
-        "uuid": "2212b868-4a06-4dde-a874-011a058f10fe",
+        "uuid": "2afe5e88-ff52-441c-a741-3bf651e6c7c2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4197,7 +4077,7 @@
           "lat": 62.78029,
           "lon": 22.78289
         },
-        "uuid": "fbc881f4-35c0-4ca1-ae69-16b82b1eaf1a",
+        "uuid": "5558c46d-3eac-4b72-b523-7e7c6a461809",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4227,7 +4107,7 @@
           "lat": 63.2412,
           "lon": 22.676922
         },
-        "uuid": "0032bb7b-25ab-4976-9b4b-9d770a5a6680",
+        "uuid": "5dfa7d9a-511a-4763-8d39-5cd4d5793c0a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4258,7 +4138,7 @@
           "lat": 63.16551,
           "lon": 22.974436
         },
-        "uuid": "26ed670e-dd5b-412a-a0ba-63d360fa072f",
+        "uuid": "3a721fa5-e616-4986-b8a0-fc188cf51e71",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4286,7 +4166,7 @@
           "lat": 62.4105,
           "lon": 21.836218
         },
-        "uuid": "b44fdcd8-5daf-4c7c-abe0-ed8702eef7d8",
+        "uuid": "e838ee9c-9986-4bb7-bcf0-c0ee0ce8558d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4316,7 +4196,7 @@
           "lat": 63.21263,
           "lon": 23.130182
         },
-        "uuid": "1d6e2b73-bbd2-4017-b02b-aec1c386dfce",
+        "uuid": "271a791d-8279-43df-9cf9-a31f6ced18a6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4346,7 +4226,7 @@
           "lat": 62.774673,
           "lon": 22.80158
         },
-        "uuid": "3ac5c390-5c13-4d50-bf72-cdab78aa2c89",
+        "uuid": "0d0be08e-61ed-447c-9498-03f334e5e20d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4378,7 +4258,7 @@
           "lat": 63.09244,
           "lon": 24.073616
         },
-        "uuid": "9a43b38d-5a51-4c2c-85e8-bd8376593900",
+        "uuid": "d02542be-1e10-4a06-9ce9-7a02fd000801",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4408,7 +4288,7 @@
           "lat": 63.189045,
           "lon": 22.900772
         },
-        "uuid": "b04a384d-37f6-4297-b984-365af10c4036",
+        "uuid": "3954e934-d440-41c4-9a22-62be373688d3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4439,7 +4319,7 @@
           "lat": 63.154488,
           "lon": 23.007778
         },
-        "uuid": "da5ca907-7238-44a2-81d1-7a8e52ff51d4",
+        "uuid": "a9a96ee8-9e46-43be-86d0-da832674af07",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4469,7 +4349,7 @@
           "lat": 63.268913,
           "lon": 23.093376
         },
-        "uuid": "a8df0d70-3596-496a-a21b-0f6e52c501ae",
+        "uuid": "45976cca-632e-44cb-af18-61dd99574a81",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4499,7 +4379,7 @@
           "lat": 62.767426,
           "lon": 22.868496
         },
-        "uuid": "857f3b13-0a1a-4c79-99ef-c0200dd5bb1e",
+        "uuid": "d487cffd-b303-440c-a535-5eb9c611f405",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4529,7 +4409,7 @@
           "lat": 63.342873,
           "lon": 23.370966
         },
-        "uuid": "65951699-92e5-4e46-8ba9-ed32dee1b2fd",
+        "uuid": "48d8505e-cc41-4648-a968-6853fd67cec8",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4559,7 +4439,7 @@
           "lat": 62.758884,
           "lon": 22.799314
         },
-        "uuid": "60fa495e-1cd1-421b-ac1a-07c211349b3b",
+        "uuid": "77dc1375-be63-4201-b8e0-f140bd9f4878",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4590,7 +4470,7 @@
           "lat": 63.077507,
           "lon": 23.996843
         },
-        "uuid": "7ce8b2ae-e4f9-4566-9689-4cea3a1b583f",
+        "uuid": "08157863-3e68-44c2-a4cd-d2d07ab8f122",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4620,7 +4500,7 @@
           "lat": 63.293537,
           "lon": 23.16258
         },
-        "uuid": "08a50713-96a1-45ca-ba9b-35955202f6fc",
+        "uuid": "54dc91e2-879a-4ecd-9e95-93280ea8bef3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4650,7 +4530,7 @@
           "lat": 62.433834,
           "lon": 21.650404
         },
-        "uuid": "4fe588f0-ce0f-425f-a080-223851470825",
+        "uuid": "bda2a6bc-1b0b-4fb3-9ffc-65a81faae854",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4680,7 +4560,7 @@
           "lat": 62.7696,
           "lon": 22.81372
         },
-        "uuid": "1e8e7a18-6b02-49d0-9389-6ac31426b2fc",
+        "uuid": "c1203553-4b38-4221-82ef-24557ed66683",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4711,7 +4591,7 @@
           "lat": 63.140945,
           "lon": 23.852257
         },
-        "uuid": "872cf95f-9bf6-42dd-bfa1-a65110be7d11",
+        "uuid": "d861c47a-bcc7-46a8-955d-71c7c3c0613d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
@@ -4741,7 +4621,7 @@
           "lat": 63.163387,
           "lon": 22.858562
         },
-        "uuid": "1a25d428-b909-4726-b5f1-6ba466e43099",
+        "uuid": "8a93b7e2-0179-4f10-958f-57d4ab608184",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
