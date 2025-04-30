@@ -14,7 +14,8 @@ const TARGET_DIR = 'public/data';
 const CACHE_DIR = 'cache';
 const EVENTS_FILE = path.join(TARGET_DIR, 'events.json');
 const EVENTS_CACHE_FILE = path.join(CACHE_DIR, 'events.json');
-const MARKERS_CACHE_FILE = path.join(CACHE_DIR, 'markers.json');
+const MARKERS_CACHE_FILE_AREA1 = path.join(CACHE_DIR, 'markers_area1.json');
+const MARKERS_CACHE_FILE_AREA2 = path.join(CACHE_DIR, 'markers_area2.json');
 
 const REFERER_URL = 'https://irma.suunnistusliitto.fi/public/competitioncalendar/list?year=upcoming&tab=event&upcoming=ONE_YEAR';
 const EVENTS_API_URL = 'https://irma.suunnistusliitto.fi/connect/CompetitionCalendarEndpoint/listEvents';
@@ -47,7 +48,7 @@ const EVENTS_PAYLOAD = {
   competitionOpen: 'ALL'
 };
 
-const MARKERS_PAYLOAD = {
+const MARKERS_PAYLOAD_AREA1 = {
   type: 'all',
   year: null,
   month: '1',
@@ -58,14 +59,16 @@ const MARKERS_PAYLOAD = {
   competitionOpen: 'ALL'
 };
 
-// Simple UUID generator for events
-function generateUUID() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-    const r = Math.random() * 16 | 0;
-    const v = c === 'x' ? r : (r & 0x3 | 0x8);
-    return v.toString(16);
-  });
-}
+const MARKERS_PAYLOAD_AREA2 = {
+  type: 'all',
+  year: null,
+  month: '1',
+  upcoming: 'ONE_YEAR',
+  disciplines: [],
+  areaId: 2,
+  calendarType: 'all',
+  competitionOpen: 'ALL'
+};
 
 // Convert date string (e.g., "01.05.2025 17:00") to epoch milliseconds
 function parseDateToEpoch(dateStr) {
@@ -117,12 +120,15 @@ async function fetchAndUpdateData() {
 
     // Check for cached events and markers
     const eventsCacheExists = await fs.access(EVENTS_CACHE_FILE).then(() => true).catch(() => false);
-    const markersCacheExists = await fs.access(MARKERS_CACHE_FILE).then(() => true).catch(() => false);
+    const markersCacheExistsArea1 = await fs.access(MARKERS_CACHE_FILE_AREA1).then(() => true).catch(() => false);
+    const markersCacheExistsArea2 = await fs.access(MARKERS_CACHE_FILE_AREA2).then(() => true).catch(() => false);
 
-    if (useCache && eventsCacheExists && markersCacheExists) {
-      console.log('Using cached responses from', EVENTS_CACHE_FILE, 'and', MARKERS_CACHE_FILE);
+    if (useCache && eventsCacheExists && markersCacheExistsArea1 && markersCacheExistsArea2) {
+      console.log('Using cached responses from', EVENTS_CACHE_FILE, MARKERS_CACHE_FILE_AREA1, 'and', MARKERS_CACHE_FILE_AREA2);
       eventsData = JSON.parse(await fs.readFile(EVENTS_CACHE_FILE, 'utf8'));
-      markersData = JSON.parse(await fs.readFile(MARKERS_CACHE_FILE, 'utf8'));
+      const markersDataArea1 = JSON.parse(await fs.readFile(MARKERS_CACHE_FILE_AREA1, 'utf8'));
+      const markersDataArea2 = JSON.parse(await fs.readFile(MARKERS_CACHE_FILE_AREA2, 'utf8'));
+      markersData = [...markersDataArea1, ...markersDataArea2];
     } else {
       await fs.mkdir(CACHE_DIR, { recursive: true });
 
@@ -151,17 +157,32 @@ async function fetchAndUpdateData() {
         console.log('Cached events response to', EVENTS_CACHE_FILE);
       }
 
-      // Fetch markers
-      fetchOptions.body = JSON.stringify(MARKERS_PAYLOAD);
-      const markersResponse = await fetch(MARKERS_API_URL, fetchOptions);
-      if (!markersResponse.ok) {
-        throw new Error(`Failed to fetch markers: ${markersResponse.status}`);
+      // Fetch markers for areaId=1
+      fetchOptions.body = JSON.stringify(MARKERS_PAYLOAD_AREA1);
+      const markersResponseArea1 = await fetch(MARKERS_API_URL, fetchOptions);
+      if (!markersResponseArea1.ok) {
+        throw new Error(`Failed to fetch markers for areaId=1: ${markersResponseArea1.status}`);
       }
-      markersData = await markersResponse.json();
+      const markersDataArea1 = await markersResponseArea1.json();
       if (saveCache) {
-        await fs.writeFile(MARKERS_CACHE_FILE, JSON.stringify(markersData, null, 2), 'utf8');
-        console.log('Cached markers response to', MARKERS_CACHE_FILE);
+        await fs.writeFile(MARKERS_CACHE_FILE_AREA1, JSON.stringify(markersDataArea1, null, 2), 'utf8');
+        console.log('Cached markers response for areaId=1 to', MARKERS_CACHE_FILE_AREA1);
       }
+
+      // Fetch markers for areaId=2
+      fetchOptions.body = JSON.stringify(MARKERS_PAYLOAD_AREA2);
+      const markersResponseArea2 = await fetch(MARKERS_API_URL, fetchOptions);
+      if (!markersResponseArea2.ok) {
+        throw new Error(`Failed to fetch markers for areaId=2: ${markersResponseArea2.status}`);
+      }
+      const markersDataArea2 = await markersResponseArea2.json();
+      if (saveCache) {
+        await fs.writeFile(MARKERS_CACHE_FILE_AREA2, JSON.stringify(markersDataArea2, null, 2), 'utf8');
+        console.log('Cached markers response for areaId=2 to', MARKERS_CACHE_FILE_AREA2);
+      }
+
+      // Concatenate markers
+      markersData = [...markersDataArea1, ...markersDataArea2];
     }
 
     // Reconcile data
@@ -176,7 +197,6 @@ async function fetchAndUpdateData() {
             eventId: event.id,
             name: event.name,
             sports: [],
-            organizerId: null,
             organizerName: marker.clubs ? marker.clubs.join(', ') : null,
             startDateTime: parseDateToEpoch(event.startTime),
             endDateTime: parseDateToEpoch(event.endTime),
@@ -188,12 +208,10 @@ async function fetchAndUpdateData() {
               lat: marker.latitude,
               lon: marker.longitude
             },
-            uuid: generateUUID(),
             priceInCents: 500,
             productDiscounts: [],
             purpose: 'SPORTS',
             parentSeriesEventId: event.seriesId || null,
-            parentSeriesEventUuid: null,
             parentSeriesEventName: event.seriesName || null
           },
           serviceAvailable: false
