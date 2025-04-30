@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-04-30T21:01:43.633Z",
+  "lastUpdated": "2025-04-30T21:24:44.800Z",
   "events": [
     {
       "disciplines": [
@@ -10,7 +10,6 @@
         "eventId": 4101,
         "name": "Edvininpolku",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Vaasan Suunnistajat",
         "startDateTime": 1746118800000,
         "endDateTime": 1746642600000,
@@ -22,12 +21,10 @@
           "lat": 63.104233,
           "lon": 21.65979
         },
-        "uuid": "20025cee-631c-4d73-be7f-c284381c5839",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3850,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Vaasarastit 2025 Skärmträffen"
       },
       "serviceAvailable": false
@@ -40,7 +37,6 @@
         "eventId": 4105,
         "name": "Huhtamäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1746118800000,
         "endDateTime": 1746126000000,
@@ -52,12 +48,10 @@
           "lat": 63.27251,
           "lon": 22.712234
         },
-        "uuid": "855e08f0-494e-42ea-b9ed-a04b17358500",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -70,7 +64,6 @@
         "eventId": 4110,
         "name": "Laitasaari",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1746118800000,
         "endDateTime": 1746124200000,
@@ -82,12 +75,10 @@
           "lat": 62.50181,
           "lon": 22.326355
         },
-        "uuid": "d42f221f-263a-4b0c-846e-a55c3d802b15",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
       },
       "serviceAvailable": false
@@ -101,7 +92,6 @@
         "eventId": 4113,
         "name": "Menkijärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1746118800000,
         "endDateTime": 1746126000000,
@@ -113,13 +103,39 @@
           "lat": 62.952293,
           "lon": 23.525742
         },
-        "uuid": "13bafc39-fa08-4886-a845-c961ad439086",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "RR",
+        "S"
+      ],
+      "event": {
+        "eventId": 4121,
+        "name": "Högåsen",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1746122400000,
+        "endDateTime": 1746126000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "HGRR+W4 Tallbacken, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.59235,
+          "lon": 21.540257
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -132,7 +148,6 @@
         "eventId": 4149,
         "name": "Sorvari",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1746464400000,
         "endDateTime": 1746471600000,
@@ -144,12 +159,10 @@
           "lat": 63.069233,
           "lon": 23.105112
         },
-        "uuid": "d1995f2c-6ae3-4514-b52e-4898863611fe",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4148,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -160,7 +173,6 @@
         "eventId": 4152,
         "name": "Pappilankangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1746466200000,
         "endDateTime": 1746471600000,
@@ -172,13 +184,39 @@
           "lat": 62.44513,
           "lon": 21.690552
         },
-        "uuid": "5e3823ea-2958-4bee-a317-580c8e0fed9b",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4153,
+        "name": "Sportstugan",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1746468000000,
+        "endDateTime": 1746471600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Västersolfintie 234, 65450 Mustasaari, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.995495,
+          "lon": 21.635578
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -190,7 +228,6 @@
         "eventId": 4167,
         "name": "Käräjävuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Kurikka",
         "startDateTime": 1746550800000,
         "endDateTime": 1746558000000,
@@ -202,12 +239,10 @@
           "lat": 62.6038,
           "lon": 22.452887
         },
-        "uuid": "aa223c98-1a1f-4a85-b25f-1281b51820fb",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3712,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Kurikan iltarastit 2025"
       },
       "serviceAvailable": false
@@ -220,7 +255,6 @@
         "eventId": 4170,
         "name": "Rajavuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Laihian Luja",
         "startDateTime": 1746550800000,
         "endDateTime": 1746558000000,
@@ -232,12 +266,10 @@
           "lat": 62.80631,
           "lon": 21.94715
         },
-        "uuid": "606ea16b-e23e-4a4e-85e1-91118b32d431",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4008,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Laihian Luja iltarastit 2025"
       },
       "serviceAvailable": false
@@ -250,7 +282,6 @@
         "eventId": 4205,
         "name": "Metsolan koulu",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1746637200000,
         "endDateTime": 1746642600000,
@@ -262,12 +293,10 @@
           "lat": 62.51799,
           "lon": 22.702854
         },
-        "uuid": "eb2be948-f969-4ec7-a1cc-17180f6de2b6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -280,7 +309,6 @@
         "eventId": 4216,
         "name": "Vesterpakka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1746637200000,
         "endDateTime": 1746644400000,
@@ -292,12 +320,10 @@
           "lat": 63.26979,
           "lon": 23.250143
         },
-        "uuid": "ee1def11-63ab-4127-9785-00c476938ff5",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -310,7 +336,6 @@
         "eventId": 4218,
         "name": "Ylipää",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1746637200000,
         "endDateTime": 1746644400000,
@@ -322,13 +347,38 @@
           "lat": 62.973576,
           "lon": 22.379827
         },
-        "uuid": "223794a8-d9a3-4096-961e-402b615cb957",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 19783,
+        "name": "Onsdagsorientering - Keskiviikkorastit: Långsjö-Lutsjö södra-eteläinen",
+        "sports": [],
+        "organizerName": "OK Raseborg",
+        "startDateTime": 1746637200000,
+        "endDateTime": 1746644400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": null,
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 60.13677222178393,
+          "lon": 23.528594970703125
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 19780,
+        "parentSeriesEventName": "Raseborgs onsdagsorienteringar 2025 - Raaseporin keskiviikkorastit 2025"
       },
       "serviceAvailable": false
     },
@@ -340,7 +390,6 @@
         "eventId": 4220,
         "name": "Säläisjärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Suunta Jurva",
         "startDateTime": 1746639000000,
         "endDateTime": 1746644400000,
@@ -352,13 +401,38 @@
           "lat": 62.665195,
           "lon": 21.981941
         },
-        "uuid": "f9273c74-46b0-479e-a1c5-ca0deefd245e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3639,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Suunta-Jurvan Iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4225,
+        "name": "#4 Länsirastit Karhuso",
+        "sports": [],
+        "organizerName": "OK 77",
+        "startDateTime": 1746721800000,
+        "endDateTime": 1746729000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Karhuniityntie 12, 02810 Espoo, Finland",
+        "locationDescription": "Ratavalikoimassa helppo 2 km, normaali 4 km, hieman vaativampi 3 km sekä vaativat 5 km ja 7 km. Lisäksi rogaining 77 min.",
+        "locationCoordinates": {
+          "lat": 60.229694,
+          "lon": 24.62147
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3760,
+        "parentSeriesEventName": "Länsirastit"
       },
       "serviceAvailable": false
     },
@@ -370,7 +444,6 @@
         "eventId": 4231,
         "name": "Virpimäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1746721800000,
         "endDateTime": 1746729000000,
@@ -382,12 +455,10 @@
           "lat": 62.885593,
           "lon": 22.99991
         },
-        "uuid": "95330599-9556-4958-b2a4-6d1552ad1bca",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -400,7 +471,6 @@
         "eventId": 4233,
         "name": "Hakola",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1746723600000,
         "endDateTime": 1746730800000,
@@ -412,12 +482,10 @@
           "lat": 63.16157,
           "lon": 22.815979
         },
-        "uuid": "f6a58ed1-e35d-469d-9406-d032bf5bed6c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -431,7 +499,6 @@
         "eventId": 4234,
         "name": "Hattukallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1746723600000,
         "endDateTime": 1746730800000,
@@ -443,12 +510,10 @@
           "lat": 63.077312,
           "lon": 23.869488
         },
-        "uuid": "d00048c0-5f54-4f05-9372-6a5943ce6042",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -461,7 +526,6 @@
         "eventId": 4237,
         "name": "Ikkeläjärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1746723600000,
         "endDateTime": 1746729000000,
@@ -473,13 +537,121 @@
           "lat": 62.387993,
           "lon": 22.573
         },
-        "uuid": "57af3b9f-484f-41b3-a2bd-fb07a7b4356a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4243,
+        "name": "Kärklax",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1746723600000,
+        "endDateTime": 1747263600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "17818, 66600 Vörå, Finland",
+        "locationDescription": "Betala till konto FI33 4958 1040 0658 58 (IF Femman Orientering) eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa tilille FI33 4958 1040 0658 58 (IF Femman Orientering) tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.194405,
+          "lon": 22.175163
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "RR",
+        "S"
+      ],
+      "event": {
+        "eventId": 4260,
+        "name": "Kompassberget",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1746727200000,
+        "endDateTime": 1746730800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "H8F4+J4 Nixmossen, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.574,
+          "lon": 21.305359
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4261,
+        "name": "#4 Länsirastit Karhuso, omatoimi",
+        "sports": [],
+        "organizerName": "OK 77",
+        "startDateTime": 1746729000000,
+        "endDateTime": 1747519200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Karhuniityntie 12, 02810 Espoo, Finland",
+        "locationDescription": "Ratavalikoimassa helppo 2 km, normaali 4 km, hieman vaativampi 3 km sekä vaativat 5 km ja 7 km. Lisäksi rogaining 77 min.",
+        "locationCoordinates": {
+          "lat": 60.229767,
+          "lon": 24.620234
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3760,
+        "parentSeriesEventName": "Länsirastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4278,
+        "name": "Epoo",
+        "sports": [],
+        "organizerName": "OK Orient",
+        "startDateTime": 1747069200000,
+        "endDateTime": 1747074600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Epoontie 522, 06200 Porvoo, Suomi",
+        "locationDescription": "Yht.henkilö: Nina 050 341 2704",
+        "locationCoordinates": {
+          "lat": 60.358364,
+          "lon": 25.808168
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3900,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025 Borgånejdens motionsorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -494,7 +666,6 @@
         "eventId": 4281,
         "name": "Mäenpää",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1747069200000,
         "endDateTime": 1747076400000,
@@ -506,12 +677,10 @@
           "lat": 63.154736,
           "lon": 23.007153
         },
-        "uuid": "57a28edb-a7fb-4e63-b9ee-b6398ae8ebda",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4148,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -522,7 +691,6 @@
         "eventId": 4289,
         "name": "Luonto-Parra",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1747071000000,
         "endDateTime": 1747076400000,
@@ -534,13 +702,39 @@
           "lat": 62.427128,
           "lon": 21.827862
         },
-        "uuid": "01529d32-511a-483b-82bf-240679157c43",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4290,
+        "name": "Petalax",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1747072800000,
+        "endDateTime": 1747076400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Thorshaantie 1, 66240 Malax, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.838314,
+          "lon": 21.430496
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -552,7 +746,6 @@
         "eventId": 4306,
         "name": "Kirsta",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Laihian Luja",
         "startDateTime": 1747155600000,
         "endDateTime": 1747162800000,
@@ -564,12 +757,10 @@
           "lat": 63.003845,
           "lon": 22.01617
         },
-        "uuid": "efe7ae8e-d260-41eb-9f83-411e8b4b8a5a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4008,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Laihian Luja iltarastit 2025"
       },
       "serviceAvailable": false
@@ -582,7 +773,6 @@
         "eventId": 4308,
         "name": "Kylävuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Kurikka",
         "startDateTime": 1747155600000,
         "endDateTime": 1747162800000,
@@ -594,12 +784,10 @@
           "lat": 62.664707,
           "lon": 22.38751
         },
-        "uuid": "ea7b12fb-b226-42c4-9ac5-bf61a008c793",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3712,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Kurikan iltarastit 2025"
       },
       "serviceAvailable": false
@@ -612,7 +800,6 @@
         "eventId": 4331,
         "name": "Hanhikoski",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1747242000000,
         "endDateTime": 1747249200000,
@@ -624,12 +811,10 @@
           "lat": 62.955357,
           "lon": 22.734709
         },
-        "uuid": "89fa38ee-e141-4a4b-a36a-6aef4f3a7ec3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
       },
       "serviceAvailable": false
@@ -642,7 +827,6 @@
         "eventId": 4340,
         "name": "Luhtalankangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1747242000000,
         "endDateTime": 1747249200000,
@@ -654,12 +838,10 @@
           "lat": 63.285564,
           "lon": 23.212519
         },
-        "uuid": "2db454bf-58bb-4569-ae35-196ae2daf598",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -672,7 +854,6 @@
         "eventId": 4341,
         "name": "Luopajärven Pohjola",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1747242000000,
         "endDateTime": 1747247400000,
@@ -684,13 +865,63 @@
           "lat": 62.580822,
           "lon": 22.743526
         },
-        "uuid": "65ce4a90-072b-4166-a4c4-f9c0b7af9ccb",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 19781,
+        "name": "Onsdagsorientering - Keskiviikkorastit: Gennarby",
+        "sports": [],
+        "organizerName": "OK Raseborg",
+        "startDateTime": 1747245600000,
+        "endDateTime": 1747249200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": null,
+        "locationDescription": "Stafetträning med gemensam start kl. 18.00 - Viestiharjoitus yhteislähdöllä klo 18.00",
+        "locationCoordinates": {
+          "lat": 60.04151134355459,
+          "lon": 23.355216979980472
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 19780,
+        "parentSeriesEventName": "Raseborgs onsdagsorienteringar 2025 - Raaseporin keskiviikkorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [],
+      "event": {
+        "eventId": 4350,
+        "name": "#5 Länsirastit Lahnus",
+        "sports": [],
+        "organizerName": "OK 77",
+        "startDateTime": 1747326600000,
+        "endDateTime": 1747333800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Vanha Lahnuksentie 17, 02970 Espoo, Finland",
+        "locationDescription": "Ratavalikoimassa helppo 2 km, normaali 4 km, hieman vaativampi 3 km sekä vaativat 5 km ja 7 km. Lisäksi rogaining 77 min.",
+        "locationCoordinates": {
+          "lat": 60.30959,
+          "lon": 24.707209
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3760,
+        "parentSeriesEventName": "Länsirastit"
       },
       "serviceAvailable": false
     },
@@ -704,7 +935,6 @@
         "eventId": 4352,
         "name": "Kyrkösjärven uimaranta P-alue",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1747326600000,
         "endDateTime": 1747333800000,
@@ -716,13 +946,38 @@
           "lat": 62.769466,
           "lon": 22.813366
         },
-        "uuid": "5db2edd9-e2b0-406f-b6de-622f42ea1093",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4354,
+        "name": "Pilvijärvi",
+        "sports": [],
+        "organizerName": "IF Sibbo-Vargarna",
+        "startDateTime": 1747326600000,
+        "endDateTime": 1747335600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Pilvijärven luontopolku, Pilvijärventie 70, 01150 Sipoo, Suomi",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 60.312706,
+          "lon": 25.295359
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3837,
+        "parentSeriesEventName": "Keski-Uusimaa-rastit 2025"
       },
       "serviceAvailable": false
     },
@@ -735,7 +990,6 @@
         "eventId": 4358,
         "name": "Kappelinmäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Vaasan Suunnistajat",
         "startDateTime": 1747328400000,
         "endDateTime": 1747852200000,
@@ -747,12 +1001,10 @@
           "lat": 63.10588,
           "lon": 21.73111
         },
-        "uuid": "59774eb9-2d33-455a-81f8-0e821f24e0b9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3850,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Vaasarastit 2025 Skärmträffen"
       },
       "serviceAvailable": false
@@ -765,7 +1017,6 @@
         "eventId": 4362,
         "name": "Mustikkakalliot",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1747328400000,
         "endDateTime": 1747335600000,
@@ -777,12 +1028,10 @@
           "lat": 63.27531,
           "lon": 22.771996
         },
-        "uuid": "5ecaa555-eebe-4873-b39c-59d497b0556a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -795,7 +1044,6 @@
         "eventId": 4374,
         "name": "Sotka / Keeveli",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1747328400000,
         "endDateTime": 1747333800000,
@@ -807,13 +1055,64 @@
           "lat": 62.41735,
           "lon": 22.325623
         },
-        "uuid": "1ab9c838-37b2-44c8-97e5-6b699c3b2abb",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "RR",
+        "S"
+      ],
+      "event": {
+        "eventId": 4380,
+        "name": "Svartbäcken",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1747332000000,
+        "endDateTime": 1747335600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "FGR4+54 Svartbäcken, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.49038,
+          "lon": 21.505333
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [],
+      "event": {
+        "eventId": 4381,
+        "name": "#5 Länsirastit Lahnus omatoimi",
+        "sports": [],
+        "organizerName": "OK 77",
+        "startDateTime": 1747333800000,
+        "endDateTime": 1748124000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Vanha Lahnuksentie 15, 02970 Espoo, Finland",
+        "locationDescription": "Ratavalikoimassa helppo 2 km, normaali 4 km, hieman vaativampi 3 km sekä vaativat 5 km ja 7 km. Lisäksi rogaining 77 min.",
+        "locationCoordinates": {
+          "lat": 60.31035,
+          "lon": 24.70526
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3760,
+        "parentSeriesEventName": "Länsirastit"
       },
       "serviceAvailable": false
     },
@@ -827,7 +1126,6 @@
         "eventId": 4387,
         "name": "Vuorijärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1747414800000,
         "endDateTime": 1747422000000,
@@ -839,12 +1137,10 @@
           "lat": 62.88263,
           "lon": 23.727152
         },
-        "uuid": "a406aa8c-6945-42bb-ae21-6d610e66e713",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -860,7 +1156,6 @@
         "eventId": 4408,
         "name": "Susivuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1747674000000,
         "endDateTime": 1747681200000,
@@ -872,12 +1167,10 @@
           "lat": 63.198254,
           "lon": 23.034311
         },
-        "uuid": "1425eb05-7417-4537-872b-9f3d919a3ff7",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4148,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -890,7 +1183,6 @@
         "eventId": 4413,
         "name": "Palomäki, metsästysmaja",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1747675800000,
         "endDateTime": 1747681200000,
@@ -902,13 +1194,39 @@
           "lat": 62.433872,
           "lon": 21.650557
         },
-        "uuid": "d95162aa-a04f-497f-8e3f-70c969a49ac6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4414,
+        "name": "Kolina",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1747677600000,
+        "endDateTime": 1747681200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Kolne skolväg 221, 66160 Malax, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.85639,
+          "lon": 21.73307
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -921,7 +1239,6 @@
         "eventId": 4437,
         "name": "Santavuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Kurikka",
         "startDateTime": 1747760400000,
         "endDateTime": 1747767600000,
@@ -933,12 +1250,10 @@
           "lat": 62.650734,
           "lon": 22.491512
         },
-        "uuid": "d8983437-bc8c-4065-aa8f-fca90bc30f5f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3712,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Kurikan iltarastit 2025"
       },
       "serviceAvailable": false
@@ -951,7 +1266,6 @@
         "eventId": 4456,
         "name": "Isokyrö, Keskusta",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1747846800000,
         "endDateTime": 1747854000000,
@@ -963,12 +1277,10 @@
           "lat": 62.997948,
           "lon": 22.319155
         },
-        "uuid": "0f8389f3-68ce-42d2-a3f5-ef1aa614f5fd",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
       },
       "serviceAvailable": false
@@ -981,7 +1293,6 @@
         "eventId": 4458,
         "name": "Kitka (murska)",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1747846800000,
         "endDateTime": 1747854000000,
@@ -993,12 +1304,10 @@
           "lat": 63.26159,
           "lon": 23.14032
         },
-        "uuid": "5a46edb6-6c26-497f-b549-a1b4a34fd660",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1011,7 +1320,6 @@
         "eventId": 4460,
         "name": "Koulukeskus",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1747846800000,
         "endDateTime": 1747852200000,
@@ -1023,12 +1331,10 @@
           "lat": 62.48983,
           "lon": 22.743408
         },
-        "uuid": "e9a9894d-bef7-4efa-b594-69ff59f4b2e8",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1043,7 +1349,6 @@
         "eventId": 4474,
         "name": "Joupiska Ampumarata",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1747931400000,
         "endDateTime": 1747938600000,
@@ -1055,12 +1360,10 @@
           "lat": 62.774708,
           "lon": 22.801517
         },
-        "uuid": "073c2d97-d017-4ed1-bb79-d9c48d01ee84",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -1073,7 +1376,6 @@
         "eventId": 4488,
         "name": "Nummijärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1747933200000,
         "endDateTime": 1747938600000,
@@ -1085,12 +1387,10 @@
           "lat": 62.275726,
           "lon": 22.43545
         },
-        "uuid": "59080a56-33e3-4a44-9df5-1911757ee0ee",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1103,7 +1403,6 @@
         "eventId": 4494,
         "name": "Porokallio ",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1747933200000,
         "endDateTime": 1747940400000,
@@ -1115,12 +1414,10 @@
           "lat": 63.227062,
           "lon": 23.00077
         },
-        "uuid": "8bb0becf-b45b-4336-a3d1-880780ec5e06",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -1134,7 +1431,6 @@
         "eventId": 4496,
         "name": "Pyhävuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1747933200000,
         "endDateTime": 1747940400000,
@@ -1146,13 +1442,67 @@
           "lat": 63.054707,
           "lon": 23.688492
         },
-        "uuid": "994c4832-f26b-4fa1-8ce0-766ada2cbb31",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4500,
+        "name": "Skatila",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1747933200000,
+        "endDateTime": 1748473200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Veikkaalantie 838, 66520 Mustasaari, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.090168,
+          "lon": 21.878527
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "RR",
+        "S"
+      ],
+      "event": {
+        "eventId": 4505,
+        "name": "Mjödträsk",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1747936800000,
+        "endDateTime": 1747940400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "G7F6+P9 Mjödträsk, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.524284,
+          "lon": 21.260937
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -1167,7 +1517,6 @@
         "eventId": 4524,
         "name": "Kroonmäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1748278800000,
         "endDateTime": 1748286000000,
@@ -1179,13 +1528,38 @@
           "lat": 63.074524,
           "lon": 23.03198
         },
-        "uuid": "0216f284-c6ad-4f70-9fc9-62bd9ee0ddca",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4148,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4528,
+        "name": "Seitlax",
+        "sports": [],
+        "organizerName": "Akilles OK",
+        "startDateTime": 1748278800000,
+        "endDateTime": 1748284200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Isojärventie 1, 06200 Porvoo, Suomi",
+        "locationDescription": "Porvoonseudun kuntosuunnistuksien järjestelyissä ovat mukana Porvoon kaupungin liikuntapalvelut sekä tapahtumien järjestelyistä vastaavat suunnistuseurat: Porvoon Urheilijat, Askolan Urheilijat, Akilles OK ja OK Orient. Ratavaihtoehtoja on viisi: A (vaativin) 6 km kartta 1:7500 tai 1:10 000 B (vaativa) 4,5 km kartta 1:7500 C (lyhyt normaali) 3 km kartta 1:7500 D (helppo) 2,5 km kartta 1:7500 E (erittäin helppo) 1,5-2 km kartta 1:7500 Ilmoittautuminen ja maksut: Aikuiset 8€, 16v ja nuoremmat 4€. Voit ilmoittautua ja maksaa ennakkoon rastilippu.fi -palvelun kautta tai ilmoittautua ja suorittaa karttamaksun paikan päällä kortti-/lähimaksuna, mobilepay -maksulla sekä käteisellä (mieluiten tasaraha). Suosittelemme ilmoittautumista ja maksua rastilippu.fi -palvelun kautta. Emit-leimasimet kaikilla radoilla. Emitin voi lainata ilmaiseksi, kuitenkin kadonneesta emitistä peritään 70€. Ilmoittaudu lähdössä ja aina myös maalissa, jottei tarvitse järjestää maastoetsintöjä turhaan. Maali sulkeutuu klo 20:00 (yösuunnistuksessa klo 22:00).",
+        "locationCoordinates": {
+          "lat": 60.325615,
+          "lon": 25.749706
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 4017,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -1195,7 +1569,6 @@
         "eventId": 4533,
         "name": "Pihakangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1748280600000,
         "endDateTime": 1748286000000,
@@ -1207,13 +1580,39 @@
           "lat": 62.58455,
           "lon": 21.869047
         },
-        "uuid": "3b3cef85-545a-414e-aaac-a078253fa770",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4534,
+        "name": "Sportstugan",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1748282400000,
+        "endDateTime": 1748286000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Västersolfintie 233, 65450 Mustasaari, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.995476,
+          "lon": 21.635622
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -1225,7 +1624,6 @@
         "eventId": 4554,
         "name": "Lusa",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Kurikka",
         "startDateTime": 1748365200000,
         "endDateTime": 1748372400000,
@@ -1237,12 +1635,10 @@
           "lat": 62.582592,
           "lon": 22.396666
         },
-        "uuid": "5d8cb013-4bf6-44e4-bebb-9bc336ce4e1d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3712,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Kurikan iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1255,7 +1651,6 @@
         "eventId": 4585,
         "name": "Luokkakallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1748451600000,
         "endDateTime": 1748457000000,
@@ -1267,12 +1662,10 @@
           "lat": 62.636726,
           "lon": 22.749935
         },
-        "uuid": "43087994-443b-447f-a907-bfcfcdb3110c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1286,7 +1679,6 @@
         "eventId": 4587,
         "name": "Metsäkallio ",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Vaasan Suunnistajat",
         "startDateTime": 1748451600000,
         "endDateTime": 1749061800000,
@@ -1298,12 +1690,10 @@
           "lat": 63.120407,
           "lon": 21.643055
         },
-        "uuid": "ab8768a2-f022-45bf-ab1e-8067066dde0e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3850,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Vaasarastit 2025 Skärmträffen"
       },
       "serviceAvailable": false
@@ -1316,7 +1706,6 @@
         "eventId": 4595,
         "name": "Vilobacka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1748451600000,
         "endDateTime": 1748458800000,
@@ -1328,12 +1717,10 @@
           "lat": 63.360836,
           "lon": 23.056124
         },
-        "uuid": "8e38a43a-ad89-441f-ae2b-3fc06d6caac0",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1346,7 +1733,6 @@
         "eventId": 4603,
         "name": "Hallilanvuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1748536200000,
         "endDateTime": 1748543400000,
@@ -1358,12 +1744,10 @@
           "lat": 62.76743,
           "lon": 22.868519
         },
-        "uuid": "b77f0063-80f0-430e-942d-ee022b28ca22",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -1376,7 +1760,6 @@
         "eventId": 4607,
         "name": "Hakola",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1748538000000,
         "endDateTime": 1748545200000,
@@ -1388,12 +1771,10 @@
           "lat": 63.160625,
           "lon": 22.817286
         },
-        "uuid": "fb2729f8-5f64-41a2-9f9c-f603a1a18364",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -1407,7 +1788,6 @@
         "eventId": 4611,
         "name": "Paalivuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1748538000000,
         "endDateTime": 1748545200000,
@@ -1419,12 +1799,10 @@
           "lat": 63.077255,
           "lon": 23.869555
         },
-        "uuid": "41827a16-09a4-4ada-9580-cc7dacf04f53",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1438,7 +1816,6 @@
         "eventId": 4640,
         "name": "Porokallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1748883600000,
         "endDateTime": 1748890800000,
@@ -1450,12 +1827,10 @@
           "lat": 63.221363,
           "lon": 23.046305
         },
-        "uuid": "0043671a-3078-44f9-96a6-077490bab609",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4148,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -1466,7 +1841,6 @@
         "eventId": 4645,
         "name": "Pappilankangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1748885400000,
         "endDateTime": 1748890800000,
@@ -1478,13 +1852,39 @@
           "lat": 62.444843,
           "lon": 21.691538
         },
-        "uuid": "246c3cce-d386-47da-89f3-35ca891db774",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4646,
+        "name": "Ribäcken (MIF 80 års jubiléum)",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1748887200000,
+        "endDateTime": 1748890800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Ribäckintie 1035, 66140 Malax, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.82243,
+          "lon": 21.573736
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -1496,7 +1896,6 @@
         "eventId": 4685,
         "name": "Kerus",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1749056400000,
         "endDateTime": 1749061800000,
@@ -1508,12 +1907,10 @@
           "lat": 62.63153,
           "lon": 22.774708
         },
-        "uuid": "eeb995a9-c4f9-4641-a0fb-eebc2f417e41",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1526,7 +1923,6 @@
         "eventId": 4686,
         "name": "Kitka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1749056400000,
         "endDateTime": 1749063600000,
@@ -1538,12 +1934,10 @@
           "lat": 63.268543,
           "lon": 23.13059
         },
-        "uuid": "79b331cc-ccef-4f28-8632-0e1c6bc143a2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1556,7 +1950,6 @@
         "eventId": 4696,
         "name": "Rautainen",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1749056400000,
         "endDateTime": 1749063600000,
@@ -1568,12 +1961,10 @@
           "lat": 63.04431,
           "lon": 22.66774
         },
-        "uuid": "3eaf25e9-7389-4581-a705-63dccf76d875",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1586,7 +1977,6 @@
         "eventId": 4707,
         "name": "Tanelinranta- Lampitie",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1749141000000,
         "endDateTime": 1749148200000,
@@ -1598,12 +1988,10 @@
           "lat": 62.79627,
           "lon": 22.913088
         },
-        "uuid": "7a7275e3-4010-4718-a5fe-892cb1bfa31e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -1617,7 +2005,6 @@
         "eventId": 4709,
         "name": "Ahonkallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1749142800000,
         "endDateTime": 1749150000000,
@@ -1629,12 +2016,10 @@
           "lat": 63.051853,
           "lon": 23.912743
         },
-        "uuid": "e1e6b7b9-dcd9-461c-b33a-50188407fbb1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1647,7 +2032,6 @@
         "eventId": 4712,
         "name": "Haarus",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1749142800000,
         "endDateTime": 1749150000000,
@@ -1659,12 +2043,10 @@
           "lat": 63.273098,
           "lon": 22.967958
         },
-        "uuid": "15f47741-d3c7-4967-a3a8-8a6a1be49ba0",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -1677,7 +2059,6 @@
         "eventId": 4714,
         "name": "Hirvimäki ",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1749142800000,
         "endDateTime": 1749148200000,
@@ -1689,13 +2070,67 @@
           "lat": 62.366703,
           "lon": 22.224638
         },
-        "uuid": "bed82e5b-7934-406e-b815-120d29832340",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4722,
+        "name": "Norrvalla",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1749142800000,
+        "endDateTime": 1749682800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Vöråvägen 305, 66600 Vörå, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.15427,
+          "lon": 22.274256
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "RR",
+        "S"
+      ],
+      "event": {
+        "eventId": 4734,
+        "name": "Mosedal",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1749146400000,
+        "endDateTime": 1749150000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Industrivägen 2, 64230 Närpes, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.475433,
+          "lon": 21.36225
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -1708,7 +2143,6 @@
         "eventId": 4750,
         "name": "Majankalliot",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1749488400000,
         "endDateTime": 1749495600000,
@@ -1720,13 +2154,38 @@
           "lat": 63.17628,
           "lon": 23.039764
         },
-        "uuid": "78e48978-ddd9-43a1-8a39-45ce0da551f6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4752,
+        "name": "Mustijoki",
+        "sports": [],
+        "organizerName": "OK Orient",
+        "startDateTime": 1749488400000,
+        "endDateTime": 1749493800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Sillvikintie 107, 06750 Porvoo, Suomi",
+        "locationDescription": "Yht.henkilö: Nina 050 341 2704",
+        "locationCoordinates": {
+          "lat": 60.339344,
+          "lon": 25.570518
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3900,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025 Borgånejdens motionsorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -1736,7 +2195,6 @@
         "eventId": 4758,
         "name": "Talvi-Parra",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1749490200000,
         "endDateTime": 1749495600000,
@@ -1748,13 +2206,39 @@
           "lat": 62.43486,
           "lon": 21.816282
         },
-        "uuid": "506d84ba-2088-4ee9-8ca0-58e492a04e9f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4759,
+        "name": "Kivne skogsväg",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1749492000000,
+        "endDateTime": 1749495600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "XM79+F3 Långmossen, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.963627,
+          "lon": 21.66772
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -1766,7 +2250,6 @@
         "eventId": 4803,
         "name": "Kokkokangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1749661200000,
         "endDateTime": 1749668400000,
@@ -1778,12 +2261,10 @@
           "lat": 63.07474,
           "lon": 22.603825
         },
-        "uuid": "58e57ceb-02f9-4f8a-b477-4fb9c66df891",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1796,7 +2277,6 @@
         "eventId": 4806,
         "name": "Pirunpesä",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1749661200000,
         "endDateTime": 1749666600000,
@@ -1808,12 +2288,10 @@
           "lat": 62.399117,
           "lon": 22.897058
         },
-        "uuid": "18e28f24-635b-4d19-b82a-f2639d9aac60",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -1826,7 +2304,6 @@
         "eventId": 4811,
         "name": "Syväjärvi (murska)",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1749661200000,
         "endDateTime": 1749668400000,
@@ -1838,13 +2315,38 @@
           "lat": 63.275013,
           "lon": 23.078302
         },
-        "uuid": "68d706d9-54ab-4573-a500-3321271ca644",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4816,
+        "name": "Hitå",
+        "sports": [],
+        "organizerName": "IF Sibbo-Vargarna",
+        "startDateTime": 1749745800000,
+        "endDateTime": 1749754800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Hitåntie 199, 01150 Sipoo, Suomi",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 60.275097,
+          "lon": 25.315605
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3837,
+        "parentSeriesEventName": "Keski-Uusimaa-rastit 2025"
       },
       "serviceAvailable": false
     },
@@ -1856,7 +2358,6 @@
         "eventId": 4817,
         "name": "Palonkylä Ilmajoki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1749745800000,
         "endDateTime": 1749753000000,
@@ -1868,12 +2369,10 @@
           "lat": 62.723293,
           "lon": 22.624582
         },
-        "uuid": "38d746d5-a7d6-4f5a-95b1-9ab5f933b492",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -1886,7 +2385,6 @@
         "eventId": 4818,
         "name": "Eko/Jäniskalliot",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1749747600000,
         "endDateTime": 1749754800000,
@@ -1898,12 +2396,10 @@
           "lat": 63.207745,
           "lon": 22.680964
         },
-        "uuid": "8b95be29-f09f-4e43-afb1-6749670f2fb6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -1916,7 +2412,6 @@
         "eventId": 4824,
         "name": "Katikka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1749747600000,
         "endDateTime": 1749753000000,
@@ -1928,13 +2423,39 @@
           "lat": 62.23975,
           "lon": 22.324032
         },
-        "uuid": "ae4017db-b909-44a1-ad13-7b31142e9fc0",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "RR",
+        "S"
+      ],
+      "event": {
+        "eventId": 4843,
+        "name": "Tjärlax",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1749751200000,
+        "endDateTime": 1749754800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "F63G+J4 Granön, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.454044,
+          "lon": 21.225317
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -1944,7 +2465,6 @@
         "eventId": 4860,
         "name": "Ontonmäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1750095000000,
         "endDateTime": 1750100400000,
@@ -1956,13 +2476,67 @@
           "lat": 62.511326,
           "lon": 21.866873
         },
-        "uuid": "49e3a3e3-082d-4c13-a387-4ca533a708be",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4861,
+        "name": "Stortelsar",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1750096800000,
+        "endDateTime": 1750100400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Storbackvägen 115, 66140 Maalahti, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.914787,
+          "lon": 21.675722
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4902,
+        "name": "Jungsund",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1750266000000,
+        "endDateTime": 1750892400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Jungsundintie 649, 65730 Mustasaari, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.18876,
+          "lon": 21.604864
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
       },
       "serviceAvailable": false
     },
@@ -1974,7 +2548,6 @@
         "eventId": 4905,
         "name": "Kiuaskallio, Rinnekahvila",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1750266000000,
         "endDateTime": 1750271400000,
@@ -1986,12 +2559,10 @@
           "lat": 62.506275,
           "lon": 22.764261
         },
-        "uuid": "7cff76b0-9a08-4f8a-a1ae-c161089f402d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2004,7 +2575,6 @@
         "eventId": 4913,
         "name": "Änttikangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1750266000000,
         "endDateTime": 1750273200000,
@@ -2016,12 +2586,10 @@
           "lat": 63.29535,
           "lon": 23.199867
         },
-        "uuid": "c0a496b3-e898-4650-9c7b-85d84a1f50f9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2035,7 +2603,6 @@
         "eventId": 4918,
         "name": "Jukosenkallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1750352400000,
         "endDateTime": 1750359600000,
@@ -2047,13 +2614,65 @@
           "lat": 63.076054,
           "lon": 23.761887
         },
-        "uuid": "4f91f30c-1b21-4e35-bf68-8ff3054653ea",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4934,
+        "name": "Mossberget",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1750356000000,
+        "endDateTime": 1750359600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "C9FQ+5R Böle, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.422913,
+          "lon": 21.38957
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 4945,
+        "name": "Holken",
+        "sports": [],
+        "organizerName": "Akilles OK",
+        "startDateTime": 1750698000000,
+        "endDateTime": 1750703400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Ebbovägen 518, 06200 Borgå, Suomi",
+        "locationDescription": "Porvoonseudun kuntosuunnistuksien järjestelyissä ovat mukana Porvoon kaupungin liikuntapalvelut sekä tapahtumien järjestelyistä vastaavat suunnistuseurat: Porvoon Urheilijat, Askolan Urheilijat, Akilles OK ja OK Orient. Ratavaihtoehtoja on viisi: A (vaativin) 6 km kartta 1:7500 tai 1:10 000 B (vaativa) 4,5 km kartta 1:7500 C (lyhyt normaali) 3 km kartta 1:7500 D (helppo) 2,5 km kartta 1:7500 E (erittäin helppo) 1,5-2 km kartta 1:7500 Ilmoittautuminen ja maksut: Aikuiset 8€, 16v ja nuoremmat 4€. Voit ilmoittautua ja maksaa ennakkoon rastilippu.fi -palvelun kautta tai ilmoittautua ja suorittaa karttamaksun paikan päällä kortti-/lähimaksuna, mobilepay -maksulla sekä käteisellä (mieluiten tasaraha). Suosittelemme ilmoittautumista ja maksua rastilippu.fi -palvelun kautta. Emit-leimasimet kaikilla radoilla. Emitin voi lainata ilmaiseksi, kuitenkin kadonneesta emitistä peritään 70€. Ilmoittaudu lähdössä ja aina myös maalissa, jottei tarvitse järjestää maastoetsintöjä turhaan. Maali sulkeutuu klo 20:00 (yösuunnistuksessa klo 22:00).",
+        "locationCoordinates": {
+          "lat": 60.357895,
+          "lon": 25.80737
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 4017,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -2066,7 +2685,6 @@
         "eventId": 4946,
         "name": "Kukkura",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1750698000000,
         "endDateTime": 1750705200000,
@@ -2078,12 +2696,10 @@
           "lat": 63.15408,
           "lon": 23.103476
         },
-        "uuid": "e2cb427a-7b6c-4940-84f7-af3f0c3d0693",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -2096,7 +2712,6 @@
         "eventId": 4953,
         "name": "Palomäki, metsästysmaja",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1750699800000,
         "endDateTime": 1750705200000,
@@ -2108,13 +2723,39 @@
           "lat": 62.43385,
           "lon": 21.650436
         },
-        "uuid": "e7fd5eef-6df7-4c30-9ac2-c77d8c002556",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 4954,
+        "name": "Lasma-Fall skogsväg",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1750701600000,
+        "endDateTime": 1750705200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Lassma-Fall skogsväg 4, Korsholm, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.943832,
+          "lon": 21.68144
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -2126,7 +2767,6 @@
         "eventId": 4993,
         "name": "Kärjenmäen kota",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1750870800000,
         "endDateTime": 1750876200000,
@@ -2138,12 +2778,10 @@
           "lat": 62.465424,
           "lon": 22.691298
         },
-        "uuid": "4c1670e1-5ac5-46b6-a780-f5f08443946e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2156,7 +2794,6 @@
         "eventId": 5002,
         "name": "Rantahalli",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1750870800000,
         "endDateTime": 1750878000000,
@@ -2168,12 +2805,10 @@
           "lat": 63.290054,
           "lon": 23.26306
         },
-        "uuid": "bc111147-c893-42e7-ac70-c08d08d1412e",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2186,7 +2821,6 @@
         "eventId": 5009,
         "name": "Kivilaaksonkadun hiekkakenttä",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1750955400000,
         "endDateTime": 1750962600000,
@@ -2198,12 +2832,10 @@
           "lat": 62.780445,
           "lon": 22.782427
         },
-        "uuid": "388a0994-1301-4b77-ac5f-ecac650018a2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -2217,7 +2849,6 @@
         "eventId": 5015,
         "name": "Kalliojärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1750957200000,
         "endDateTime": 1750964400000,
@@ -2229,13 +2860,38 @@
           "lat": 63.042408,
           "lon": 23.818548
         },
-        "uuid": "3b93ad17-2c9c-451f-a6cc-9c558e06a860",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5038,
+        "name": "Högåsen",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1750960800000,
+        "endDateTime": 1750964400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "HGRR+X5 Tallbacken, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.592422,
+          "lon": 21.540424
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -2248,7 +2904,6 @@
         "eventId": 5056,
         "name": "Yliviitala",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1751302800000,
         "endDateTime": 1751310000000,
@@ -2260,12 +2915,10 @@
           "lat": 63.163353,
           "lon": 22.858282
         },
-        "uuid": "8bf1c24d-8774-4d2c-b644-5db8f07e42e7",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -2278,7 +2931,6 @@
         "eventId": 5057,
         "name": "Yliviitala",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1751302800000,
         "endDateTime": 1751310000000,
@@ -2290,13 +2942,39 @@
           "lat": 63.16285,
           "lon": 22.85632
         },
-        "uuid": "8759cd80-9c35-4abd-9148-d6cfd366d1d1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5058,
+        "name": "Isomäki",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1751306400000,
+        "endDateTime": 1751310000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Sarvijoentie 348, 66340 Kurikka, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.839542,
+          "lon": 21.755295
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -2308,7 +2986,6 @@
         "eventId": 5096,
         "name": "Muuruuvuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1751475600000,
         "endDateTime": 1751481000000,
@@ -2320,12 +2997,10 @@
           "lat": 62.365925,
           "lon": 22.81603
         },
-        "uuid": "d41d3a80-93c9-45c0-b5a2-0815a4c3295f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2338,7 +3013,6 @@
         "eventId": 5102,
         "name": "Sampakka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1751475600000,
         "endDateTime": 1751482800000,
@@ -2350,12 +3024,10 @@
           "lat": 63.286278,
           "lon": 23.10971
         },
-        "uuid": "04af5682-e88f-420e-8e7e-f51352be89e1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2368,7 +3040,6 @@
         "eventId": 5116,
         "name": "Riuttankallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1751562000000,
         "endDateTime": 1751567400000,
@@ -2380,13 +3051,121 @@
           "lat": 62.468353,
           "lon": 22.184732
         },
-        "uuid": "d5647fbc-35f7-4c57-8ad8-9d2afdcf1080",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5121,
+        "name": "Vassor (Självservice/Omatoimi)",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1751562000000,
+        "endDateTime": 1752102000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "52HF+C3 Vassor, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.17856,
+          "lon": 22.022724
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5123,
+        "name": "Vargberget",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1751565600000,
+        "endDateTime": 1751569200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "GF37+XJ Svartbäcken, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.50495,
+          "lon": 21.464119
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5128,
+        "name": "Norrnäs",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1751882400000,
+        "endDateTime": 1752433200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Flatskärsvägen 67, 64530 Närpes, Finland",
+        "locationDescription": "Sjlvservice 7 - 13.7",
+        "locationCoordinates": {
+          "lat": 62.567303,
+          "lon": 21.169538
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5135,
+        "name": "Norike itä",
+        "sports": [],
+        "organizerName": "OK Orient",
+        "startDateTime": 1751907600000,
+        "endDateTime": 1751913000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Ylikentie 732, 06200 Porvoo, Suomi",
+        "locationDescription": "Yht.henkilö: Nina 050 341 2704",
+        "locationCoordinates": {
+          "lat": 60.36681,
+          "lon": 25.866951
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3900,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025 Borgånejdens motionsorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -2399,7 +3178,6 @@
         "eventId": 5137,
         "name": "Raunionmäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1751907600000,
         "endDateTime": 1751914800000,
@@ -2411,12 +3189,10 @@
           "lat": 63.177826,
           "lon": 22.94094
         },
-        "uuid": "74d82501-98e7-4f01-840f-642393001847",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -2429,7 +3205,6 @@
         "eventId": 5168,
         "name": "Eskonmäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1752080400000,
         "endDateTime": 1752087600000,
@@ -2441,12 +3216,10 @@
           "lat": 63.22583,
           "lon": 23.07909
         },
-        "uuid": "2234287f-ed4c-4b35-a8af-0aa2f4db5b99",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2459,7 +3232,6 @@
         "eventId": 5176,
         "name": "Pontikkaharju",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1752080400000,
         "endDateTime": 1752085800000,
@@ -2471,12 +3243,10 @@
           "lat": 62.39512,
           "lon": 22.80852
         },
-        "uuid": "c9497990-f2a3-4167-a19b-f57e47b15a35",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2489,7 +3259,6 @@
         "eventId": 5181,
         "name": "Kyrkösvuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1752165000000,
         "endDateTime": 1752172200000,
@@ -2501,13 +3270,38 @@
           "lat": 62.758812,
           "lon": 22.799316
         },
-        "uuid": "9b2aef5f-bfeb-470a-99c5-b1bc857b54e3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5182,
+        "name": "Rännarberget",
+        "sports": [],
+        "organizerName": "IF Sibbo-Vargarna",
+        "startDateTime": 1752165000000,
+        "endDateTime": 1752174000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "9GG78CW7+HQ",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 60.346443,
+          "lon": 25.414448
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3837,
+        "parentSeriesEventName": "Keski-Uusimaa-rastit 2025"
       },
       "serviceAvailable": false
     },
@@ -2519,7 +3313,6 @@
         "eventId": 5187,
         "name": "Laitasaari",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1752166800000,
         "endDateTime": 1752172200000,
@@ -2531,12 +3324,10 @@
           "lat": 62.502117,
           "lon": 22.324993
         },
-        "uuid": "d43adfb5-a216-4bd2-8420-52b8fbef41b2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2550,7 +3341,6 @@
         "eventId": 5197,
         "name": "Valkealampi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1752166800000,
         "endDateTime": 1752174000000,
@@ -2562,12 +3352,10 @@
           "lat": 62.775925,
           "lon": 23.865673
         },
-        "uuid": "15617ab2-b12f-493f-a5c4-4e8c95447924",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2581,7 +3369,6 @@
         "eventId": 5209,
         "name": "Pakkaskallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1752512400000,
         "endDateTime": 1752519600000,
@@ -2593,13 +3380,39 @@
           "lat": 63.14368,
           "lon": 23.000282
         },
-        "uuid": "b4b9ba12-0af5-4a76-832d-9a19713bfd57",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5213,
+        "name": "Bergö",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1752516000000,
+        "endDateTime": 1752519600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Bredhällanintie 152, 66220 Bergö, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.96889,
+          "lon": 21.191078
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -2611,7 +3424,6 @@
         "eventId": 5254,
         "name": "Mujunkangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1752685200000,
         "endDateTime": 1752690600000,
@@ -2623,12 +3435,10 @@
           "lat": 62.3012,
           "lon": 22.828588
         },
-        "uuid": "14cfdcca-339d-4089-86bf-0095afee9b09",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2641,7 +3451,6 @@
         "eventId": 5261,
         "name": "Vanha kaatopaikka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1752685200000,
         "endDateTime": 1752692400000,
@@ -2653,12 +3462,10 @@
           "lat": 63.25832,
           "lon": 23.099653
         },
-        "uuid": "03ffcb0f-cc24-480d-9804-e8edbdcc5653",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2671,7 +3478,6 @@
         "eventId": 5267,
         "name": "Uitonloukko",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1752769800000,
         "endDateTime": 1752777000000,
@@ -2683,12 +3489,10 @@
           "lat": 62.869614,
           "lon": 22.965324
         },
-        "uuid": "63eb2f3a-37be-4713-9d70-10c30411dfd6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -2702,7 +3506,6 @@
         "eventId": 5270,
         "name": "Iiruu",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1752771600000,
         "endDateTime": 1752778800000,
@@ -2714,13 +3517,39 @@
           "lat": 63.0716,
           "lon": 24.072878
         },
-        "uuid": "68c35036-22f1-4ac7-87d0-d88a99648b4d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5272,
+        "name": "Karika (Självservice/Omatoimi)",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1752771600000,
+        "endDateTime": 1753311600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Lekmosunds villaväg 1, 66560 Korsholm, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.239803,
+          "lon": 21.936354
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
       },
       "serviceAvailable": false
     },
@@ -2732,7 +3561,6 @@
         "eventId": 5281,
         "name": "Sotka (Erähovi)",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1752771600000,
         "endDateTime": 1752777000000,
@@ -2744,13 +3572,66 @@
           "lat": 62.414303,
           "lon": 22.2511
         },
-        "uuid": "8db9ba5d-8b5b-401a-89a6-7e900aa97b1c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5288,
+        "name": "Svartbäcken",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1752775200000,
+        "endDateTime": 1752778800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "FGR3+FH Svartbäcken, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.49114,
+          "lon": 21.503948
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5291,
+        "name": "Mossberget Kvittbergsback",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1753092000000,
+        "endDateTime": 1753642800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "C9FQ+8F Böle, Finland",
+        "locationDescription": "Sjlvservice 21 - 27.7",
+        "locationCoordinates": {
+          "lat": 62.423275,
+          "lon": 21.388676
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -2763,7 +3644,6 @@
         "eventId": 5295,
         "name": "Kotkanpesä",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1753117200000,
         "endDateTime": 1753124400000,
@@ -2775,13 +3655,66 @@
           "lat": 63.16034,
           "lon": 23.06291
         },
-        "uuid": "ef791bac-3f62-4272-a343-e9d66f9837ce",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5302,
+        "name": "Sondby",
+        "sports": [],
+        "organizerName": "Akilles OK",
+        "startDateTime": 1753117200000,
+        "endDateTime": 1753122600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Sondbyntie 271, 06200 Porvoo, Suomi",
+        "locationDescription": "Porvoonseudun kuntosuunnistuksien järjestelyissä ovat mukana Porvoon kaupungin liikuntapalvelut sekä tapahtumien järjestelyistä vastaavat suunnistuseurat: Porvoon Urheilijat, Askolan Urheilijat, Akilles OK ja OK Orient. Ratavaihtoehtoja on viisi: A (vaativin) 6 km kartta 1:7500 tai 1:10 000 B (vaativa) 4,5 km kartta 1:7500 C (lyhyt normaali) 3 km kartta 1:7500 D (helppo) 2,5 km kartta 1:7500 E (erittäin helppo) 1,5-2 km kartta 1:7500 Ilmoittautuminen ja maksut: Aikuiset 8€, 16v ja nuoremmat 4€. Voit ilmoittautua ja maksaa ennakkoon rastilippu.fi -palvelun kautta tai ilmoittautua ja suorittaa karttamaksun paikan päällä kortti-/lähimaksuna, mobilepay -maksulla sekä käteisellä (mieluiten tasaraha). Suosittelemme ilmoittautumista ja maksua rastilippu.fi -palvelun kautta. Emit-leimasimet kaikilla radoilla. Emitin voi lainata ilmaiseksi, kuitenkin kadonneesta emitistä peritään 70€. Ilmoittaudu lähdössä ja aina myös maalissa, jottei tarvitse järjestää maastoetsintöjä turhaan. Maali sulkeutuu klo 20:00 (yösuunnistuksessa klo 22:00).",
+        "locationCoordinates": {
+          "lat": 60.26653,
+          "lon": 25.821894
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 4017,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5303,
+        "name": "Munsmo",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1753120800000,
+        "endDateTime": 1753124400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Munsmovägen 157, 65450 Mustasaari, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 63.039585,
+          "lon": 21.627909
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -2793,7 +3726,6 @@
         "eventId": 5343,
         "name": "Lakiakallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1753290000000,
         "endDateTime": 1753295400000,
@@ -2805,12 +3737,10 @@
           "lat": 62.53425,
           "lon": 22.762815
         },
-        "uuid": "4bda8eaf-32e5-4857-856b-3399a22f28c9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2823,7 +3753,6 @@
         "eventId": 5348,
         "name": "Peräkuopat",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1753290000000,
         "endDateTime": 1753297200000,
@@ -2835,12 +3764,10 @@
           "lat": 63.35024,
           "lon": 23.14349
         },
-        "uuid": "b6fe4e03-b55d-4ea3-9fec-e221347d83d1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2853,7 +3780,6 @@
         "eventId": 5355,
         "name": "Kukkulatien pää",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1753374600000,
         "endDateTime": 1753381800000,
@@ -2865,12 +3791,10 @@
           "lat": 62.778316,
           "lon": 22.764698
         },
-        "uuid": "aa654b4b-1456-4f9c-b7ae-ab4740ab5087",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -2883,7 +3807,6 @@
         "eventId": 5360,
         "name": "Kotamäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1753376400000,
         "endDateTime": 1753381800000,
@@ -2895,12 +3818,10 @@
           "lat": 62.447292,
           "lon": 22.334404
         },
-        "uuid": "28bf61e8-70d4-465b-b00f-e2edfb7478bc",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2914,7 +3835,6 @@
         "eventId": 5378,
         "name": "Korkiamäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1753722000000,
         "endDateTime": 1753729200000,
@@ -2926,13 +3846,39 @@
           "lat": 63.0645,
           "lon": 23.34763
         },
-        "uuid": "e706bfca-3c3d-400b-a523-a1050b6f47b4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5388,
+        "name": "Majorsträsk",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1753725600000,
+        "endDateTime": 1753729200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Majors villaväg 5, 66100 Majors, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.899998,
+          "lon": 21.465023
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -2944,7 +3890,6 @@
         "eventId": 5429,
         "name": "Mäntykallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1753894800000,
         "endDateTime": 1753902000000,
@@ -2956,12 +3901,10 @@
           "lat": 62.91239,
           "lon": 22.823582
         },
-        "uuid": "655abecb-caf9-43d4-bf9a-21e4ed7578be",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
       },
       "serviceAvailable": false
@@ -2974,7 +3917,6 @@
         "eventId": 5434,
         "name": "Palojärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1753894800000,
         "endDateTime": 1753902000000,
@@ -2986,13 +3928,38 @@
           "lat": 63.256065,
           "lon": 23.2467
         },
-        "uuid": "177ab477-f678-492f-a087-7a8a78826338",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5439,
+        "name": "Pörtom by",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1753898400000,
+        "endDateTime": 1753902000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Centrumvägen 8, 66270 Pörtom, Finland",
+        "locationDescription": "Onsdag!",
+        "locationCoordinates": {
+          "lat": 62.71068,
+          "lon": 21.61316
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -3004,7 +3971,6 @@
         "eventId": 5441,
         "name": "Pajuluoman koulu",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1753979400000,
         "endDateTime": 1753986600000,
@@ -3016,12 +3982,10 @@
           "lat": 62.767376,
           "lon": 22.868902
         },
-        "uuid": "9b1d0ff8-719a-451f-80e5-caf1b7b27f2b",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -3035,7 +3999,6 @@
         "eventId": 5460,
         "name": "Saunavuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1753981200000,
         "endDateTime": 1753988400000,
@@ -3047,12 +4010,10 @@
           "lat": 62.920288,
           "lon": 24.107151
         },
-        "uuid": "8192b17a-2ce9-4897-a6b3-6ffec41ac6f4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3065,7 +4026,6 @@
         "eventId": 5461,
         "name": "Teevahainen (CUP)",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1753981200000,
         "endDateTime": 1753986600000,
@@ -3077,13 +4037,38 @@
           "lat": 62.322243,
           "lon": 22.23889
         },
-        "uuid": "a9ed1aec-0615-4134-bdad-34cb4974151f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5468,
+        "name": "Hamari",
+        "sports": [],
+        "organizerName": "OK Orient",
+        "startDateTime": 1754326800000,
+        "endDateTime": 1754332200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Kenttätie 2, 06650 Porvoo, Suomi",
+        "locationDescription": "Yht. henkilö: Nina 050 341 2704",
+        "locationCoordinates": {
+          "lat": 60.36657,
+          "lon": 25.64036
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3900,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025 Borgånejdens motionsorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -3098,7 +4083,6 @@
         "eventId": 5474,
         "name": "Susivuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1754326800000,
         "endDateTime": 1754334000000,
@@ -3110,12 +4094,10 @@
           "lat": 63.20132,
           "lon": 23.032934
         },
-        "uuid": "2302ce56-b14e-4630-8c0c-776b44ba1c5c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -3126,7 +4108,6 @@
         "eventId": 5476,
         "name": "Pappilankangas",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1754328600000,
         "endDateTime": 1754334000000,
@@ -3138,13 +4119,39 @@
           "lat": 62.444927,
           "lon": 21.69147
         },
-        "uuid": "5fe094b3-f332-4fbc-b2f3-7f26669b2c02",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5477,
+        "name": "Soffis gränden",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1754330400000,
+        "endDateTime": 1754334000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Rantatie 1002, 65450 Mustasaari, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.977634,
+          "lon": 21.610191
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -3156,7 +4163,6 @@
         "eventId": 5514,
         "name": "Hietalanmäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1754499600000,
         "endDateTime": 1754506800000,
@@ -3168,13 +4174,38 @@
           "lat": 63.307854,
           "lon": 23.142616
         },
-        "uuid": "1ad67d2e-42eb-4f0a-ae72-cb1aa7330597",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5527,
+        "name": "Böleberget",
+        "sports": [],
+        "organizerName": "IF Sibbo-Vargarna",
+        "startDateTime": 1754584200000,
+        "endDateTime": 1754593200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Johannebergintie 120, 04130 Sipoo, Suomi",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 60.360138,
+          "lon": 25.181541
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3837,
+        "parentSeriesEventName": "Keski-Uusimaa-rastit 2025"
       },
       "serviceAvailable": false
     },
@@ -3186,7 +4217,6 @@
         "eventId": 5530,
         "name": "Palonkyl",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1754584200000,
         "endDateTime": 1754591400000,
@@ -3198,12 +4228,10 @@
           "lat": 62.72031,
           "lon": 22.63206
         },
-        "uuid": "26187e03-90fc-4763-8951-64c0fe291226",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -3218,7 +4246,6 @@
         "eventId": 5534,
         "name": "Kanaharju",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1754586000000,
         "endDateTime": 1754593200000,
@@ -3230,12 +4257,10 @@
           "lat": 62.990894,
           "lon": 23.829828
         },
-        "uuid": "a00ca3b3-e74f-4c43-943c-c126159d64af",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3248,7 +4273,6 @@
         "eventId": 5542,
         "name": "Lempolankallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1754586000000,
         "endDateTime": 1754591400000,
@@ -3260,13 +4284,39 @@
           "lat": 62.504536,
           "lon": 22.606089
         },
-        "uuid": "f6ebf2b2-bb65-4b3c-bab3-5dc3757a0ecc",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5551,
+        "name": "Södra Vallgrund",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1754586000000,
+        "endDateTime": 1755126000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Sommarövägen 116, 65930 Korsholm, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.168247,
+          "lon": 21.29271
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
       },
       "serviceAvailable": false
     },
@@ -3278,7 +4328,6 @@
         "eventId": 5553,
         "name": "Ylihärmä/Kuntokeskus",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1754586000000,
         "endDateTime": 1754593200000,
@@ -3290,13 +4339,65 @@
           "lat": 63.142952,
           "lon": 22.826578
         },
-        "uuid": "861968e1-e31d-453e-b4c0-ac23a38a931a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5555,
+        "name": "Nämpnäs",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1754589600000,
+        "endDateTime": 1754593200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "F6VC+C9 Dalsbacken, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.49352,
+          "lon": 21.220877
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5563,
+        "name": "Karhunkorpi",
+        "sports": [],
+        "organizerName": "OK Orient",
+        "startDateTime": 1754931600000,
+        "endDateTime": 1754937000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Veckjärventie 600, 07310 Porvoo, Suomi",
+        "locationDescription": "Yht.henkilö: Nina 050 341 2704",
+        "locationCoordinates": {
+          "lat": 60.39272,
+          "lon": 25.7763
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3900,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025 Borgånejdens motionsorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -3309,7 +4410,6 @@
         "eventId": 5564,
         "name": "Kramsu",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1754931600000,
         "endDateTime": 1754938800000,
@@ -3321,12 +4421,10 @@
           "lat": 63.129078,
           "lon": 23.330267
         },
-        "uuid": "9312b373-8f01-47f1-b64e-0ccce98a280b",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -3337,7 +4435,6 @@
         "eventId": 5570,
         "name": "Talvi-Parra",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1754933400000,
         "endDateTime": 1754938800000,
@@ -3349,13 +4446,39 @@
           "lat": 62.43485,
           "lon": 21.816397
         },
-        "uuid": "19b05a44-918b-4bb4-a75c-dd453eb5b854",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5571,
+        "name": "Haikne",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1754935200000,
+        "endDateTime": 1754938800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Majors skogsväg 77, 66100 Maalahti, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.908398,
+          "lon": 21.472227
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -3367,7 +4490,6 @@
         "eventId": 5609,
         "name": "Hautamäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1755104400000,
         "endDateTime": 1755111600000,
@@ -3379,12 +4501,10 @@
           "lat": 63.26297,
           "lon": 23.16988
         },
-        "uuid": "9da9dcf9-73dc-4a32-95da-ee3f1cd66fa4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3397,7 +4517,6 @@
         "eventId": 5616,
         "name": "Luopajärven Pohjola, kisarastit",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1755104400000,
         "endDateTime": 1755109800000,
@@ -3409,12 +4528,10 @@
           "lat": 62.58051,
           "lon": 22.744314
         },
-        "uuid": "efb34065-0c60-4f29-a187-17388770227c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3429,7 +4546,6 @@
         "eventId": 5630,
         "name": "Hyllykallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1755189000000,
         "endDateTime": 1755196200000,
@@ -3441,12 +4557,10 @@
           "lat": 62.80517,
           "lon": 22.898823
         },
-        "uuid": "1d29f1c5-3ad2-4d29-9ab9-eefe70399492",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -3460,7 +4574,6 @@
         "eventId": 5635,
         "name": "Hakola",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1755190800000,
         "endDateTime": 1755198000000,
@@ -3472,12 +4585,10 @@
           "lat": 63.1599,
           "lon": 22.817108
         },
-        "uuid": "21133036-fb87-474c-9621-336107d0701f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
@@ -3490,7 +4601,6 @@
         "eventId": 5647,
         "name": "Sotka, kesäteatteri",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhajoen Karhu",
         "startDateTime": 1755190800000,
         "endDateTime": 1755196200000,
@@ -3502,13 +4612,38 @@
           "lat": 62.410458,
           "lon": 22.222773
         },
-        "uuid": "440a1d2b-624f-48be-a08e-46c2c0564664",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3866,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhajoen Karhu iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5656,
+        "name": "Tjärlax",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1755194400000,
+        "endDateTime": 1755198000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "F62F+59 Granön, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.450394,
+          "lon": 21.223423
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -3523,7 +4658,6 @@
         "eventId": 5669,
         "name": "Rumakallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1755536400000,
         "endDateTime": 1755543600000,
@@ -3535,13 +4669,38 @@
           "lat": 63.187756,
           "lon": 23.04192
         },
-        "uuid": "0effa457-d7e6-4bdb-8ef1-e20e7efbe052",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5671,
+        "name": "Virvik",
+        "sports": [],
+        "organizerName": "Akilles OK",
+        "startDateTime": 1755536400000,
+        "endDateTime": 1755541800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Virvikintie 39, 06200 Porvoo, Suomi",
+        "locationDescription": "Porvoonseudun kuntosuunnistuksien järjestelyissä ovat mukana Porvoon kaupungin liikuntapalvelut sekä tapahtumien järjestelyistä vastaavat suunnistuseurat: Porvoon Urheilijat, Askolan Urheilijat, Akilles OK ja OK Orient. Ratavaihtoehtoja on viisi: A (vaativin) 6 km kartta 1:7500 tai 1:10 000 B (vaativa) 4,5 km kartta 1:7500 C (lyhyt normaali) 3 km kartta 1:7500 D (helppo) 2,5 km kartta 1:7500 E (erittäin helppo) 1,5-2 km kartta 1:7500 Ilmoittautuminen ja maksut: Aikuiset 8€, 16v ja nuoremmat 4€. Voit ilmoittautua ja maksaa ennakkoon rastilippu.fi -palvelun kautta tai ilmoittautua ja suorittaa karttamaksun paikan päällä kortti-/lähimaksuna, mobilepay -maksulla sekä käteisellä (mieluiten tasaraha). Suosittelemme ilmoittautumista ja maksua rastilippu.fi -palvelun kautta. Emit-leimasimet kaikilla radoilla. Emitin voi lainata ilmaiseksi, kuitenkin kadonneesta emitistä peritään 70€. Ilmoittaudu lähdössä ja aina myös maalissa, jottei tarvitse järjestää maastoetsintöjä turhaan. Maali sulkeutuu klo 20:00 (yösuunnistuksessa klo 22:00).",
+        "locationCoordinates": {
+          "lat": 60.347393,
+          "lon": 25.864313
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 4017,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -3551,7 +4710,6 @@
         "eventId": 5673,
         "name": "Roumio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1755538200000,
         "endDateTime": 1755543600000,
@@ -3563,13 +4721,39 @@
           "lat": 62.426723,
           "lon": 21.685816
         },
-        "uuid": "9690bb21-2456-4dce-a6de-e3abc97cc7e1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5674,
+        "name": "Kivne krossen",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1755540000000,
+        "endDateTime": 1755543600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "XJGR+HH Bladbacken, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.9765,
+          "lon": 21.641459
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -3581,7 +4765,6 @@
         "eventId": 5716,
         "name": "Ponsivuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1755709200000,
         "endDateTime": 1755714600000,
@@ -3593,12 +4776,10 @@
           "lat": 62.485504,
           "lon": 22.518137
         },
-        "uuid": "ba2173c7-c029-46bf-a63d-7683fd3e1f30",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3611,7 +4792,6 @@
         "eventId": 5717,
         "name": "Porkholma",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1755709200000,
         "endDateTime": 1755716400000,
@@ -3623,12 +4803,10 @@
           "lat": 63.345737,
           "lon": 23.092499
         },
-        "uuid": "1845c5e1-6607-4be4-b5dc-c33244789fee",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3643,7 +4821,6 @@
         "eventId": 5724,
         "name": "Joupiska tekonurmi takaparkki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1755793800000,
         "endDateTime": 1755801000000,
@@ -3655,12 +4832,10 @@
           "lat": 62.77963,
           "lon": 22.811152
         },
-        "uuid": "26dfc8fb-abfc-4e00-9e36-62d8302dc8ce",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -3673,7 +4848,6 @@
         "eventId": 5732,
         "name": "Härmän asema",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1755795600000,
         "endDateTime": 1755802800000,
@@ -3685,13 +4859,66 @@
           "lat": 63.241207,
           "lon": 22.883623
         },
-        "uuid": "98f78f6b-3638-485f-8372-8dff26aa21b8",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5737,
+        "name": "Kuni/Märkenkall",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1755795600000,
+        "endDateTime": 1756335600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Bastuholmsvägen 145, 66580 Korsholm, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.14313,
+          "lon": 21.981895
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5752,
+        "name": "Kompassberget",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1755799200000,
+        "endDateTime": 1755802800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "H8F5+88 Nixmossen, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.573296,
+          "lon": 21.30829
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -3704,7 +4931,6 @@
         "eventId": 5765,
         "name": "Vuorensyrjä",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1756141200000,
         "endDateTime": 1756148400000,
@@ -3716,12 +4942,10 @@
           "lat": 63.062706,
           "lon": 23.2979
         },
-        "uuid": "c3e44d51-4cf8-4128-96f1-0e18c6cfc2d1",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -3732,7 +4956,6 @@
         "eventId": 5766,
         "name": "Paljasvuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1756143000000,
         "endDateTime": 1756148400000,
@@ -3744,13 +4967,39 @@
           "lat": 62.42179,
           "lon": 21.868666
         },
-        "uuid": "411aab35-14ff-43b3-8282-7ef7b2d0fd40",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5767,
+        "name": "Pölne",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1756144800000,
+        "endDateTime": 1756148400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Klockarbackvägen 138, 66100 Maalahti, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.95109,
+          "lon": 21.574938
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -3762,7 +5011,6 @@
         "eventId": 5809,
         "name": "Hirvijärven koulu",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1756314000000,
         "endDateTime": 1756319400000,
@@ -3774,12 +5022,10 @@
           "lat": 62.477116,
           "lon": 22.914963
         },
-        "uuid": "9993f4d1-2601-418b-ba58-51161cbc347c",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3792,7 +5038,6 @@
         "eventId": 5810,
         "name": "Kalijärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1756314000000,
         "endDateTime": 1756321200000,
@@ -3804,12 +5049,10 @@
           "lat": 63.26524,
           "lon": 23.053629
         },
-        "uuid": "2bec8de7-cf89-4d97-86a4-ac7c69fa141d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3822,7 +5065,6 @@
         "eventId": 5822,
         "name": "Isovuori, metsästysmaja",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1756398600000,
         "endDateTime": 1756405800000,
@@ -3834,12 +5076,10 @@
           "lat": 62.839314,
           "lon": 22.978582
         },
-        "uuid": "fbf99f3d-a4be-4998-aee5-ae00d38be4c9",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -3854,7 +5094,6 @@
         "eventId": 5830,
         "name": "Lakeaharju",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1756400400000,
         "endDateTime": 1756407600000,
@@ -3866,12 +5105,10 @@
           "lat": 63.099884,
           "lon": 23.820429
         },
-        "uuid": "6e8efc98-f10f-40eb-91ef-8c8dc87791c4",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -3884,7 +5121,6 @@
         "eventId": 5845,
         "name": "Voltti (sprintti)",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1756400400000,
         "endDateTime": 1756407600000,
@@ -3896,13 +5132,38 @@
           "lat": 63.279114,
           "lon": 22.815916
         },
-        "uuid": "fcafee68-c0ca-4c5d-beeb-7c5cfe019d85",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 5848,
+        "name": "Mjödträsk",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1756404000000,
+        "endDateTime": 1756407600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "G7F4+QH Mjödträsk, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.524452,
+          "lon": 21.256447
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -3915,7 +5176,6 @@
         "eventId": 5859,
         "name": "Kotkanpesä",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1756746000000,
         "endDateTime": 1756753200000,
@@ -3927,12 +5187,10 @@
           "lat": 63.178234,
           "lon": 23.060896
         },
-        "uuid": "0cccafa2-61b2-4eb4-8bcc-d959281c732f",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
       },
       "serviceAvailable": false
@@ -3945,7 +5203,6 @@
         "eventId": 5865,
         "name": "Palomäki, metsästysmaja",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1756747800000,
         "endDateTime": 1756753200000,
@@ -3957,13 +5214,39 @@
           "lat": 62.43385,
           "lon": 21.650377
         },
-        "uuid": "bf5feed3-037d-4eaa-afac-1bd1626a1b52",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5866,
+        "name": "Finnmossen",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1756749600000,
+        "endDateTime": 1756753200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Porintie 1180, 66160 Mustasaari, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.93255,
+          "lon": 21.750917
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -3975,7 +5258,6 @@
         "eventId": 5899,
         "name": "Evijärvi",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1756918800000,
         "endDateTime": 1756926000000,
@@ -3987,12 +5269,10 @@
           "lat": 63.365158,
           "lon": 23.477993
         },
-        "uuid": "fa100340-8860-4c3c-a43a-8d439e5c65fc",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4005,7 +5285,6 @@
         "eventId": 5903,
         "name": "Kauden päätös",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Jalasjärven Jalas",
         "startDateTime": 1756918800000,
         "endDateTime": 1756924200000,
@@ -4017,12 +5296,10 @@
           "lat": 62.486908,
           "lon": 22.748981
         },
-        "uuid": "89178919-f283-4765-9623-582789829b00",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3953,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Jalasjärven Jalaksen iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4035,7 +5312,6 @@
         "eventId": 5904,
         "name": "Kärkimäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
         "startDateTime": 1756918800000,
         "endDateTime": 1756926000000,
@@ -4047,12 +5323,10 @@
           "lat": 62.9778,
           "lon": 22.48708
         },
-        "uuid": "2afe5e88-ff52-441c-a741-3bf651e6c7c2",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3963,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "YK-V/Pora iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4065,7 +5339,6 @@
         "eventId": 5915,
         "name": "Kivilaaksonkadun hiekkakenttä",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1757003400000,
         "endDateTime": 1757010600000,
@@ -4077,13 +5350,39 @@
           "lat": 62.78029,
           "lon": 22.78289
         },
-        "uuid": "5558c46d-3eac-4b72-b523-7e7c6a461809",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 5917,
+        "name": "Träskberga",
+        "sports": [],
+        "organizerName": "IF Sibbo-Vargarna",
+        "startDateTime": 1757003400000,
+        "endDateTime": 1757008800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Nevaksentie 340, 01150 Sipoo, Suomi",
+        "locationDescription": "Yösuunnistus lähtö klo 20:30 - 21:30",
+        "locationCoordinates": {
+          "lat": 60.27242,
+          "lon": 25.405838
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3837,
+        "parentSeriesEventName": "Keski-Uusimaa-rastit 2025"
       },
       "serviceAvailable": false
     },
@@ -4095,7 +5394,6 @@
         "eventId": 5936,
         "name": "Vakkuri/Hunuri",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1757005200000,
         "endDateTime": 1757012400000,
@@ -4107,13 +5405,67 @@
           "lat": 63.2412,
           "lon": 22.676922
         },
-        "uuid": "5dfa7d9a-511a-4763-8d39-5cd4d5793c0a",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5938,
+        "name": "Vörå Skidcentrum",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1757005200000,
+        "endDateTime": 1757545200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Hiihtomäentie 21, 66600 Vörå, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.135677,
+          "lon": 22.260681
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 5941,
+        "name": "Svartbäcken",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1757008800000,
+        "endDateTime": 1757023200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "FGR4+5J Svartbäcken, Finland",
+        "locationDescription": "Dag och natt",
+        "locationCoordinates": {
+          "lat": 62.490448,
+          "lon": 21.506577
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
       },
       "serviceAvailable": false
     },
@@ -4126,7 +5478,6 @@
         "eventId": 5952,
         "name": "Fräntykallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1757350800000,
         "endDateTime": 1757358000000,
@@ -4138,13 +5489,39 @@
           "lat": 63.16551,
           "lon": 22.974436
         },
-        "uuid": "3a721fa5-e616-4986-b8a0-fc188cf51e71",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 5955,
+        "name": "Kokonniemi",
+        "sports": [],
+        "organizerName": "OK Orient",
+        "startDateTime": 1757350800000,
+        "endDateTime": 1757356200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Lapinniementie 26, 06100 Porvoo, Suomi",
+        "locationDescription": "Yht.henkilö: Nina 050 341 2704\nMyös yö, klo 20-22",
+        "locationCoordinates": {
+          "lat": 60.37962,
+          "lon": 25.649633
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3900,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025 Borgånejdens motionsorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -4154,7 +5531,6 @@
         "eventId": 5959,
         "name": "Iso-Parra",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1757352600000,
         "endDateTime": 1757358000000,
@@ -4166,13 +5542,39 @@
           "lat": 62.4105,
           "lon": 21.836218
         },
-        "uuid": "e838ee9c-9986-4bb7-bcf0-c0ee0ce8558d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 5960,
+        "name": "Majorsback",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1757354400000,
+        "endDateTime": 1757358000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Rantatie 2114, 66100 Maalahti, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.909492,
+          "lon": 21.456554
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -4184,7 +5586,6 @@
         "eventId": 5997,
         "name": "Hirsimäki",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1757523600000,
         "endDateTime": 1757530800000,
@@ -4196,12 +5597,10 @@
           "lat": 63.21263,
           "lon": 23.130182
         },
-        "uuid": "271a791d-8279-43df-9cf9-a31f6ced18a6",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4214,7 +5613,6 @@
         "eventId": 6009,
         "name": "Joupiska ampumarata",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1757608200000,
         "endDateTime": 1757615400000,
@@ -4226,12 +5624,10 @@
           "lat": 62.774673,
           "lon": 22.80158
         },
-        "uuid": "0d0be08e-61ed-447c-9498-03f334e5e20d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -4246,7 +5642,6 @@
         "eventId": 6017,
         "name": "Käärmekallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1757610000000,
         "endDateTime": 1757628000000,
@@ -4258,12 +5653,10 @@
           "lat": 63.09244,
           "lon": 24.073616
         },
-        "uuid": "d02542be-1e10-4a06-9ce9-7a02fd000801",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4276,7 +5669,6 @@
         "eventId": 6025,
         "name": "Sorvisto",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1757610000000,
         "endDateTime": 1757617200000,
@@ -4288,13 +5680,66 @@
           "lat": 63.189045,
           "lon": 22.900772
         },
-        "uuid": "3954e934-d440-41c4-9a22-62be373688d3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": 6033,
+        "name": "Näsby",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1757613600000,
+        "endDateTime": 1757617200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Närpesvägen 25, 64200 Närpes, Finland",
+        "locationDescription": null,
+        "locationCoordinates": {
+          "lat": 62.478676,
+          "lon": 21.33657
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 6049,
+        "name": "Holken",
+        "sports": [],
+        "organizerName": "Akilles OK",
+        "startDateTime": 1757955600000,
+        "endDateTime": 1757961000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Ebbovägen 518, 06200 Borgå, Suomi",
+        "locationDescription": "Porvoonseudun kuntosuunnistuksien järjestelyissä ovat mukana Porvoon kaupungin liikuntapalvelut sekä tapahtumien järjestelyistä vastaavat suunnistuseurat: Porvoon Urheilijat, Askolan Urheilijat, Akilles OK ja OK Orient. Ratavaihtoehtoja on viisi: A (vaativin) 6 km kartta 1:7500 tai 1:10 000 B (vaativa) 4,5 km kartta 1:7500 C (lyhyt normaali) 3 km kartta 1:7500 D (helppo) 2,5 km kartta 1:7500 E (erittäin helppo) 1,5-2 km kartta 1:7500 Ilmoittautuminen ja maksut: Aikuiset 8€, 16v ja nuoremmat 4€. Voit ilmoittautua ja maksaa ennakkoon rastilippu.fi -palvelun kautta tai ilmoittautua ja suorittaa karttamaksun paikan päällä kortti-/lähimaksuna, mobilepay -maksulla sekä käteisellä (mieluiten tasaraha). Suosittelemme ilmoittautumista ja maksua rastilippu.fi -palvelun kautta. Emit-leimasimet kaikilla radoilla. Emitin voi lainata ilmaiseksi, kuitenkin kadonneesta emitistä peritään 70€. Ilmoittaudu lähdössä ja aina myös maalissa, jottei tarvitse järjestää maastoetsintöjä turhaan. Maali sulkeutuu klo 20:00 (yösuunnistuksessa klo 22:00).",
+        "locationCoordinates": {
+          "lat": 60.357895,
+          "lon": 25.807365
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 4017,
+        "parentSeriesEventName": "Porvoon seudun kuntosuunnistus 2025, Borgånejdens motionorientering 2025"
       },
       "serviceAvailable": false
     },
@@ -4307,7 +5752,6 @@
         "eventId": 6051,
         "name": "Mäenpää",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kauhavan Wisa",
         "startDateTime": 1757955600000,
         "endDateTime": 1757962800000,
@@ -4319,13 +5763,40 @@
           "lat": 63.154488,
           "lon": 23.007778
         },
-        "uuid": "a9a96ee8-9e46-43be-86d0-da832674af07",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4749,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kauhavan Wisan iltarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 6055,
+        "name": "Kivne",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1757959200000,
+        "endDateTime": 1757962800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Kivne skogsväg 19, 65450 Korsholm, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.978844,
+          "lon": 21.654184
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -4337,7 +5808,6 @@
         "eventId": 6093,
         "name": "Syväjärvi P",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1758128400000,
         "endDateTime": 1758135600000,
@@ -4349,12 +5819,10 @@
           "lat": 63.268913,
           "lon": 23.093376
         },
-        "uuid": "45976cca-632e-44cb-af18-61dd99574a81",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4367,7 +5835,6 @@
         "eventId": 6098,
         "name": "Hallilanvuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1758213000000,
         "endDateTime": 1758220200000,
@@ -4379,13 +5846,93 @@
           "lat": 62.767426,
           "lon": 22.868496
         },
-        "uuid": "d487cffd-b303-440c-a535-5eb9c611f405",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 6102,
+        "name": "Dammbrunnen",
+        "sports": [],
+        "organizerName": "IF Femman",
+        "startDateTime": 1758214800000,
+        "endDateTime": 1758754800000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Dammbrunnsbrinken 5, 65100 Vaasa, Finland",
+        "locationDescription": "Betala via Rastilippu eller köp EPSU-säsongskort. Tilläggsinfo: femman.fi / Maksa Rastilipussa tai osta EPSU-kortti. Lisätietoja: vaasu.fi",
+        "locationCoordinates": {
+          "lat": 63.097412,
+          "lon": 21.640873
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3774,
+        "parentSeriesEventName": "Skärmträffen 2025 Vaasarastit"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [],
+      "event": {
+        "eventId": 6124,
+        "name": "Vargberget",
+        "sports": [],
+        "organizerName": "Närpes OK",
+        "startDateTime": 1758315600000,
+        "endDateTime": 1758319200000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "GF37+XM Svartbäcken, Finland",
+        "locationDescription": "Fredag! Endast natt!",
+        "locationCoordinates": {
+          "lat": 62.50496,
+          "lon": 21.464233
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3995,
+        "parentSeriesEventName": "Torsdagsträffen 2025, Närpes OK"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 6139,
+        "name": "Åminne",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1758564000000,
+        "endDateTime": 1758567600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Paviljongsvägen 21, 66100 Malax, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.974884,
+          "lon": 21.485588
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -4397,7 +5944,6 @@
         "eventId": 6170,
         "name": "Nauriskallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1758733200000,
         "endDateTime": 1758740400000,
@@ -4409,12 +5955,10 @@
           "lat": 63.342873,
           "lon": 23.370966
         },
-        "uuid": "48d8505e-cc41-4648-a968-6853fd67cec8",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4427,7 +5971,6 @@
         "eventId": 6173,
         "name": "Kyrkösvuori",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1758817800000,
         "endDateTime": 1758825000000,
@@ -4439,12 +5982,10 @@
           "lat": 62.758884,
           "lon": 22.799314
         },
-        "uuid": "77dc1375-be63-4201-b8e0-f140bd9f4878",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
       },
       "serviceAvailable": false
@@ -4458,7 +5999,6 @@
         "eventId": 6204,
         "name": "Tikkakallio",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1759064400000,
         "endDateTime": 1759071600000,
@@ -4470,13 +6010,40 @@
           "lat": 63.077507,
           "lon": 23.996843
         },
-        "uuid": "08157863-3e68-44c2-a4cd-d2d07ab8f122",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 6212,
+        "name": "Munsmo",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1759168800000,
+        "endDateTime": 1759172400000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Munsmovägen 158, 65450 Mustasaari, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 63.039536,
+          "lon": 21.62802
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -4488,7 +6055,6 @@
         "eventId": 6230,
         "name": "Kivisaari",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Kortesjärven Järvi-Veikot",
         "startDateTime": 1759338000000,
         "endDateTime": 1759345200000,
@@ -4500,13 +6066,39 @@
           "lat": 63.293537,
           "lon": 23.16258
         },
-        "uuid": "54dc91e2-879a-4ecd-9e95-93280ea8bef3",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3955,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Kortesjärven iltarastit 2025"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": 6233,
+        "name": "Skattåkersberg",
+        "sports": [],
+        "organizerName": "IF Sibbo-Vargarna",
+        "startDateTime": 1759422600000,
+        "endDateTime": 1759428000000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "Skattåkerintie 66, 01190 Sipoo, Suomi",
+        "locationDescription": "Yösuunnistus lähtö klo 19:30 - 20:30",
+        "locationCoordinates": {
+          "lat": 60.29529,
+          "lon": 25.393753
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3837,
+        "parentSeriesEventName": "Keski-Uusimaa-rastit 2025"
       },
       "serviceAvailable": false
     },
@@ -4518,7 +6110,6 @@
         "eventId": 6242,
         "name": "Palomäki, metsästysmaja",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Teuvan Rivakka",
         "startDateTime": 1759572000000,
         "endDateTime": 1759575600000,
@@ -4530,12 +6121,10 @@
           "lat": 62.433834,
           "lon": 21.650404
         },
-        "uuid": "bda2a6bc-1b0b-4fb3-9ffc-65a81faae854",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4065,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Teuvan Rivakka iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4548,7 +6137,6 @@
         "eventId": 6245,
         "name": "Kyrkösjärven uimaranta P-alue",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Rasti-Jussit",
         "startDateTime": 1759579200000,
         "endDateTime": 1759586400000,
@@ -4560,13 +6148,39 @@
           "lat": 62.7696,
           "lon": 22.81372
         },
-        "uuid": "c1203553-4b38-4221-82ef-24557ed66683",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3762,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Rasti-Jussien kuntorastit Seinäjoki"
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "OT",
+        "S"
+      ],
+      "event": {
+        "eventId": 6255,
+        "name": "Söderfjärdsvägen",
+        "sports": [],
+        "organizerName": "Malax IF",
+        "startDateTime": 1759770000000,
+        "endDateTime": 1759773600000,
+        "currentAttendeeCount": 0,
+        "maxAttendeeCount": 10000,
+        "locationAddress": "XHPW+3P Söderfjärden, Finland",
+        "locationDescription": "HUOM! Tavallinen, ajanotollinen lähtö maanataisin klo 18-19. Tapahtuma myös omatoimitapahtumana. Rastit ovat paikoillaan maanaintaista kl 18 seuraavaan sunnuntai iltaan saakka. Ei EMIT-leimausta, pelkkä katsekontakti rastikoodiin riittää. Voit lataa ja tulostaa valitsemasi radan kartan itse Maalahden IFn verkkosivuilta: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ Ilmoita läheisellesi, kun lähdet maastoon. Oman turvallisuutesi takia. ************************************************************************ OBS! Vanlig Måndsagsbom med EMIT-stämpling och tidtagning måndag kl 18-19. Måndagsbommarna även enligt självservice / egen träning -principen. Banorna och kontrollerna är tillgängliga från Måndag kl 18 fram till söndag kväll dock utan EMIT stämpling. Du kan ladda ner och printa din egen karta från Malax IF hemsida: https://malaxif.idrott.fi/orientering/traningar/mandagsbommen/ På Solf IKs Måndagsbommar finns även kartor att hämtas från Solfvägen 121, (Ines Market). OBS! För din egen säkerhet: Meddela någon då du far och orienterar.",
+        "locationCoordinates": {
+          "lat": 62.98514,
+          "lon": 21.596796
+        },
+        "priceInCents": 500,
+        "productDiscounts": [],
+        "purpose": "SPORTS",
+        "parentSeriesEventId": 3805,
+        "parentSeriesEventName": "Måndagsbommen (Malax IF - Solf IK)"
       },
       "serviceAvailable": false
     },
@@ -4579,7 +6193,6 @@
         "eventId": 6273,
         "name": "Vatpakka",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Järviseudun Rasti",
         "startDateTime": 1760187600000,
         "endDateTime": 1760194800000,
@@ -4591,12 +6204,10 @@
           "lat": 63.140945,
           "lon": 23.852257
         },
-        "uuid": "d861c47a-bcc7-46a8-955d-71c7c3c0613d",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 3883,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Järviseudun iltarastit 2025"
       },
       "serviceAvailable": false
@@ -4609,7 +6220,6 @@
         "eventId": 6285,
         "name": "Yliviitala, yö",
         "sports": [],
-        "organizerId": null,
         "organizerName": "Alahärmän Kisa",
         "startDateTime": 1760547600000,
         "endDateTime": 1760562000000,
@@ -4621,12 +6231,10 @@
           "lat": 63.163387,
           "lon": 22.858562
         },
-        "uuid": "8a93b7e2-0179-4f10-958f-57d4ab608184",
         "priceInCents": 500,
         "productDiscounts": [],
         "purpose": "SPORTS",
         "parentSeriesEventId": 4104,
-        "parentSeriesEventUuid": null,
         "parentSeriesEventName": "Alahärmän Kisan kuntorastit 2025"
       },
       "serviceAvailable": false
