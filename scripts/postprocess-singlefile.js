@@ -20,11 +20,28 @@ const { document } = window;
 const organizerScript = document.createElement('script');
 organizerScript.textContent = `
   window.knownOrganizers = [
-    "Rasti-Jussit r.y.",
-    "Vaasan Suunnistajat",
-    "Jalasjärven Jalas ry",
-    "Järviseudun Rasti ry",
-    "Vörå Idrottsförening rf"
+    "Akilles OK",
+    "Alahärmän Kisa",
+    "IF Femman",
+    "IF Sibbo-Vargarna",
+    "Jalasjärven Jalas",
+    "Järviseudun Rasti",
+    "Kauhajoen Karhu",
+    "Kauhavan Wisa",
+    "Kortesjärven Järvi-Veikot",
+    "Laihian Luja",
+    "Lapuan Virkiä",
+    "Malax IF",
+    "Närpes OK",
+    "OK 77",
+    "OK Orient",
+    "OK Raseborg",
+    "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
+    "Rasti-Jussit",
+    "Rasti-Kurikka",
+    "Suunta Jurva",
+    "Teuvan Rivakka",
+    "Vaasan Suunnistajat"
   ];
 `;
 const body = document.querySelector('body');
