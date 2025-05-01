@@ -119,7 +119,7 @@ class EventModal extends HTMLElement {
     // Populate location section
     if (this.event.locationDescription || this.event.locationCoordinates) {
       locationText.textContent = this.event.locationDescription || '';
-      if (this.event.locationCoordinates) {
+      if (this.event.locationCoordinates && this.event.locationCoordinates.lat && this.event.locationCoordinates.lon) {
         const { northing, easting } = wgs84ToTm35fin(
           this.event.locationCoordinates.lat,
           this.event.locationCoordinates.lon,

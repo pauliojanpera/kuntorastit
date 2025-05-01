@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { JSDOM } from 'jsdom';
+import he from 'he';
 
 // Derive __dirname equivalent in ES Modules
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -39,6 +40,7 @@ organizerScript.textContent = `
     "Pohjankyrön Rasti, Ylistaron Kilpa-Veljet",
     "Rasti-Jussit",
     "Rasti-Kurikka",
+    "Rastiketut",
     "Suunta Jurva",
     "Teuvan Rivakka",
     "Vaasan Suunnistajat"
@@ -60,9 +62,28 @@ styles.forEach(style => style.remove());
 styles.forEach(style => body.appendChild(style));
 scripts.forEach(script => body.appendChild(script));
 
-// Serialize the modified DOM back to HTML
-const modifiedHtml = '<!DOCTYPE html>\n' + window.document.documentElement.outerHTML;
+// Store script contents and replace with unique placeholders
+const scriptContents = [];
+for (const script of Array.from(document.querySelectorAll('script'))) {
+  scriptContents.push(script.textContent);
+  script.textContent = 'SCRIPT_PLACEHOLDER';
+}
+
+// Serialize the modified DOM to HTML
+const modifiedHtml = he.encode('<!DOCTYPE html>\n' + window.document.documentElement.outerHTML, {
+  useNamedReferences: true,
+  encodeEverything: false,
+  allowUnsafeSymbols: true,
+  decimal: true
+}).split('SCRIPT_PLACEHOLDER');
+
+const finalHtml = [modifiedHtml.shift()];
+
+while (scriptContents.length) {
+  finalHtml.push(scriptContents.shift());
+  finalHtml.push(modifiedHtml.shift());
+}
 
 // Write the modified HTML back to the file
-await fs.writeFile(outputFile, modifiedHtml, 'utf-8');
-console.log('Post-processing complete: Moved scripts and styles to end of <body>');
+await fs.writeFile(outputFile, finalHtml.join(''), 'utf-8');
+console.log('Post-processing complete: Moved scripts and styles to end of <body>, preserved script contents');
