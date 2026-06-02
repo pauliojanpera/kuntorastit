@@ -3,20 +3,37 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import fetch from 'node-fetch';
+import { JSDOM } from 'jsdom';
 
 const args = process.argv.slice(2);
 const noOverwrite = args.includes('--no-overwrite');
+const useCache = args.includes('--use-cache');
+const saveCache = args.includes('--save-cache');
 
 const TARGET_DIR = 'public/data';
+const CACHE_DIR = 'cache';
 const TARGET_FILE = path.join(TARGET_DIR, 'events.json');
-const CURRENT_YEAR = new Date().getFullYear();
+const CACHE_FILE = path.join(CACHE_DIR, 'markers.json');
 
+const CURRENT_YEAR = new Date().getFullYear();
 const IRMA_BASE = 'https://irma.suunnistusliitto.fi';
 const CALENDAR_PAGE = `${IRMA_BASE}/public/competitioncalendar/list?year=${CURRENT_YEAR}&area=all&tab=map&type=competition_event`;
 const LIST_MARKERS_URL = `${IRMA_BASE}/connect/CompetitionCalendarEndpoint/listMarkers`;
 
+const FETCH_INTERVAL_MS = 2000;
+let lastFetchTime = 0;
+
+async function rateLimitedFetch(url, options) {
+  const elapsed = Date.now() - lastFetchTime;
+  if (elapsed < FETCH_INTERVAL_MS) {
+    await new Promise(resolve => setTimeout(resolve, FETCH_INTERVAL_MS - elapsed));
+  }
+  lastFetchTime = Date.now();
+  return fetch(url, options);
+}
+
 // "DD.MM.YYYY HH:mm" → milliseconds
-// Finnish clock time is stored as-is (treated as UTC) so the frontend displays it correctly.
+// Finnish clock time stored as-is (treated as UTC) so the frontend displays it correctly.
 function parseIrmaDate(str) {
   if (!str) return null;
   const spaceIdx = str.indexOf(' ');
@@ -46,7 +63,7 @@ function irmaToEvent(e) {
 }
 
 async function getSessionAndCsrf() {
-  const response = await fetch(CALENDAR_PAGE, {
+  const response = await rateLimitedFetch(CALENDAR_PAGE, {
     headers: { 'User-Agent': 'Mozilla/5.0', Accept: 'text/html' },
     redirect: 'follow',
   });
@@ -54,26 +71,15 @@ async function getSessionAndCsrf() {
   if (!response.ok) throw new Error(`Session GET failed: ${response.status}`);
 
   let jsessionId = null;
-  let csrfToken = null;
-
-  // node-fetch v3: getSetCookie() returns all Set-Cookie header values
   const setCookies = response.headers.getSetCookie?.() ?? [response.headers.get('set-cookie')].filter(Boolean);
   for (const cookie of setCookies) {
     const m = cookie.match(/JSESSIONID=([^;]+)/);
     if (m) jsessionId = m[1];
-    const x = cookie.match(/XSRF-TOKEN=([^;]+)/);
-    if (x) csrfToken = decodeURIComponent(x[1]);
   }
 
-  if (!csrfToken) {
-    const html = await response.text();
-    const m = html.match(/["']_csrf["'][^>]*content=["']([^"']+)["']|content=["']([^"']+)["'][^>]*["']_csrf["']/);
-    if (m) csrfToken = m[1] || m[2];
-    if (!csrfToken) {
-      const m2 = html.match(/X-CSRF-TOKEN["']\s*:\s*["']([^"']+)["']/);
-      if (m2) csrfToken = m2[1];
-    }
-  }
+  const html = await response.text();
+  const dom = new JSDOM(html);
+  const csrfToken = dom.window.document.querySelector('meta[name="_csrf"]')?.getAttribute('content');
 
   if (!jsessionId) throw new Error('Could not establish session (no JSESSIONID cookie)');
   if (!csrfToken) throw new Error('Could not extract CSRF token from IRMA page');
@@ -90,62 +96,72 @@ async function fetchAndUpdateEvents() {
     }
 
     await fs.mkdir(TARGET_DIR, { recursive: true });
+    await fs.mkdir(CACHE_DIR, { recursive: true });
 
-    console.log('Establishing IRMA session...');
-    const { jsessionId, csrfToken } = await getSessionAndCsrf();
+    let allIrmaEvents;
 
-    console.log(`Fetching all months for ${CURRENT_YEAR}...`);
-    const seenIds = new Set();
-    const allIrmaEvents = [];
+    const cacheExists = await fs.access(CACHE_FILE).then(() => true).catch(() => false);
+    if (useCache && cacheExists) {
+      console.log('Using cached markers from', CACHE_FILE);
+      allIrmaEvents = JSON.parse(await fs.readFile(CACHE_FILE, 'utf8'));
+    } else {
+      console.log('Establishing IRMA session...');
+      const { jsessionId, csrfToken } = await getSessionAndCsrf();
 
-    for (let month = 1; month <= 12; month++) {
-      const response = await fetch(LIST_MARKERS_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          Cookie: `JSESSIONID=${jsessionId}`,
-          'X-CSRF-TOKEN': csrfToken,
-          Origin: IRMA_BASE,
-          Referer: `${CALENDAR_PAGE}&month=${month}`,
-        },
-        body: JSON.stringify({
-          type: 'competition_event',
-          year: CURRENT_YEAR,
-          month: String(month),
-          upcoming: 'ONE_YEAR',
-          disciplines: [],
-          areaId: null,
-          calendarType: 'all',
-          competitionOpen: 'ALL',
-          currentDay: null,
-        }),
-      });
+      const headers = {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Cookie: `JSESSIONID=${jsessionId}`,
+        'X-CSRF-TOKEN': csrfToken,
+        Origin: IRMA_BASE,
+      };
 
-      if (!response.ok) throw new Error(`Month ${month} request failed: ${response.status}`);
+      console.log(`Fetching all months for ${CURRENT_YEAR}...`);
+      const seenIds = new Set();
+      allIrmaEvents = [];
 
-      const monthEvents = await response.json();
-      let added = 0;
-      for (const e of monthEvents) {
-        if (e.type === 'event' && !seenIds.has(e.id)) {
-          seenIds.add(e.id);
-          allIrmaEvents.push(e);
-          added++;
+      for (let month = 1; month <= 12; month++) {
+        const response = await rateLimitedFetch(LIST_MARKERS_URL, {
+          method: 'POST',
+          headers: { ...headers, Referer: `${CALENDAR_PAGE}&month=${month}` },
+          body: JSON.stringify({
+            type: 'competition_event',
+            year: CURRENT_YEAR,
+            month: String(month),
+            upcoming: 'ONE_YEAR',
+            disciplines: [],
+            areaId: null,
+            calendarType: 'all',
+            competitionOpen: 'ALL',
+            currentDay: null,
+          }),
+        });
+
+        if (!response.ok) throw new Error(`Month ${month} request failed: ${response.status}`);
+
+        const monthEvents = await response.json();
+        let added = 0;
+        for (const e of monthEvents) {
+          if (e.type === 'event' && !seenIds.has(e.id)) {
+            seenIds.add(e.id);
+            allIrmaEvents.push(e);
+            added++;
+          }
         }
+        console.log(`  Month ${month}: ${added} new events`);
       }
-      console.log(`  Month ${month}: ${added} new events`);
+
+      if (saveCache) {
+        await fs.writeFile(CACHE_FILE, JSON.stringify(allIrmaEvents, null, 2), 'utf8');
+        console.log('Cached markers to', CACHE_FILE);
+      }
     }
 
     const events = allIrmaEvents
       .map(irmaToEvent)
       .sort((a, b) => a.event.startDateTime - b.event.startDateTime);
 
-    const updatedData = {
-      lastUpdated: new Date().toISOString(),
-      events,
-    };
-
-    await fs.writeFile(TARGET_FILE, JSON.stringify(updatedData, null, 2), 'utf8');
+    await fs.writeFile(TARGET_FILE, JSON.stringify({ lastUpdated: new Date().toISOString(), events }, null, 2), 'utf8');
     console.log(`Successfully updated events.json with ${events.length} events`);
   } catch (error) {
     console.error('Error fetching or writing events data:', error);
