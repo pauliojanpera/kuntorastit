@@ -17,6 +17,33 @@ const EVENTS_CACHE_FILE = path.join(CACHE_DIR, 'events.json');
 const MARKERS_CACHE_FILE = path.join(CACHE_DIR, 'markers.json');
 
 const CURRENT_YEAR = new Date().getFullYear();
+
+const KNOWN_CLUBS = new Set([
+  'Akilles OK',
+  'Alahärmän Kisa',
+  'IF Femman',
+  'IF Sibbo-Vargarna',
+  'Jalasjärven Jalas',
+  'Järviseudun Rasti',
+  'Kauhajoen Karhu',
+  'Kauhavan Wisa',
+  'Kortesjärven Järvi-Veikot',
+  'Laihian Luja',
+  'Lapuan Virkiä',
+  'Malax IF',
+  'Närpes OK',
+  'OK 77',
+  'OK Orient',
+  'OK Raseborg',
+  'Pohjankyrön Rasti',
+  'Ylistaron Kilpa-Veljet',
+  'Rasti-Jussit',
+  'Rasti-Kurikka',
+  'Rastiketut',
+  'Suunta Jurva',
+  'Teuvan Rivakka',
+  'Vaasan Suunnistajat',
+]);
 const IRMA_BASE = 'https://irma.suunnistusliitto.fi';
 const CALENDAR_PAGE = `${IRMA_BASE}/public/competitioncalendar/list?year=${CURRENT_YEAR}&area=all&tab=map&type=competition_event`;
 const LIST_EVENTS_URL = `${IRMA_BASE}/connect/CompetitionCalendarEndpoint/listEvents`;
@@ -215,6 +242,7 @@ async function fetchAndUpdateEvents() {
     const events = eventsData
       .filter(e => e.seriesId != null)
       .map(e => irmaToEvent(mergeEvent(e, markerById.get(e.id))))
+      .filter(e => e.event.organizerClubs.some(club => KNOWN_CLUBS.has(club)))
       .sort((a, b) => a.event.startDateTime - b.event.startDateTime);
 
     const onlyInEvents = eventsData.filter(e => e.seriesId != null && !markerById.has(e.id)).length;
