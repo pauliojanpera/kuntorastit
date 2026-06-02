@@ -6,11 +6,12 @@ const EVENTS_DATA_URL = `${import.meta.env.ACTUAL_BASE_URL.replace(/\/$/, '')}/d
 
 // Interface for an orienteering event
 interface OrienteeringEvent {
-  uuid: string;
+  eventId: string;
   startDateTime: number;
   endDateTime: number;
   name: string;
   organizerName: string;
+  organizerClubs: string[];
   locationDescription: string;
   locationCoordinates: { lat: number; lon: number };
 }
@@ -131,7 +132,7 @@ class EventModal extends HTMLElement {
     }
 
     // Populate event link
-    eventLink.href = `https://www.rastilippu.fi/kuntorastit/tapahtuma/${this.event.uuid}`;
+    eventLink.href = `https://irma.suunnistusliitto.fi/public/event/view/${this.event.eventId}`;
   }
 }
 
@@ -231,7 +232,9 @@ async function loadAndDisplayEvents() {
     if ('knownOrganizers' in window) {
       const { knownOrganizers } = window as any;
       if (Array.isArray(knownOrganizers) && knownOrganizers.length > 0) {
-        events = events.filter(({ event }) => knownOrganizers.includes(event.organizerName));
+        events = events.filter(({ event }) =>
+          event.organizerClubs.some((club: string) => knownOrganizers.includes(club)),
+        );
       } else {
         console.error('knownOrganizers should be a non-empty array of strings');
       }
@@ -359,7 +362,9 @@ function populateOrganizerFilter(events: { event: OrienteeringEvent }[]) {
   const filterElement = document.getElementById('organizer-filter') as HTMLSelectElement;
   const organizerCounts = new Map<string, number>();
   events.forEach(({ event }) =>
-    organizerCounts.set(event.organizerName, (organizerCounts.get(event.organizerName) || 0) + 1),
+    event.organizerClubs.forEach(club =>
+      organizerCounts.set(club, (organizerCounts.get(club) || 0) + 1),
+    ),
   );
 
   const sortedOrganizers = Array.from(organizerCounts.keys()).sort((a, b) =>
@@ -473,7 +478,8 @@ function renderEvents(events: { event: OrienteeringEvent }[], filters: FilterSet
           (filters.dateFilter === 'future' &&
             event.startDateTime > Date.now() - 24 * 60 * 60 * 1000)) &&
         (!filters.nameFilter || event.name.toLowerCase().includes(filters.nameFilter)) &&
-        (!filters.organizerFilter || filters.organizerFilter.has(event.organizerName)),
+        (!filters.organizerFilter ||
+          event.organizerClubs.some(club => filters.organizerFilter!.has(club))),
     )
     .map(({ event }, rowIndex) => {
       const isOdd = rowIndex % 2 === 0;
