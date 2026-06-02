@@ -43,7 +43,7 @@ organizerScript.textContent = `
     "Kuortaneen Kunto",
     "Ähtärin Urheilijat",
     "OK Kristina",
-    "Solf",
+    "Solf IK",
     "Karijoen Tappara",
     "Vähänkyrön Viesti",
     "Gamlakarleby IF",

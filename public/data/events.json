@@ -1,156 +1,6 @@
 {
-  "lastUpdated": "2026-06-02T14:35:49.040Z",
+  "lastUpdated": "2026-06-02T15:03:05.991Z",
   "events": [
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "21930",
-        "name": "Januariorientering i Ekenäs / Tammirastit Tammisaaressa",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1769252400000,
-        "endDateTime": 1769256000000,
-        "locationDescription": "Hedviģ Sohlberģin katu 3, 10600 Tammisaari",
-        "locationCoordinates": {
-          "lat": 59.97231375754405,
-          "lon": 23.4468412399292
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22138",
-        "name": "Februariorientering / Helmikuun rastit",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1772276400000,
-        "endDateTime": 1772280000000,
-        "locationDescription": "Nycanderinkatu 8, 10900 Hanko",
-        "locationCoordinates": {
-          "lat": 59.822532516753526,
-          "lon": 22.962455749511722
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "22981",
-        "name": "Kevätpaketti 1/2026: Märsan, Hanko",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1773450000000,
-        "endDateTime": 1776639600000,
-        "locationDescription": "Lähteentie, Hanko",
-        "locationCoordinates": {
-          "lat": 59.843235859562085,
-          "lon": 22.994019985198978
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23668",
-        "name": "Kevätpaketti 2/2026: lyhyet suunnistusvedot, Grabbskogin uimaranta, Tammisaari",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1773849600000,
-        "endDateTime": 1776639600000,
-        "locationDescription": "Grabbskog simstrand, Ekenäs",
-        "locationCoordinates": {
-          "lat": 60.01604180940226,
-          "lon": 23.378047943115238
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22761",
-        "name": "OK Raseborgs sprintklubbis",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1774177200000,
-        "endDateTime": 1774180800000,
-        "locationDescription": "Lisätiedot tulossa\nMuseivägen 7, Ingå",
-        "locationCoordinates": {
-          "lat": 60.043254599060475,
-          "lon": 24.000771045684818
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23504",
-        "name": "ESC Kauniainen",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1774287000000,
-        "endDateTime": 1774292400000,
-        "locationDescription": "Tapahtumakeskuksen sijainti: Smedsintien sorakenttä, Kauniainen (Smedsintie 8)\nSmedsintie 8, Kauniainen",
-        "locationCoordinates": {
-          "lat": 60.206774407744554,
-          "lon": 24.730428457260135
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "24606",
-        "name": "Kevätpaketti 3/2026: Högsand käyräkartta ja tavallinen",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1774598400000,
-        "endDateTime": 1776639600000,
-        "locationDescription": "Koverharintie 111, Lappohja",
-        "locationCoordinates": {
-          "lat": 59.89625097793901,
-          "lon": 23.220591545104984
-        }
-      },
-      "serviceAvailable": false
-    },
     {
       "disciplines": [
         "S"
@@ -168,28 +18,6 @@
         "locationCoordinates": {
           "lat": 62.71647751903569,
           "lon": 21.605293393167816
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "24871",
-        "name": "Raaseporin linna",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1775005200000,
-        "endDateTime": 1776639600000,
-        "locationDescription": "Raaseporin linnantie 110, Snappertuna",
-        "locationCoordinates": {
-          "lat": 59.992656022876126,
-          "lon": 23.64558219909668
         }
       },
       "serviceAvailable": false
@@ -253,92 +81,6 @@
         "locationCoordinates": {
           "lat": 62.975848690567496,
           "lon": 23.00798892974854
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "24933",
-        "name": "Jurvan pesäpallostadion (sprint-cup)",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1775584800000,
-        "endDateTime": 1775588400000,
-        "locationDescription": "Suupohjan Sprint-cup 2026\nJurvan pesäpallostadion, 66300 Kurikka, Suomi",
-        "locationCoordinates": {
-          "lat": 62.68433157921936,
-          "lon": 21.981003284454346
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25301",
-        "name": "Predium",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1775667600000,
-        "endDateTime": 1775674800000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.915257974827526,
-          "lon": 23.286294937133793
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT",
-        "YÖ"
-      ],
-      "event": {
-        "eventId": "23506",
-        "name": "Länsirastit #1 Kasavuori, Kauniainen",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1775752200000,
-        "endDateTime": 1775773800000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. Yösuunnistuksen lähtö ajanotolla 20.00-21.30. Maali sulkeutuu 22.30. Aurinko laskee klo 20.30.\nKasavuorentie 1, Kauniainen",
-        "locationCoordinates": {
-          "lat": 60.21493865657295,
-          "lon": 24.70355272293091
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23650",
-        "name": "Söderkulla",
-        "organizerName": "IF Sibbo-Vargarna",
-        "organizerClubs": [
-          "IF Sibbo-Vargarna"
-        ],
-        "startDateTime": 1775752200000,
-        "endDateTime": 1775761200000,
-        "locationDescription": "Kompassikuja, Sipoo",
-        "locationCoordinates": {
-          "lat": 60.30112562721898,
-          "lon": 25.323512077593485
         }
       },
       "serviceAvailable": false
@@ -518,50 +260,6 @@
     },
     {
       "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25302",
-        "name": "Fiskars bruk sprint / Fiskarin ruukki sprintti",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1776272400000,
-        "endDateTime": 1776279600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.126852622709166,
-          "lon": 23.5407829284668
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT",
-        "YÖ"
-      ],
-      "event": {
-        "eventId": "23812",
-        "name": "Länsirastit #2 Puolarmaari, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1776357000000,
-        "endDateTime": 1776378600000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. Yösuunnistuksen lähtö ajanotolla 20.00-21.30. Maali sulkeutuu 22.30. Aurinko laskee klo 20.45.\nPuolarmaari 12, Espoo",
-        "locationCoordinates": {
-          "lat": 60.17670920962004,
-          "lon": 24.697372913360596
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
         "S",
         "OT",
         "RR",
@@ -630,6 +328,29 @@
         "S"
       ],
       "event": {
+        "eventId": "25502",
+        "name": "Tallåsen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1776358800000,
+        "endDateTime": 1776366000000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.72434107744396,
+          "lon": 23.040518760681156
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24148",
         "name": "Kompassberget",
         "organizerName": "Närpes OK",
@@ -642,48 +363,6 @@
         "locationCoordinates": {
           "lat": 62.57003566927922,
           "lon": 21.30155467990335
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25305",
-        "name": "Kevätkilpailun kuntosuunnistus / Vårtävlingens motionsorientering",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1776510000000,
-        "endDateTime": 1776515400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.94344688846971,
-          "lon": 23.298225402832035
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25422",
-        "name": "Joonaanmäki Jonasbacken",
-        "organizerName": "OK Orient",
-        "organizerClubs": [
-          "OK Orient"
-        ],
-        "startDateTime": 1776704400000,
-        "endDateTime": 1776709800000,
-        "locationDescription": "Joonaksentie 06100 Porvoo",
-        "locationCoordinates": {
-          "lat": 60.38931159335047,
-          "lon": 25.674962997436527
         }
       },
       "serviceAvailable": false
@@ -822,28 +501,6 @@
     },
     {
       "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "25219",
-        "name": "Pitkälammi",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1776819600000,
-        "endDateTime": 1778454000000,
-        "locationDescription": "Pitkälammin metsätien risteys, maantie 186",
-        "locationCoordinates": {
-          "lat": 60.23022532032383,
-          "lon": 23.60996246337891
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
         "S"
       ],
       "event": {
@@ -889,27 +546,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25303",
-        "name": "Harparskog-Spjutsböle",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1776877200000,
-        "endDateTime": 1776884400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.943244482325966,
-          "lon": 23.298482894897464
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25405",
         "name": "Ylistaro, Kirkonkylä",
         "organizerName": "Pohjankyrön Rasti",
@@ -923,49 +559,6 @@
         "locationCoordinates": {
           "lat": 62.950242569255366,
           "lon": 22.529869079589847
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "24925",
-        "name": "Isokangas",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1776879000000,
-        "endDateTime": 1776882600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.74820251182586,
-          "lon": 22.0356559753418
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23813",
-        "name": "Länsirastit #3 Karhusuo, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1776961800000,
-        "endDateTime": 1776969000000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nKarhuniityntie 12, Espoo",
-        "locationCoordinates": {
-          "lat": 60.229715696577514,
-          "lon": 24.621380567550663
         }
       },
       "serviceAvailable": false
@@ -1052,6 +645,29 @@
         "locationCoordinates": {
           "lat": 62.42487668462025,
           "lon": 22.190408706665043
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25527",
+        "name": "Nedervetil skola",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1776963600000,
+        "endDateTime": 1776970800000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.70077348987057,
+          "lon": 23.339381217956547
         }
       },
       "serviceAvailable": false
@@ -1237,6 +853,31 @@
         "S"
       ],
       "event": {
+        "eventId": "25082",
+        "name": "Perhonjokilaakson iltarastit, Terjärv, keskusta",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1777395600000,
+        "endDateTime": 1777402800000,
+        "locationDescription": "Perhonjokilaakson Iltarastit Teerijärven keskustassa. Sprintti.  Radat A, B, C ja D. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi. Maksutavat: Käteinen, Epassi, MobilePay ja pankkisiirto. Lisätietoja OK Terjärven kotisivuilta. \n\nPerhonjoki orientering i Terjärv centrum. Sprint. A, B, C, och D banor. Kartavgift 7 euro, under 16-åringar gratis. Betalningssätt: Kontant, Epassi, MobilePay och konto. Tilläggsinformation på OK Terjärvs hemsida.",
+        "locationCoordinates": {
+          "lat": 63.54423977353376,
+          "lon": 23.50570392634836
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "26361",
         "name": "Sprintti-cup",
         "organizerName": "Teuvan Rivakka",
@@ -1320,27 +961,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25304",
-        "name": "Ekenäs centrum sprint / Tammisaaren keskusta sprintti",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1777482000000,
-        "endDateTime": 1777489200000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.97179833844402,
-          "lon": 23.448557853698734
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25406",
         "name": "Asema",
         "organizerName": "Pohjankyrön Rasti",
@@ -1354,27 +974,6 @@
         "locationCoordinates": {
           "lat": 62.91228500042096,
           "lon": 22.525234222412113
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "24928",
-        "name": "Puustelli etelä",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1777483800000,
-        "endDateTime": 1777487400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.735859094739055,
-          "lon": 21.83170080184937
         }
       },
       "serviceAvailable": false
@@ -1470,18 +1069,22 @@
         "S"
       ],
       "event": {
-        "eventId": "22059",
-        "name": "Ilola, Illby",
-        "organizerName": "Akilles OK",
+        "eventId": "24182",
+        "name": "Perhonjokilaakson iltarastit, Kaustinen, Urheilukeskus",
+        "organizerName": "Halsuan Toivo",
         "organizerClubs": [
-          "Akilles OK"
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
         ],
-        "startDateTime": 1777914000000,
-        "endDateTime": 1777924800000,
-        "locationDescription": "Tapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nSannaistentie 20, 07280 Porvoo, Suomi",
+        "startDateTime": 1777640400000,
+        "endDateTime": 1777647600000,
+        "locationDescription": "Perhonjokilaakson Iltarastit pe 1.5. Kaustisella, opastus vt13, Urheilukeskus.\n\nRadat A, B, C, D ja RR.\n\nLähdöt klo 13.00-15.00. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi.\n\nMaksutavat: Käteinen, Epassi, SmartumPay ja Smartum setelit. MobilePay, toimipaikka 70055 ja pankkisiirto Perhonjokilaakson OP FI98 5124 0410 0000 38\n\nLisätietoja KP-V:n kotisivuilta.\n\nTervetuloa !",
         "locationCoordinates": {
-          "lat": 60.454448806880066,
-          "lon": 25.754112303256992
+          "lat": 63.54355394817319,
+          "lon": 23.688221812117263
         }
       },
       "serviceAvailable": false
@@ -1647,6 +1250,75 @@
         "S"
       ],
       "event": {
+        "eventId": "25536",
+        "name": "Sandhagen / Santahaka",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1778000400000,
+        "endDateTime": 1778007600000,
+        "locationDescription": "Arrangör / Järjestäjä: GIF",
+        "locationCoordinates": {
+          "lat": 63.84438220127346,
+          "lon": 23.093647956848148
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "27001",
+        "name": "Perhonjokilaakson iltarastit, Perho, Peltokangas",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1778000400000,
+        "endDateTime": 1778007600000,
+        "locationDescription": "Iltarastit Perhossa Peltokankaalla. Radat A, B, C, D ja RR. Karttamaksu 7 e yli 16 v. Maksutavat käteinen, Epassi, Smartum, kortti. Opastus vt 13. ",
+        "locationCoordinates": {
+          "lat": 63.24899371876963,
+          "lon": 24.101456902571957
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24533",
+        "name": "Härkmeri",
+        "organizerName": "OK Kristina",
+        "organizerClubs": [
+          "OK Kristina"
+        ],
+        "startDateTime": 1778002200000,
+        "endDateTime": 1778007600000,
+        "locationDescription": "Härkmeri",
+        "locationCoordinates": {
+          "lat": 62.158787742186746,
+          "lon": 21.42957064821958
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24361",
         "name": "Vesterbacka",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -1689,27 +1361,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25306",
-        "name": "Bergkulla, Ingå/Inkoo",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1778086800000,
-        "endDateTime": 1778094000000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.04848595555358,
-          "lon": 23.928737640380863
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25418",
         "name": "Ylipää",
         "organizerName": "Pohjankyrön Rasti",
@@ -1732,40 +1383,20 @@
         "S"
       ],
       "event": {
-        "eventId": "23653",
-        "name": "Pilvijärvi",
-        "organizerName": "IF Sibbo-Vargarna",
+        "eventId": "25563",
+        "name": "Såka skola / Sokojan koulu",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "IF Sibbo-Vargarna"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1778171400000,
-        "endDateTime": 1778180400000,
-        "locationDescription": "Pilvijärvi, Pilvijärventie 70, Sipoo\nPilvijärventie 70, Sipoo",
+        "startDateTime": 1778086800000,
+        "endDateTime": 1778094000000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
         "locationCoordinates": {
-          "lat": 60.31234207822797,
-          "lon": 25.29454350449669
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23814",
-        "name": "Länsirastit #5 Kellonummi, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1778171400000,
-        "endDateTime": 1778178600000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nKellonummentie 13, Espoo",
-        "locationCoordinates": {
-          "lat": 60.239351045167076,
-          "lon": 24.640606641769413
+          "lat": 63.76058256519331,
+          "lon": 23.204605579376224
         }
       },
       "serviceAvailable": false
@@ -1869,6 +1500,29 @@
         "locationCoordinates": {
           "lat": 62.50263029354693,
           "lon": 22.32404708862305
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25574",
+        "name": "Skjutbanan / Ampumarata",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1778173200000,
+        "endDateTime": 1778180400000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.75317087674152,
+          "lon": 23.06511998176575
         }
       },
       "serviceAvailable": false
@@ -2055,22 +1709,45 @@
     },
     {
       "disciplines": [
-        "S",
-        "OT"
+        "PS"
       ],
       "event": {
-        "eventId": "25220",
-        "name": "Vahrs",
-        "organizerName": "OK Raseborg",
+        "eventId": "26455",
+        "name": "Kaanaanmaantie, Kokkola",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "OK Raseborg"
+          "Gamlakarleby IF",
+          "Himangan Urheilijat",
+          "Kokkolan Suunnistajat",
+          "OK Botnia"
         ],
-        "startDateTime": 1778634000000,
-        "endDateTime": 1782860400000,
-        "locationDescription": "Björnvikenin uimaranta, Inkoo",
+        "startDateTime": 1778605200000,
+        "endDateTime": 1778610600000,
+        "locationDescription": "Järjestävä seura KoS,\nArrangör KoS\n",
         "locationCoordinates": {
-          "lat": 60.04721142827891,
-          "lon": 23.89260292053223
+          "lat": 63.85587746203343,
+          "lon": 23.145736455917362
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24536",
+        "name": "Västra sidan",
+        "organizerName": "OK Kristina",
+        "organizerClubs": [
+          "OK Kristina"
+        ],
+        "startDateTime": 1778607000000,
+        "endDateTime": 1778612400000,
+        "locationDescription": "Kristiinankaupunki",
+        "locationCoordinates": {
+          "lat": 62.27365511190743,
+          "lon": 21.36787799629708
         }
       },
       "serviceAvailable": false
@@ -2144,27 +1821,6 @@
         "S"
       ],
       "event": {
-        "eventId": "24930",
-        "name": "Korvenloukko",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1778693400000,
-        "endDateTime": 1778697000000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.73971501377029,
-          "lon": 22.135313639459696
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "24677",
         "name": "Tikkakallio",
         "organizerName": "Järviseudun Rasti",
@@ -2177,28 +1833,6 @@
         "locationCoordinates": {
           "lat": 63.077444723432244,
           "lon": 23.997638225555423
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23815",
-        "name": "Länsirastit #6 Malminmäki, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1778776200000,
-        "endDateTime": 1778783400000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nMalminkorvenpolku, Espoo",
-        "locationCoordinates": {
-          "lat": 60.1808999853515,
-          "lon": 24.676709175109863
         }
       },
       "serviceAvailable": false
@@ -2271,21 +1905,24 @@
     },
     {
       "disciplines": [
-        "S"
+        "S",
+        "RR"
       ],
       "event": {
-        "eventId": "25439",
-        "name": "Virvik",
-        "organizerName": "OK Orient",
+        "eventId": "25558",
+        "name": "Ahlskog",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "OK Orient"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1779123600000,
-        "endDateTime": 1779129000000,
-        "locationDescription": "Pysäköinti: Virvikintien soramonttu.  Noudata opastusta.",
+        "startDateTime": 1778778000000,
+        "endDateTime": 1778785200000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
         "locationCoordinates": {
-          "lat": 60.34733373860797,
-          "lon": 25.8673095703125
+          "lat": 63.73635109271928,
+          "lon": 23.292989730834964
         }
       },
       "serviceAvailable": false
@@ -2469,6 +2106,51 @@
     },
     {
       "disciplines": [
+        "PS"
+      ],
+      "event": {
+        "eventId": "26454",
+        "name": "Santahaka / Sandhagen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "Himangan Urheilijat",
+          "Kokkolan Suunnistajat",
+          "OK Botnia"
+        ],
+        "startDateTime": 1779210000000,
+        "endDateTime": 1779215400000,
+        "locationDescription": "Järjestävä seura GIF\nArrangör GIF",
+        "locationCoordinates": {
+          "lat": 63.84416086492463,
+          "lon": 23.09351921081543
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24541",
+        "name": "Kanonviken",
+        "organizerName": "OK Kristina",
+        "organizerClubs": [
+          "OK Kristina"
+        ],
+        "startDateTime": 1779211800000,
+        "endDateTime": 1779217200000,
+        "locationDescription": "Kanonviken",
+        "locationCoordinates": {
+          "lat": 62.24974433195139,
+          "lon": 21.326065062603455
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S"
       ],
       "event": {
@@ -2511,29 +2193,6 @@
     },
     {
       "disciplines": [
-        "S",
-        "RR",
-        "TR"
-      ],
-      "event": {
-        "eventId": "25307",
-        "name": "FU-47:s föreningshus / FU-47:n maja, Fiskars/Fiskari",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1779296400000,
-        "endDateTime": 1779303600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.13104486032267,
-          "lon": 23.562583923339847
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
         "S"
       ],
       "event": {
@@ -2550,28 +2209,6 @@
         "locationCoordinates": {
           "lat": 62.97966526185224,
           "lon": 22.432365417480472
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23816",
-        "name": "Länsirastit #7 Vaakkoi, Espoo/ Vihti",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1779381000000,
-        "endDateTime": 1779388200000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nVaakkoin ulkoilualue, pysäköintialue, Espoo",
-        "locationCoordinates": {
-          "lat": 60.33263884783992,
-          "lon": 24.609653949737552
         }
       },
       "serviceAvailable": false
@@ -2661,6 +2298,29 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25576",
+        "name": "Linnusperä",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1779382800000,
+        "endDateTime": 1779390000000,
+        "locationDescription": "Arrangör / Järjestäjä: GIF",
+        "locationCoordinates": {
+          "lat": 63.80531497581346,
+          "lon": 23.211450576782227
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "RR"
       ],
@@ -2677,27 +2337,6 @@
         "locationCoordinates": {
           "lat": 62.416851174721636,
           "lon": 21.398114204439484
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22057",
-        "name": "Seitlahti, Seitlax",
-        "organizerName": "Akilles OK",
-        "organizerClubs": [
-          "Akilles OK"
-        ],
-        "startDateTime": 1779728400000,
-        "endDateTime": 1779739200000,
-        "locationDescription": "Tapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nIsojärventie 1, 06200 Porvoo, Suomi",
-        "locationCoordinates": {
-          "lat": 60.32567931088085,
-          "lon": 25.749887824058533
         }
       },
       "serviceAvailable": false
@@ -2813,6 +2452,31 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24183",
+        "name": "Perhonjokilaakson iltarastit, Kaustinen, Vintturi",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1779814800000,
+        "endDateTime": 1779822000000,
+        "locationDescription": "Perhonjokilaakson Iltarastit ti 26.5. Kaustisella, opastus kt63, Vintturi.\n\nRadat A, B, C, D ja RR.\n\nLähdöt klo 17.00-19.00. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi.\n\nMaksutavat: Käteinen, Epassi, SmartumPay ja Smartum setelit. MobilePay, toimipaikka 70055 ja pankkisiirto Perhonjokilaakson OP FI98 5124 0410 0000 38\n\nLisätietoja KP-V:n kotisivuilta.\n\nTervetuloa !",
+        "locationCoordinates": {
+          "lat": 63.604799622735996,
+          "lon": 23.742262959349322
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "OT"
       ],
@@ -2853,6 +2517,27 @@
         "locationCoordinates": {
           "lat": 62.91193293268559,
           "lon": 21.813815832138065
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24528",
+        "name": "Back/Pakankylä",
+        "organizerName": "OK Kristina",
+        "organizerClubs": [
+          "OK Kristina"
+        ],
+        "startDateTime": 1779816600000,
+        "endDateTime": 1779822000000,
+        "locationDescription": "Back/Pakankylä",
+        "locationCoordinates": {
+          "lat": 62.11560627509743,
+          "lon": 21.553916929406117
         }
       },
       "serviceAvailable": false
@@ -2904,27 +2589,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25308",
-        "name": "Högsand, Lappvik/Lappohja",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1779901200000,
-        "endDateTime": 1779908400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.89843658394705,
-          "lon": 23.238101005554203
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25412",
         "name": "Untamala",
         "organizerName": "Pohjankyrön Rasti",
@@ -2938,49 +2602,6 @@
         "locationCoordinates": {
           "lat": 63.05451463124498,
           "lon": 22.596216201782227
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "24934",
-        "name": "Rökäskallio",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1779903000000,
-        "endDateTime": 1779906600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.792835475914,
-          "lon": 21.897211074829105
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23817",
-        "name": "Länsirastit #8 Oittaa, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1779985800000,
-        "endDateTime": 1779993000000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nOittaan ulkoilualue, Oittaantie, Espoo",
-        "locationCoordinates": {
-          "lat": 60.240022058434526,
-          "lon": 24.66257929801941
         }
       },
       "serviceAvailable": false
@@ -3088,6 +2709,29 @@
         "locationCoordinates": {
           "lat": 62.39625597460504,
           "lon": 22.405586242675785
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25562",
+        "name": "Öjbacken",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1779987600000,
+        "endDateTime": 1779994800000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.70887230962529,
+          "lon": 23.087725639343265
         }
       },
       "serviceAvailable": false
@@ -3243,8 +2887,8 @@
         "endDateTime": 1780768800000,
         "locationDescription": null,
         "locationCoordinates": {
-          "lat": 62.58888151008945,
-          "lon": 24.122680664586376
+          "lat": 62.566922851650936,
+          "lon": 24.108724594116214
         }
       },
       "serviceAvailable": false
@@ -3272,22 +2916,70 @@
     },
     {
       "disciplines": [
-        "S",
-        "OT"
+        "S"
       ],
       "event": {
-        "eventId": "25221",
-        "name": "Risten",
-        "organizerName": "OK Raseborg",
+        "eventId": "25083",
+        "name": "Perhonjokilaakson iltarastit, Terjärv, hiihtomaja",
+        "organizerName": "Halsuan Toivo",
         "organizerClubs": [
-          "OK Raseborg"
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
         ],
-        "startDateTime": 1780448400000,
-        "endDateTime": 1785106800000,
-        "locationDescription": "Hultet, Risten",
+        "startDateTime": 1780419600000,
+        "endDateTime": 1780426800000,
+        "locationDescription": "Perhonjokilaakson Iltarastit Teerijärven hiihtomajalla. Radat A, B, C, D ja RR. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi. Maksutavat: Käteinen, Epassi, MobilePay ja pankkisiirto. Lisätietoja OK Terjärven kotisivuilta. \n\nPerhonjoki orientering vid sportstugan i Terjärv . A, B, C, D och RR banor. Kartavgift 7 euro, under 16-åringar gratis. Betalningssätt: Kontant, Epassi, MobilePay och konto. Tilläggsinformation på OK Terjärvs hemsida.\nSepäntie 88, Teerijärvi",
         "locationCoordinates": {
-          "lat": 60.11707525025962,
-          "lon": 23.892002105712894
+          "lat": 63.545978241630294,
+          "lon": 23.528118610447567
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "PS"
+      ],
+      "event": {
+        "eventId": "26458",
+        "name": "Pernu, Himanka",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "Himangan Urheilijat",
+          "Kokkolan Suunnistajat",
+          "OK Botnia"
+        ],
+        "startDateTime": 1780419600000,
+        "endDateTime": 1780425000000,
+        "locationDescription": "Järjestävä seura HimU\nArrangör HimU\n\nK-Pn AM-kisat",
+        "locationCoordinates": {
+          "lat": 64.10139266670036,
+          "lon": 23.898782730102543
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24534",
+        "name": "Vargö, Tjöck",
+        "organizerName": "OK Kristina",
+        "organizerClubs": [
+          "OK Kristina"
+        ],
+        "startDateTime": 1780421400000,
+        "endDateTime": 1780426800000,
+        "locationDescription": "Vargö, Tjöck",
+        "locationCoordinates": {
+          "lat": 62.309434957565976,
+          "lon": 21.459809418109394
         }
       },
       "serviceAvailable": false
@@ -3352,69 +3044,6 @@
         "locationCoordinates": {
           "lat": 63.001961007729655,
           "lon": 22.655525207519535
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25309",
-        "name": "Spjutsböle",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1780507800000,
-        "endDateTime": 1780511400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.95580598196709,
-          "lon": 23.30148696899414
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23649",
-        "name": "Kyrkoby",
-        "organizerName": "IF Sibbo-Vargarna",
-        "organizerClubs": [
-          "IF Sibbo-Vargarna"
-        ],
-        "startDateTime": 1780590600000,
-        "endDateTime": 1780599600000,
-        "locationDescription": "Kyrkoby\nStaffaksentie 30, Sipoo",
-        "locationCoordinates": {
-          "lat": 60.3610550847411,
-          "lon": 25.25834798801953
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23832",
-        "name": "Länsirastit #9 Hanikka, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1780590600000,
-        "endDateTime": 1780597800000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nHanikan ulkoilupuisto, Suvisaarentie 8, Espoo",
-        "locationCoordinates": {
-          "lat": 60.12949281601191,
-          "lon": 24.691160917282108
         }
       },
       "serviceAvailable": false
@@ -3520,6 +3149,30 @@
         "locationCoordinates": {
           "lat": 62.46791517407902,
           "lon": 22.17041015625
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "RR"
+      ],
+      "event": {
+        "eventId": "25560",
+        "name": "Langtågsvägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1780592400000,
+        "endDateTime": 1780599600000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.75768226135671,
+          "lon": 23.060688972473148
         }
       },
       "serviceAvailable": false
@@ -3703,6 +3356,27 @@
         "S"
       ],
       "event": {
+        "eventId": "24542",
+        "name": "Bergmansberget",
+        "organizerName": "OK Kristina",
+        "organizerClubs": [
+          "OK Kristina"
+        ],
+        "startDateTime": 1781026200000,
+        "endDateTime": 1781031600000,
+        "locationDescription": "Bilbanan/Autorata",
+        "locationCoordinates": {
+          "lat": 62.30981921920641,
+          "lon": 21.398602739324033
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24358",
         "name": "Syväjärvi (murska)",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -3766,27 +3440,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25310",
-        "name": "Raseborg, Snappertuna",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1781110800000,
-        "endDateTime": 1781118000000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.00047225533505,
-          "lon": 23.627536296844482
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25417",
         "name": "Kokkokangas",
         "organizerName": "Pohjankyrön Rasti",
@@ -3800,27 +3453,6 @@
         "locationCoordinates": {
           "lat": 63.07476010343954,
           "lon": 22.603511810302738
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23833",
-        "name": "Länsirastit #10 Olari, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1781195400000,
-        "endDateTime": 1781202600000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nOlarinniityntie 8, Espoo",
-        "locationCoordinates": {
-          "lat": 60.18055747302108,
-          "lon": 24.73452687263489
         }
       },
       "serviceAvailable": false
@@ -3914,18 +3546,20 @@
         "S"
       ],
       "event": {
-        "eventId": "24937",
-        "name": "AH-stadion",
-        "organizerName": "Suunta Jurva",
+        "eventId": "25577",
+        "name": "Rummelbacken",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "Suunta Jurva"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1781199000000,
-        "endDateTime": 1781202600000,
-        "locationDescription": null,
+        "startDateTime": 1781197200000,
+        "endDateTime": 1781204400000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
         "locationCoordinates": {
-          "lat": 62.67488209914951,
-          "lon": 21.98237657546997
+          "lat": 63.69366134841967,
+          "lon": 23.163342475891117
         }
       },
       "serviceAvailable": false
@@ -3947,27 +3581,6 @@
         "locationCoordinates": {
           "lat": 62.47548367636132,
           "lon": 21.361996650957742
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25442",
-        "name": "Mustijoki _Svartså",
-        "organizerName": "OK Orient",
-        "organizerClubs": [
-          "OK Orient"
-        ],
-        "startDateTime": 1781542800000,
-        "endDateTime": 1781548200000,
-        "locationDescription": "Sillvikintie 107, 06750 Porvoo",
-        "locationCoordinates": {
-          "lat": 60.33928483159936,
-          "lon": 25.57051777839661
         }
       },
       "serviceAvailable": false
@@ -4013,6 +3626,28 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24184",
+        "name": "Perhonjokilaakson iltarastit, Kaustinen, Varila",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1781629200000,
+        "endDateTime": 1781636400000,
+        "locationDescription": "Perhonjokilaakson Iltarastit ti 16.6. Kaustisella, opastus vt13, Varila.\n\nRadat A, B, C, D ja RR.\n\nLähdöt klo 17.00-19.00. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi.\n\nMaksutavat: Käteinen, Epassi, SmartumPay ja Smartum setelit. MobilePay, toimipaikka 70055 ja pankkisiirto Perhonjokilaakson OP FI98 5124 0410 0000 38\n\nLisätietoja KP-V:n kotisivuilta.\n\nTervetuloa !",
+        "locationCoordinates": null
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "OT"
       ],
@@ -4032,6 +3667,30 @@
         "locationCoordinates": {
           "lat": 62.77276587547916,
           "lon": 23.619060516357422
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "PS"
+      ],
+      "event": {
+        "eventId": "26457",
+        "name": "Sokojantie / Såkavägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "Himangan Urheilijat",
+          "Kokkolan Suunnistajat",
+          "OK Botnia"
+        ],
+        "startDateTime": 1781629200000,
+        "endDateTime": 1781634600000,
+        "locationDescription": "Järjestävä seura OK Botnia\nArrangör OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.72529097181417,
+          "lon": 23.121371269226078
         }
       },
       "serviceAvailable": false
@@ -4094,27 +3753,6 @@
         "locationCoordinates": {
           "lat": 63.1682270422396,
           "lon": 21.29285573959351
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25311",
-        "name": "Västerby norra/pohjoinen",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1781715600000,
-        "endDateTime": 1781722800000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.01109748763198,
-          "lon": 23.37324142456055
         }
       },
       "serviceAvailable": false
@@ -4231,18 +3869,20 @@
         "S"
       ],
       "event": {
-        "eventId": "24932",
-        "name": "Säläshalli",
-        "organizerName": "Suunta Jurva",
+        "eventId": "25564",
+        "name": "Harrbåda / Harriniemi",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "Suunta Jurva"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1781803800000,
-        "endDateTime": 1781807400000,
-        "locationDescription": null,
+        "startDateTime": 1781802000000,
+        "endDateTime": 1781809200000,
+        "locationDescription": "Arrangör / Järjestäjä: GIF",
         "locationCoordinates": {
-          "lat": 62.66509952274384,
-          "lon": 21.983814239501957
+          "lat": 63.85414763322527,
+          "lon": 23.09609413146973
         }
       },
       "serviceAvailable": false
@@ -4264,27 +3904,6 @@
         "locationCoordinates": {
           "lat": 62.489423085886465,
           "lon": 21.217208864400163
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22058",
-        "name": "Sondby",
-        "organizerName": "Akilles OK",
-        "organizerClubs": [
-          "Akilles OK"
-        ],
-        "startDateTime": 1782147600000,
-        "endDateTime": 1782158400000,
-        "locationDescription": "Tapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nSondbyntie 271, 06200 Porvoo, Suomi",
-        "locationCoordinates": {
-          "lat": 60.266556465309485,
-          "lon": 25.821792483329777
         }
       },
       "serviceAvailable": false
@@ -4423,6 +4042,31 @@
         "S"
       ],
       "event": {
+        "eventId": "27030",
+        "name": "Perhonjokilaakson iltarastit, Perho, Porasentie",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1782234000000,
+        "endDateTime": 1782241200000,
+        "locationDescription": "Perhonjokilaakson iltarastit Perhossa Porasentien varrella. Radat A, B, C ja D. Karttamaksu 7 e yli 16 v.  Maksutavat käteinen, Epassi, kortti. Opastus vt 13. ",
+        "locationCoordinates": {
+          "lat": 63.188676361663944,
+          "lon": 24.326763151329946
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24379",
         "name": "Sampakka",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -4456,48 +4100,6 @@
         "locationCoordinates": {
           "lat": 62.398860201186224,
           "lon": 22.896697892226488
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25312",
-        "name": "Rövarberget, Pojo/Pohja",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1782320400000,
-        "endDateTime": 1782327600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.11929887037833,
-          "lon": 23.552198410034183
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "24929",
-        "name": "Pässilän maja",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1782322200000,
-        "endDateTime": 1782325800000,
-        "locationDescription": "Sorkintie 127",
-        "locationCoordinates": {
-          "lat": 62.73116016436686,
-          "lon": 22.112710475921634
         }
       },
       "serviceAvailable": false
@@ -4563,6 +4165,29 @@
         "locationCoordinates": {
           "lat": 63.09656215017901,
           "lon": 21.74102926257547
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25571",
+        "name": "Lövbackavägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1782406800000,
+        "endDateTime": 1782414000000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.70237632727896,
+          "lon": 23.08115959167481
         }
       },
       "serviceAvailable": false
@@ -4705,27 +4330,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25313",
-        "name": "Ovanmalm, Tenala/Tenhola",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1782925200000,
-        "endDateTime": 1782932400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.093814099172945,
-          "lon": 23.303675651550293
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25415",
         "name": "Rautainen",
         "organizerName": "Pohjankyrön Rasti",
@@ -4739,27 +4343,6 @@
         "locationCoordinates": {
           "lat": 63.04503149193898,
           "lon": 22.66706943511963
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23652",
-        "name": "Borgby",
-        "organizerName": "IF Sibbo-Vargarna",
-        "organizerClubs": [
-          "IF Sibbo-Vargarna"
-        ],
-        "startDateTime": 1783009800000,
-        "endDateTime": 1783018800000,
-        "locationDescription": "Linnanpelto, Pornaistentie 467, Sipoo",
-        "locationCoordinates": {
-          "lat": 60.406707786247125,
-          "lon": 25.31550049738144
         }
       },
       "serviceAvailable": false
@@ -4828,6 +4411,30 @@
     },
     {
       "disciplines": [
+        "S",
+        "RR"
+      ],
+      "event": {
+        "eventId": "25555",
+        "name": "Tamlinsvägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1783011600000,
+        "endDateTime": 1783018800000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.70214817087574,
+          "lon": 23.389291763305668
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S"
       ],
       "event": {
@@ -4843,27 +4450,6 @@
         "locationCoordinates": {
           "lat": 62.59233631935222,
           "lon": 21.540378571080517
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22060",
-        "name": "Kråkö",
-        "organizerName": "Akilles OK",
-        "organizerClubs": [
-          "Akilles OK"
-        ],
-        "startDateTime": 1783357200000,
-        "endDateTime": 1783368000000,
-        "locationDescription": "\nTapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nSjötorpintie 18, 07410 Porvoo, Suomi",
-        "locationCoordinates": {
-          "lat": 60.33771249319093,
-          "lon": 25.642001330852512
         }
       },
       "serviceAvailable": false
@@ -4916,6 +4502,31 @@
         "S"
       ],
       "event": {
+        "eventId": "25084",
+        "name": "Perhonjokilaakson iltarastit, Terjärv, Vuojärvi",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1783443600000,
+        "endDateTime": 1783450800000,
+        "locationDescription": "Perhonjokilaakson Iltarastit Teerijärven Vuojärvellä. Radat A, B, C, D ja RR. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi. Maksutavat: Käteinen, Epassi, MobilePay ja pankkisiirto. Lisätietoja OK Terjärven kotisivuilta. \n\nPerhonjoki orientering Terjärv, Vuojärv. A, B, C, D och RR banor. Kartavgift 7 euro, under 16-åringar gratis. Betalningssätt: Kontant, Epassi, MobilePay och konto. Tilläggsinformation på OK Terjärvs hemsida.",
+        "locationCoordinates": {
+          "lat": 63.52295230356635,
+          "lon": 23.401934623980203
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24357",
         "name": "Eskonmäki",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -4928,27 +4539,6 @@
         "locationCoordinates": {
           "lat": 63.22651054706744,
           "lon": 23.08012962341309
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25314",
-        "name": "Harparskog-Vitsjön",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1783530000000,
-        "endDateTime": 1783537200000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.947478623889225,
-          "lon": 23.29050064086914
         }
       },
       "serviceAvailable": false
@@ -5020,6 +4610,29 @@
         "S"
       ],
       "event": {
+        "eventId": "25569",
+        "name": "Idrottshallen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1783616400000,
+        "endDateTime": 1783623600000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.72885944004231,
+          "lon": 23.031527996063236
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24159",
         "name": "Mjödträsk",
         "organizerName": "Närpes OK",
@@ -5032,27 +4645,6 @@
         "locationCoordinates": {
           "lat": 62.521473732154504,
           "lon": 21.25521469220985
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25440",
-        "name": "Karhunkorpi",
-        "organizerName": "OK Orient",
-        "organizerClubs": [
-          "OK Orient"
-        ],
-        "startDateTime": 1783962000000,
-        "endDateTime": 1783967400000,
-        "locationDescription": "Paikoitustilaa on rajoitetusti, suosikaa kimppakyytejä mahdollisuuksien mukaan. Pysäköidä voi myös Tervajärven uimarannan parkkipaikalle. Etäisyys lähtöpaikalle n. 1, 7 km.\nVeckjärventie 600, 07310 Porvoo (Mustlax)",
-        "locationCoordinates": {
-          "lat": 60.392510852778884,
-          "lon": 25.775578022003177
         }
       },
       "serviceAvailable": false
@@ -5120,6 +4712,28 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24185",
+        "name": "Perhonjokilaakson iltarastit, Kaustinen, Pikkukallio",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1784048400000,
+        "endDateTime": 1784055600000,
+        "locationDescription": "Perhonjokilaakson Iltarastit ti 14.7. Kaustisella, opastus kt63, Pikkukallio. Kaustiselta noin 6,5 km Toholammin suuntaan.\n\nRadat A, B, C, D ja RR.\n\nLähdöt klo 17.00-19.00. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi.\n\nMaksutavat: Käteinen, Epassi, SmartumPay ja Smartum setelit. MobilePay, toimipaikka 70055 ja pankkisiirto Perhonjokilaakson OP FI98 5124 0410 0000 38\n\nLisätietoja KP-V:n kotisivuilta.\n\nTervetuloa !",
+        "locationCoordinates": null
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "OT"
       ],
@@ -5181,29 +4795,6 @@
         "locationCoordinates": {
           "lat": 62.3768371914687,
           "lon": 22.965067433986686
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "RR",
-        "TR"
-      ],
-      "event": {
-        "eventId": "25315",
-        "name": "Gennarby",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1784134800000,
-        "endDateTime": 1784142000000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.04125899576334,
-          "lon": 23.3550238609314
         }
       },
       "serviceAvailable": false
@@ -5318,6 +4909,29 @@
         "S"
       ],
       "event": {
+        "eventId": "25565",
+        "name": "Öja",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1784221200000,
+        "endDateTime": 1784228400000,
+        "locationDescription": "Arrangör / Järjestäjä: GIF",
+        "locationCoordinates": {
+          "lat": 63.867457810333775,
+          "lon": 22.919969558715824
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24163",
         "name": "Tjärlax",
         "organizerName": "Närpes OK",
@@ -5352,6 +4966,30 @@
         "locationCoordinates": {
           "lat": 63.128902598574186,
           "lon": 23.329622268938692
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "PS"
+      ],
+      "event": {
+        "eventId": "26456",
+        "name": "Saarikangas",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "Himangan Urheilijat",
+          "Kokkolan Suunnistajat",
+          "OK Botnia"
+        ],
+        "startDateTime": 1784566800000,
+        "endDateTime": 1784572200000,
+        "locationDescription": "Järjestävä seura KoS\nArrangör KoS",
+        "locationCoordinates": {
+          "lat": 63.801980669182385,
+          "lon": 23.113775253295902
         }
       },
       "serviceAvailable": false
@@ -5467,27 +5105,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25316",
-        "name": "Vahrs, Ingå/Inkoo",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1784739600000,
-        "endDateTime": 1784746800000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.04729713632939,
-          "lon": 23.893203735351566
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "24079",
         "name": "Rintalanvuori",
         "organizerName": "Rasti-Jussit",
@@ -5551,18 +5168,20 @@
         "S"
       ],
       "event": {
-        "eventId": "22062",
-        "name": "Ebbo, Epoo",
-        "organizerName": "Akilles OK",
+        "eventId": "25572",
+        "name": "Djöstas",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "Akilles OK"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1785171600000,
-        "endDateTime": 1785182400000,
-        "locationDescription": "Tapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nEbbovägen 518, 06200 Borgå, Suomi",
+        "startDateTime": 1784826000000,
+        "endDateTime": 1784833200000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
         "locationCoordinates": {
-          "lat": 60.35785605136164,
-          "lon": 25.80735951662064
+          "lat": 63.642460244587575,
+          "lon": 23.37899208068848
         }
       },
       "serviceAvailable": false
@@ -5762,27 +5381,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25317",
-        "name": "Undermalm, Tenala/Tenhola",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1785344400000,
-        "endDateTime": 1785351600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.07207296410663,
-          "lon": 23.289105892181396
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25408",
         "name": "Mäntykallio",
         "organizerName": "Pohjankyrön Rasti",
@@ -5796,27 +5394,6 @@
         "locationCoordinates": {
           "lat": 62.9123130101611,
           "lon": 22.823796272277836
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23651",
-        "name": "Böleberget",
-        "organizerName": "IF Sibbo-Vargarna",
-        "organizerClubs": [
-          "IF Sibbo-Vargarna"
-        ],
-        "startDateTime": 1785429000000,
-        "endDateTime": 1785438000000,
-        "locationDescription": "Böleberget, Sipoo",
-        "locationCoordinates": {
-          "lat": 60.36299583021517,
-          "lon": 25.183467864117123
         }
       },
       "serviceAvailable": false
@@ -5878,6 +5455,29 @@
         "locationCoordinates": {
           "lat": 62.32187346939264,
           "lon": 22.23813056945801
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25554",
+        "name": "Rönnbacken",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1785430800000,
+        "endDateTime": 1785438000000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.70382127514017,
+          "lon": 23.21196556091309
         }
       },
       "serviceAvailable": false
@@ -6018,6 +5618,31 @@
         "S"
       ],
       "event": {
+        "eventId": "27031",
+        "name": "Perhonjokilaakson iltarastit, Perho, Jänkä",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1785862800000,
+        "endDateTime": 1785870000000,
+        "locationDescription": "Perhonjokilaakson iltarastit Perhossa Jängällä. Radat A, B, C ja D. Karttamaksu 7 e. Maksutavat käteinen, Epassi, Smartum, kortti. Opastus vt 13.",
+        "locationCoordinates": {
+          "lat": 63.29795353251801,
+          "lon": 24.486751554650258
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24372",
         "name": "Perä-Manninen",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -6060,27 +5685,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25318",
-        "name": "Bollsta-Flacksjö, Fiskars/Fiskari",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1785949200000,
-        "endDateTime": 1785956400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.1237346151933,
-          "lon": 23.528466224670414
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25420",
         "name": "Isokyrö, Keskusta",
         "organizerName": "Pohjankyrön Rasti",
@@ -6100,22 +5704,23 @@
     },
     {
       "disciplines": [
-        "S",
-        "OT"
+        "S"
       ],
       "event": {
-        "eventId": "23834",
-        "name": "Länsirastit #12 Suna, Espoo",
-        "organizerName": "OK 77",
+        "eventId": "25561",
+        "name": "Sandbacka",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "OK 77"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1786033800000,
-        "endDateTime": 1786041000000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nSunanniityn kenttä, Alamäentie 1, Espoo",
+        "startDateTime": 1785949200000,
+        "endDateTime": 1785956400000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
         "locationCoordinates": {
-          "lat": 60.19445782970281,
-          "lon": 24.682717323303223
+          "lat": 63.71895077255106,
+          "lon": 23.09609413146973
         }
       },
       "serviceAvailable": false
@@ -6226,6 +5831,29 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25557",
+        "name": "Köykar / Köykäri",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1786035600000,
+        "endDateTime": 1786042800000,
+        "locationDescription": "Arrangör / Järjestäjä: GIF",
+        "locationCoordinates": {
+          "lat": 63.82838949739001,
+          "lon": 23.198468685150146
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "RR"
       ],
@@ -6242,27 +5870,6 @@
         "locationCoordinates": {
           "lat": 62.59229680986947,
           "lon": 21.540206909703564
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25441",
-        "name": "Norike pohj / Norike norra",
-        "organizerName": "OK Orient",
-        "organizerClubs": [
-          "OK Orient"
-        ],
-        "startDateTime": 1786381200000,
-        "endDateTime": 1786386600000,
-        "locationDescription": "Ylikentie 732, 06200 Porvoo",
-        "locationCoordinates": {
-          "lat": 60.36695919873212,
-          "lon": 25.866880416870117
         }
       },
       "serviceAvailable": false
@@ -6444,27 +6051,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25319",
-        "name": "Västerby västra/läntinen",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1786554000000,
-        "endDateTime": 1786561200000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.98871707387777,
-          "lon": 23.379120826721195
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25403",
         "name": "Hanhikoski",
         "organizerName": "Pohjankyrön Rasti",
@@ -6478,28 +6064,6 @@
         "locationCoordinates": {
           "lat": 62.95521458948925,
           "lon": 22.73483276367188
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23835",
-        "name": "Länsirastit #13 Kasavuori, Kauniainen",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1786638600000,
-        "endDateTime": 1786645800000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. Yösuunnistuksen lähtö ajanotolla 20.00-21.30. Maali sulkeutuu 22.30. Aurinko laskee klo 20.30.\nKasavuorentie 1, Kauniainen",
-        "locationCoordinates": {
-          "lat": 60.21493865657295,
-          "lon": 24.70355272293091
         }
       },
       "serviceAvailable": false
@@ -6591,6 +6155,29 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25556",
+        "name": "Riippavägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1786640400000,
+        "endDateTime": 1786647600000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.69461797811778,
+          "lon": 23.3913516998291
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "RR"
       ],
@@ -6607,27 +6194,6 @@
         "locationCoordinates": {
           "lat": 62.504682494651945,
           "lon": 21.464049339556368
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22061",
-        "name": "Kokon, Kokonniemi",
-        "organizerName": "Akilles OK",
-        "organizerClubs": [
-          "Akilles OK"
-        ],
-        "startDateTime": 1786986000000,
-        "endDateTime": 1786996800000,
-        "locationDescription": "Tapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nLapinniementie 22, 06100 Porvoo",
-        "locationCoordinates": {
-          "lat": 60.37875609878681,
-          "lon": 25.649693906307224
         }
       },
       "serviceAvailable": false
@@ -6719,6 +6285,28 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24186",
+        "name": "Perhonjokilaakson iltarastit, Kaustinen, Teerinen",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1787072400000,
+        "endDateTime": 1787079600000,
+        "locationDescription": "Perhonjokilaakson Iltarastit ti 18.8. Kaustisella, opastus kt63, Teerinen.\n\nRadat A, B, C, D ja RR.\n\nLähdöt klo 17.00-19.00. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi.\n\nMaksutavat: Käteinen, Epassi, SmartumPay ja Smartum setelit. MobilePay, toimipaikka 70055 ja pankkisiirto Perhonjokilaakson OP FI98 5124 0410 0000 38\n\nLisätietoja KP-V:n kotisivuilta.\n\nTervetuloa !",
+        "locationCoordinates": null
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "OT"
       ],
@@ -6789,27 +6377,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25320",
-        "name": "Märsan, Hangö/Hanko",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1787158800000,
-        "endDateTime": 1787166000000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.84064343492695,
-          "lon": 22.979364395141605
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25413",
         "name": "Untamala",
         "organizerName": "Pohjankyrön Rasti",
@@ -6823,49 +6390,6 @@
         "locationCoordinates": {
           "lat": 63.054425824222236,
           "lon": 22.59625911712647
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "24926",
-        "name": "Isokallio",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1787160600000,
-        "endDateTime": 1787164200000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.70969089821802,
-          "lon": 22.12092876434326
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23836",
-        "name": "Länsirastit #14 Karhusuo, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1787243400000,
-        "endDateTime": 1787250600000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nKarhuniityntie 12, Espoo",
-        "locationCoordinates": {
-          "lat": 60.229715696577514,
-          "lon": 24.621380567550663
         }
       },
       "serviceAvailable": false
@@ -6970,6 +6494,30 @@
         "locationCoordinates": {
           "lat": 62.282297688867196,
           "lon": 21.63036346435547
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "RR"
+      ],
+      "event": {
+        "eventId": "25570",
+        "name": "Såkavägen / Sokojantie",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1787245200000,
+        "endDateTime": 1787252400000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.731033353539615,
+          "lon": 23.140211105346683
         }
       },
       "serviceAvailable": false
@@ -7131,6 +6679,31 @@
         "S"
       ],
       "event": {
+        "eventId": "25085",
+        "name": "Perhonjokilaakson iltarastit, Terjärv, Djupsjön",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1787677200000,
+        "endDateTime": 1787684400000,
+        "locationDescription": "Perhonjokilaakson Iltarastit Teerijärven Syväjärvellä. Radat A, B, C, D ja RR. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi. Maksutavat: Käteinen, Epassi, MobilePay ja pankkisiirto. Lisätietoja OK Terjärven kotisivuilta. \n\nPerhonjoki orientering i Terjärv, Djupsjön. A, B, C, D och RR banor. Kartavgift 7 euro, under 16-åringar gratis. Betalningssätt: Kontant, Epassi, MobilePay och konto. Tilläggsinformation på OK Terjärvs hemsida.",
+        "locationCoordinates": {
+          "lat": 63.59700588194545,
+          "lon": 23.46993827872211
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24365",
         "name": "Kitka",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -7173,27 +6746,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25321",
-        "name": "VM i Fiskars 60 år / MM-kisat Fiskarissa 60 vuotta: Långsjö-Lutsjö, Fiskars/Fiskari",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1787763600000,
-        "endDateTime": 1787770800000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.13665504873224,
-          "lon": 23.52893829345703
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25419",
         "name": "Kärkimäki",
         "organizerName": "Pohjankyrön Rasti",
@@ -7216,61 +6768,20 @@
         "S"
       ],
       "event": {
-        "eventId": "24935",
-        "name": "Iso-Pässilä",
-        "organizerName": "Suunta Jurva",
+        "eventId": "25568",
+        "name": "Kainovägen",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "Suunta Jurva"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1787765400000,
-        "endDateTime": 1787769000000,
-        "locationDescription": null,
+        "startDateTime": 1787763600000,
+        "endDateTime": 1787770800000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
         "locationCoordinates": {
-          "lat": 62.74804530329835,
-          "lon": 22.244052886962894
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23648",
-        "name": "Sipoonkorpi",
-        "organizerName": "IF Sibbo-Vargarna",
-        "organizerClubs": [
-          "IF Sibbo-Vargarna"
-        ],
-        "startDateTime": 1787848200000,
-        "endDateTime": 1787857200000,
-        "locationDescription": "Sipoonkorpi, Knutersintie 262, Sipoo",
-        "locationCoordinates": {
-          "lat": 60.315264973651615,
-          "lon": 25.200934409222103
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23837",
-        "name": "Länsirastit #15 Harmaakallio, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1787848200000,
-        "endDateTime": 1787855400000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nKaskipiha, Espoo",
-        "locationCoordinates": {
-          "lat": 60.17700943248391,
-          "lon": 24.654833078384403
+          "lat": 63.68902037890673,
+          "lon": 23.375859260559086
         }
       },
       "serviceAvailable": false
@@ -7382,6 +6893,29 @@
         "S"
       ],
       "event": {
+        "eventId": "25573",
+        "name": "Krokfors",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1787850000000,
+        "endDateTime": 1787857200000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
+        "locationCoordinates": {
+          "lat": 63.70199036185332,
+          "lon": 23.117423057556152
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24154",
         "name": "Kompassberget",
         "organizerName": "Närpes OK",
@@ -7394,27 +6928,6 @@
         "locationCoordinates": {
           "lat": 62.57202151675299,
           "lon": 21.307004929112743
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25443",
-        "name": "Virvik",
-        "organizerName": "OK Orient",
-        "organizerClubs": [
-          "OK Orient"
-        ],
-        "startDateTime": 1788195600000,
-        "endDateTime": 1788201000000,
-        "locationDescription": "Pysäköinti: Virvikin ulkoilureitin pysäköintipaikka\nVirvik/Rånäsin rantatie alku, ",
-        "locationCoordinates": {
-          "lat": 60.34730429581559,
-          "lon": 25.869283676147464
         }
       },
       "serviceAvailable": false
@@ -7554,27 +7067,6 @@
         "S"
       ],
       "event": {
-        "eventId": "24931",
-        "name": "Pässinkallio",
-        "organizerName": "Suunta Jurva",
-        "organizerClubs": [
-          "Suunta Jurva"
-        ],
-        "startDateTime": 1788283800000,
-        "endDateTime": 1788287400000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 62.71418667153487,
-          "lon": 22.13367462158203
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "24366",
         "name": "Tuomaala",
         "organizerName": "Kortesjärven Järvi-Veikot",
@@ -7617,27 +7109,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25322",
-        "name": "Lappers, Sjundeå/Siuntio",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1788368400000,
-        "endDateTime": 1788375600000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.16076073613656,
-          "lon": 24.11520481109619
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "25410",
         "name": "Järviranta",
         "organizerName": "Pohjankyrön Rasti",
@@ -7651,28 +7122,6 @@
         "locationCoordinates": {
           "lat": 63.00183307665523,
           "lon": 22.655696868896488
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT"
-      ],
-      "event": {
-        "eventId": "23838",
-        "name": "Länsirastit #16 Lahnuksen koulu, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1788453000000,
-        "endDateTime": 1788460200000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\n\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nVanha Lahnuksentie 15, Espoo",
-        "locationCoordinates": {
-          "lat": 60.31070490124663,
-          "lon": 24.705054759979248
         }
       },
       "serviceAvailable": false
@@ -7783,6 +7232,29 @@
     },
     {
       "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25567",
+        "name": "Merjärvvägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1788454800000,
+        "endDateTime": 1788462000000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.69257535292014,
+          "lon": 23.260974884033207
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
         "S",
         "RR"
       ],
@@ -7799,27 +7271,6 @@
         "locationCoordinates": {
           "lat": 62.59225730033415,
           "lon": 21.54029274039204
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "22063",
-        "name": "Seitlahti, Seitlax",
-        "organizerName": "Akilles OK",
-        "organizerClubs": [
-          "Akilles OK"
-        ],
-        "startDateTime": 1788800400000,
-        "endDateTime": 1788811200000,
-        "locationDescription": "Tapahtumien järjestelyistä vastaavat AskU, AOK, OK Orient ja PorvU\nTapahtumat järjestetään maanantaisin 13.4.-21.9.2026\nLähtö klo 17-18:30. Maali sulkeutuu klo 20\nEmit leimaus. Emit-kortin lainaus 0€\nKartat A4,  1:7500, paitsi A 1:10000\nRadat\nA  6 km\nB 4,5 km\nC 3 km\nD 2,5 km\nE  1,5-2 km\nMaksut\nAikuiset 10 €, nuoret 16v ja alle 5 €\nEnnakkoon Rastilippu.fi -palvelussa. Paikan päällä kortti-/lähimaksu, MobilePay, Liikuntaedut: Edenred ja EPassi sekä käteinen\nIsojärventie 1, 06200 Porvoo, Suomi",
-        "locationCoordinates": {
-          "lat": 60.32560976312525,
-          "lon": 25.7496652007103
         }
       },
       "serviceAvailable": false
@@ -7905,6 +7356,31 @@
         "locationCoordinates": {
           "lat": 62.56197744906723,
           "lon": 22.46237933635712
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "24187",
+        "name": "Perhonjokilaakson iltarastit, Kaustinen, Tastula",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1788886800000,
+        "endDateTime": 1788894000000,
+        "locationDescription": "Perhonjokilaakson Iltarastit ti 8.9. Kaustisella, opastus kt63, Tastula.\n\nRadat A, B, C, D ja RR.\n\nLähdöt klo 17.00-19.00. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi.\n\nMaksutavat: Käteinen, Epassi, SmartumPay ja Smartum setelit. MobilePay, toimipaikka 70055 ja pankkisiirto Perhonjokilaakson OP FI98 5124 0410 0000 38\n\nLisätietoja KP-V:n kotisivuilta.\n\nTervetuloa !",
+        "locationCoordinates": {
+          "lat": 63.59199987151601,
+          "lon": 23.722784757483172
         }
       },
       "serviceAvailable": false
@@ -8000,29 +7476,6 @@
     },
     {
       "disciplines": [
-        "S",
-        "OT",
-        "YÖ"
-      ],
-      "event": {
-        "eventId": "23911",
-        "name": "Länsirastit #17 Vaakkoi, Espoo/ Vihti",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1789057800000,
-        "endDateTime": 1789075800000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nYösuunnistus lähtö klo 20.00-21.30. Maali sulkeutuu klo 22.30.\nAurinko laskee klo 19.57.\nVaakkoin ulkoilualue, pysäköintialue, Espoo",
-        "locationCoordinates": {
-          "lat": 60.33263884783992,
-          "lon": 24.609653949737552
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
         "S"
       ],
       "event": {
@@ -8109,6 +7562,29 @@
         "S"
       ],
       "event": {
+        "eventId": "25559",
+        "name": "Skrikovägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1789059600000,
+        "endDateTime": 1789066800000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.74045266536317,
+          "lon": 23.3748722076416
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
         "eventId": "24152",
         "name": "Vargberget",
         "organizerName": "Närpes OK",
@@ -8121,27 +7597,6 @@
         "locationCoordinates": {
           "lat": 62.5049004367417,
           "lon": 21.464092254900613
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25323",
-        "name": "SM-viestin kuntosuunnistus / FM-stafetts motionsorientering",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1789293600000,
-        "endDateTime": 1789300800000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.08682766350358,
-          "lon": 23.904018402099613
         }
       },
       "serviceAvailable": false
@@ -8257,50 +7712,6 @@
         "S"
       ],
       "event": {
-        "eventId": "25324",
-        "name": "Skräckmalmen, Ingå/Inkoo",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1789578000000,
-        "endDateTime": 1789585200000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 60.087512498803044,
-          "lon": 23.900671005249023
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT",
-        "YÖ"
-      ],
-      "event": {
-        "eventId": "23912",
-        "name": "Länsirastit #18 Hanikka, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1789662600000,
-        "endDateTime": 1789678800000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nYösuunnistus lähtö klo 20.00-21.00. Maali sulkeutuu klo 22.00.\nAurinko laskee klo 19.35.\nHanikan ulkoilupuisto, Suvisaarentie 8, Espoo",
-        "locationCoordinates": {
-          "lat": 60.12949281601191,
-          "lon": 24.691160917282108
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
         "eventId": "24100",
         "name": "Pajuluoman koulu",
         "organizerName": "Rasti-Jussit",
@@ -8384,18 +7795,20 @@
         "S"
       ],
       "event": {
-        "eventId": "25444",
-        "name": "Epoo Ebbo",
-        "organizerName": "OK Orient",
+        "eventId": "25566",
+        "name": "Brändåsen",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "OK Orient"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1790010000000,
-        "endDateTime": 1790015400000,
-        "locationDescription": "Epoontie 522, 06200 Porvoo",
+        "startDateTime": 1789664400000,
+        "endDateTime": 1789671600000,
+        "locationDescription": "Arrangör / Järjestäjä: IK Kronan",
         "locationCoordinates": {
-          "lat": 60.35863523633718,
-          "lon": 25.807785987854007
+          "lat": 63.70716718707967,
+          "lon": 23.14433097839356
         }
       },
       "serviceAvailable": false
@@ -8528,71 +7941,6 @@
     },
     {
       "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "25325",
-        "name": "Källviken, Leksvall",
-        "organizerName": "OK Raseborg",
-        "organizerClubs": [
-          "OK Raseborg"
-        ],
-        "startDateTime": 1790182800000,
-        "endDateTime": 1790190000000,
-        "locationDescription": null,
-        "locationCoordinates": {
-          "lat": 59.94582891336518,
-          "lon": 23.374271392822266
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S"
-      ],
-      "event": {
-        "eventId": "23654",
-        "name": "Träskberga",
-        "organizerName": "IF Sibbo-Vargarna",
-        "organizerClubs": [
-          "IF Sibbo-Vargarna"
-        ],
-        "startDateTime": 1790267400000,
-        "endDateTime": 1790272800000,
-        "locationDescription": "Träskberga, Nevaksentie 340, Sipoo",
-        "locationCoordinates": {
-          "lat": 60.27263374419455,
-          "lon": 25.40614843324875
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT",
-        "YÖ"
-      ],
-      "event": {
-        "eventId": "23913",
-        "name": "Länsirastit #19 Meiko, Kirkkonummi",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1790267400000,
-        "endDateTime": 1790285400000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nYösuunnistus lähtö klo 20.00-21.00. Maali sulkeutuu klo 22.00.\nAurinko laskee klo 19.14.\nKorsolammenintie 44, Kirkkonummi",
-        "locationCoordinates": {
-          "lat": 60.149017166498176,
-          "lon": 24.373930692672733
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
         "S",
         "YÖ"
       ],
@@ -8635,6 +7983,29 @@
       "serviceAvailable": false
     },
     {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25578",
+        "name": "Snårevägen",
+        "organizerName": "Gamlakarleby IF",
+        "organizerClubs": [
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
+        ],
+        "startDateTime": 1790269200000,
+        "endDateTime": 1790276400000,
+        "locationDescription": "Arrangör / Järjestäjä: OK Botnia",
+        "locationCoordinates": {
+          "lat": 63.64451791344475,
+          "lon": 23.300371170043945
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
       "disciplines": [],
       "event": {
         "eventId": "24788",
@@ -8651,6 +8022,29 @@
           "lat": 63.154412367697574,
           "lon": 22.274286746978763
         }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S",
+        "YÖ"
+      ],
+      "event": {
+        "eventId": "24176",
+        "name": "Metsän Tähden Yö-Cup / II Kaustinen Night Challenge - pariviesti",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1790364600000,
+        "endDateTime": 1790371800000,
+        "locationDescription": "Metsän Tähden Yö-Cup / II Kaustinen Night Challenge - pariviesti\n\nPerjantaina 25.9.2025, yhteislähtö klo 19:30\n\nTule kokemaan vauhdikas, yllätyksellinen ja jännittävä suunnistustapahtuma!\n\nParit voi muodostaa vapaasti (ei sukupuoli- tai ikärajoituksia). Sarjojen voittajille palkinnot.\n\nHuom! Kaustisella järjestetään 25.9. myös koko perheelle suunnattu perinteinen markkinatapahtuma HURJAT HÄMYILYT\n\nLisätietoja veikot.kaustinen.fi\n\nTervetuloa !",
+        "locationCoordinates": null
       },
       "serviceAvailable": false
     },
@@ -8742,44 +8136,23 @@
     },
     {
       "disciplines": [
-        "YÖ"
+        "S"
       ],
       "event": {
-        "eventId": "25326",
-        "name": "Västerby södra/eteläinen",
-        "organizerName": "OK Raseborg",
+        "eventId": "25575",
+        "name": "Såka / Sokoja",
+        "organizerName": "Gamlakarleby IF",
         "organizerClubs": [
-          "OK Raseborg"
+          "Gamlakarleby IF",
+          "IK Kronan",
+          "OK Botnia"
         ],
-        "startDateTime": 1790800200000,
-        "endDateTime": 1790803800000,
-        "locationDescription": null,
+        "startDateTime": 1790874000000,
+        "endDateTime": 1790881200000,
+        "locationDescription": "Arrangör / järjestäjä: OK Botnia",
         "locationCoordinates": {
-          "lat": 59.99019258025312,
-          "lon": 23.407874107360843
-        }
-      },
-      "serviceAvailable": false
-    },
-    {
-      "disciplines": [
-        "S",
-        "OT",
-        "YÖ"
-      ],
-      "event": {
-        "eventId": "23914",
-        "name": "Länsirastit #20 Haukkalampi, Espoo",
-        "organizerName": "OK 77",
-        "organizerClubs": [
-          "OK 77"
-        ],
-        "startDateTime": 1790872200000,
-        "endDateTime": 1790888400000,
-        "locationDescription": "Kuntosuunnistus 2km, 3km, 4km, 5km, 7km ja rogaining.\nLähtö klo 16.30-18.30. Maali sulkeutuu klo 20.00. \nYösuunnistus lähtö klo 20.00-21.00. Maali sulkeutuu klo 22.00.\nAurinko laskee klo 18.52.\nHaukkalammentie 30, Espoo",
-        "locationCoordinates": {
-          "lat": 60.309627213676954,
-          "lon": 24.520427584648136
+          "lat": 63.75328522362329,
+          "lon": 23.18724632263184
         }
       },
       "serviceAvailable": false
@@ -8800,6 +8173,31 @@
         "locationCoordinates": {
           "lat": 63.105724020791165,
           "lon": 21.7285280228316
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "YÖ"
+      ],
+      "event": {
+        "eventId": "27032",
+        "name": "MetsänTähden yö-cup,Perho, Möttönen",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1790967600000,
+        "endDateTime": 1790971200000,
+        "locationDescription": "MetsänTähden yö-cupin 2.osakilpailu Perhossa Möttösessä. Radat A, B ja C. Karttamaksu 7 e. Maksutavat käteinen, Epassi, Smartum, kortti. Opastus vt 13.",
+        "locationCoordinates": {
+          "lat": 63.18538546172182,
+          "lon": 24.520826339285126
         }
       },
       "serviceAvailable": false
@@ -8865,6 +8263,31 @@
         "locationCoordinates": {
           "lat": 63.29357526891625,
           "lon": 23.162773847579956
+        }
+      },
+      "serviceAvailable": false
+    },
+    {
+      "disciplines": [
+        "S"
+      ],
+      "event": {
+        "eventId": "25086",
+        "name": "MetsänTähden Yö-cup., Terjärv, Bjölas",
+        "organizerName": "Halsuan Toivo",
+        "organizerClubs": [
+          "Halsuan Toivo",
+          "Kaustisen Pohjan-Veikot",
+          "OK Terjärv",
+          "Perhon Kiri",
+          "Vetelin Urheilijat"
+        ],
+        "startDateTime": 1791572400000,
+        "endDateTime": 1791576000000,
+        "locationDescription": "MetsänTähden Yö-cup Teerijärven Bjölaksessa. Radat A, B ja C. Karttamaksu 7 euroa, alle 16-vuotiaat ilmaiseksi. Maksutavat: Käteinen, Epassi, MobilePay ja pankkisiirto. Lisätietoja OK Terjärven kotisivuilta. \n\nMetsänTähden Natt-cup i Terjärv, Bjölas. A, B och C banor. Kartavgift 7 euro, under 16-åringar gratis. Betalningssätt: Kontant, Epassi, MobilePay och konto. Tilläggsinformation på OK Terjärvs hemsida.",
+        "locationCoordinates": {
+          "lat": 63.56635745303102,
+          "lon": 23.499403953683217
         }
       },
       "serviceAvailable": false
