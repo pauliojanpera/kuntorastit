@@ -21,10 +21,8 @@ const { document } = window;
 const organizerScript = document.createElement('script');
 organizerScript.textContent = `
   window.knownOrganizers = [
-    "Akilles OK",
     "Alahärmän Kisa",
     "IF Femman",
-    "IF Sibbo-Vargarna",
     "Jalasjärven Jalas",
     "Järviseudun Rasti",
     "Kauhajoen Karhu",
@@ -34,17 +32,26 @@ organizerScript.textContent = `
     "Lapuan Virkiä",
     "Malax IF",
     "Närpes OK",
-    "OK 77",
-    "OK Orient",
-    "OK Raseborg",
     "Pohjankyrön Rasti",
     "Ylistaron Kilpa-Veljet",
     "Rasti-Jussit",
     "Rasti-Kurikka",
     "Rastiketut",
-    "Suunta Jurva",
+    "Suunta-Jurva",
     "Teuvan Rivakka",
-    "Vaasan Suunnistajat"
+    "Vaasan Suunnistajat",
+    "Kuortaneen Kunto",
+    "Ähtärin Urheilijat",
+    "OK Kristina",
+    "Solf",
+    "Karijoen Tappara",
+    "Vähänkyrön Viesti",
+    "Gamlakarleby IF",
+    "IF Minken",
+    "IK Falken",
+    "OK Botnia",
+    "OK Terjärv",
+    "Lehtimäen Jyske"
   ];
 `;
 const body = document.querySelector('body');

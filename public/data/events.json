@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T07:45:26.273Z",
+  "lastUpdated": "2026-06-02T14:35:49.040Z",
   "events": [
     {
       "disciplines": [
@@ -3243,8 +3243,8 @@
         "endDateTime": 1780768800000,
         "locationDescription": null,
         "locationCoordinates": {
-          "lat": 62.566922851650936,
-          "lon": 24.108724594116214
+          "lat": 62.58888151008945,
+          "lon": 24.122680664586376
         }
       },
       "serviceAvailable": false
